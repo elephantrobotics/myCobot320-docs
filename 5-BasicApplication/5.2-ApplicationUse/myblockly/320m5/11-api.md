@@ -1,4 +1,4 @@
-# Detailed explanation of myblockly building blocks
+# 11 Detailed explanation of myblockly building blocks
 
 
 
@@ -26,7 +26,7 @@
 
 - **Return**: Return to Basic firmware version.
 
-  
+
 
 #### Get Robot ID
 
@@ -38,7 +38,7 @@
 
 - **Return**: Return the robot id.
 
-  
+
 
 #### Set Robot ID
 
@@ -369,13 +369,13 @@
 - **Parameters**
 
    - Joint id: 1-6
-   
+
    - Angle value
    - speed
-   
-   
-   
-   
+
+
+
+
 
 
 #### Set single coordinates
@@ -426,7 +426,7 @@
 
    - j6 angle value
 
-    
+
 
 - **Return**:
 
@@ -459,7 +459,7 @@
 
    - rz coordinate value
 
-    
+
 
 - **Return**:
 
@@ -490,12 +490,12 @@
    - `coords`: list of coordinate values (`List[float]`).
    - `speed`: (`int`) 0 ~ 100
    - `mode`: (`int`): `0` - angular (default), `1` - linear
-   
-- 
 
-  
+-
 
-  
+
+
+
 
 
 
@@ -538,10 +538,10 @@
    - `coord_id`: (`int`) 1 ~ 6
    - `direction`:
    - `speed`: 0 ~ 100
-   
-   
-   
-   
+
+
+
+
 
 
 
@@ -558,17 +558,17 @@
    - `coord_id`: (`int`) 1 ~ 6
    - `direction`:
    - `speed`: 0 ~ 100
-   
-   
-   
-   
+
+
+
+
 
 ### Jog Stop
 ![Alt text](./img/blocks/jog/3.png)
 - **Prototype**: `jog_stop()`
 - **Interface Description**: Stop jog moving.
 
-### 
+###
 
 #### Pause
 

@@ -1,6 +1,4 @@
-
-
-##  Install driver
+# 2 Install driver
 
 > **Notice**: There is no need to download and install the driver in the myCobot 320 Pi system.
 

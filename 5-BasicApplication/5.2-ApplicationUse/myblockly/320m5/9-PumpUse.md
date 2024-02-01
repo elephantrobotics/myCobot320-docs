@@ -1,4 +1,4 @@
-# 9. Use of suction pump
+# 9 Use of suction pump
 
 <i>Preparation before you begin</i>
 
@@ -16,11 +16,11 @@
 
   - Method module **1**: `Set the bottom pin number status`
 
-  
+
 
   <img src="./img/case/pump_item1.png" style="zoom: 50%;" />
 
-  
+
 
   <img src="./img/blocks/basic/1.png" />
 
@@ -32,7 +32,7 @@
     * Running status parameter: 0 means set to running state, 1 means stopped state
 
     Purpose: Set the working status of the bottom pin number
-  
+
 
 
 

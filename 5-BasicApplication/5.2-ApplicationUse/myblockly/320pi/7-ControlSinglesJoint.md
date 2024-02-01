@@ -1,4 +1,4 @@
-# 5 Control multiple joints
+# 7 Control multiple joints
 
 <i>Preparation before you begin</i>
 
@@ -23,7 +23,7 @@ How to use myBlockly to control multiple joint movements of a robotic arm
   This module has two parameters that can be adjusted:
 
   - Joint angle parameters
-  
+
 * Speed parameters
 
 - Purpose: To control the movement of multiple joints of the robotic arm
@@ -41,5 +41,5 @@ How to use myBlockly to control multiple joint movements of a robotic arm
   Return all joints of the robotic arm to the origin at a speed of 50. After three seconds,
 
   Simultaneously control the 1 joint, 2 joint, 3 joint, 4 joint, 5 joint, and 6 joint of the robotic arm to run at a speed of 50 to -30 degrees, -30 degrees, 30 degrees, -10 degrees, -10 degrees, and -30 degrees respectively. position, after three seconds,
-  
+
   Control all joints of the robotic arm to return to the origin

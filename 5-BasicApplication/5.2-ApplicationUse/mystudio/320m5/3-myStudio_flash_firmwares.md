@@ -1,4 +1,4 @@
-# 2 Burn and update firmware
+# 3-Burn and update firmware
 
 **[myStudio Video tutorial](https://www.bilibili.com/video/BV1Qr4y1N7B5/)**
 
@@ -42,11 +42,11 @@ Step 2 :Select Robot `myCobot 320 for M5`,and click `LOGIN` button.
 
 
 Step 3: After logging in, click `Basic`
-<img src="./img/320/2.png" alt="atom" style="zoom: 80%;" />
+	<img src="./img/320/2.png" alt="atom" style="zoom: 80%;" />
 
 Step 4: select minirobot ,after click `Download`    and click `Flash` to burn.
 
-![](C:\Users\Administrator\Desktop\320_mystudio_gitbook截图\en\img\320\3.png)
+![](.\img\320\3.png)
 
 
 
@@ -72,21 +72,21 @@ Step 3: Enter the myStudio firmware burning page and select picoMain firmware bu
 >
 > - Select Robot `myCobot 320 for M5`,and click `LOGIN` button.
 >
-> <img src="./img/320/1.png" alt="atom" style="zoom:80%;" />
+>   <img src="./img/320/1.png" alt="atom" style="zoom:80%;" />
 >
-> 
 >
-> 
+>
+>
 >
 > -  After logging in, click `Basic`
->   <img src="./img/320/2.png" alt="atom" style="zoom: 80%;" />
+><img src="./img/320/2.png" alt="atom" style="zoom: 80%;" />
 >
-> 
+>
 >
 > - select picoMain ,after click `Download`    and click `Flash` to burn.
 >
-> ![](C:\Users\Administrator\Desktop\320_mystudio_gitbook截图\en\img\320\8.png)
+>   ![](.\img\320\8.png)
 >
-> 
+>
 
 

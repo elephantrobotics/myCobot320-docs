@@ -1,4 +1,4 @@
-# 2 Control RGB light panel
+# 4 Control RGB light panel
 
 <i>Preparation before you begin</i>
 
@@ -26,7 +26,7 @@ How to control RGB light panel using myBlockly
 
   * Parameter range (for details, please refer to the RGB parameter table):
 
-  * 
+  *
 
     R：0~255
 

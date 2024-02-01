@@ -1,6 +1,4 @@
-
-
-##  Install driver
+# 2 Install driver
 
 Users can click the button below to download the corresponding **CP210X** or **CP34X** driver compressed package according to the operating system they are using. After decompressing the compressed package, select the installation package corresponding to the number of bits of the operating system to install.
 
@@ -16,21 +14,21 @@ For Mac OS, before installing make sure system "Preferences->Security & Privacy-
     - [ **Windows10** ](https://download.elephantrobotics.com/software/drivers/CP210x_VCP_Windows.zip)
     - [ **MacOS** ](https://download.elephantrobotics.com/software/drivers/CP210x_VCP_MacOS.zip)
     - [ **Linux** ](https://download.elephantrobotics.com/software/drivers/CP210x_VCP_Linux.zip)
-    
+
     - **CP34X**
-  
+
       - [ **Windows10** ](https://download.elephantrobotics.com/software/drivers/CH9102_VCP_SER_Windows.exe)
-  
+
       - [ **MacOS** ](https://download.elephantrobotics.com/software/drivers/CH9102_VCP_MacOS.zip)
-  
-        
+
+
 
 - Download the **Atom** serial port driver at the end
 
   - [ **Windows10** ](https://download.elephantrobotics.com/software/drivers/CDM21228_Setup.zip)
 
 
-![P210X_install](C:\Users\Administrator\Desktop\320_mystudio_gitbook截图\en\img\4.1.1.2-CP210X_install.gif)
+![P210X_install](.\img\4.1.1.2-CP210X_install.gif)
 
 
 
@@ -38,7 +36,7 @@ For Mac OS, before installing make sure system "Preferences->Security & Privacy-
 
 - As shown in the figure below, open **Device Manager** and view **Ports (COM and LPT)**
 
-![frimware_check](C:\Users\Administrator\Desktop\320_mystudio_gitbook截图\en\img\4.1.1.3-firmware_check.gif)
+![frimware_check](.\img\4.1.1.3-firmware_check.gif)
 
   * If **Port (COM and LPT)** displays **USB-Enhanced-SERIAL CH9102**, it is **CP34X chip**
 
