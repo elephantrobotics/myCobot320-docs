@@ -42,9 +42,9 @@ For Mac OS, before installing make sure system "Preferences->Security & Privacy-
 
   * If **Port (COM and LPT)** displays **USB-Enhanced-SERIAL CH9102**, it is **CP34X chip**
 
-![CP34X](C:\Users\Administrator\Desktop\320_mystudio_gitbook截图\en\img\4.1.1.3-CP34X.png)
+![CP34X](.\img\4.1.1.3-CP34X.jpg)
 
   * If **Port (COM and LPT)** shows **Silicon Labs CP210x USB to UART Bridge**, it is **CP210X chip**
 
-![CP210C](C:\Users\Administrator\Desktop\320_mystudio_gitbook截图\en\img\4.1.1.3-CP210X.png)
+![CP210C](.\img\4.1.1.3-CP210X.jpg)
 
