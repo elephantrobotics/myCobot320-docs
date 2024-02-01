@@ -27,7 +27,7 @@
 
 Before officially starting programming, be sure to select the corresponding **machine model**, otherwise it will easily cause hardware damage.
 
-First connect `myCobot 320 M5` to our computer through `USB data cable`, then we select the initialization model as `myCobot 320`, the port connected to my computer is `COM8`, and the baud rate is `115200`
+First connect `myCobot 320 Pi` to our computer through `USB data cable`, then we select the initialization model as `myCobot 320`, the port connected to my computer is `COM8`, and the baud rate is `115200`
 
 ![](.\img\interface\2.png)
 
@@ -111,7 +111,7 @@ When using the control panel to control the machine, be sure to select the corre
 
 
 
-Here we choose the model `myCobot 320` ,`Port` is `COM8`,and the baud rate `115200`
+Here we choose the Robot `myCobot 320` ,`Port` is `COM8`,and the baud rate `115200`
 
 <img src="./img/interface/qm.png" style="zoom: 67%;" />
 

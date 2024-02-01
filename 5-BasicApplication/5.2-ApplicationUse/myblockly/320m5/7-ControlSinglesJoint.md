@@ -40,7 +40,7 @@ The graphics code is as follows:
 
   Control all joints of the robotic arm to return to the origin. After three seconds,
 
-  At the same time, control the 1 joint, 2 joint, 3 joint, 4 joint, 5 joint, and 6 joint of the robotic arm to move at a speed of 50 to the positions of 30 degrees, 30 degrees, -30 degrees, 10 degrees, 10 degrees, and 30 degrees respectively. seconds later,
+  At the same time, control the 1 joint, 2 joint, 3 joint, 4 joint, 5 joint, and 6 joint of the robotic arm to move at a speed of 50 to the positions of 30 degrees, 30 degrees, -30 degrees, 10 degrees, 10 degrees, and 30 degrees respectively. After three seconds,
 
   Return all joints of the robotic arm to the origin at a speed of 50. After three seconds,
 
