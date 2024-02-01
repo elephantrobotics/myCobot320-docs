@@ -1,55 +1,47 @@
-# 1 myStudio environment setup
+# 1 myStudio环境搭建
 
-## Download
+## myStudio下载
 
->Note: The installation path when installing myStudio cannot have any spaces.
-
-
-
-> **myCobot320 pi system has already installed myStudio, no need to re-download it**
+>注意：myStudio安装时的安装路径不能有任何空格
 
 
 
+> **myCobot320 pi 系统内部已安装 myStudio , 无需重新下载**
 
 
-download link:
 
-**1. [GitHub](https://github.com/elephantrobotics/myStudio)**
+下载地址：
 
-* After entering the download address, click on `myStudio` on the right and select the corresponding version to download.
+**1. [GitHub地址](https://github.com/elephantrobotics/myStudio)**
+
+* 进入下载地址后，点击右侧`myStudio`，选择相应版本下载即可。
 
 <img src="./img/github.png" style="zoom: 80%;" />
 
 <img src="./img/github_download.png" style="zoom: 80%;" />
 
-* Different suffixes represent different systems, please download the corresponding version:
-
-  - *.AppImage - Linux system
-
-  * *.dmg - Mac system
-  * *.exe - Window system
+* 不同后缀代表了适用于不同的系统，请下载相应版本：
+  * *.AppImage —— Linux系统
+  * *.dmg —— Mac 系统
+  * *.exe —— Window 系统
 
 
 
-**2. [Official website address](https://www.elephantrobotics.com/download/)**
+**2. [官网地址](https://www.elephantrobotics.com/download/)**
 
-You can choose to download `myStudio 2.0` according to your computer system.
+依据电脑系统自行选择下载`myStudio 2.0`即可。
 
 <img src="./img/download.png" style="zoom: 50%;" />
 
 
 
+## 安装
+
+### 对于Linux 系统安装 myStudio
 
 
 
-
-
-
-## Install
-
-### For Linux  install myStudio
-
-Download the Linux version of myStudio from the official website to get an installation package as shown below
+从官网下载 Linux 版本的 myStudio 可得到一个如下图的安装包
 
 ![](.\img\320\appimage.png)
 
@@ -57,27 +49,25 @@ Download the Linux version of myStudio from the official website to get an insta
 
 
 
-Select `myStudio-latest.AppImage` with the right mouse button to open it, click `Properties` to open it
+选中`myStudio-latest.AppImage`鼠标右键打开，点击`Properties`打开
 
-<img src="C:\Users\Administrator\Desktop\320_pi_mystudio_gitbook\zh\img\320\appimage1.png"  />
-
-
-
-Click to enter `Permissions`
-
-<img src="C:\Users\Administrator\Desktop\320_pi_mystudio_gitbook\zh\img\320\appimage2.png"  />
+<img src=".\img\320\appimage1.png"  />
 
 
 
-In the `Permissions` page, check `Allow executing file as program`, and then click the `Close` button to close the pop-up window
+点击 进入`Permissions` 
 
-<img src="C:\Users\Administrator\Desktop\320_pi_mystudio_gitbook\zh\img\320\appimage3.png"  />
-
-
-
-After closing the pop-up window, double-click the installation package `myStudio-latest.AppImage` to open myStudio
+<img src=".\img\320\appimage2.png"  />
 
 
+
+`Permissions` 页内勾选`Allow executing file as program`, 后可点击`Close`按钮关闭弹窗
+
+<img src=".\img\320\appimage3.png"  />
+
+
+
+关闭弹窗后 鼠标双击 安装包 `myStudio-latest.AppImage` 即可打开 myStudio
 
 
 
@@ -85,43 +75,43 @@ After closing the pop-up window, double-click the installation package `myStudio
 
 
 
+#### 对于 Windows 系统安装 myStudio
+
+双击打开名为`Mystudio_Setup_latest.exe`的文件，然后单击`Run`
+
+![](.\img\install_1.png)
+
+
+
+点击 `下一步`
+
+![](.\img\install_2.png)
+
+点击`安装`后，等待myStudio安装完成
+
+![](.\img\install_3.png)
+
+
+
+安装完成，点击`完成`按钮打开并运行 myStudio
+
+![](.\img\install_4.png)
+
+![](C:\Users\Administrator\Desktop\320_mystudio_gitbook截图\zh\img\install_5.png)
 
 
 
 
-#### For Windows install myStudio
-
-Double-click to open the file named`Mystudio_Setup_latest.exe`,and click to `Run`
-
-![](./img/install_1.png)
 
 
 
-click `Next>`
+### 对于 Mac 系统安装 myStudio
 
-![](./img/install_2.png)
-
-After clicking `Install`, wait for myStudio installation to complete
-
-![](./img/install_3.png)
-
-
-
-The installation is complete, click the `Finish` button to open and run myStudio
-
-![](./img/install_4.png)
-
-![](./img/install_5.png)
-
-
-
-### For MacOS install myStudio
-
-Download the Mac version of myblockly from the official website to get an installation package as shown below. Double-click to open it.
+从官网下载 Mac 版本的 myblockly 可得到一个如下图的安装包，鼠标双击打开即可
 
 ![](.\img\mac.png)
 
-**Note**: For MacOS, make sure system "Preferences->Security & Privacy->General" and Allow Apps from App Store and Recognized Developers are enabled before installing.
+**注意**：对于 MacOS，在安装之前确保系统 "偏好设置->安全性和隐私->通用" ，并允许从 App Store 和被认可的开发者。
 
 
 
@@ -129,54 +119,50 @@ Download the Mac version of myblockly from the official website to get an instal
 
 
 
+## 卸载
 
+### 对于Linux 系统 卸载 myStudio
 
-## Uninstall
+**直接删除安装包即可**
 
-### For Linux systems uninstall myStudio
-
-**Just delete the installation package directly**
-
->The default name of the installation package is `myStudio-latest.AppImage`
-
+>安装包默认名为 `myStudio-latest.AppImage`
 
 
 
+### 对于 Mac 系统卸载 myStudio
 
-### Uninstall myStudio for Mac
-
-**Just move myStudio to the Trash in the app**
-
-
-
-### Uninstall myStudio for Windows systems
-
-Enter the file directory of myStudio and click to run `Uninstall myStudio.exe`
-
-![](.\img\uninstall_1.png)
+**在应用程序中将 myStudio 移至 废纸篓 即可 **
 
 
 
-Click `Next>`
+
+
+### 对于Windows 系统卸载 myStudio
+
+进入myStudio的文件目录，点击运行`Uninstall myStudio.exe`
+
+![](C:\Users\Administrator\Desktop\320_mystudio_gitbook截图\zh\img\uninstall_1.png)
 
 
 
-![](.\img\uninstall_2.png)
+点击 `下一步`
 
 
 
-myblockly has been uninstalled, click `Finish` to exit
+![](C:\Users\Administrator\Desktop\320_mystudio_gitbook截图\zh\img\uninstall_2.png)
 
-![](.\img\uninstall_4.png)
+myblockly已卸载，点击`完成`退出
 
-
-
-## Update
+![](C:\Users\Administrator\Desktop\320_mystudio_gitbook截图\zh\img\uninstall_3.png)
 
 
 
-**In myStudio you can click the `Update` button to update**
+## 更新
 
 
 
-![](./img/update.png)
+**在myStudio中您可以点击`Update`按钮进行更新**
+
+
+
+![](C:\Users\Administrator\Desktop\320_mystudio_gitbook截图\zh\img\update.png)

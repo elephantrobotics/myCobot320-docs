@@ -1,80 +1,77 @@
-# 8. Use of clamping jaws
+# 8 夹爪的使用
 
-<i>Preparation before you begin</i>
+<i>开始前准备</i>
 
-- Make sure the robotic arm is connected to the computer
+- 确保机械臂已经连接上电脑
 
-- Make sure the machine is normal
+其他系列：确保机器正常
 
-Grippers include adaptive grippers, electric grippers and pneumatic grippers. Here we take the adaptive gripper as an example to explain how to use myBlockly to control the gripper.
+夹爪包括自适应夹爪、电动夹爪以及气动夹爪。这里以自适应夹爪，对使用myBlockly控制夹爪的方法进行说明。
+
+### 本章学习内容
+
+如何使用myBlockly控制myPalletizer 260 M5Stack机械臂上连接的自适应夹爪
+
+#### API展示
+
+<img src="./img/case/gripper_item.png" style="zoom: 50%;" />
 
 
 
-### Learning content of this chapter
-
-How to use myBlockly to control the adaptive gripper attached to the myCobot 320 M5Stack robotic arm
-
-#### API display
-
-<img src="./img/case/gripper_ite.png" style="zoom: 67%;" />
-
-- Method module **1**: `Set gripper status`
+- 方法模块**1**：`设置夹爪状态`
 
   <img src="./img/blocks/gripper/2.png" style="zoom: 67%;" />
 
-  Parameter introduction:
+  参数介绍：
 
-  This module has two parameters that can be adjusted:
+  该模块有两个参数可以调整：
 
-  * Clamp status parameter: 1 indicates the clamp claws closed state, 0 indicates the clamp claws open state
-  * Speed parameter: indicates the speed at which to rotate, the value range is 0~100
-  * Clamp type parameter: select adaptive clamp here
+  * 夹爪状态参数：1表示夹爪合拢状态，0 表示夹爪打开状态
+  * 速度参数：表示以多少的速度转动，取值范围 0~100
+  * 夹爪类型：可以选择不同的夹爪类型
 
-  
-
-  Purpose: Make the gripper enter the specified state (open or closed) at a specified speed
+  目的：使夹爪以指定的速度进入到指定的状态（打开或者闭合）
 
   
 
-- Method module **2**: `Set the value of the gripper`
+- 方法模块**2**：`设置夹爪的值`
 
   <img src="./img/blocks/gripper/3.png" style="zoom: 67%;" />
 
-  Parameter introduction:
+  参数介绍：
 
-  This module has two parameters that can be adjusted:
+  该模块有两个参数可以调整：
 
-  * The parameter of the clamping jaw value: indicates the position that the clamping jaw wants to reach, and the value range is 0~100.
-  * Speed parameter: indicates the speed at which to rotate, the value range is 0~100.
-  * Clamp type parameter: select adaptive clamp here
+  * 夹爪值的参数：表示夹爪所要到达的位置，取值范围 0~100
+  * 速度参数：表示以多少的速度转动，取值范围 0~100
+  * 夹爪类型：可以选择不同的夹爪类型
 
-  Purpose: Make the gripper rotate to a specified position at a specified speed.
-
-
-
-* Method module **3**: `Is the gripper in motion`
-
-  <img src="./img/blocks/gripper/4.png" style="zoom: 67%;" />
-
-  Purpose: To determine whether the gripper is running
-
-  
+  目的： 使夹爪以指定的速度转动到指定的位置
 
 
-#### Simple demonstration
 
-The graphics code is as follows:
+
+* 方法模块**3**：`夹爪是否在运动`
+
+  <img src="./img/blocks/gripper/4.png"  />
+
+  目的：判断夹爪是否正在运行
+
+
+#### 简单演示
+
+* 图形代码如下：
 
 <img src="./img/case/gripper.png" style="zoom: 50%;" />
 
 
 
-* Implementation content:
+* 实现内容：
 
-  Move joint 2 of the robotic arm to 30 degrees at a speed of 50. After two seconds,
+  把机械臂2关节以速度50运行至30度，过两秒后，
 
-  The clamping jaw opens at a speed of 70. After two seconds,
+  夹爪以速度70打开，过两秒后，
 
-  The jaws close at speed 70,
+  夹爪以速度70关闭，
 
-  After the process of opening and closing the jaws is cycled 5 times, the program ends.
+  夹爪打开闭合的过程循环5次后，程序运行结束。

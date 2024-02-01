@@ -6,40 +6,41 @@
 
 - Make sure the machine is normal
 
-### Learning content of this chapter
 
-How to use myBlockly to control multiple joint movements of a robotic arm
 
-#### API introduction
+### 本章学习内容
 
-* Method module: `Set angles`
+如何使用myBlockly控制机械臂多个关节运动
 
-  <img src="./img/case/go_zero_item.png" style="zoom: 50%;" />
+#### API介绍
 
-<img src="./img/blocks/mid/8.png" />
+* 方法模块：`设置全角度`
 
-* Parameter introduction:
+  <img src="../../../resourse/5-ProgramingApplication-myblockly-uiflow-mind/image/myblockly/控制多关节1.jpg" style="zoom: 33%;" />
 
-  This module has two parameters that can be adjusted:
+<img src="../../../resourse/5-ProgramingApplication-myblockly-uiflow-mind/image/myblockly/控制多关节2.jpg" style="zoom: 50%;" />
 
-  - Joint angle parameters
-  
-* Speed parameters
+* 参数介绍：
 
-- Purpose: To control the movement of multiple joints of the robotic arm
+  该模块有两个参数可以调整：
 
-- The graphics code is as follows:
+  * 关节角度参数：可以根据需要在机械臂关节运动范围内设置参数（关节运动范围详情请参考**[2.产品介绍](https://docs.elephantrobotics.com/docs/gitbook/2-serialproduct/2-buy.html)**）
+  * 速度参数：可以根据需要在机械臂运动速度范围设置参数（运动最大速度请参考**[2.产品介绍](https://docs.elephantrobotics.com/docs/gitbook/2-serialproduct/2-buy.html)**）
 
-<img src="./img/case/joints.png" style="zoom: 50%;" />
+* 目的：控制机械臂多个关节运动
 
-* Implementation content:
+#### 简单演示
 
-  Control all joints of the robotic arm to return to the origin. After three seconds,
+* 图形代码如下：
 
-  At the same time, control the 1 joint, 2 joint, 3 joint, 4 joint, 5 joint, and 6 joint of the robotic arm to move at a speed of 50 to the positions of 30 degrees, 30 degrees, -30 degrees, 10 degrees, 10 degrees, and 30 degrees respectively. seconds later,
+<img src="./img/myblockly/控制多关节4.jpg" style="zoom: 50%;" />
 
-  Return all joints of the robotic arm to the origin at a speed of 50. After three seconds,
+* 实现内容：
 
-  Simultaneously control the 1 joint, 2 joint, 3 joint, 4 joint, 5 joint, and 6 joint of the robotic arm to run at a speed of 50 to -30 degrees, -30 degrees, 30 degrees, -10 degrees, -10 degrees, and -30 degrees respectively. position, after three seconds,
-  
-  Control all joints of the robotic arm to return to the origin
+  控制机械臂所有关节回到原点，过两秒后，
+
+  同时控制机械臂1关节、2关节、3关节和4关节以速度50分别运行到30度、30度、-30度以及50度的位置，过两秒后，
+
+  将机械臂所有关节以速度50回到原点，过两秒后，
+
+  控制机械臂1关节、2关节、3关节和4关节以速度50分别运行到-30度、0度、30度以及-50度的位置，过两秒后，结束程序。

@@ -1,31 +1,22 @@
-# myBlockly download and install
+# myBlockly下载安装
 
-### Download
+### 下载
 
-download link**[Official website address](https://www.elephantrobotics.com/en/downloads/)**
+下载地址**[官网地址](https://www.elephantrobotics.com/download/)**
 
-You need to download different installation packages according to your operating system.
-
-
-
-Different suffixes represent different systems, please download the corresponding version:
-
-- *.AppImage  : Linux system
-
-* *.dmg : Mac system
-* *.exe : Window system
+需要根据自己的操作系统选择下载不同的安装包。
 
 
 
-![](C:\Users\Administrator\Desktop\320gitbook截图\en\img\download.png)
+![](C:\Users\Administrator\Desktop\320gitbook截图\zh\img\download.png)
 
 
 
-## Install
+## 安装
 
-### For Linux install myblockly
+### 对于Linux 系统安装 myblockly
 
-Download the Linux version of myblockly from the official website and you will get an installation package as shown below
+从官网下载 Linux 版本的 myblockly 可得到一个如下图的安装包
 
 ![](.\img\appimage.png)
 
@@ -33,121 +24,104 @@ Download the Linux version of myblockly from the official website and you will g
 
 
 
-Select `myblockly-arm64-latest.AppImage`, right-click to open it, click `Properties` to open it
+选中`myblockly-arm64-latest.AppImage`鼠标右键打开，点击`Properties`打开
 
 <img src=".\img\appimage1.png"  />
 
 
 
-Click to enter `Permissions`
+点击 进入`Permissions` 
 
 <img src=".\img\appimage2.png"  />
 
 
 
-In the `Permissions` page, check `Allow executing file as program`, and then click the `Close` button to close the pop-up window
+`Permissions` 页内勾选`Allow executing file as program`, 后可点击`Close`按钮关闭弹窗
 
 <img src=".\img\appimage3.png"  />
 
 
 
-After closing the pop-up window, double-click the installation package `myblockly-arm64-latest.AppImage` to open myblockly
+关闭弹窗后 鼠标双击 安装包 `myblockly-arm64-latest.AppImage` 即可打开 myblockly
 
 
 
-### For Windows installation
 
-Double-click to open the file named`myblockly-arm64-latest.AppImage`
 
-![](.\img\install_1.png)
+#### 对于Windows 安装 myblockly
 
-Click `Run`
+双击打开名为 `myblockly-Setup-latest.exe`
 
-![](C:\Users\Administrator\Desktop\320gitbook截图\en\img\install_2.png)
+![](C:\Users\Administrator\Desktop\320gitbook截图\zh\img\install_1.png)
 
-After clicking `Install`, wait for myblockly installation to complete
+点击运行
 
-![](C:\Users\Administrator\Desktop\320gitbook截图\en\img\install_3.png)
+![](C:\Users\Administrator\Desktop\320gitbook截图\zh\img\install_2.png)
 
+点击`安装`后，等待 myblockly 安装完成
 
+![](C:\Users\Administrator\Desktop\320gitbook截图\zh\img\install_3.png)
 
-The installation is complete, click the `Finish` button to open and run myblockly
 
-![](C:\Users\Administrator\Desktop\320gitbook截图\en\img\install_4.png)
 
-![](C:\Users\Administrator\Desktop\320gitbook截图\en\img\install_5.png)
+安装完成，点击 `完成` 按钮即可打开运行 myblockly
 
+![](C:\Users\Administrator\Desktop\320gitbook截图\zh\img\install_4.png)
 
+![](C:\Users\Administrator\Desktop\320gitbook截图\zh\img\install_5.png)
 
 
 
-### For MacOS install myblockly
 
-Download the Mac version of myblockly from the official website to get an installation package as shown below. Double-click to open it.
 
-![](C:/Users/Administrator/Desktop/320_pi_blockly/zh/img/mac.png)
+### 对于 Mac 系统安装 myblockly
 
-**Note**: For MacOS, make sure system "Preferences->Security & Privacy->General" and Allow Apps from App Store and Recognized Developers are enabled before installing.
+从官网下载 Mac 版本的 myblockly 可得到一个如下图的安装包，鼠标双击打开即可
 
+![](./img/mac.png)
 
+**注意**：对于 MacOS，在安装之前确保系统 "偏好设置->安全性和隐私->通用" ，并允许从 App Store 和被认可的开发者。
 
 
 
 
 
+## 卸载
 
+### 对于 Linux 系统卸载 myblockly
 
-## Uninstall
+**直接删除安装包即可**
 
-### For Linux uninstall myblockly
+>安装包默认名称为`myblockly-arm64-latest.AppImage`
 
-**Just delete the installation package directly**
 
->The default name of the installation package is `myblockly-arm64-latest.AppImage`
 
 
 
+### 对于 Mac 系统卸载 myblockly
 
+**在应用程序中将 myblockly 移至 废纸篓 即可 **
 
-### Uninstall myblockly for Mac
 
-**Just move myblockly to the Trash in the app**
 
+### 对于 Windows 系统卸载 myblockly
 
+进入到 myblockly的文件目录，点击运行 `Uninstall myblockly.exe` 
 
+![](C:\Users\Administrator\Desktop\320gitbook截图\zh\img\uninstall_1.png)
 
 
-### For Windows uninstall myblockly
 
-Enter the file directory of myblockly and click to run `Uninstall myblockly.exe`
+点击 `解除安装`
 
-<img src="C:\Users\Administrator\Desktop\320gitbook截图\en\img\uninstall.png"  />
+![](C:\Users\Administrator\Desktop\320gitbook截图\zh\img\uninstall_2.png)
 
-![](C:\Users\Administrator\Desktop\320gitbook截图\en\img\uninstall_1.png)
+myblockly 已卸载，点击`完成`退出即可
 
 
 
-Click `Uninstall`
 
-![](C:\Users\Administrator\Desktop\320gitbook截图\en\img\uninstall_2.png)
 
-myblockly has been uninstalled, click `Finish` to exit
+## 更新
 
-
-
-
-
-
-
-
-
-
-
-
-
-## Update
-
-If you want to update myblockly, please go to the [official website](https://www.elephantrobotics.com/en/downloads/) to download the latest version.
-
-
-
+如果您想更新myblockly，请前往 [官方网站](https://www.elephantrobotics.com/downloads/) 下载最新版本。

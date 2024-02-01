@@ -1,52 +1,52 @@
-# 4. Control single joint movement
+# 4 控制单关节运动
 
-<i>Preparation before you begin</i>
+<i>开始前准备</i>
 
-- Make sure the robotic arm is connected to the computer
+- 确保机械臂已经连接上电脑
 
-- Make sure the machine is normal
+其他系列：确保机器正常
 
-### Learning content of this chapter
+### 本章学习内容
 
-How to use myBlockly to control the single joint movement of the robotic arm
+如何使用myBlockly，控制机械臂单关节运动
 
-#### API introduction
+#### API介绍
 
-* method module：`Set Joint`
+* 方法模块：`设置关节`
 
-  <img src="./img/case/singlejoint_item.png" style="zoom: 50%;" />
   
-  <img src="./img/blocks/mid/3.png" />
 
+<img src="./img/case/singlejoint_item.png" style="zoom: 50%;" />
 
+<img src="./img/blocks/mid/3.png" />
 
-* Parameter introduction:
+* 参数介绍：
 
-  This method has three parameters that can be adjusted:
+  该方法有三个参数可以调整：
 
-  * Joint parameters: The parameter range is: 1-6 (corresponding to the 6 joints of the robotic arm);
+  * 关节参数：参数范围为：1-6（对应机械臂的6个关节）；
 
-  - Angle parameters: refer to the parameters of the corresponding model
-  - Speed: Controls the speed of the robot arm movement. The parameter range is: 0~100
+  - 角度参数：参考对应机型的参数
+  - 速度(Speed)：控制机械臂运动的速度，参数范围为：0~100
 
-* Purpose: Control the single joint movement of the robotic arm
+* 目的：控制机械臂单关节运动
 
-#### Simple demonstration
+#### 简单演示
 
-* The graphics code is as follows:
+* 图形代码如下：
 
-  <img src="./img/case/singjoint.png" style="zoom: 50%;" />
+  <img src="./img/case/singlejoint.png" style="zoom: 50%;" />
 
-* Implementation content:
+* 实现内容：
 
-  Control joint 1 of the robotic arm to run at a speed of 50 to the position of joint 1 with an angle of 20. After one second,
+  控制机械臂关节1以50的速度运行到1关节角度20的位置。1秒后，
 
-  Control the 2nd joint of the robotic arm to move at a speed of 50 to the position of the 2nd joint angle of 20. After one second,
+  控制机械臂关节2以50的速度移动到2关节角度20的位置，1秒后，
 
-  Control the 3 joints of the robotic arm to run at a speed of 50 to the position of the 3 joint angle of 20. After one second,
+  控制机械臂关节3以50的速度运行到3关节角度20的位置，1秒后，
 
-  Control the 4 joints of the robotic arm to run at a speed of 50 to the position of the 4 joint angle of 20. After one second,
+  控制机械臂关节4以50的速度运行到4关节角度20的位置，1秒后，
 
-  Control the 5 joints of the robotic arm to run at a speed of 50 to the position of joint 5 with an angle of 20. After one second,
+  控制机械臂关节5以50的速度运行到5关节角度20的位置，1秒后，
   
-  Control the 6 joints of the robotic arm to run at a speed of 50 to the position of the 6 joint angle of 20
+  控制机械臂关节6以50的速度运行到6关节角度20的位置

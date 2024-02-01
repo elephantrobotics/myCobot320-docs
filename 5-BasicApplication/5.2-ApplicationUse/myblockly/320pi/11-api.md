@@ -1,96 +1,96 @@
-# Detailed explanation of myblockly building blocks
+# myblockly 积木块详解
 
 
 
-## System Status
+## 系统信息
 
 
 
-#### Get Basic firmware version
+#### 获取Basic固件版本
 
 ![Alt text](./img/blocks/system/1.png)
 
-- **Prototype**: `get_basic_version()`
-- **Interface Description**: Get the Basic firmware version.
-- **Return**: Return to Basic firmware version.
+- **原型**: `get_basic_version()`
+- **接口描述**：获取Basic固件版本。
+- **返回**：返回Basic固件版本。
 
 
 
-#### Get Master Control Info
+#### 获取主控版本信息
 
 ![Alt text](./img/blocks/system/2.png)
 
-- **Prototype**: `get_system_version()`
+- **原型**: `get_system_version()`
 
-- **Interface Description**: Get main control version information.
+- **接口描述**：获取主控版本信息。
 
-- **Return**: Return to Basic firmware version.
+- **返回**：返回Basic固件版本。
 
   
 
-#### Get Robot ID
+#### 获取机器人id
 
 ![Alt text](./img/blocks/system/3.png)
 
-- **Prototype**: `get_robot_id()`
+- **原型**: `get_robot_id()`
 
-- **Interface Description**: Get the robot id.
+- **接口描述**：获取机器人id。
 
-- **Return**: Return the robot id.
+- **返回**：返回机器人id。
 
   
 
-#### Set Robot ID
+#### 获取机器人id
 
 ![Alt text](./img/blocks/system/4.png)
 
-- **Prototype**: `set_robot_id(id)`
-- **Interface Description**: Set the robot id.
-- **Parameters**:
-   -robot id
+- **原型**: `set_robot_id(id)`
+- **接口描述**：设置机器人id。
+- **参数**：
+  - 机器人id
 
 
 
 
 
-## WLAN  Setting
+## WLAN 
 
 
 
-#### Set WLAN account password
+#### 设置WLAN账号密码
 
 ![Alt text](./img/blocks/wlan/1.png)
 
-- **Prototype**: `set_ssid_pwd(account,password)`
-- **Interface Description**: Set WLAN account password.
-- **Parameters**:
-   - wlan account
-   - wlan password
+- **原型**: `set_ssid_pwd(account,password)`
+- **接口描述**：设置WLAN账号密码。
+- **参数**：
+  - wlan账号
+  - wlan密码
 
 
 
-####  Get WLAN Account and Password
+####  获取WLAN账号密码
 
 ![Alt text](./img/blocks/wlan/2.png)
 
 
 
-- **Prototype**: `get_ssid_pwd()`
-- **Interface Description**: Get the WLAN account password.
-- **Return**:
-   - wlan account
-   - wlan password
+- **原型**: `get_ssid_pwd()`
+- **接口描述**：获取WLAN账号密码。
+- **返回**：
+  - wlan账号
+  - wlan密码
 
 
 
-#### Set Server Port
+#### 设置WLAN连接的端口
 
 ![Alt text](./img/blocks/wlan/3.png)
 
-- **Prototype**: `set_server_port(port)`
-- **Interface Description**: Set the port for WLAN connection.
-- **Parameters**:
-   - The port number
+- **原型**: `set_server_port(port)`
+- **接口描述**：设置WLAN连接的端口。
+- **返回**：
+  - 端口号
 
 
 
@@ -98,237 +98,241 @@
 
 
 
-## Basic
+## 底座
 
 
 
-#### Set basic pin output
+#### 设置底座引脚输出
 
 ![Alt text](./img/blocks/basic/1.png)
 
-- **Prototype**: `set_basic_output(id,state)`
-- **Interface Description**: Set base pin output
-- **Parameters**:
-   - Pin number
-   - Select output status
+- **原型**: `set_basic_output(id,state)`
+- **接口描述**：设置底座引脚输出
+- **参数**：
+  - 引脚号
+  - 选择输出状态
 
 
 
-#### Get basic pin input
+#### 获取底座引脚输入
 
 ![Alt text](./img/blocks/basic/2.png)
 
-- **Prototype**: `set_basic_output(id)`
-- **Interface Description**: Get base pin input
-- **Return**:
-   - Base pin input status
+- **原型**: `set_basic_output(id)`
+- **接口描述**：获取底座引脚输入
+- **返回**：
+  - 底座引脚输入状态
 
 
 
 
 
-## ATOM Io
+## 原子
 
 
 
-### Set Color
+### 设置颜色
 
 ![Alt text](./img/blocks/atom/1.png)
 
-- **Prototype**: `set_color(r=0,g=0,b=0)`
-- **Interface Description**: Set the color of the end LED light.
-- **Parameters**
-   * red
+- **原型**: `set_color(r=0,g=0,b=0)`
+- **接口描述**：设置末端LED灯的颜色。
+- **参数**
+  * 红
 
-   * green
+  * 绿
 
-   * blue
+  * 蓝
 
 
 
-#### Set PWM output
+#### 设置PWM输出
 
 ![Alt text](./img/blocks/atom/2.png)
 
-- **Prototype**: `set_pwm_output(v1=0,v2=0,v3=0)`
-- **Interface Description**: Set PWM output.
-- **Parameters**
-   * **v1** (_int_)
+- **原型**: `set_pwm_output(v1=0,v2=0,v3=0)`
+- **接口描述**：设置PWM输出。
+- **参数**
+  * **v1** (_int_)
 
-   * **v2** (_int_)
+  * **v2** (_int_)
 
-   * **v3** (_int_)
+  * **v3** (_int_) 
 
 
 
-#### Set end pin mode
+#### 设置末端引脚模式
 
 ![Alt text](./img/blocks/atom/3.png)
 
-- **Prototype**: `set_pin_mode(id,state)`
-- **Interface Description**: Set the end pin mode.
-- **Parameters**
-   * Pin number
-   * Select mode
+- **原型**: `set_pin_mode(id,state)`
+- **接口描述**：设置末端引脚模式。
+- **参数**
+  * 引脚号
+* 选择模式
 
 
 
-#### Set IO value
+#### 设置IO值
 
 ![Alt text](./img/blocks/atom/4.png)
 
-- **Prototype**: `set_digital_output(id,state)`
-- **Interface Description**: Set IO value
-- **Parameters**
-   * io serial number
+- **原型**: `set_digital_output(id,state)`
+- **接口描述**：设置IO值
+- **参数**
+  * io序号
 
-   * Select status 0 or 1
-
-
+  * 选择状态 0 或 1
 
 
-#### Read IO value
+
+
+#### 读取IO值
 
 ![Alt text](./img/blocks/atom/5.png)
 
-- **Prototype**: `get_digital_input(id)`
-- **Interface Description**: Read IO value
-- **Parameters**
-   * io serial number
+- **原型**: `get_digital_input(id)`
+- **接口描述**：读取IO值
+- **参数**
+  * io 序号
 
 
 
 
 
-## Status
+## 状态
 
-#### Power On
-
-![Alt text](./img/blocks/status/2.png)
-- **Prototype**: `power_on()`
-- **Interface Description**: Atom opens communication (open by default).
-
-
-
-#### Power Off
+#### 上电
 
 ![Alt text](./img/blocks/status/1.png)
-- **Prototype**: `power_off()`
-- **Interface Description**: Atom closes communication.
+- **原型**: `power_on()`
+- **接口描述**:Atom开放通信（默认开放）。
+
+
+
+#### 断电
+
+![Alt text](./img/blocks/status/2.png)
+- **原型**: `power_off()`
+
+- **接口描述**: Atom 关闭通信。
 
 
 
 
 
-#### Check whether the robot arm is powered on
+#### 检查机械臂是否通电
 
 ![Alt text](./img/blocks/status/3.png)
-- **Prototype**: `is_power_on()`
-- **Interface Description**: Check whether the robot arm is powered on.
+- **原型**: `is_power_on()`
 
-- **Return**:
+- **接口描述**: 检查机械臂是否通电。
 
-   - `1`: power on
-   - `0`: power off
-   - `-1`: error
+- **返回**:
 
-
-
+  - `1`: power on
+  - `0`: power off
+  - `-1`: error
 
 
-#### release all Servos
+
+
+
+#### 释放所有关节
 
 ![Alt text](./img/blocks/status/4.png)
-- **Prototype**: `release_all_servos()`
-- **Interface Description**: Set the robot arm to free movement mode
+- **原型**: `release_all_servos()`
+- **接口描述**: 将机器人手臂设置为自由移动模式。
 
 
 
-### Set command refresh mode
+### 设置指令刷新模式
 
 ![Alt text](./img/blocks/status/5.png)
 
-- **Prototype**: `set_fresh_mode(mode)`
-- **Interface Description**: Set command refresh mode
+- **原型**: `set_fresh_mode(mode)`
+- **接口描述**: 设置指令刷新模式
 
-* **Parameters**
+* **参数**
 
-   * **mode**:
-     `Refresh Sport` - always execute the latest command first.
-     `Interpolation` - Execute instructions sequentially in a queue.
+  * **mode**:
+    `Refresh Sport` - 始终首先执行最新的命令.
+    `Interpolation` - 以队列的形式顺序执行指令.
 
+    
 
-
-### Get command refresh mode
+### 获取指令刷新模式
 
 ![Alt text](./img/blocks/status/6.png)
 
-- **Prototype**: `get_fresh_mode()`
-- **Interface Description**: Get command refresh mode
-- **Return**
-   - 1 - Always execute the latest command first.
-   - 0 - Execute instructions sequentially in a queue.
+- **原型**: `get_fresh_mode()`
+- **接口描述**: 获取指令刷新模式
+
+   * **返回**
+     - 1 - 始终首先执行最新的命令。
+     - 0 - 以队列的形式顺序执行指令。
 
 
 
 
 
-#### Get Error Infomation
+#### 获取机器人错误信息。
 
 ![Alt text](./img/blocks/status/7.png)
-- **Prototype**: `get_error_information()`
-- **Interface Description**: Get robot error information.
+- **原型**: `get_error_information()`
 
-- **Return**:
+- **接口描述**: 获取机器人错误信息。
 
-   - `0`: No error.
-   - `1 ~ 6`: The corresponding joint exceeds the limit position.
-   - `32`: The inverse kinematics solution has no solution.
-   - `33 ~ 34`: There is no adjacent solution for linear motion.
+- **返回**:
+
+  - `0`: 没有错误.
+  - `1 ~ 6`: 对应关节超出极限位置.
+  - `32`: 运动学逆解无解.
+  - `33 ~ 34`: 直线运动没有邻接解.
 
 
 
-#### Clear Error Infomation
+#### 清除机器人错误消息
 
 ![Alt text](./img/blocks/status/8.png)
-- **Prototype**: `clear_error_information()`
-- **Interface Description**: Clear robot error messages.
+- **原型**: `clear_error_information()`
+- **接口描述**: 清除机器人错误消息。
 
 
 
-#### Check if Atom is connected
+#### 检查Atom是否已连接
 
 ![Alt text](./img/blocks/status/9.png)
 
-- **Prototype**: `is_controller_connected()`
-- **Interface Description**: Check whether Atom is connected
-- **Return**:
-   - 0: Not connected
-   - 1: Connected
+- **原型**: `is_controller_connected()`
+- **接口描述**: 检查Atom是否已连接
+- **返回**：
+  - 0：未连接
+  - 1：已连接
 
 
 
-#### Set  free mode
+#### 设置自由模式
 
 ![Alt text](./img/blocks/status/10.png)
 
-- **Prototype**: `set_free_mode(state)`
-- **Interface Description**: Whether to set to free mode
-- **Parameters**:
-   - **state**(int): 0 | 1
+- **原型**: `set_free_mode(state)`
+- **接口描述**: 是否设置成自由模式
+- **参数**：
+  - **state**(int)：0 | 1
 
 
 
 
 
-#### Is free mode
+#### 检查是否是自由模式
 
 ![Alt text](./img/blocks/status/11.png)
 
-- **Prototype**: `is_free_mode()`
-- **Interface description**: Check whether it is free mode
-- **return value**:
-   - **state**(int): 0 | 1
+- **原型**: `is_free_mode()`
+- **接口描述**: 检查是否是自由模式
+- **返回值**：
+  - **state**(int)：0 | 1
 
 
 
@@ -336,162 +340,159 @@
 
 
 
-## MDI Control
+## 角度和坐标
 
-#### Get Angles
+#### 获取所有角度
 
 ![Alt text](./img/blocks/mid/1.png)
-- **Prototype**: `get_angles()`
-- **Interface Description**: Get the degrees of all joints.
-- **Return**:
-   - joint angle value
+- **原型**: `get_angles()`
+- **接口描述**: 获取所有关节的度数。
+- **返回**：
+  - 机器所有关节角度值
 
 
 
-#### Get Coords
+#### 获取所有坐标
 
 ![Alt text](./img/blocks/mid/2.png)
 
-- **Prototype**: `get_coords()`
-- **Interface Description**: Get the Cartesian coordinates of the machine.
-- **Return**:
-   - Cartesian coordinates
+- **原型**: `get_coords()`
+- **接口描述**: 获取机器笛卡尔坐标。
+- **返回**：
+  - 笛卡尔坐标值
 
 
 
-#### Set single joint angle
+#### 设置单关节角度
 
 ![Alt text](./img/blocks/mid/3.png)
-- **Prototype**: `send_angle(id, degree, speed)`
+- **原型**: `send_angle(id, degree, speed)`
 
-- **Interface Description**: Robot single joint angle control.
+- **接口描述**: 机器人单关节角度控制。
 
-- **Parameters**
+- **参数**
 
-   - Joint id: 1-6
-   
-   - Angle value
-   - speed
-   
-   
-   
-   
+  - 关节id：1-6
+  - 角度值
+  - 速度
+
+  
 
 
-#### Set single coordinates
+#### 设置单坐标
 
 ![Alt text](./img/blocks/mid/4.png)
 
-- **Prototype**: `send_coord(id, value, speed)`
-- **Interface Description**: Robot single coordinate control.
+- **原型**: `send_coord(id, value, speed)`
 
-- **Parameters**
-   - Coordinates: 1-6 correspond to x、y、 z、rx、ry、rz
-   - coordinate value
-   - speed
+- **接口描述**: 机器人单坐标控制。
+
+- **参数**
+  - 坐标：1-6对应 x y z rx ry rz
+  - 坐标值
+  - 速度
 
 
 
-#### Check if you are in motion
+#### 检测是否在运动
 
 ![Alt text](./img/blocks/mid/5.png)
 
-- **Prototype**: `is_moving(id, value, speed)`
-- **Interface Description**: Detect whether the machine is moving.
-- **Return**:
-   - 0: The machine is not in motion
-   - 1: The machine is in motion.
+- **原型**: `is_moving(id, value, speed)`
+- **接口描述**: 检测机器是否在运动。
+- **返回**：
+  - 0 ：机器不处于运动状态
+  - 1：机器在运动。
 
 
 
-#### Angles is in position
+#### 角度是否到达位置
 
 ![Alt text](./img/blocks/mid/6.png)
 
-- **Prototype**: `is_in_position([j1,j2,j3,j4,j5,j6],0)`
+- **原型**: `is_in_position([j1,j2,j3,j4,j5,j6],0)`
 
-- **Interface description**: Check whether the machine angle reaches the specified position
+- **接口描述**: 检查机器角度是否到达指定的位置
 
-- **Parameters**:
+- **参数**：
 
-   - j1 angle value
+  - j1 角度值
 
-   - j2 angle value
+  - j2 角度值
 
-   - j3 angle value
+  - j3 角度值
 
-   - j4 angle value
+  - j4 角度值
 
-   - j5 angle value
+  - j5 角度值
 
-   - j6 angle value
+  - j6 角度值
 
     
 
-- **Return**:
-
-   - 0: Not reached the specified location
-   - 1: Reach the specified location
-
+- **返回**：
+  - 0 ：未到达指定位置
+  - 1：到达指定位置
 
 
 
 
-#### Coords is in position
+
+#### 角度是否到达位置
 
 ![Alt text](./img/blocks/mid/7.png)
 
-- **Prototype**: `is_in_position([x,y,z,rx,ry,rz],1)`
+- **原型**: `is_in_position([x,y,z,rx,ry,rz],1)`
 
-- **Interface description**: Check whether the machine angle reaches the specified position
+- **接口描述**: 检查机器角度是否到达指定的位置
 
-- **Parameters**:
+- **参数**：
 
-   - x coordinate value
+  - x 坐标值
 
-   - y coordinate value
+  - y 坐标值
 
-   - z coordinate value
+  - z 坐标值
 
-   - rx coordinate value
+  - rx 坐标值
 
-   - ry coordinate value
+  - ry 坐标值
 
-   - rz coordinate value
+  - rz 坐标值
 
     
 
-- **Return**:
+- **返回**：
+  - 0 ：未到达指定位置
+  - 1：到达指定位置
 
-   - 0: Not reached the specified location
-   - 1: Reach the specified location
 
-### Set Angles
+
+### 设置全坐标
 
 ![Alt text](./img/blocks/mid/8.png)
 
-- **Prototype**: `send_angles(angles, speed)`
-- **Interface Description**: Send all angles to the robot arm.
+- **原型**: `send_angles(angles, speed)`
 
-- **Parameters**
-   - `angles`: list of coordinate values (`List[float]`).
-   - `speed`: (`int`) 0 ~ 100
+- **接口描述**: 将所有角度发送到机器人手臂.
+
+- **参数**
+  - `angles`: 坐标值列表(`List[float]`).
+  - `speed`: (`int`) 0 ~ 100
 
 
 
-### Set Coords
+### 设置全角度
 ![Alt text](./img/blocks/mid/9.png)
-- **Prototype**: `send_coords(coords, speed, mode)`
+- **原型**: `send_coords(coords, speed, mode)`
 
-- **Interface Description**: Send all coordinates to the robot arm.
+- **接口描述**: 将所有坐标发送到机器人手臂.
 
-- **Parameters**
+- **参数**
 
-   - `coords`: list of coordinate values (`List[float]`).
-   - `speed`: (`int`) 0 ~ 100
-   - `mode`: (`int`): `0` - angular (default), `1` - linear
-   
-- 
+  - `coords`: 坐标值列表(`List[float]`).
+  - `speed`: (`int`) 0 ~ 100
+  - `mode`: (`int`): `0` - angular（默认）, `1` - linear
 
   
 
@@ -499,150 +500,155 @@
 
 
 
-## JOG Control
+## 点动控制
 
-### JOG Angle
+### 点动控制关节
 ![Alt text](./img/blocks/jog/1.png)
-- **Prototype**: `jog_angle(joint_id, direction, speed)`
-- **Interface description**: Jog control angle
+- **原型**: `jog_angle(joint_id, direction, speed)`
+
+- **接口描述**: Jog control angle
 
 - **Parameters**
 
-   - `joint_id`: (`int`) 1 ~ 6
-   - `direction`: `0` - decrease, `1` - increase
-   - `speed`: 0 ~ 100
+  - `joint_id`: (`int`) 1 ~ 6
+  - `direction`: `0` - decrease, `1` - increase
+  - `speed`: 0 ~ 100
 
-### JOG Coord
+### 点动控制坐标
 ![Alt text](./img/blocks/jog/2.png)
-- **Prototype**: `jog_coord(coord_id, direction, speed)`
-- **Interface description**: Jog control coord.
+- **原型**: `jog_coord(coord_id, direction, speed)`
+
+- **接口描述**: Jog control coord.
 
 - **Parameters**
 
-   - `coord_id`: (`int`) 1 ~ 6
-   - `direction`: `0` - decrease, `1` - increase
-   - `speed`: 0 ~ 100
+  - `coord_id`: (`int`) 1 ~ 6
+  - `direction`: `0` - decrease, `1` - increase
+  - `speed`: 0 ~ 100
 
 
 
-#### JOG Absolute
+#### 关节绝对控制
 
 ![Alt text](./img/blocks/jog/4.png)
 
-- **Prototype**: `jog_absolue(coord_id, direction, speed)`
+- **原型**: `jog_absolue(coord_id, direction, speed)`
 
-- **Interface description**: Step mode.
+- **接口描述**: Step mode.
 
 - **Parameters**
 
-   - `coord_id`: (`int`) 1 ~ 6
-   - `direction`:
-   - `speed`: 0 ~ 100
-   
-   
-   
-   
+  - `coord_id`: (`int`) 1 ~ 6
+  - `direction`:
+  - `speed`: 0 ~ 100 
+
+  
 
 
 
-#### JOG Increment
+#### 步进模式
 
 ![Alt text](./img/blocks/jog/5.png)
 
-- **Prototype**: `jog_increment(coord_id, direction, speed)`
+- **原型**: `jog_increment(coord_id, direction, speed)`
 
-- **Interface description**: Step mode.
+- **接口描述**: Step mode.
 
 - **Parameters**
 
-   - `coord_id`: (`int`) 1 ~ 6
-   - `direction`:
-   - `speed`: 0 ~ 100
-   
-   
-   
-   
+  - `coord_id`: (`int`) 1 ~ 6
+  - `direction`:
+  - `speed`: 0 ~ 100 
 
-### Jog Stop
+  
+
+### 停止点动运动
 ![Alt text](./img/blocks/jog/3.png)
-- **Prototype**: `jog_stop()`
-- **Interface Description**: Stop jog moving.
+- **原型**: `jog_stop()`
 
-### 
+- **接口描述**: Stop jog moving.
 
-#### Pause
-
+### 暂停
 ![Alt text](./img/blocks/jog/8.png)
-- **Prototype**: `pause()`
-- **Interface Description**: Pause movement.
+- **原型**: `pause()`
 
-### Resume
+- **接口描述**: Pause movement.
+
+### 恢复
 ![Alt text](./img/blocks/jog/9.png)
-- **Prototype**: `resume()`
-- **Interface description**: Recovery movement.
+- **原型**: `resume()`
 
-### Stop
+- **接口描述**: Recovery movement.
+
+### 停止
 ![Alt text](./img/blocks/jog/10.png)
-- **Prototype**: `stop()`
-- **Interface Description**: Stop moving.
+- **原型**: `stop()`
+
+- **接口描述**: Stop moving.
 
 ### is_paused
 ![Alt text](./img/blocks/jog/11.png)
-- **Prototype**: `is_paused()`
-- **Interface Description**: Judge whether the manipulator pauses or not.
+- **原型**: `is_paused()`
 
-- **Return**: :
+- **接口描述**: Judge whether the manipulator pauses or not.
 
-   - `1` - paused
-   - `0` - not paused
-   - `-1` - error
+- **返回**: :
 
-
-
+  - `1` - paused
+  - `0` - not paused
+  - `-1` - error
 
 
-### Set Servo encoder value
+
+
+
+### 设置伺服电机编码值
 ![Alt text](./img/blocks/jog/6.png)
-- **Prototype**: `set_encoder(joint_id, encoder)`
-- **Interface Description**: Set a single joint rotation to the specified potential value.
+- **原型**: `set_encoder(joint_id, encoder)`
+
+- **接口描述**: Set a single joint rotation to the specified potential value.
 
 - **Parameters**
 
-   - `joint_id`: (`int`) 1 ~ 6
-   - `encoder`: 0 ~ 4096
+  - `joint_id`: (`int`) 1 ~ 6
+  - `encoder`: 0 ~ 4096
+  
+  
 
-### Get Servo encoder value
+### 获取伺服电机编码值
 ![Alt text](./img/blocks/jog/7.png)
-- **Prototype**: `get_encoder(joint_id)`
-- **Interface description**: Obtain the specified joint potential value.
+- **原型**: `get_encoder(joint_id)`
+
+- **接口描述**:Obtain the specified joint potential value.
 
 - **Parameters**: `joint_id`: (`int`) 1 ~ 6
 
-- **Return**: `encoder`: 0 ~ 4096
+- **返回**: `encoder`: 0 ~ 4096
 
 
 
-## Setting
+## 设置
 
 ### get_speed
 ![Alt text](./img/blocks/setting/1.png)
-- **Prototype**: `get_speed()`
-- **Interface description**: Get speed.
+- **原型**: `get_speed()`
 
-- **Return**: speed: (`int`)
+- **接口描述**: Get speed.
+
+- **返回**: speed: (`int`)
 
 ### set_speed
 ![Alt text](./img/blocks/setting/2.png)
-- **Prototype**: `set_speed(speed)`
+- **原型**: `set_speed(speed)`
 
-- **Interface description**: Set speed.
+- **接口描述**: Set speed.
 
 - **Parameters**: speed: (`int`) 0 ~ 100
 
 ### set_joint_min
 ![Alt text](./img/blocks/setting/5.png)
-- **Prototype**: `set_joint_min(id, angle)`
-- **Interface description**: Sets the minimum angle for the specified joint.
+- **原型**: `set_joint_min(id, angle)`
+- **接口描述**: Sets the minimum angle for the specified joint.
 
 - **Parameters**:
   - `id`: (`int`) joint id 1-6.
@@ -650,8 +656,8 @@
 
 ### set_joint_max
 ![Alt text](./img/blocks/setting/6.png)
-- **Prototype**: `set_joint_max(id, angle)`
-- **Interface description**: Sets the maximum angle of the specified joint.
+- **原型**: `set_joint_max(id, angle)`
+- **接口描述**: Sets the maximum angle of the specified joint.
 
 - **Parameters**:
   - `id`: (`int`) joint id 1-6.
@@ -659,19 +665,19 @@
 
 ### get_joint_min_angle
 ![Alt text](./img/blocks/setting/3.png)
-- **Prototype**: `get_joint_min_angle()`
-- **Interface description**: Gets the minimum movement angle of the specified joint
+- **原型**: `get_joint_min_angle()`
+- **接口描述**: Gets the minimum movement angle of the specified joint
 
 - **Parameters**: `joint_id`: (`int`)
 
-- **Return**: angle value (`float`)
+- **返回**: angle value (`float`)
 
 ### get_joint_max_angle
 ![Alt text](./img/blocks/setting/4.png)
-- **Prototype**: `get_joint_max_angle()`
-- **Interface description**: Gets the maximum movement angle of the specified joint
+- **原型**: `get_joint_max_angle()`
+- **接口描述**: Gets the maximum movement angle of the specified joint
 - **Parameters**: `joint_id`: (`int`)
-- **Return**: angle value (`float`)
+- **返回**: angle value (`float`)
 
 
 
@@ -683,24 +689,25 @@
 
 ### is_servo_enable
 ![Alt text](./img/blocks/servos/1.png)
-- **Prototype**: `is_servo_enable(servo_id)`
+- **原型**: `is_servo_enable(servo_id)`
 
-- **Interface description**: Determine whether all steering gears are connected
+- **接口描述**: Determine whether all steering gears are connected
 
 - **Parameters**: `servo_id` (`int`) 1 ~ 6
 
-- **Return**:
-- `0`: disable
+- **返回**:
+
+  - `0`: disable
   - `1`: enable
   - `-1`: error
 
 ### is_all_servo_enable
 ![Alt text](./img/blocks/servos/2.png)
-- **Prototype**: `is_all_servo_enable()`
+- **原型**: `is_all_servo_enable()`
 
-- **Interface description**: Determine whether the specified steering gear is connected
+- **接口描述**: Determine whether the specified steering gear is connected
 
-- **Return**:
+- **返回**:
 
   - `0`: disable
   - `1`: enable
@@ -708,8 +715,8 @@
 
 ### set_servo_data
 ![Alt text](./img/blocks/servos/3.png)
-- **Prototype**: `set_servo_data(servo_no, data_id, value)`
-- **Interface description**: Set the data parameters of the specified address of the steering gear.
+- **原型**: `set_servo_data(servo_no, data_id, value)`
+- **接口描述**: Set the data parameters of the specified address of the steering gear.
 
 - **Parameters**:
   - `servo_no`: Serial number of articulated steering gear, 1 - 6.
@@ -718,15 +725,15 @@
 
 ### get_servo_data
 ![Alt text](./img/blocks/servos/4.png)
-- **Prototype**: `get_servo_data(servo_no, data_id)`
-- **Interface description**: Read the data parameter of the specified address of the steering gear.
+- **原型**: `get_servo_data(servo_no, data_id)`
+- **接口描述**: Read the data parameter of the specified address of the steering gear.
 
 - **Parameters**:
 
   - `servo_no`: Serial number of articulated steering gear, 1 - 6.
   - `data_id`: Data address.
 
-- **Return**: `value`: 0 - 4096
+- **返回**: `value`: 0 - 4096
 
   - `0`: disable
   - `1`: enable
@@ -734,38 +741,38 @@
 
 ### set_servo_calibration
 ![Alt text](./img/blocks/servos/5.png)
-- **Prototype**: `set_servo_calibration(servo_no)`
-- **Interface description**: The current position of the calibration joint actuator is the angle zero point, and the corresponding potential value is 2048.
+- **原型**: `set_servo_calibration(servo_no)`
+- **接口描述**: The current position of the calibration joint actuator is the angle zero point, and the corresponding potential value is 2048.
 
 - **Parameters**:
   - `servo_no`: Serial number of articulated steering gear, 1 - 6.
 
 ### release_servo
 ![Alt text](./img/blocks/servos/6.png)
-- **Prototype**: `release_servo(servo_id)`
+- **原型**: `release_servo(servo_id)`
 
-- **Interface description**: Power off designated servo
+- **接口描述**: Power off designated servo
 
 - **Parameters**: `servo_id`: 1 ~ 6
 
 ### focus_servo
 ![Alt text](./img/blocks/servos/7.png)
-- **Prototype**: `focus_servo(servo_id)`
-- **Interface description**: Power on designated servo
+- **原型**: `focus_servo(servo_id)`
+- **接口描述**: Power on designated servo
 - **Parameters**: `servo_id`: 1 ~ 6
 
 
 
 
 
-## Gripper
+## 夹爪
 
 
 
 ### set_gripper_calibration
 ![Alt text](./img/blocks/gripper/1.png)
-- **Prototype**: `set_gripper_calibration()`
-- **Interface description**: Set the current position to zero, set current position value is `2048`.
+- **原型**: `set_gripper_calibration()`
+- **接口描述**: Set the current position to zero, set current position value is `2048`.
 
 
 
@@ -775,9 +782,9 @@
 
 ![Alt text](./img/blocks/gripper/2.png)
 
-- **Prototype**: `set_gripper_state(flag, speed, mode)`
+- **原型**: `set_gripper_state(flag, speed, mode)`
 
-- **Interface description**: Set gripper switch state
+- **接口描述**: Set gripper switch state
 
 - **Parameters**
 
@@ -791,9 +798,9 @@
 
 ![Alt text](./img/blocks/gripper/3.png)
 
-- **Prototype**: `set_gripper_value(value, speed, mode)`
+- **原型**: `set_gripper_value(value, speed, mode)`
 
-- **Interface description**: Set gripper value
+- **接口描述**: Set gripper value
 
 - **Parameters**
 
@@ -807,8 +814,8 @@
 
 ![Alt text](./img/blocks/gripper/4.png)
 
-- **Prototype**: `get_gripper_value(mode)`
-- **Interface description**: Get gripper value
+- **原型**: `get_gripper_value(mode)`
+- **接口描述**: Get gripper value
 - **Return**: gripper value (int)
 
 
@@ -819,11 +826,11 @@
 
 ![Alt text](./img/blocks/gripper/5.png)
 
-- **Prototype**: `is_gripper_moving()`
+- **原型**: `is_gripper_moving()`
 
-- **Interface description**: Judge whether the gripper is moving or not
+- **接口描述**: Judge whether the gripper is moving or not
 
-- **Return**:
+- **返回**:
 
   - `0` : not moving
   - `1` : is moving
@@ -835,8 +842,8 @@
 
 ![Alt text](./img/blocks/gripper/6.png)
 
-- **Prototype**: `init_eletric_gripper()`
-- **Interface description**:Init Eletric Gripper
+- **原型**: `init_eletric_gripper()`
+- **接口描述**:Init Eletric Gripper
 
 
 
@@ -844,8 +851,8 @@
 
 ![Alt text](./img/blocks/gripper/7.png)
 
-- **Prototype**: `set_eletric_gripper()`
-- **Interface description**:Init Eletric Gripper
+- **原型**: `set_eletric_gripper()`
+- **接口描述**:Init Eletric Gripper
 - **Parameters**
 
   - 选择打开或关闭
@@ -856,18 +863,18 @@
 
 ### set_gripper_mode
 ![Alt text](./img/blocks/gripper/8.png)
-- **Prototype**: `set_gripper_mode(status)`
+- **原型**: `set_gripper_mode(status)`
 
-- **Interface description**: Set gripper mode.
+- **接口描述**: Set gripper mode.
 
 - **Parameters**
 - `status` (`int`): 0 - transparent transmission. 1 - Port Mode.
 
 ### get_gripper_mode
 ![Alt text](./img/blocks/gripper/9.png)
-- **Prototype**: `get_gripper_mode()`
+- **原型**: `get_gripper_mode()`
 
-- **Interface description**: Get gripper mode.
+- **接口描述**: Get gripper mode.
 
 - **Return**
 
@@ -879,21 +886,21 @@
 
 
 
-##  Coord Control
+##  坐标控制
 
 ### get_tool_reference
 ![Alt text](./img/blocks/coords/1.png)
-- **Prototype**: `get_tool_reference()`
+- **原型**: `get_tool_reference()`
 
-- **Interface description**: Get tool coordinate system.
+- **接口描述**: Get tool coordinate system.
 
 - **Return**: `list` [x, y, z, rx, ry, rz].
 
 ### set_tool_reference
 ![Alt text](./img/blocks/coords/2.png)
-- **Prototype**: `set_tool_reference(coords)`
+- **原型**: `set_tool_reference(coords)`
 
-- **Interface description**: Set tool coordinate system.
+- **接口描述**: Set tool coordinate system.
 
 - **Parameters**:
   - `coords`: (`list`) [x, y, z, rx, ry, rz].
@@ -904,8 +911,8 @@
 
 ![Alt text](./img/blocks/coords/3.png)
 
-- **Prototype**: `get_world_reference()`
-- **Interface description**: Get world coordinate system.
+- **原型**: `get_world_reference()`
+- **接口描述**: Get world coordinate system.
 - **Return**: `list` [x, y, z, rx, ry, rz].
 
 
@@ -914,9 +921,9 @@
 
 ### set_world_reference
 ![Alt text](./img/blocks/coords/4.png)
-- **Prototype**: `set_world_reference(coords)`
+- **原型**: `set_world_reference(coords)`
 
-- **Interface description**: Set world coordinate system.
+- **接口描述**: Set world coordinate system.
 
 - **Parameters**:
   - `coords`: (`list`) [x, y, z, rx, ry, rz].
@@ -929,9 +936,9 @@
 
 ![Alt text](./img/blocks/coords/5.png)
 
-- **Prototype**: `get_reference_frame()`
+- **原型**: `get_reference_frame()`
 
-- **Interface description**: Get base coordinate system.
+- **接口描述**: Get base coordinate system.
 
 - **Return**: 0 - base 1 - tool.
 
@@ -941,9 +948,9 @@
 
 ### set_reference_frame
 ![Alt text](./img/blocks/coords/6.png)
-- **Prototype**: `set_reference_frame(rftype)`
+- **原型**: `set_reference_frame(rftype)`
 
-- **Interface description**: Set base coordinate system.
+- **接口描述**: Set base coordinate system.
 
 - **Parameters**:
   - `rftype`: 0 - base 1 - tool.
@@ -952,8 +959,8 @@
 
 ### get_movement_type
 ![Alt text](./img/blocks/coords/7.png)
-- **Prototype**: `get_movement_type()`
-- **Interface description**: Get movement type.
+- **原型**: `get_movement_type()`
+- **接口描述**: Get movement type.
 - **Return**: 1 - movel, 0 - moveJ.
 
 
@@ -962,9 +969,9 @@
 
 ![Alt text](./img/blocks/coords/8.png)
 
-- **Prototype**: `set_movement_type(move_type)`
+- **原型**: `set_movement_type(move_type)`
 
-- **Interface description**: Set movement type.
+- **接口描述**: Set movement type.
 
 - **Parameters**:
   - `move_type`: 1 - movel, 0 - moveJ.
@@ -977,17 +984,17 @@
 
 ![Alt text](./img/blocks/coords/9.png)
 
-- **Prototype**: `get_end_type()`
-- **Interface description**: Get end coordinate system.
+- **原型**: `get_end_type()`
+- **接口描述**: Get end coordinate system.
 - **Return**: 0 - flange, 1 - tool.
 
 
 
 ### set_end_type
 ![Alt text](./img/blocks/coords/10.png)
-- **Prototype**: `set_end_type(end)`
+- **原型**: `set_end_type(end)`
 
-- **Interface description**: Set end coordinate system.
+- **接口描述**: Set end coordinate system.
 
 - **Parameters**:
   - `end`:  0 - flange, 1 - tool.
@@ -1008,41 +1015,41 @@
 
 ### get_servo_speeds
 ![Alt text](./img/blocks/mycobot320/1.png)
-- **Prototype**: `get_servo_speeds()`
+- **原型**: `get_servo_speeds()`
 
-- **Interface description**: Get joint velocity.
+- **接口描述**: Get joint velocity.
 
 - **Return**: `list` Speed of each joint.
 
 ### get_servo_currents
 ![Alt text](./img/blocks/mycobot320/2.png)
-- **Prototype**: `get_servo_currents()`
+- **原型**: `get_servo_currents()`
 
-- **Interface description**: Get joint current.
+- **接口描述**: Get joint current.
 
 - **Return**: `list` Current of each joint.
 
 ### get_servo_voltages
 ![Alt text](./img/blocks/mycobot320/3.png)
-- **Prototype**: `get_servo_voltages()`
+- **原型**: `get_servo_voltages()`
 
-- **Interface description**: Get joint voltage.
+- **接口描述**: Get joint voltage.
 
 - **Return**: `list` Voltage of each joint.
 
 ### get_servo_status
 ![Alt text](./img/blocks/mycobot320/4.png)
-- **Prototype**: `get_servo_status()`
+- **原型**: `get_servo_status()`
 
-- **Interface description**: Get the state of each joint.
+- **接口描述**: Get the state of each joint.
 
 - **Return**: `list` the state of each joint.
 
 ### get_servo_temps
 ![Alt text](./img/blocks/mycobot320/5.png)
-- **Prototype**: `get_servo_temps()`
+- **原型**: `get_servo_temps()`
 
-- **Interface description**: Get the temperature of each joint.
+- **接口描述**: Get the temperature of each joint.
 
 - **Return**: `list` temperature of each joint.
 

@@ -1,49 +1,48 @@
-# 5 Control multiple joints
+# 5 控制多关节
 
-<i>Preparation before you begin</i>
+<i>开始前的准备</i>
 
-- Make sure the robotic arm is connected to the computer
+- 确保机器已连接电脑
 
-- Make sure the machine is normal
+- 确保机器正常
 
-### Learning content of this chapter
 
-How to use myBlockly to control multiple joint movements of a robotic arm
 
-#### API introduction
+### 本章学习内容
 
-* Method module: `Set angles`
+如何使用myBlockly控制机械臂多个关节运动
+
+#### API介绍
+
+* 方法模块：`设置全角度`
 
   <img src="./img/case/go_zero_item.png" style="zoom: 50%;" />
 
 <img src="./img/blocks/mid/8.png" />
 
-* Parameter introduction:
+* 参数介绍：
 
-  This module has two parameters that can be adjusted:
+  该模块有两个参数可以调整：
 
-  - Joint angle parameters
+  * 关节角度参数：可以根据需要在机械臂关节运动范围内设置参数
+  * 速度参数：可以根据需要在机械臂运动速度范围设置参数
+
+* 目的：控制机械臂多个关节运动
+
+#### 简单演示
+
+* 图形代码如下：
+
+<img src="./img/case/joints.png" style="zoom: 50%;" />
+
+* 实现内容：
+
+  控制机械臂各关节回原点，三秒后，
+
+  同时控制机械臂1关节、2关节、3关节、4关节、5关节、6关节以50的速度运动到30度、30度、-30度、10度、10度、30度的位置，三秒后，
+
+  机械臂所有关节以50的速度返回原点，三秒后，
+
+  同时控制机械臂1关节、2关节、3关节、4关节、5关节、6关节以50的速度运动到-30度、-30度、30度、-10度、-10度、-30度的位置，三秒后，
   
-* Speed parameters
-
-- Purpose: To control the movement of multiple joints of the robotic arm
-
-
-
-#### Simple demonstration
-
-The graphics code is as follows:
-
-<img src="./img/case/joints.png"  />
-
-* Implementation content:
-
-  Control all joints of the robotic arm to return to the origin. After three seconds,
-
-  At the same time, control the 1 joint, 2 joint, 3 joint, 4 joint, 5 joint, and 6 joint of the robotic arm to move at a speed of 50 to the positions of 30 degrees, 30 degrees, -30 degrees, 10 degrees, 10 degrees, and 30 degrees respectively. After three seconds,
-
-  Return all joints of the robotic arm to the origin at a speed of 50. After three seconds,
-
-  Simultaneously control the 1 joint, 2 joint, 3 joint, 4 joint, 5 joint, and 6 joint of the robotic arm to run at a speed of 50 to -30 degrees, -30 degrees, 30 degrees, -10 degrees, -10 degrees, and -30 degrees respectively. position, after three seconds,
-  
-  Control all joints of the robotic arm to return to the origin
+  控制机械臂各关节回原点

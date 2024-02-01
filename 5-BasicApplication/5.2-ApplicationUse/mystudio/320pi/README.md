@@ -1,32 +1,24 @@
 # myStudio
 
-<img src="./img/320/0.png" alt="basic" style="zoom:50%;" />
+<img src="./img/界面展示.png" alt="basic" style="zoom:50%;" />
 
 
 
-## 1 myStudio design original intention
+## 1 myStudio设计初衷
 
-- myStudio is a one-stop platform for using robots such as myRobot/myCobot.
+- myStudio是一个一站式的myRobot/myCobot等机器人的使用平台。
 
-- It is convenient for users to select different firmware and download it according to their own usage scenarios, while learning relevant teaching materials and browsing tutorial videos online.
+- 方便用户根据自己的使用场景，选择不同的固件并进行下载，同时学习相关的教材，在线浏览教程视频。
 
-  
+## 2 myStudio最新版本与支持平台
 
-## 2 myStudio latest version and supported platforms
+- 最新版本：V3.4.1
 
-- Latest version: V3.5.7
+- 适用于：Windows、Mac、Linux
 
-- Available on: 
+## 3 myStudio功能
 
-  - Windows
-  -  Mac
-  -  Linux arm64
-  
-  
-
-## 3 myStudio function
-
-- Burn and update firmware
-- Provide robot usage tutorials, such as user manuals, video tutorials, Q&A, etc.
-- Information on maintenance and repairs
+- 烧录、更新固件
+- 提供机器人使用教程，如用户手册、视频教程、Q&A等
+- 维护和维修方面的信息
 

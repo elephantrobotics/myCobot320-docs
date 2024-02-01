@@ -1,52 +1,46 @@
-# 9. Use of suction pump
+# 9 吸泵的使用
 
-<i>Preparation before you begin</i>
+<i>开始前准备</i>
 
-- Make sure the robotic arm is connected to the computer
+- 确保机械臂已经连接上电脑
 
-- Make sure the machine is normal
+- 确保机器正常
 
 
 
-* ### Learning content of this chapter
+### 本章学习内容
 
-  How to use myBlockly to control a suction pump attached to the myCobot 320 M5Stack robotic arm
+如何使用 myBlockly 控制吸泵
 
-  #### API display
+#### API展示
 
-  - Method module **1**: `Set the bottom pin number status`
+* 方法模块**1**：`设置底部引脚号状态`
 
-  
-
-  <img src="./img/case/pump_item1.png" style="zoom: 50%;" />
-
-  
+  <img src="./img/case/pumpuse_item.png" style="zoom: 50%;" />
 
   <img src="./img/blocks/basic/1.png" />
 
-  * Parameter introduction:
+  参数介绍：
 
-    This module has two parameters that can be adjusted:
+  该模块有两个参数可以调整：
 
-    * Bottom pin number parameter: the specific pin number at the bottom of the device (only the digital part is taken)
-    * Running status parameter: 0 means set to running state, 1 means stopped state
+  * 底部引脚号参数：设备底部的具体引脚号（仅取数字部分）
 
-    Purpose: Set the working status of the bottom pin number
+  * 运行状态参数：0表示设置为运行状态，1表示停止状态
+
+  目的：设置底部引脚号的工作状态
+
   
 
 
+#### 简单演示
 
-
-
-
-
-
-#### Simple demonstration
-
-The graphics code is as follows:
+图形代码如下：
 
 <img src="./img/case/pumpuse.png"  />
 
-* Implementation content:
 
-  The suction pump vibrates and starts working. The suction pump sucks up the object and puts it down after two seconds. After another two seconds, it repeats the previous action until the program ends.
+
+* 实现内容：
+
+  吸泵发出震动，开始工作。吸泵吸起物体，过两秒后放下，再过两秒后，重复前面动作，直至程序运行结束。

@@ -1,41 +1,40 @@
-# 3 Control the robotic arm to return to the origin
+# 3 控制机械臂回到原点
 
-<i>Preparation before you begin</i>
+<i>开始前准备</i>
 
-- Make sure the robotic arm is connected to the computer
+- 确保机械臂已经连接上电脑
 
-- Make sure the machine is normal
+其他系列：确保机器正常
 
-### Learning content of this chapter
+### 本章学习内容
 
-How to use myBlockly to control the robot arm to return to the origin
+如何使用myBlockly控制机械臂回到原点
 
-#### API introduction
+#### API介绍
 
-* Method module: `Set angle`
+* 方法模块：`设置角度`
 
   <img src="./img/case/go_zero_item.png" style="zoom: 50%;" />
 
-
-
 <img src="./img/blocks/mid/8.png"  />
 
-* Parameter introduction:
+* 参数介绍：
 
-  This module has two parameters that can be adjusted:
+  该模块有两个参数可以调整：
 
-  - Joint angle parameters: If the robot arm returns to the origin, all joint angle parameters need to be set to 0
+  * 关节角度参数：若使机械臂回到原点，则所有关节角度参数需设置为0
+  * 速度参数：0-100
 
-  * Speed parameter: 0-100
+* 目的：控制机械臂，将机械臂的所有轴的角度回到原点（角度为0）
 
-* Purpose: Control the robotic arm and return the angles of all axes of the robotic arm to the origin (angle is 0)
+#### myCobot
 
-  
-
-#### 简单演示
+##### 简单演示
 
 <img src="./img/case/gozero.png" style="zoom: 50%;" />
 
 
 
-* Implementation content: Control the movement of the robotic arm to return to the origin, so that the angles of all axes of the robotic arm are 0
+
+
+* 实现的内容：控制机械臂运动回到原点，让机械臂所有的轴的角度都为0
