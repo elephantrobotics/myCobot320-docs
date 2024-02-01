@@ -1,7 +1,7 @@
 # C++
 **Using C++ language, you can make developments (coordinate control, angle control, io control, gripper control, etc.) freely through the C++ dynamic library developed by our company, and control some of the robots which have been developed by us.** <br>
 
-![pic](../resourse/12-ApplicationBaseCPlus/8.0/8.0.jpg)
+![pic](../resourse/12-ApplicationBaseCPlus/12.0/12.0.jpg)
 
 # What is C++?<br>
 C++ is the inheritance of C language. It may be used to carry out procedural programming of C language, object-based programming characterized by abstract data types, and object-oriented programming characterized by inheritance and polymorphism.<br>
