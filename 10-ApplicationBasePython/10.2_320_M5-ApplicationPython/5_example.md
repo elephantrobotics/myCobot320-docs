@@ -55,9 +55,6 @@ while i > 0:
 
 
 
-
-
-
 <video id="my-video" class="video-js" controls preload="auto" width="100%"
 poster="" data-setup='{"aspectRatio":"16:9"}'>
   <source src="../../resources/10-ApplicationBasePython/myArm/2.1python控制RGB灯板01.mp4" type='video/mp4' >
@@ -70,28 +67,7 @@ poster="" data-setup='{"aspectRatio":"16:9"}'>
 ```python
 from pymycobot.mycobot import MyCobot
 from pymycobot import PI_PORT, PI_BAUD  	# When using the Raspberry Pi version of mycobot, you can refer to these two variables to initialize MyCobot
-
-# MyCobot class initialization requires two parameters:
-#   The first is the serial port string, such as:
-#       linux: "/dev/ttyUSB0"
-#          or "/dev/ttyAMA0"
-#       windows: "COM3"
-#   The second is the baud rate:
-#       M5 version is: 115200
-#
-#    Example:
-#       mycobot-M5:
-#           linux:
-#              mc = MyCobot("/dev/ttyUSB0", 115200)
-#          or mc = MyCobot("/dev/ttyAMA0", 115200)
-#           windows:
-#              mc = MyCobot("COM3", 115200)
-#       mycobot-raspi:
-#           mc = MyCobot(PI_PORT, PI_BAUD)
-#
-# Initialize a MyCobot object
-# Create object code here for Raspberry Pi version
-mc = MyCobot(PI_PORT, PI_BAUD)
+mc = MyCobot("COM3",115200)
 
 # Check whether the program can be burned into the robot arm
 if mc.is_controller_connected() != 1:
@@ -102,10 +78,7 @@ if mc.is_controller_connected() != 1:
 # Subject to the alignment of the mechanical arm bayonet, this is only a case
 mc.send_angles([0, 0, 0, 0, 0, 0], 30)
 
-# To calibrate the position at this time, the calibrated angular position represents [0,0,0,0,0,0], and the potential value represents [2048,2048,2048,2048,2048,2048]
-# The for loop is equivalent to the method set_gripper_ini()
-#for i in range(1, 7):
-	#mc.set_servo_calibration(i)
+
 ```
 
 
@@ -123,28 +96,6 @@ from pymycobot.mycobot import MyCobot
 from pymycobot.genre import Angle
 import time
 
-# MyCobot class initialization requires two parameters:
-#   The first is the serial port string, such as:
-#       linux: "/dev/ttyUSB0"
-#          or "/dev/ttyAMA0"
-#       windows: "COM3"
-#   The second is the baud rate:
-#       M5 version is: 115200
-#
-#    Example:
-#       mycobot-M5:
-#           linux:
-#              mc = MyCobot("/dev/ttyUSB0", 115200)
-#          or mc = MyCobot("/dev/ttyAMA0", 115200)
-#           windows:
-#              mc = MyCobot("COM3", 115200)
-#       mycobot-raspi:
-#           mc = MyCobot(PI_PORT, PI_BAUD)
-#
-# Initialize a MyCobot object
-# Create object code for Raspberry Pi
-# mc = MyCobot(PI_PORT, PI_BAUD)
-# Create object code for M5
 mc=MyCobot('COM3',115200)
 
 # Robotic arm recovery
@@ -180,7 +131,7 @@ poster="" data-setup='{"aspectRatio":"16:9"}'>
 
 
 
-## **4 Multi-Joint Motion**
+## 4 Multi-Joint Motion
 
 ```python
 import time
@@ -234,142 +185,8 @@ poster="" data-setup='{"aspectRatio":"16:9"}'>
 
 
 
-## 5 Swaying Arms Left and Right
 
-```python
-from pymycobot.mycobot import MyCobot
-from pymycobot.genre import Angle
-from pymycobot import PI_PORT, PI_BAUD  # When using the Raspberry Pi version of mycobot, these two variables can be referenced to initialize MyCobot
-import time
-
-# Initialize a MyCobot object
-mc = MyCobot("COM3", 115200)
-# Get the coordinates of the current location
-angle_datas = mc.get_angles()
-print(angle_datas)
-
-
-#By passing the angle parameter, let each joint of the robotic arm move to the position
-mc.send_angles([0, 0, 0, 0, 0, 0], 50)
-print(mc.is_paused())
-# Set the waiting time to ensure that the robotic arm has reached the specified position
-# while not mc.is_paused():
-time.sleep(2.5)
-
-# Move joint 1 to the 90 position
-mc.send_angle(Angle.J1.value, 90, 50)
-
-# Set the waiting time to ensure that the robotic arm has reached the specified position
-time.sleep(2)
-
-# set loop times
-num = 5
-
-# The following code can make the robotic arm swing left and right
-while num > 0:
-    # Move joint 2 to the 50 position
-    mc.send_angle(Angle.J2.value, 50, 50)
-
-    # Set the waiting time to ensure that the robotic arm has reached the specified position
-    time.sleep(1.5)
-
-    # Move joint 2 to the -50 position
-    mc.send_angle(Angle.J2.value, -50, 50)
-
-    # Set the waiting time to ensure that the robotic arm has reached the specified position
-    time.sleep(1.5)
-
-    num -= 1
-
-#  Make the robotic arm retract. You can manually swing the robotic arm, and then use the get_angles() function to get the coordinate sequence, use this function to let the robotic arm reach the position you want.
-mc.send_angles([88.68, -138.51, 155.65, -128.05, -9.93, -15.29], 50)
-
-# Set the waiting time to ensure that the robotic arm has reached the specified position
-time.sleep(2.5)
-
-# Let the robotic arm relax, you can manually swing the robotic arm
-mc.release_all_servos()
-```
-
-<video id="my-video" class="video-js" controls preload="auto" width="100%"
-poster="" data-setup='{"aspectRatio":"16:9"}'>
-  <source src="../../resources/10-ApplicationBasePython/myArm/2.5python控制机械臂左右摆动01.mp4"></video>
-
-
-
-## 6 Let Robot Dance
-
-```python
-from pymycobot.mycobot import MyCobot
-from pymycobot import PI_PORT, PI_BAUD  # When using the Raspberry Pi version of mycobot, these two variables can be referenced to initialize MyCobot
-import time
-
-if __name__ == "__main__":
-    # MyCobot class initialization requires two parameters:
-    #   The first is the serial port string, such as:
-    #       linux: "/dev/ttyUSB0"
-    #          or "/dev/ttyAMA0"
-    #       windows: "COM3"
-    #   The second is the baud rate::
-    #       M5 version is: 115200
-    #
-    #    such as:
-    #       mycobot-M5:
-    #           linux:
-    #              mc = MyCobot("/dev/ttyUSB0", 115200)
-    #          or mc = MyCobot("/dev/ttyAMA0", 115200)
-    #           windows:
-    #              mc = MyCobot("COM3", 115200)
-    #       mycobot-raspi:
-    #           mc = MyCobot(PI_PORT, PI_BAUD)
-    #
-    # Initialize a MyCobot object
-    # Create object code for Raspberry Pi version below
-    mc = MyCobot(PI_PORT, PI_BAUD)
-
-    # set start start time
-    start = time.time()
-    # Let the robotic arm reach the specified position
-    mc.send_angles([-1.49, 115, -153.45, 30, -33.42, 137.9], 80)
-    # Determine if it reaches the specified position
-    while not mc.is_in_position([-1.49, 115, -153.45, 30, -33.42, 137.9], 0):
-        # Return the robotic arm to motion
-        mc.resume()
-        # Let the robotic arm move for 0.5s
-        time.sleep(0.5)
-        # Pause arm movement
-        mc.pause()
-        # Determine if the move timed out
-        if time.time() - start > 3:
-            break
-
-    # set start time
-    start = time.time()
-    # Let the exercise last for 30 seconds
-    while time.time() - start < 30:
-        # Let the robotic arm quickly reach this position
-        mc.send_angles([-1.49, 115, -153.45, 30, -33.42, 137.9], 80)
-        # Set the color of the light to [0,0,50]
-        mc.set_color(0, 0, 50)
-        time.sleep(0.7)
-        # Let the robotic arm quickly reach this position
-        mc.send_angles([-1.49, 55, -153.45, 80, 33.42, 137.9], 80)
-        # Set the color of the light to [0,50,0]
-        mc.set_color(0, 50, 0)
-        time.sleep(0.7)
-```
-
-
-
-<video id="my-video" class="video-js" controls preload="auto" width="100%"
-poster="" data-setup='{"aspectRatio":"16:9"}'>
-  <source src="../../resources/10-ApplicationBasePython/myArm/2.6控制机械臂跳舞01.mp4"></video>
-
-
-
-
-
-## 7 Controlling Gripper
+## 5 Controlling Gripper
 
 ```python
 from pymycobot.mycobot import MyCobot
@@ -447,7 +264,7 @@ if __name__ == "__main__":
     #
     # Initialize a MyCobot object
     # Create object code for Raspberry Pi version below
-    mc = MyCobot(PI_PORT, PI_BAUD)
+    mc = MyCobot("COM3",115200)
     # make it move to zero position
     mc.set_encoders([2048, 2048, 2048, 2048, 2048, 2048], 20)
     time.sleep(3)
@@ -464,35 +281,13 @@ poster="" data-setup='{"aspectRatio":"16:9"}'>
 
 
 
-## 8 Controlling Sucking Pump 
-
-280-M5 version (the video below takes the M5 version as an example):
+## 6 Controlling Sucking Pump 
 
 ```python
 from pymycobot.mycobot import MyCobot
 from pymycobot import PI_PORT, PI_BAUD  # When using the Raspberry Pi version of mycobot, these two variables can be referenced to initialize MyCobot
 import time
 
-# MyCobot class initialization requires two parameters:
-#   The first is the serial port string, such as:
-#       linux: "/dev/ttyUSB0"
-#          or "/dev/ttyAMA0"
-#       windows: "COM3"
-#   The second is the baud rate::
-#       M5 version is: 115200
-#
-#    such as:
-#       mycobot-M5:
-#           linux:
-#              mc = MyCobot("/dev/ttyUSB0", 115200)
-#          or mc = MyCobot("/dev/ttyAMA0", 115200)
-#           windows:
-#              mc = MyCobot("COM3", 115200)
-#       mycobot-raspi:
-#           mc = MyCobot(PI_PORT, PI_BAUD)
-#
-# Initialize a MyCobot object
-# Create object code here for windows version
 mc = MyCobot("COM3", 115200)
 
 # The position of the robot arm movement
@@ -539,88 +334,6 @@ mc.send_angles(angles[0], 40)
 time.sleep(1.5)
 
 ```
-
-280-Pi version:
-
-```python
-from pymycobot.mycobot import MyCobot
-from pymycobot import PI_PORT, PI_BAUD  # # When using the Raspberry Pi version of mycobot, these two variables can be referenced to initialize MyCobot
-import RPi.GPIO as GPIO
-import time
-
-# MyCobot class initialization requires two parameters:
-#   The first is the serial port string, such as:
-#       linux: "/dev/ttyUSB0"
-#          or "/dev/ttyAMA0"
-#       windows: "COM3"
-#   The second is the baud rate::
-#       M5 version is: 115200
-#
-#    such as:
-#       mycobot-M5:
-#           linux:
-#              mc = MyCobot("/dev/ttyUSB0", 115200)
-#          or mc = MyCobot("/dev/ttyAMA0", 115200)
-#           windows:
-#              mc = MyCobot("COM3", 115200)
-#       mycobot-raspi:
-#           mc = MyCobot(PI_PORT, PI_BAUD)
-#
-# Initialize a MyCobot object
-# Create object code here for Raspberry Pi version
-mc = MyCobot(PI_PORT, PI_BAUD)
-
-# The position of the robot arm movement
-angles = [
-            [92.9, -10.1, -60, 5.8, -2.02, -37.7],
-            [92.9, -53.7, -83.05, 50.09, -0.43, -38.75],
-            [92.9, -10.1, -87.27, 5.8, -2.02, -37.7]
-        ]
-# Initialize the suction pump
-GPIO.setmode(GPIO.BCM)
-GPIO.setup(20, GPIO.OUT)
-GPIO.setup(21, GPIO.OUT)
-
-# Turn on the suction pump
-def pump_on():
-    # Make the 20 work
-    GPIO.output(20，0)
-    # Make the 21 work
-    GPIO.output(21，0)
-
-# Stop the suction pump
-def pump_off():
-    # Stop the 20 from working
-    GPIO.output(21，1)
-    # Stop the 21 from working
-    GPIO.output(21，1)
-
-
-# Robotic arm recovery
-mc.send_angles([0, 0, 0, 0, 0, 0], 30)
-time.sleep(3)
-
-# Turn on the suction pump
-pump_on()
-mc.send_angles(angles[2], 30)
-time.sleep(2)
-
-# absorb small blocks
-mc.send_angles(angles[1], 30)
-time.sleep(2)
-mc.send_angles(angles[0], 30)
-time.sleep(2)
-mc.send_angles(angles[1], 30)
-time.sleep(2)
-
-# Turn off the suction pump
-pump_off()
-mc.send_angles(angles[0], 40)
-time.sleep(1.5)
-
-```
-
-
 
 <video id="my-video" class="video-js" controls preload="auto" width="100%"
 poster="" data-setup='{"aspectRatio":"16:9"}'>
