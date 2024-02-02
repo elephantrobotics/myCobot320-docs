@@ -3,7 +3,7 @@
 * [1 Product Introduction](1-ProductIntroduction/README.md)
 * [2 Product Feature](2-ProductFreature/README.md)
 * [3 User Notes](3-UserNotes/README.md)
-* [4 First Install and Use](4-FirstInstallAndUse/README.md)
+* [4 First Install and Use](4-FirstInstallAndUse/4.1_320_PI_firstUse.md)
 * [5 Basic Application](5-BasicApplication/README.md)
   * [5.2 ApplicationUse](5-BasicApplication/README.md)
     * [1 myblockly](5-BasicApplication/5.2-ApplicationUse/myblockly/320pi/README.md)
