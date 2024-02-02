@@ -56,7 +56,7 @@
   * [12.2 build](12-ApplicationBaseCPlus/12.2-build.md)
   * [12.3 API](12-ApplicationBaseCPlus/12.3-API.md)
   * [12.4 example](12-ApplicationBaseCPlus/12.3-example.md)
-* [14 ApplicationBaseCPlus](14-communication/14-communication.md)
+* [14 communication](14-communication/14-communication.md)
 
 * [16 Arduino](16-ArduinoEnv320/README.md)
   * [16.1 arduino Download](16-ArduinoEnv320/16.1-arduino_download.md)
