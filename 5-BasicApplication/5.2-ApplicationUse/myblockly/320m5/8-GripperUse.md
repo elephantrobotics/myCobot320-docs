@@ -6,6 +6,8 @@
 
 - Make sure the machine is normal
 
+- Make sure the machine is power on
+
 Grippers include adaptive grippers, electric grippers and pneumatic grippers. Here we take the adaptive gripper as an example to explain how to use myBlockly to control the gripper.
 
 

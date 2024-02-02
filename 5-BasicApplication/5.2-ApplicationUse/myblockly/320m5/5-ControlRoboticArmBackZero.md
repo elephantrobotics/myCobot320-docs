@@ -6,6 +6,8 @@
 
 - Make sure the machine is normal
 
+- Make sure the machine is power on
+
 ### Learning content of this chapter
 
 How to use myBlockly to control the robot arm to return to the origin
