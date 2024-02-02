@@ -1,4 +1,4 @@
-## **myBlockly interface display and use of basic functions**
+## 3 myBlockly interface display and use of basic functions
 
 <img src="./img/interface/1.png" />
 
@@ -55,9 +55,7 @@ We use building blocks to implement such a small case: let the robotic arm retur
 
   <img src=".\img\interface\小案例5.png" style="zoom: 50%;" />
 
-
-
-  <img src=".\img\interface\小案例6.png" style="zoom: 67%;" />
+- <img src=".\img\interface\小案例6.png" style="zoom: 50%;" />
 
 
 
@@ -65,23 +63,23 @@ We use building blocks to implement such a small case: let the robotic arm retur
 
 - Click the "Python" option in the upper left corner to view the corresponding Python code, as shown in the figure below.
 
-<img src=".\img\interface\小案例代码.png" style="zoom:67%;" />
+<img src=".\img\interface\小案例代码.png" style="zoom:80%;" />
 
 
 
 - Click the `Run` button to run the code and observe the movement of the robotic arm.
 
-<img src=".\img\interface\run.png" style="zoom:67%;" />
+<img src=".\img\interface\run.png" style="zoom: 80%;" />
 
 
 
 - Program is running
 
-  <img src=".\img\interface\run1.png" style="zoom:67%;" />
+  <img src=".\img\interface\run1.png" style="zoom: 80%;" />
 
 - The program ends
 
-  <img src=".\img\interface\run2.png" style="zoom:67%;" />
+  <img src=".\img\interface\run2.png" style="zoom:80%;" />
 
 
 

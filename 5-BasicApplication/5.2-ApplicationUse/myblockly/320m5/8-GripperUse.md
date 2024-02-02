@@ -1,4 +1,4 @@
-# 8. Use of clamping jaws
+# 8 Use of clamping jaws
 
 <i>Preparation before you begin</i>
 
@@ -30,11 +30,11 @@ How to use myBlockly to control the adaptive gripper attached to the myCobot 320
   * Speed parameter: indicates the speed at which to rotate, the value range is 0~100
   * Clamp type parameter: select adaptive clamp here
 
-  
+
 
   Purpose: Make the gripper enter the specified state (open or closed) at a specified speed
 
-  
+
 
 - Method module **2**: `Set the value of the gripper`
 
@@ -58,7 +58,7 @@ How to use myBlockly to control the adaptive gripper attached to the myCobot 320
 
   Purpose: To determine whether the gripper is running
 
-  
+
 
 
 #### Simple demonstration

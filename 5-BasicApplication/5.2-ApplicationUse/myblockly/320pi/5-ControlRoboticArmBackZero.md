@@ -1,4 +1,4 @@
-# 3 Control the robotic arm to return to the origin
+# 5 Control the robotic arm to return to the origin
 
 <i>Preparation before you begin</i>
 
@@ -30,7 +30,7 @@ How to use myBlockly to control the robot arm to return to the origin
 
 * Purpose: Control the robotic arm and return the angles of all axes of the robotic arm to the origin (angle is 0)
 
-  
+
 
 #### 简单演示
 
