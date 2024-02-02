@@ -7,7 +7,7 @@
 ## Burn Atom firmware
 
 Step 1: Connect to PC. Connect the Atom at the end with USB.
-<img src="./img/4.1.2.1-atom_PC.jpg" alt="atom" style="zoom:40%;" />
+<img src="./img/320/atom_pc.jpg" alt="atom" style="zoom:40%;" />
 
 
 
@@ -31,7 +31,7 @@ Step 3:  After download finish, click the `Flash` button to start burn.
 
 Step 1: Connect M5Stack-Basic to PC.
 
-​	<img src="./img/4.1.2.1-basic_PC.jpg" alt="basic" style="zoom: 50%;" />
+​	<img src="./img/320/basic_2_pc.jpg" alt="basic" style="zoom: 50%;" />
 
 Step 2 :Select Robot `myCobot 320 for M5`,and click `LOGIN` button.
 
@@ -67,6 +67,8 @@ Step 1: Connect M5Stack-Basic to PC.
 <img src="./img/4.1.2.3.3.jpg" alt="4.1.2.3.3" style="zoom: 15%;" />
 
 
+
+<img src="./img/320/basic_1_pc.jpg" alt="4.1.2.3.3" style="zoom: 15%;" />
 
 Step 2: Select Flash mode in the robot arm base (you can choose to press the `UP` key once or the `Down` key four times), and then the base will sleep with a black screen for about 30 seconds.
 
