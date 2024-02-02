@@ -3,7 +3,7 @@
 * [1 Product Introduction](1-ProductIntroduction/README.md)
 * [2 Product Feature](2-ProductFreature/README.md)
 * [3 User Notes](3-UserNotes/README.md)
-* [4 First Install and Use](4-FirstInstallAndUse/README.md)
+* [4 First Install and Use](4-FirstInstallAndUse/4.1_320_PI_firstUse.md)
 * [5 Basic Application](5-BasicApplication/README.md)
   * [5.2 ApplicationUse](5-BasicApplication/README.md)
     * [1 myblockly](5-BasicApplication/5.2-ApplicationUse/myblockly/320pi/README.md)
@@ -15,17 +15,39 @@
     * [3 TCP/IP Control](10-ApplicationBasePython/10.1_320_PI-ApplicationPython/3_TCPIP.md)
     * [4 Drag to teach](10-ApplicationBasePython/10.1_320_PI-ApplicationPython/4_drag.md)
     * [5 Handle Control](10-ApplicationBasePython/10.1_320_PI-ApplicationPython/5_Handle_control.md)
-    * [6 Videos and Codes for Display](7-ApplicationBasePython/7.17_320_PI-ApplicationPython/7.6_example.md)
+    * [6 Videos and Codes for Display](10-ApplicationBasePython/10.1_320_PI-ApplicationPython/6_example.md)
   * [6.2 Development based on ROS1](11-ApplicationBaseROS/11.1-ROS1/11.1.2-PI.md)
     * [1 Environment Building](11-ApplicationBaseROS/11.1-ROS1/11.1.2-320PI/11.1.2.1-环境搭建.md)
     * [2 ROS basics](11-ApplicationBaseROS/11.1-ROS1/11.1.2-320PI/11.1.2.2-ROS基础.md)
     * [3 Rviz use](11-ApplicationBaseROS/11.1-ROS1/11.1.2-320PI/11.1.2.3-rviz介绍.md)
     * [4 Basic function case](11-ApplicationBaseROS/11.1-ROS1/11.1.2-320PI/11.1.2.4-基础功能.md)
+<<<<<<< HEAD
+<<<<<<< HEAD
+   
+
+=======
+    * [6.3 C#Development ]()
+	    * [1 Environmental construction](15-ApplicationBaseCSharp/15.2-myCobot320-PI.md)
+	    * [2 Mechanical control](15-ApplicationBaseCSharp/15.3-angle.md)
+	    * [3 myCobot API](15-ApplicationBaseCSharp/15.4-API.md)
+	    * [4 Use Cases](15-ApplicationBaseCSharp/15.5-case.md)
+>>>>>>> 418d8d6fc2d111645b7075308fd0b31236c6f550
+
   * [6.3 Development based on ROS2](11-ApplicationBaseROS/11.2-ROS2/11.2.2-PI.md)
     * [1 Environment Building](11-ApplicationBaseROS/11.2-ROS2/11.2.2-320PI/11.2.2.1-环境搭建.md)
     * [2 ROS2 basics](11-ApplicationBaseROS/11.2-ROS2/11.2.2-320PI/11.2.2.2-ROS2基础.md)
     * [3 Rviz2 use](11-ApplicationBaseROS/11.2-ROS2/11.2.2-320PI/11.2.2.3-rviz2介绍.md)
     * [4 Basic function case](11-ApplicationBaseROS/11.2-ROS2/11.2.2-320PI/11.2.2.4-基础功能.md)
+<<<<<<< HEAD
+     
+    * [6.4 C#Development ](15-ApplicationBaseCSharp/C#.md)
+	    * [1 Environmental construction](15-ApplicationBaseCSharp/15.2-myCobot320-PI.md)
+	    * [2 Mechanical control](15-ApplicationBaseCSharp/15.3-angle.md)
+	    * [3 myCobot API](15-ApplicationBaseCSharp/15.4-API.md)
+	    * [4 Use Cases](15-ApplicationBaseCSharp/15.5-case.md)
+>>>>>>> b1a4abfecff1c9ce4a8fc359312b89c4a52a20ac
+=======
+>>>>>>> 418d8d6fc2d111645b7075308fd0b31236c6f550
 * [7 Examples of Robots Using]()
   * [7.1 Examples](7-ExampleRobotsUsing/README.md)
 * [8 Documents Download]()
