@@ -28,12 +28,6 @@
     * [2 ROS2 basics](11-ApplicationBaseROS/11.2-ROS2/11.2.2-320PI/11.2.2.2-ROS2基础.md)
     * [3 Rviz2 use](11-ApplicationBaseROS/11.2-ROS2/11.2.2-320PI/11.2.2.3-rviz2介绍.md)
     * [4 Basic function case](11-ApplicationBaseROS/11.2-ROS2/11.2.2-320PI/11.2.2.4-基础功能.md)
-     
-* [6.4 C#Development ](15-ApplicationBaseCSharp/C#.md)
-	* [1 Environmental construction](15-ApplicationBaseCSharp/15.2-myCobot320-PI.md)
-	* [2 Mechanical control](15-ApplicationBaseCSharp/15.3-angle.md)
-	* [3 myCobot API](15-ApplicationBaseCSharp/15.4-API.md)
-	* [4 Use Cases](15-ApplicationBaseCSharp/15.5-case.md)
 
 * [7 Examples of Robots Using]()
 * [8 Documents Download]()
@@ -50,4 +44,10 @@
 * [9 About Us]()
   * [9.1 Elephant Robotics](9-AboutUs/9.1_company.md)
   * [9.2 Contact us](9-AboutUs/9.2_contact.md)
+
+* [15 C#Development ](15-ApplicationBaseCSharp/15.6-illustrate.md)
+	* [1 Environmental construction](15-ApplicationBaseCSharp/15.2-myCobot320-PI.md)
+	* [2 Mechanical control](15-ApplicationBaseCSharp/15.3-angle.md)
+	* [3 myCobot API](15-ApplicationBaseCSharp/15.4-API.md)
+	* [4 Use Cases](15-ApplicationBaseCSharp/15.5-case.md)
 
