@@ -2,8 +2,6 @@
 
 > **Notice:** Before the direct communication via communication protocol, `Transponder` is required to be burnt on M5Stack-basic, and the latest atomMain on Atom.
 
-![atom](../resourse/4-BasicApplication/4.1/4.1.2.1-atom_PC.jpg)
-
 
 
 ## 1 Settings of USB Communication
