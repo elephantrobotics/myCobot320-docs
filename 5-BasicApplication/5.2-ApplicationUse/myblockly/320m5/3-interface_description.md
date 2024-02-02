@@ -158,3 +158,12 @@ MyBlockly's program is saved in *.json format. Click the blue box in the upper r
 Also click the blue box and click the "Load" option to import the saved program.
 
 <img src="./img/interface/load.png" />
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+>**The basic function demonstration is completed, you can check the other information in [here](https://download-elephantrobotics.oss-cn-shenzhen.aliyuncs.com/software/myblockly/README/myblockly%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6-en.pdf)**
