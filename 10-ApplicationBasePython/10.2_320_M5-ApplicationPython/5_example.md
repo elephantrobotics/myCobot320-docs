@@ -4,6 +4,9 @@ Videos given below are for reference.
 
 >  **Notice:** The baud rates are different depending on the type of device. Before using them, refer to the information related thereto. The serial port number can be viewed through [calculator device manager](https://docs.elephantrobotics.com/docs/gitbook-en/4-BasicApplication/4.1-myStudio/4.1.1-myStudio_download_driverinstalled.html#4113-how-to-distinguish-between-cp210x-chip-and-cp34x-chip) or a serial helper.
 
+
+**Please make sure the robot power on.**
+
 ## 1 Controlling RGB Light Panel
 
 ### myCobot
@@ -60,28 +63,6 @@ poster="" data-setup='{"aspectRatio":"16:9"}'>
   <source src="../../resources/10-ApplicationBasePython/myArm/2.1python控制RGB灯板01.mp4" type='video/mp4' >
 </video>
 
-
-### myArm
-
-```python
-from pymycobot.myarm import MyArm
-import time
-#The above needs to be written at the beginning of the code, which means importing the project package
-
-# Initialize a MyArm object
-mc = MyArm("/dev/ttyAMA0", 115200)
-
-i = 7
-#loop 7 times
-while i > 0:							
-    mc.set_color(0,0,255) #blue light on
-    time.sleep(2)	#wait for 2 seconds				
-    mc.set_color(255,0,0) #red light on
-    time.sleep(2)	#wait for 2 seconds
-    mc.set_color(0,255,0) #green light on
-    time.sleep(2)	#wait for 2 seconds
-    i -= 1
-```
 
 
 ## 2 Controlling Arms to Move Them to Starting Point
