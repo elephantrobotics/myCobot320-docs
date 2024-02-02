@@ -6,7 +6,7 @@
 
 - Make sure the machine is normal
 
-
+- Make sure the machine is power on
 
 * ### Learning content of this chapter
 
