@@ -15,7 +15,7 @@
     * [3 TCP/IP Control](10-ApplicationBasePython/10.1_320_PI-ApplicationPython/3_TCPIP.md)
     * [4 Drag to teach](10-ApplicationBasePython/10.1_320_PI-ApplicationPython/4_drag.md)
     * [5 Handle Control](10-ApplicationBasePython/10.1_320_PI-ApplicationPython/5_Handle_control.md)
-    * [6 Videos and Codes for Display](7-ApplicationBasePython/7.17_320_PI-ApplicationPython/7.6_example.md)
+    * [6 Videos and Codes for Display](10-ApplicationBasePython/10.1_320_PI-ApplicationPython/6_example.md)
   * [6.2 Development based on ROS1](11-ApplicationBaseROS/11.1-ROS1/11.1.2-PI.md)
     * [1 Environment Building](11-ApplicationBaseROS/11.1-ROS1/11.1.2-320PI/11.1.2.1-环境搭建.md)
     * [2 ROS basics](11-ApplicationBaseROS/11.1-ROS1/11.1.2-320PI/11.1.2.2-ROS基础.md)
