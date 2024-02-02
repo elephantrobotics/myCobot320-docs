@@ -27,7 +27,15 @@
 
 Before officially starting programming, be sure to select the corresponding **machine model**, otherwise it will easily cause hardware damage.
 
-First connect `myCobot 320 M5` to our computer through `USB data cable`, then we select the initialization model as `myCobot 320`, the port connected to my computer is `COM8`, and the baud rate is `115200`
+First connect `myCobot 320 M5` to our computer through `USB data cable`,
+
+<img src=".\img\connect_pc.jpg" style="zoom: 33%;" />
+
+<img src=".\img\connect_ok.gif" style="zoom: 33%;" />
+
+
+
+And then we select the initialization model as `myCobot 320`, the port connected to my computer is `COM8`, and the baud rate is `115200`
 
 ![](.\img\interface\2.png)
 
@@ -36,6 +44,46 @@ First connect `myCobot 320 M5` to our computer through `USB data cable`, then we
 #### small case
 
 We use building blocks to implement such a small case: let the robotic arm return to the zero point, and then move a joint 30 degrees.
+
+
+
+- Make sure robot is power on
+
+  Click the `Status` category in the toolbox, select the `Power On` building block and drag it to the workspace
+
+  ![](.\img\power_on1.png)
+
+  
+
+  
+
+  ![](.\img\power_on2.png)
+
+  
+
+  Click to `Run` button
+
+  ![](.\img\power_on3.png)
+
+
+
+If the `End of program` text appears in the popup, the program is finish.
+
+Check whether the device is successfully powered on. 
+
+If the joint of the machine cannot be broken by hand, it is successfully powered on
+
+
+
+And please click the `X` button to close  pop-up window
+
+![](C:\Users\Administrator\Desktop\myCobot320-docs\5-BasicApplication\5.2-ApplicationUse\myblockly\320pi\img\power_on_finish.png)
+
+​	
+
+
+
+##### Let's start with our little case study
 
 
 

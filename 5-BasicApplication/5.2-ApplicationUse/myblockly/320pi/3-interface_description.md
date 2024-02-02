@@ -27,7 +27,9 @@
 
 Before officially starting programming, be sure to select the corresponding **machine model**, otherwise it will easily cause hardware damage.
 
-First connect `myCobot 320 Pi` to our computer through `USB data cable`, then we select the initialization model as `myCobot 320`, the port connected to my computer is `COM8`, and the baud rate is `115200`
+First  we select the initialization model as `myCobot 320`, the port connected to my computer is `COM8`(**The default serial port on myCobot 320 Pi is `/dev/ttyAMA0`. If you are in myCobot 320 Pi, select  `/dev/ttyAMA0`**)
+
+And the baud rate is `115200`
 
 ![](.\img\interface\2.png)
 
@@ -37,7 +39,43 @@ First connect `myCobot 320 Pi` to our computer through `USB data cable`, then we
 
 We use building blocks to implement such a small case: let the robotic arm return to the zero point, and then move a joint 30 degrees.
 
+- Make sure robot is power on
 
+  Click the `Status` category in the toolbox, select the `Power On` building block and drag it to the workspace
+
+  ![](.\img\power_on1.png)
+
+  
+
+  
+
+  ![](.\img\power_on2.png)
+
+  
+
+  Click to `Run` button
+
+  ![](.\img\power_on3.png)
+
+
+
+If the `End of program` text appears in the popup, the program is finish.
+
+Check whether the device is successfully powered on. 
+
+If the joint of the machine cannot be broken by hand, it is successfully powered on
+
+
+
+and please click the `X` button to close  pop-up window
+
+![](.\img\power_on_finish.png)
+
+​	
+
+
+
+##### Let's start with our little case study
 
 - Click the `MDI Control` category in the toolbox, select the `Set Angle` building block and drag it to the workspace
 
