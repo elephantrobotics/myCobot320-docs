@@ -14,6 +14,10 @@
 
 download link:
 
+> In the myCobot320 system, you should download: Linux system version
+
+
+
 **1. [GitHub](https://github.com/elephantrobotics/myStudio)**
 
 * After entering the download address, click on `myStudio` on the right and select the corresponding version to download.
@@ -59,19 +63,19 @@ Download the Linux version of myStudio from the official website to get an insta
 
 Select `myStudio-latest.AppImage` with the right mouse button to open it, click `Properties` to open it
 
-<img src="C:\Users\Administrator\Desktop\320_pi_mystudio_gitbook\zh\img\320\appimage1.png"  />
+<img src=".\img\320\appimage1.png"  />
 
 
 
 Click to enter `Permissions`
 
-<img src="C:\Users\Administrator\Desktop\320_pi_mystudio_gitbook\zh\img\320\appimage2.png"  />
+<img src=".\img\320\appimage2.png"  />
 
 
 
 In the `Permissions` page, check `Allow executing file as program`, and then click the `Close` button to close the pop-up window
 
-<img src="C:\Users\Administrator\Desktop\320_pi_mystudio_gitbook\zh\img\320\appimage3.png"  />
+<img src=".\img\320\appimage3.png"  />
 
 
 

@@ -34,7 +34,7 @@ For Mac OS, before installing make sure system "Preferences->Security & Privacy-
   - [ **Windows10** ](https://download.elephantrobotics.com/software/drivers/CDM21228_Setup.zip)
 
 
-![P210X_install](C:\Users\Administrator\Desktop\320_mystudio_gitbook截图\en\img\4.1.1.2-CP210X_install.gif)
+![P210X_install](C.\img\4.1.1.2-CP210X_install.gif)
 
 
 

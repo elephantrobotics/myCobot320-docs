@@ -1,6 +1,6 @@
 # myStudio
 
-<img src="./img/320/0.png" alt="basic" style="zoom:50%;" />
+<img src="./img/320/1.png" alt="basic" style="zoom:50%;" />
 
 
 
@@ -19,8 +19,14 @@
 - Available on:
 
   - Windows
-  -  Mac
-  -  Linux arm64# 3 myStudio function
+
+  - Mac
+
+  - Linux arm64
+
+    
+
+## 3 myStudio function
 
 - Burn and update firmware
 - Provide robot usage tutorials, such as user manuals, video tutorials, Q&A, etc.

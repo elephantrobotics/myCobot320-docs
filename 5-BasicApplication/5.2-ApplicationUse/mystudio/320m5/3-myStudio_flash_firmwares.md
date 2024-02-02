@@ -13,15 +13,15 @@ Step 1: Connect to PC. Connect the Atom at the end with USB.
 
 Step 2 :Select Robot `myCobot 320 M5`
 
-<img src="./img/320/atom.png" alt="atom" style="zoom: 50%;" />
+<img src="./img/320/atom.png" alt="atom" style="zoom: 67%;" />
 
 Step 2: Select `ATOM` in the `Board` column, and the Atom firmware will appear in the sidebar `Basic`. There is only one firmware for Atom, just click to `Download` it in.
 
-<img src="./img/320/atom2.png" alt="atom" style="zoom: 50%;" />
+<img src="./img/320/atom2.png" alt="atom" style="zoom: 67%;" />
 
 Step 3:  After download finish, click the `Flash` button to start burn.
 
-<img src="./img/320/atom3.png" alt="atom" style="zoom: 50%;" />
+<img src="./img/320/atom3.png" alt="atom" style="zoom: 67%;" />
 
 
 
@@ -35,22 +35,30 @@ Step 1: Connect M5Stack-Basic to PC.
 
 Step 2 :Select Robot `myCobot 320 for M5`,and click `LOGIN` button.
 
-<img src="./img/320/1.png" alt="atom" style="zoom:80%;" />
+<img src="./img/320/1.png" alt="atom" style="zoom: 67%;" />
 
 
 
 
 
 Step 3: After logging in, click `Basic`
-	<img src="./img/320/2.png" alt="atom" style="zoom: 80%;" />
+	<img src="./img/320/2.png" alt="atom" style="zoom: 67%;" />
 
-Step 4: select minirobot ,after click `Download`    and click `Flash` to burn.
+Step 4:  click `Download` 
 
-![](.\img\320\3.png)
-
-
+<img src=".\img\320\3.png" style="zoom: 67%;" />
 
 
+
+Step 5: click  `Ok` 
+
+<img src=".\img\320\4.png" style="zoom:67%;" />
+
+
+
+Step 5: click  `Flash` 
+
+<img src=".\img\320\5.png" style="zoom:67%;" />
 
 ### Burn pico firmware——picoMain
 
@@ -66,27 +74,36 @@ Step 2: Select Flash mode in the robot arm base (you can choose to press the `UP
 
 
 
-Step 3: Enter the myStudio firmware burning page and select picoMain firmware burning.
+Step 3: Enter the myStudio firmware burning page and select `picoMain` firmware burning.
 
-> **Note: To burn the pico firmware, you need to select Flash mode, that is, to burn in the sleep state. If the sleep time is exceeded, the base display will restart and then burning the pico firmware will fail. Step 2: Step 2 :Select Robot `myCobot 320 for M5`,and click `LOGIN` button.
->
-> - Select Robot `myCobot 320 for M5`,and click `LOGIN` button.
->
->   <img src="./img/320/1.png" alt="atom" style="zoom:80%;" />
->
->
->
->
->
-> -  After logging in, click `Basic`
-><img src="./img/320/2.png" alt="atom" style="zoom: 80%;" />
->
->
->
-> - select picoMain ,after click `Download`    and click `Flash` to burn.
->
->   ![](.\img\320\8.png)
->
->
+> **Note**: To burn the pico firmware, you need to select Flash mode, that is, to burn in the sleep state. If the sleep time is exceeded, the base display will restart and then burning the pico firmware will fail. Step 2: Step 2 :Select Robot `myCobot 320 for M5`,and click `LOGIN` button.
+
+
+
+Step 4: Select Robot `myCobot 320 for M5`,and click `LOGIN` button.
+
+<img src="./img/320/1.png" alt="atom" style="zoom:80%;" />
+
+
+
+
+
+Step 5: After logging in, click `Basic`
+
+<img src="./img/320/2.png" alt="atom" style="zoom: 80%;" />
+
+
+
+Step 6: click `Download`    and click `Flash` to burn.
+
+![](.\img\320\6.png)
+
+
+
+
+
+Step 7: click `Flash` to burn.
+
+![](.\img\320\8.png)
 
 
