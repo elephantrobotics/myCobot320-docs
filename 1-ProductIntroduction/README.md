@@ -1,6 +1,6 @@
 # myCobot 320
 
-<img src="../../resources/1-ProductIntroduction/1-1-banner.png" alt="320banner" />
+<img src="../resources/1-ProductIntroduction/1-1-banner.png" alt="320banner" />
 
 > **320, meaning 320 mm, refers to the effective working radius of the robot arm.**
 
@@ -36,3 +36,23 @@ If you are interested in purchasing the device, please click the link below.
 -   Taobao: https://shop504055678.taobao.com
 -   shopify: https://shop.elephantrobotics.com/
 
+## Chapter Summary
+
+Now that you have a grasp of the product's fundamental features and applications, let's delve deeper into obtaining more detailed information together. The next section of this manual will guide you to various sub-chapters, enabling you to gain a more comprehensive understanding of our product's design philosophy, target user demographics, recommended usage scenarios, as well as the supported accessories and tools. 
+
+Please feel free to select the following sections based on your interests and requirements:
+
+[1.1-Design Philosophy](../../myCobot320-docs/1-ProductIntroduction/1.1-DesignPhilosophy.md): In this section, we will introduce the product's design principles and philosophy to help you better comprehend why the product possesses specific features and advantages.
+
+[1.2-Suitable Users](../../myCobot320-docs/1-ProductIntroduction/1.2-SuitableUsers.md): Understand which user groups are most suitable for using this product and how it caters to the diverse needs of different users.
+
+[1.3-Application Scenario](../../myCobot320-docs/1-ProductIntroduction/1.3-ApplicationScenario.md): In this part, we will elucidate the product's optimal application methods in various scenarios, enabling you to fully harness its functionality.
+
+[1.4-Accessories and Tools](../../myCobot320-docs/1-ProductIntroduction/1.4-AccessoriesTools/1.4-AccessoriesTools.md): Examine the supported accessories and tools to ensure that you can make the most of the product's full potential.
+
+Please click on the respective links based on your interests to access more detailed information. If you have any questions or require further assistance, please do not hesitate to contact our customer support team. We are committed to providing you with support and guidance. Thank you for choosing our product, and we look forward to delivering an outstanding user experience for you!
+
+----
+If you have already read all the content in this chapter, please proceed to the next chapter.
+
+[Next Chapter →](../../myCobot320-docs/2-ProductFeature/README.md)
