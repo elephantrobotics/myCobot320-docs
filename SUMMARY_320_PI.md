@@ -6,8 +6,8 @@
 * [4 First Install and Use](4-FirstInstallAndUse/4.1_320_PI_firstUse.md)
 * [5 Basic Application](5-BasicApplication/README.md)
   * [5.2 ApplicationUse](5-BasicApplication/README.md)
-    * [1 myblockly](5-BasicApplication/5.2-ApplicationUse/myblockly/320pi/README.md)
-    * [2 myStudio](5-BasicApplication/5.2-ApplicationUse/mystudio//320pi/README.md)
+    * [1 myblockly](5-BasicApplication/5.2-ApplicationUse/5.2.1-myblockly/320pi/README.md)
+    * [2 myStudio](5-BasicApplication/5.2-ApplicationUse/5.2.2-mystudio/320pi/README.md)
 * [6 SDK Development](6-SDKDevelopment/README.md)
   * [6.1 Development based on python](10-ApplicationBasePython/README.md)
     * [1 Environment Building](10-ApplicationBasePython/10.1_320_PI-ApplicationPython/1_download.md)
@@ -28,7 +28,7 @@
     * [2 ROS2 basics](11-ApplicationBaseROS/11.2-ROS2/11.2.2-320PI/11.2.2.2-ROS2基础.md)
     * [3 Rviz2 use](11-ApplicationBaseROS/11.2-ROS2/11.2.2-320PI/11.2.2.3-rviz2介绍.md)
     * [4 Basic function case](11-ApplicationBaseROS/11.2-ROS2/11.2.2-320PI/11.2.2.4-基础功能.md)
-     
+
 * [6.4 C#Development ](15-ApplicationBaseCSharp/15.6C.md)
 	* [1 Environmental construction](15-ApplicationBaseCSharp/15.2-myCobot320-PI.md)
 	* [2 Mechanical control](15-ApplicationBaseCSharp/15.3-angle.md)
