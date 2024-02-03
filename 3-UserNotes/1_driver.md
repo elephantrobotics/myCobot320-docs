@@ -11,24 +11,11 @@
 
 - A: The parameters in the previous array are the coordinates of the end of the myCobot, speed is the speed, and the last parameter is the motion mode. rx, ry, and rz should correspond to rpy, that is, corresponding to roll, pitch, and yaw respectively. The order of Euler angles is zyx, and zyx is its own coordinate. The value range of x, y, z is -300~300.00 (the value range is undefined, if the range is exceeded, the inverse kinematics no solution prompt will be returned), and the value range of rx, ry, and rz is -180~180.
 
-
 **Q: Are sample tutorials for the python API provided?**
 
-- A: Yes, there is test code in the test folder of github, which can be executed with the terminal. https://github.com/elephantrobotics/pymycobot/tree/main/demo
+- A: Yes, there is test code in the test folder of github, which can be executed with the terminal. https://github.com/elephantrobotics/pymycobot/tree/main/demo/myCobot_320_demo
 
-
-
-**Q: How does the python drag teaching demo of mycobot280-Pi work?**
-- A: Run in the terminal, please enter 1000000 baud rate.
-
-
-**Q: Mycobot280-Pi uses python zero to calibrate the demo program, why is there an error?**
-
-- A: The atom firmware is not burned, please burn the atom firmware before running the program.
-
-
-
-**Q: Is the python API of different versions of myCobots the same?**
+**Q: Are the python apis the same for different versions of robotic arms?**
 
 - A: The API is the same.
 

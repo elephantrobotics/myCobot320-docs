@@ -48,15 +48,13 @@
 
 - A: After logging in, select program robot and click load program. Directly clicking run program cannot be used, only pro600 can.
 
-**Q: When the pro600 uses roboflow, the log shows that 456 joints are stopped. Is this normal?**
 
-- A: This is normal.
 
-	​				
+	​
 ## 3 About mycobot phone controller
 
 
-**Q: What version of firmware should myCobot phone controller app be programmed with?**	
+**Q: What version of firmware should myCobot phone controller app be programmed with?**
 - A: You need to burn the atom firmware version atommain 2.5 in mystudio.
 
 
@@ -67,7 +65,7 @@
 **Q: Why does a pop-up box always appear when myblockly is running?**
 
 - A: Before running the myblockly program, close the serial port occupation.
-             
+
 
 
 ## 5 About ROS1
