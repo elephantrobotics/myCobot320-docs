@@ -16,11 +16,11 @@ How to use myBlockly to control the robot arm to return to the origin
 
 * Method module: `Set angle`
 
-  <img src="./img/case/go_zero_item.png" style="zoom: 50%;" />
+  <img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/case/go_zero_item.png" style="zoom: 50%;" />
 
 
 
-<img src="./img/blocks/mid/8.png"  />
+<img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/blocks/mid/8.png"  />
 
 * Parameter introduction:
 
@@ -36,7 +36,7 @@ How to use myBlockly to control the robot arm to return to the origin
 
 #### 简单演示
 
-<img src="./img/case/gozero.png" style="zoom: 50%;" />
+<img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/case/gozero.png" style="zoom: 50%;" />
 
 
 

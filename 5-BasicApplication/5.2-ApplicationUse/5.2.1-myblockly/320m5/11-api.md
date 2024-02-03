@@ -8,7 +8,7 @@
 
 #### Get Basic firmware version
 
-![Alt text](./img/blocks/system/1.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/system/1.png)
 
 - **Prototype**: `get_basic_version()`
 - **Interface Description**: Get the Basic firmware version.
@@ -18,7 +18,7 @@
 
 #### Get Master Control Info
 
-![Alt text](./img/blocks/system/2.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/system/2.png)
 
 - **Prototype**: `get_system_version()`
 
@@ -30,7 +30,7 @@
 
 #### Get Robot ID
 
-![Alt text](./img/blocks/system/3.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/system/3.png)
 
 - **Prototype**: `get_robot_id()`
 
@@ -42,7 +42,7 @@
 
 #### Set Robot ID
 
-![Alt text](./img/blocks/system/4.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/system/4.png)
 
 - **Prototype**: `set_robot_id(id)`
 - **Interface Description**: Set the robot id.
@@ -59,7 +59,7 @@
 
 #### Set WLAN account password
 
-![Alt text](./img/blocks/wlan/1.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/wlan/1.png)
 
 - **Prototype**: `set_ssid_pwd(account,password)`
 - **Interface Description**: Set WLAN account password.
@@ -71,7 +71,7 @@
 
 ####  Get WLAN Account and Password
 
-![Alt text](./img/blocks/wlan/2.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/wlan/2.png)
 
 
 
@@ -85,7 +85,7 @@
 
 #### Set Server Port
 
-![Alt text](./img/blocks/wlan/3.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/wlan/3.png)
 
 - **Prototype**: `set_server_port(port)`
 - **Interface Description**: Set the port for WLAN connection.
@@ -104,7 +104,7 @@
 
 #### Set basic pin output
 
-![Alt text](./img/blocks/basic/1.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/basic/1.png)
 
 - **Prototype**: `set_basic_output(id,state)`
 - **Interface Description**: Set base pin output
@@ -116,7 +116,7 @@
 
 #### Get basic pin input
 
-![Alt text](./img/blocks/basic/2.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/basic/2.png)
 
 - **Prototype**: `set_basic_output(id)`
 - **Interface Description**: Get base pin input
@@ -133,7 +133,7 @@
 
 ### Set Color
 
-![Alt text](./img/blocks/atom/1.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/atom/1.png)
 
 - **Prototype**: `set_color(r=0,g=0,b=0)`
 - **Interface Description**: Set the color of the end LED light.
@@ -148,7 +148,7 @@
 
 #### Set PWM output
 
-![Alt text](./img/blocks/atom/2.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/atom/2.png)
 
 - **Prototype**: `set_pwm_output(v1=0,v2=0,v3=0)`
 - **Interface Description**: Set PWM output.
@@ -163,7 +163,7 @@
 
 #### Set end pin mode
 
-![Alt text](./img/blocks/atom/3.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/atom/3.png)
 
 - **Prototype**: `set_pin_mode(id,state)`
 - **Interface Description**: Set the end pin mode.
@@ -175,7 +175,7 @@
 
 #### Set IO value
 
-![Alt text](./img/blocks/atom/4.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/atom/4.png)
 
 - **Prototype**: `set_digital_output(id,state)`
 - **Interface Description**: Set IO value
@@ -189,7 +189,7 @@
 
 #### Read IO value
 
-![Alt text](./img/blocks/atom/5.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/atom/5.png)
 
 - **Prototype**: `get_digital_input(id)`
 - **Interface Description**: Read IO value
@@ -204,7 +204,7 @@
 
 #### Power On
 
-![Alt text](./img/blocks/status/2.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/status/2.png)
 - **Prototype**: `power_on()`
 - **Interface Description**: Atom opens communication (open by default).
 
@@ -212,7 +212,7 @@
 
 #### Power Off
 
-![Alt text](./img/blocks/status/1.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/status/1.png)
 - **Prototype**: `power_off()`
 - **Interface Description**: Atom closes communication.
 
@@ -222,7 +222,7 @@
 
 #### Check whether the robot arm is powered on
 
-![Alt text](./img/blocks/status/3.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/status/3.png)
 - **Prototype**: `is_power_on()`
 - **Interface Description**: Check whether the robot arm is powered on.
 
@@ -238,7 +238,7 @@
 
 #### release all Servos
 
-![Alt text](./img/blocks/status/4.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/status/4.png)
 - **Prototype**: `release_all_servos()`
 - **Interface Description**: Set the robot arm to free movement mode
 
@@ -246,7 +246,7 @@
 
 ### Set command refresh mode
 
-![Alt text](./img/blocks/status/5.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/status/5.png)
 
 - **Prototype**: `set_fresh_mode(mode)`
 - **Interface Description**: Set command refresh mode
@@ -261,7 +261,7 @@
 
 ### Get command refresh mode
 
-![Alt text](./img/blocks/status/6.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/status/6.png)
 
 - **Prototype**: `get_fresh_mode()`
 - **Interface Description**: Get command refresh mode
@@ -275,7 +275,7 @@
 
 #### Get Error Infomation
 
-![Alt text](./img/blocks/status/7.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/status/7.png)
 - **Prototype**: `get_error_information()`
 - **Interface Description**: Get robot error information.
 
@@ -290,7 +290,7 @@
 
 #### Clear Error Infomation
 
-![Alt text](./img/blocks/status/8.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/status/8.png)
 - **Prototype**: `clear_error_information()`
 - **Interface Description**: Clear robot error messages.
 
@@ -298,7 +298,7 @@
 
 #### Check if Atom is connected
 
-![Alt text](./img/blocks/status/9.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/status/9.png)
 
 - **Prototype**: `is_controller_connected()`
 - **Interface Description**: Check whether Atom is connected
@@ -310,7 +310,7 @@
 
 #### Set  free mode
 
-![Alt text](./img/blocks/status/10.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/status/10.png)
 
 - **Prototype**: `set_free_mode(state)`
 - **Interface Description**: Whether to set to free mode
@@ -323,7 +323,7 @@
 
 #### Is free mode
 
-![Alt text](./img/blocks/status/11.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/status/11.png)
 
 - **Prototype**: `is_free_mode()`
 - **Interface description**: Check whether it is free mode
@@ -340,7 +340,7 @@
 
 #### Get Angles
 
-![Alt text](./img/blocks/mid/1.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/mid/1.png)
 - **Prototype**: `get_angles()`
 - **Interface Description**: Get the degrees of all joints.
 - **Return**:
@@ -350,7 +350,7 @@
 
 #### Get Coords
 
-![Alt text](./img/blocks/mid/2.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/mid/2.png)
 
 - **Prototype**: `get_coords()`
 - **Interface Description**: Get the Cartesian coordinates of the machine.
@@ -361,7 +361,7 @@
 
 #### Set single joint angle
 
-![Alt text](./img/blocks/mid/3.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/mid/3.png)
 - **Prototype**: `send_angle(id, degree, speed)`
 
 - **Interface Description**: Robot single joint angle control.
@@ -380,7 +380,7 @@
 
 #### Set single coordinates
 
-![Alt text](./img/blocks/mid/4.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/mid/4.png)
 
 - **Prototype**: `send_coord(id, value, speed)`
 - **Interface Description**: Robot single coordinate control.
@@ -394,7 +394,7 @@
 
 #### Check if you are in motion
 
-![Alt text](./img/blocks/mid/5.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/mid/5.png)
 
 - **Prototype**: `is_moving(id, value, speed)`
 - **Interface Description**: Detect whether the machine is moving.
@@ -406,7 +406,7 @@
 
 #### Angles is in position
 
-![Alt text](./img/blocks/mid/6.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/mid/6.png)
 
 - **Prototype**: `is_in_position([j1,j2,j3,j4,j5,j6],0)`
 
@@ -439,7 +439,7 @@
 
 #### Coords is in position
 
-![Alt text](./img/blocks/mid/7.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/mid/7.png)
 
 - **Prototype**: `is_in_position([x,y,z,rx,ry,rz],1)`
 
@@ -468,7 +468,7 @@
 
 ### Set Angles
 
-![Alt text](./img/blocks/mid/8.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/mid/8.png)
 
 - **Prototype**: `send_angles(angles, speed)`
 - **Interface Description**: Send all angles to the robot arm.
@@ -480,7 +480,7 @@
 
 
 ### Set Coords
-![Alt text](./img/blocks/mid/9.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/mid/9.png)
 - **Prototype**: `send_coords(coords, speed, mode)`
 
 - **Interface Description**: Send all coordinates to the robot arm.
@@ -502,7 +502,7 @@
 ## JOG Control
 
 ### JOG Angle
-![Alt text](./img/blocks/jog/1.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/jog/1.png)
 - **Prototype**: `jog_angle(joint_id, direction, speed)`
 - **Interface description**: Jog control angle
 
@@ -513,7 +513,7 @@
    - `speed`: 0 ~ 100
 
 ### JOG Coord
-![Alt text](./img/blocks/jog/2.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/jog/2.png)
 - **Prototype**: `jog_coord(coord_id, direction, speed)`
 - **Interface description**: Jog control coord.
 
@@ -527,7 +527,7 @@
 
 #### JOG Absolute
 
-![Alt text](./img/blocks/jog/4.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/jog/4.png)
 
 - **Prototype**: `jog_absolue(coord_id, direction, speed)`
 
@@ -547,7 +547,7 @@
 
 #### JOG Increment
 
-![Alt text](./img/blocks/jog/5.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/jog/5.png)
 
 - **Prototype**: `jog_increment(coord_id, direction, speed)`
 
@@ -564,7 +564,7 @@
 
 
 ### Jog Stop
-![Alt text](./img/blocks/jog/3.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/jog/3.png)
 - **Prototype**: `jog_stop()`
 - **Interface Description**: Stop jog moving.
 
@@ -572,22 +572,22 @@
 
 #### Pause
 
-![Alt text](./img/blocks/jog/8.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/jog/8.png)
 - **Prototype**: `pause()`
 - **Interface Description**: Pause movement.
 
 ### Resume
-![Alt text](./img/blocks/jog/9.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/jog/9.png)
 - **Prototype**: `resume()`
 - **Interface description**: Recovery movement.
 
 ### Stop
-![Alt text](./img/blocks/jog/10.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/jog/10.png)
 - **Prototype**: `stop()`
 - **Interface Description**: Stop moving.
 
 ### is_paused
-![Alt text](./img/blocks/jog/11.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/jog/11.png)
 - **Prototype**: `is_paused()`
 - **Interface Description**: Judge whether the manipulator pauses or not.
 
@@ -602,7 +602,7 @@
 
 
 ### Set Servo encoder value
-![Alt text](./img/blocks/jog/6.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/jog/6.png)
 - **Prototype**: `set_encoder(joint_id, encoder)`
 - **Interface Description**: Set a single joint rotation to the specified potential value.
 
@@ -612,7 +612,7 @@
    - `encoder`: 0 ~ 4096
 
 ### Get Servo encoder value
-![Alt text](./img/blocks/jog/7.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/jog/7.png)
 - **Prototype**: `get_encoder(joint_id)`
 - **Interface description**: Obtain the specified joint potential value.
 
@@ -625,14 +625,14 @@
 ## Setting
 
 ### get_speed
-![Alt text](./img/blocks/setting/1.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/setting/1.png)
 - **Prototype**: `get_speed()`
 - **Interface description**: Get speed.
 
 - **Return**: speed: (`int`)
 
 ### set_speed
-![Alt text](./img/blocks/setting/2.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/setting/2.png)
 - **Prototype**: `set_speed(speed)`
 
 - **Interface description**: Set speed.
@@ -640,7 +640,7 @@
 - **Parameters**: speed: (`int`) 0 ~ 100
 
 ### set_joint_min
-![Alt text](./img/blocks/setting/5.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/setting/5.png)
 - **Prototype**: `set_joint_min(id, angle)`
 - **Interface description**: Sets the minimum angle for the specified joint.
 
@@ -649,7 +649,7 @@
   - `angle`: 0 - 180.
 
 ### set_joint_max
-![Alt text](./img/blocks/setting/6.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/setting/6.png)
 - **Prototype**: `set_joint_max(id, angle)`
 - **Interface description**: Sets the maximum angle of the specified joint.
 
@@ -658,7 +658,7 @@
   - `angle`: 0 - 180.
 
 ### get_joint_min_angle
-![Alt text](./img/blocks/setting/3.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/setting/3.png)
 - **Prototype**: `get_joint_min_angle()`
 - **Interface description**: Gets the minimum movement angle of the specified joint
 
@@ -667,7 +667,7 @@
 - **Return**: angle value (`float`)
 
 ### get_joint_max_angle
-![Alt text](./img/blocks/setting/4.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/setting/4.png)
 - **Prototype**: `get_joint_max_angle()`
 - **Interface description**: Gets the maximum movement angle of the specified joint
 - **Parameters**: `joint_id`: (`int`)
@@ -682,7 +682,7 @@
 ## Servo control
 
 ### is_servo_enable
-![Alt text](./img/blocks/servos/1.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/servos/1.png)
 - **Prototype**: `is_servo_enable(servo_id)`
 
 - **Interface description**: Determine whether all steering gears are connected
@@ -695,7 +695,7 @@
   - `-1`: error
 
 ### is_all_servo_enable
-![Alt text](./img/blocks/servos/2.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/servos/2.png)
 - **Prototype**: `is_all_servo_enable()`
 
 - **Interface description**: Determine whether the specified steering gear is connected
@@ -707,7 +707,7 @@
   - `-1`: error
 
 ### set_servo_data
-![Alt text](./img/blocks/servos/3.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/servos/3.png)
 - **Prototype**: `set_servo_data(servo_no, data_id, value)`
 - **Interface description**: Set the data parameters of the specified address of the steering gear.
 
@@ -717,7 +717,7 @@
   - `value`: 0 - 4096
 
 ### get_servo_data
-![Alt text](./img/blocks/servos/4.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/servos/4.png)
 - **Prototype**: `get_servo_data(servo_no, data_id)`
 - **Interface description**: Read the data parameter of the specified address of the steering gear.
 
@@ -733,7 +733,7 @@
   - `-1`: error
 
 ### set_servo_calibration
-![Alt text](./img/blocks/servos/5.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/servos/5.png)
 - **Prototype**: `set_servo_calibration(servo_no)`
 - **Interface description**: The current position of the calibration joint actuator is the angle zero point, and the corresponding potential value is 2048.
 
@@ -741,7 +741,7 @@
   - `servo_no`: Serial number of articulated steering gear, 1 - 6.
 
 ### release_servo
-![Alt text](./img/blocks/servos/6.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/servos/6.png)
 - **Prototype**: `release_servo(servo_id)`
 
 - **Interface description**: Power off designated servo
@@ -749,7 +749,7 @@
 - **Parameters**: `servo_id`: 1 ~ 6
 
 ### focus_servo
-![Alt text](./img/blocks/servos/7.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/servos/7.png)
 - **Prototype**: `focus_servo(servo_id)`
 - **Interface description**: Power on designated servo
 - **Parameters**: `servo_id`: 1 ~ 6
@@ -763,7 +763,7 @@
 
 
 ### set_gripper_calibration
-![Alt text](./img/blocks/gripper/1.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/gripper/1.png)
 - **Prototype**: `set_gripper_calibration()`
 - **Interface description**: Set the current position to zero, set current position value is `2048`.
 
@@ -773,7 +773,7 @@
 
 ### set_gripper_state
 
-![Alt text](./img/blocks/gripper/2.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/gripper/2.png)
 
 - **Prototype**: `set_gripper_state(flag, speed, mode)`
 
@@ -789,7 +789,7 @@
 
 ### set_gripper_value
 
-![Alt text](./img/blocks/gripper/3.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/gripper/3.png)
 
 - **Prototype**: `set_gripper_value(value, speed, mode)`
 
@@ -805,7 +805,7 @@
 
 ### get_gripper_value
 
-![Alt text](./img/blocks/gripper/4.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/gripper/4.png)
 
 - **Prototype**: `get_gripper_value(mode)`
 - **Interface description**: Get gripper value
@@ -817,7 +817,7 @@
 
 ### is_gripper_moving
 
-![Alt text](./img/blocks/gripper/5.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/gripper/5.png)
 
 - **Prototype**: `is_gripper_moving()`
 
@@ -833,7 +833,7 @@
 
 ### Init Eletric Gripper
 
-![Alt text](./img/blocks/gripper/6.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/gripper/6.png)
 
 - **Prototype**: `init_eletric_gripper()`
 - **Interface description**:Init Eletric Gripper
@@ -842,7 +842,7 @@
 
 ### Set Eletric Gripper
 
-![Alt text](./img/blocks/gripper/7.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/gripper/7.png)
 
 - **Prototype**: `set_eletric_gripper()`
 - **Interface description**:Init Eletric Gripper
@@ -855,7 +855,7 @@
 
 
 ### set_gripper_mode
-![Alt text](./img/blocks/gripper/8.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/gripper/8.png)
 - **Prototype**: `set_gripper_mode(status)`
 
 - **Interface description**: Set gripper mode.
@@ -864,7 +864,7 @@
 - `status` (`int`): 0 - transparent transmission. 1 - Port Mode.
 
 ### get_gripper_mode
-![Alt text](./img/blocks/gripper/9.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/gripper/9.png)
 - **Prototype**: `get_gripper_mode()`
 
 - **Interface description**: Get gripper mode.
@@ -882,7 +882,7 @@
 ##  Coord Control
 
 ### get_tool_reference
-![Alt text](./img/blocks/coords/1.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/coords/1.png)
 - **Prototype**: `get_tool_reference()`
 
 - **Interface description**: Get tool coordinate system.
@@ -890,7 +890,7 @@
 - **Return**: `list` [x, y, z, rx, ry, rz].
 
 ### set_tool_reference
-![Alt text](./img/blocks/coords/2.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/coords/2.png)
 - **Prototype**: `set_tool_reference(coords)`
 
 - **Interface description**: Set tool coordinate system.
@@ -902,7 +902,7 @@
 
 ### get_world_reference
 
-![Alt text](./img/blocks/coords/3.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/coords/3.png)
 
 - **Prototype**: `get_world_reference()`
 - **Interface description**: Get world coordinate system.
@@ -913,7 +913,7 @@
 
 
 ### set_world_reference
-![Alt text](./img/blocks/coords/4.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/coords/4.png)
 - **Prototype**: `set_world_reference(coords)`
 
 - **Interface description**: Set world coordinate system.
@@ -927,7 +927,7 @@
 
 ### get_reference_frame
 
-![Alt text](./img/blocks/coords/5.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/coords/5.png)
 
 - **Prototype**: `get_reference_frame()`
 
@@ -940,7 +940,7 @@
 
 
 ### set_reference_frame
-![Alt text](./img/blocks/coords/6.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/coords/6.png)
 - **Prototype**: `set_reference_frame(rftype)`
 
 - **Interface description**: Set base coordinate system.
@@ -951,7 +951,7 @@
 
 
 ### get_movement_type
-![Alt text](./img/blocks/coords/7.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/coords/7.png)
 - **Prototype**: `get_movement_type()`
 - **Interface description**: Get movement type.
 - **Return**: 1 - movel, 0 - moveJ.
@@ -960,7 +960,7 @@
 
 ### set_movement_type
 
-![Alt text](./img/blocks/coords/8.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/coords/8.png)
 
 - **Prototype**: `set_movement_type(move_type)`
 
@@ -975,7 +975,7 @@
 
 ### get_end_type
 
-![Alt text](./img/blocks/coords/9.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/coords/9.png)
 
 - **Prototype**: `get_end_type()`
 - **Interface description**: Get end coordinate system.
@@ -984,7 +984,7 @@
 
 
 ### set_end_type
-![Alt text](./img/blocks/coords/10.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/coords/10.png)
 - **Prototype**: `set_end_type(end)`
 
 - **Interface description**: Set end coordinate system.
@@ -1007,7 +1007,7 @@
 
 
 ### get_servo_speeds
-![Alt text](./img/blocks/mycobot320/1.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/mycobot320/1.png)
 - **Prototype**: `get_servo_speeds()`
 
 - **Interface description**: Get joint velocity.
@@ -1015,7 +1015,7 @@
 - **Return**: `list` Speed of each joint.
 
 ### get_servo_currents
-![Alt text](./img/blocks/mycobot320/2.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/mycobot320/2.png)
 - **Prototype**: `get_servo_currents()`
 
 - **Interface description**: Get joint current.
@@ -1023,7 +1023,7 @@
 - **Return**: `list` Current of each joint.
 
 ### get_servo_voltages
-![Alt text](./img/blocks/mycobot320/3.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/mycobot320/3.png)
 - **Prototype**: `get_servo_voltages()`
 
 - **Interface description**: Get joint voltage.
@@ -1031,7 +1031,7 @@
 - **Return**: `list` Voltage of each joint.
 
 ### get_servo_status
-![Alt text](./img/blocks/mycobot320/4.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/mycobot320/4.png)
 - **Prototype**: `get_servo_status()`
 
 - **Interface description**: Get the state of each joint.
@@ -1039,7 +1039,7 @@
 - **Return**: `list` the state of each joint.
 
 ### get_servo_temps
-![Alt text](./img/blocks/mycobot320/5.png)
+![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/mycobot320/5.png)
 - **Prototype**: `get_servo_temps()`
 
 - **Interface description**: Get the temperature of each joint.

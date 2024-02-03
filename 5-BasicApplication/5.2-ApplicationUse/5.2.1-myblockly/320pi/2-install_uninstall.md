@@ -27,7 +27,7 @@ Different suffixes represent different systems, please download the correspondin
 
 Download the Linux version of myblockly from the official website and you will get an installation package as shown below
 
-![](.\img\appimage.png)
+![](../../../../resources/5-BasicApplication/5.2.1/pi/img/appimage.png)
 
 
 
@@ -35,19 +35,19 @@ Download the Linux version of myblockly from the official website and you will g
 
 Select `myblockly-arm64-latest.AppImage`, right-click to open it, click `Properties` to open it
 
-<img src=".\img\appimage1.png"  />
+<img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/appimage1.png"  />
 
 
 
 Click to enter `Permissions`
 
-<img src=".\img\appimage2.png"  />
+<img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/appimage2.png"  />
 
 
 
 In the `Permissions` page, check `Allow executing file as program`, and then click the `Close` button to close the pop-up window
 
-<img src=".\img\appimage3.png"  />
+<img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/appimage3.png"  />
 
 
 
@@ -59,23 +59,23 @@ After closing the pop-up window, double-click the installation package `myblockl
 
 Double-click to open the file named`myblockly-arm64-latest.AppImage`
 
-![](.\img\install_1.png)
+![](../../../../resources/5-BasicApplication/5.2.1/pi/img/install_1.png)
 
 Click `Run`
 
-![](C:\Users\Administrator\Desktop\320gitbook截图\en\img\install_2.png)
+![](../../../../resources/5-BasicApplication/5.2.1/pi/img/install_2.png)
 
 After clicking `Install`, wait for myblockly installation to complete
 
-![](C:\Users\Administrator\Desktop\320gitbook截图\en\img\install_3.png)
+![](../../../../resources/5-BasicApplication/5.2.1/pi/img/install_3.png)
 
 
 
 The installation is complete, click the `Finish` button to open and run myblockly
 
-![](C:\Users\Administrator\Desktop\320gitbook截图\en\img\install_4.png)
+![](../../../../resources/5-BasicApplication/5.2.1/pi/img/install_4.png)
 
-![](C:\Users\Administrator\Desktop\320gitbook截图\en\img\install_5.png)
+![](../../../../resources/5-BasicApplication/5.2.1/pi/img/install_5.png)
 
 
 
@@ -85,7 +85,7 @@ The installation is complete, click the `Finish` button to open and run myblockl
 
 Download the Mac version of myblockly from the official website to get an installation package as shown below. Double-click to open it.
 
-![](C:/Users/Administrator/Desktop/320_pi_blockly/zh/img/mac.png)
+![](../../../../resources/5-BasicApplication/5.2.1/pi/img/mac.png)
 
 **Note**: For MacOS, make sure system "Preferences->Security & Privacy->General" and Allow Apps from App Store and Recognized Developers are enabled before installing.
 
@@ -123,13 +123,13 @@ Enter the file directory of myblockly and click to run `Uninstall myblockly.exe`
 
 <img src="C:\Users\Administrator\Desktop\320gitbook截图\en\img\uninstall.png"  />
 
-![](C:\Users\Administrator\Desktop\320gitbook截图\en\img\uninstall_1.png)
+![](../../../../resources/5-BasicApplication/5.2.1/pi/img/uninstall_1.png)
 
 
 
 Click `Uninstall`
 
-![](C:\Users\Administrator\Desktop\320gitbook截图\en\img\uninstall_2.png)
+![](../../../../resources/5-BasicApplication/5.2.1/pi/img/uninstall_2.png)
 
 myblockly has been uninstalled, click `Finish` to exit
 
