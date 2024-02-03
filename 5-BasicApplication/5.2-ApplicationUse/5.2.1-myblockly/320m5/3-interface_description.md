@@ -1,6 +1,6 @@
 ## 3 myBlockly interface display and use of basic functions
 
-<img src="./img/interface/1.png" />
+<img src="../../../../resources/5-BasicApplication/5.2.1/m5/img/interface/1.png" />
 
 
 
@@ -29,15 +29,15 @@ Before officially starting programming, be sure to select the corresponding **ma
 
 First connect `myCobot 320 M5` to our computer through `USB data cable`,
 
-<img src=".\img\connect_pc.jpg" style="zoom: 33%;" />
+<img src="../../../../resources/5-BasicApplication/5.2.1/m5/img/connect_pc.jpg" style="zoom: 33%;" />
 
-<img src=".\img\connect_ok.gif" style="zoom: 33%;" />
+<img src="../../../../resources/5-BasicApplication/5.2.1/m5/img/connect_ok.gif" style="zoom: 33%;" />
 
 
 
 And then we select the initialization model as `myCobot 320`, the port connected to my computer is `COM8`, and the baud rate is `115200`
 
-![](.\img\interface\2.png)
+![](../../../../resources/5-BasicApplication/5.2.1/m5/img/interface/2.png)
 
 
 
@@ -51,19 +51,19 @@ We use building blocks to implement such a small case: let the robotic arm retur
 
   Click the `Status` category in the toolbox, select the `Power On` building block and drag it to the workspace
 
-  ![](.\img\power_on1.png)
+  ![](../../../../resources/5-BasicApplication/5.2.1/m5/img/power_on1.png)
 
   
 
   
 
-  ![](.\img\power_on2.png)
+  ![](../../../../resources/5-BasicApplication/5.2.1/m5/img/power_on2.png)
 
   
 
   Click to `Run` button
 
-  ![](.\img\power_on3.png)
+  ![](../../../../resources/5-BasicApplication/5.2.1/m5/img/power_on3.png)
 
 
 
@@ -89,21 +89,21 @@ And please click the `X` button to close  pop-up window
 
 - Click the `MDI Control` category in the toolbox, select the `Set Angle` building block and drag it to the workspace
 
-![](.\img\interface\小案例1.png)
+![](../../../../resources/5-BasicApplication/5.2.1/m5/img/interface/小案例1.png)
 
-<img src=".\img\interface\小案例2.png" style="zoom:50%;" />
+<img src="../../../../resources/5-BasicApplication/5.2.1/m5/img/interface/小案例2.png" style="zoom:50%;" />
 
 - Click the `Time` category in the toolbox, select the `Sleep` building block and drag it to the workspace; click the mouse on the input box and change the input value of the building block to `5`
 
-<img src=".\img\interface\小案例3.png" style="zoom:67%;" />
+<img src="../../../../resources/5-BasicApplication/5.2.1/m5/img/interface/小案例3.png" style="zoom:67%;" />
 
-<img src=".\img\interface\小案例4.png" style="zoom: 50%;" />
+<img src="../../../../resources/5-BasicApplication/5.2.1/m5/img/interface/小案例4.png" style="zoom: 50%;" />
 
 - Click the `MDI Control` category in the toolbox again, select the `Set Angle` building block and drag it to the workspace; at the same time, change the input value of `J1` to 30
 
-  <img src=".\img\interface\小案例5.png" style="zoom: 50%;" />
+  <img src="../../../../resources/5-BasicApplication/5.2.1/m5/img/interface/小案例5.png" style="zoom: 50%;" />
 
-- <img src=".\img\interface\小案例6.png" style="zoom: 50%;" />
+- <img src="../../../../resources/5-BasicApplication/5.2.1/m5/img/interface/小案例6.png" style="zoom: 50%;" />
 
 
 
@@ -111,23 +111,23 @@ And please click the `X` button to close  pop-up window
 
 - Click the "Python" option in the upper left corner to view the corresponding Python code, as shown in the figure below.
 
-<img src=".\img\interface\小案例代码.png" style="zoom:80%;" />
+<img src="../../../../resources/5-BasicApplication/5.2.1/m5/img/interface/小案例代码.png" style="zoom:80%;" />
 
 
 
 - Click the `Run` button to run the code and observe the movement of the robotic arm.
 
-<img src=".\img\interface\run.png" style="zoom: 80%;" />
+<img src="../../../../resources/5-BasicApplication/5.2.1/m5/img/interface/run.png" style="zoom: 80%;" />
 
 
 
 - Program is running
 
-  <img src=".\img\interface\run1.png" style="zoom: 80%;" />
+  <img src="../../../../resources/5-BasicApplication/5.2.1/m5/img/interface/run1.png" style="zoom: 80%;" />
 
 - The program ends
 
-  <img src=".\img\interface\run2.png" style="zoom:80%;" />
+  <img src="../../../../resources/5-BasicApplication/5.2.1/m5/img/interface/run2.png" style="zoom:80%;" />
 
 
 
@@ -143,11 +143,11 @@ And please click the `X` button to close  pop-up window
 
 
 
-<img src="./img/interface/can_not_run1.png" style="zoom: 50%;" />
+<img src="../../../../resources/5-BasicApplication/5.2.1/m5/img/interface/can_not_run1.png" style="zoom: 50%;" />
 
 
 
-<img src="./img/interface/can_not_run1.png" style="zoom: 50%;" />
+<img src="../../../../resources/5-BasicApplication/5.2.1/m5/img/interface/can_not_run1.png" style="zoom: 50%;" />
 
 
 
@@ -155,7 +155,7 @@ And please click the `X` button to close  pop-up window
 
 
 
-<img src="./img/interface/open_qm.png" style="zoom:67%;" />
+<img src="../../../../resources/5-BasicApplication/5.2.1/m5/img/interface/open_qm.png" style="zoom:67%;" />
 
 
 
@@ -171,13 +171,13 @@ Here we choose the model `myCobot 320` ,`Port` is `COM8`,and the baud rate `1152
 
 
 
-<img src="./img/interface/qm.png" style="zoom: 67%;" />
+<img src="../../../../resources/5-BasicApplication/5.2.1/m5/img/interface/qm.png" style="zoom: 67%;" />
 
 
 
 After selecting the model and port, click the `Open` button to connect the robotic arm.
 
-![](./img/interface/open.png)
+![](../../../../resources/5-BasicApplication/5.2.1/m5/img/interface/open.png)
 
 Read angles and coordinates
 
@@ -197,7 +197,7 @@ You can control the movement of the robot arm joints by clicking the mouse, long
 
 MyBlockly's program is saved in *.json format. Click the blue box in the upper right corner of the interface. When the "Save" option appears, click it to save the program.
 
-<img src="./img/interface/save.png" />
+<img src="../../../../resources/5-BasicApplication/5.2.1/m5/img/interface/save.png" />
 
 
 
@@ -205,7 +205,7 @@ MyBlockly's program is saved in *.json format. Click the blue box in the upper r
 
 Also click the blue box and click the "Load" option to import the saved program.
 
-<img src="./img/interface/load.png" />
+<img src="../../../../resources/5-BasicApplication/5.2.1/m5/img/interface/load.png" />
 
 <br/>
 <br/>

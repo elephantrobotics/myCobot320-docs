@@ -16,9 +16,9 @@ How to use myBlockly to control multiple joint movements of a robotic arm
 
 * Method module: `Set angles`
 
-  <img src="./img/case/go_zero_item.png" style="zoom: 50%;" />
+  <img src="../../../../resources/5-BasicApplication/5.2.1/m5/img/case/go_zero_item.png" style="zoom: 50%;" />
 
-<img src="./img/blocks/mid/8.png" />
+<img src="../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/mid/8.png" />
 
 * Parameter introduction:
 
@@ -36,7 +36,7 @@ How to use myBlockly to control multiple joint movements of a robotic arm
 
 The graphics code is as follows:
 
-<img src="./img/case/joints.png"  />
+<img src="../../../../resources/5-BasicApplication/5.2.1/m5/img/case/joints.png"  />
 
 * Implementation content:
 

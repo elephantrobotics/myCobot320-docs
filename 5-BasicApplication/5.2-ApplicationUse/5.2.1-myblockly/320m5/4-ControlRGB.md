@@ -16,9 +16,9 @@ How to control RGB light panel using myBlockly
 
 * method module：`Set color`
 
-  <img src="./img/case/setcolor_item.png" style="zoom: 33%;" />
+  <img src="../../../../resources/5-BasicApplication/5.2.1/m5/img/case/setcolor_item.png" style="zoom: 33%;" />
 
-<img src="./img/blocks/atom/1.png"/>
+<img src="../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/atom/1.png"/>
 
 * Parameter introduction:
 
@@ -42,7 +42,7 @@ How to control RGB light panel using myBlockly
 
 The graphics code is as follows:
 
-<img src="./img/case/setcolor.png" style="zoom: 50%;" />
+<img src="../../../../resources/5-BasicApplication/5.2.1/m5/img/case/setcolor.png" style="zoom: 50%;" />
 
 * What is implemented:
 

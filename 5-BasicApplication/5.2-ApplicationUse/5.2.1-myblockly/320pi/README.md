@@ -1,6 +1,6 @@
 # What is myBlockly?
 
-![](./img/myblockly/myblockly界面.jpg)
+![](../../../../resources/5-BasicApplication/5.2.1/pi/img/myblockly/myblockly界面.jpg)
 
 **myBlockly** is a completely visual modular programming software that is a graphical programming language.
 

@@ -18,11 +18,11 @@
 
 
 
-  <img src="./img/case/pump_item1.png" style="zoom: 50%;" />
+  <img src="../../../../resources/5-BasicApplication/5.2.1/m5/img/case/pump_item1.png" style="zoom: 50%;" />
 
 
 
-  <img src="./img/blocks/basic/1.png" />
+  <img src="../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/basic/1.png" />
 
   * Parameter introduction:
 
@@ -45,7 +45,7 @@
 
 The graphics code is as follows:
 
-<img src="./img/case/pumpuse.png"  />
+<img src="../../../../resources/5-BasicApplication/5.2.1/m5/img/case/pumpuse.png"  />
 
 * Implementation content:
 

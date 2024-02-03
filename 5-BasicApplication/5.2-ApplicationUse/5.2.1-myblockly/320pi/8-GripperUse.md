@@ -18,11 +18,11 @@ How to use myBlockly to control the adaptive gripper attached to the myCobot 320
 
 #### API display
 
-<img src="./img/case/gripper_ite.png" style="zoom: 67%;" />
+<img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/case/gripper_ite.png" style="zoom: 67%;" />
 
 - Method module **1**: `Set gripper status`
 
-  <img src="./img/blocks/gripper/2.png" style="zoom: 67%;" />
+  <img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/blocks/gripper/2.png" style="zoom: 67%;" />
 
 - Parameter introduction:
 
@@ -42,7 +42,7 @@ How to use myBlockly to control the adaptive gripper attached to the myCobot 320
 
 - Method module **2**: `Set the value of the gripper`
 
-  <img src="./img/blocks/gripper/3.png" style="zoom: 67%;" />
+  <img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/blocks/gripper/3.png" style="zoom: 67%;" />
 
 - Parameter introduction:
 
@@ -58,7 +58,7 @@ How to use myBlockly to control the adaptive gripper attached to the myCobot 320
 
 * Method module **3**: `Is the gripper in motion`
 
-  <img src="./img/blocks/gripper/4.png" style="zoom: 67%;" />
+  <img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/blocks/gripper/4.png" style="zoom: 67%;" />
 
 * Purpose: To determine whether the gripper is running
 
@@ -68,7 +68,7 @@ How to use myBlockly to control the adaptive gripper attached to the myCobot 320
 
 The graphics code is as follows:
 
-<img src="./img/case/gripper.png" style="zoom: 50%;" />
+<img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/case/gripper.png" style="zoom: 50%;" />
 
 
 
