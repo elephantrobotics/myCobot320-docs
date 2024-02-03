@@ -1,20 +1,12 @@
 # **myCobotPro Adaptive Gripper**
 
-**Compatible models:** myCobot 320, myCobot Pro 600
+> **Compatible models:** myCobot 320, myCobot Pro 600
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RPKjV0IuP5E?si=_AGbac6f1OUW81PM&amp;start=145" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/AdaptiveGripper-3.png" alt="img-1" width="480" height=“auto” />
 
-</video>
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/AdaptiveGripper-4.jpg" alt="img-2" width="240" height="auto" /><img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/AdaptiveGripper-1.jpg" alt="img-3" width="240" height="auto" />
 
-**product icon**
-
-![pi](../../../resourse/2-serialproduct/2.7.10.4.png)
-
-![pi](../../../resourse/2-serialproduct/2.7.10.1.jpg)
-
-![pi](../../../resourse/2-serialproduct/2.7.10.2.jpg)
-
-**Specifications:**
+## Specifications
 
 | **name name**                 | **myCobotPro Adaptive Gripper Black and White** |
 | ----------------------------- | ----------------------------------------------- |
@@ -53,17 +45,18 @@
 
 - long object
 
-Mall link: [https://item.taobao.com/item.htm?spm=a1z10.5-cs.0.0.6945364bve0QX4&id=667084571424](https://item.taobao.com/item.htm?spm=a1z10.5-c-s.0.0.6945364bve0QX4&id=667084571424)
+Mall link: 
+-   [Taobao](https://shop504055678.taobao.com)
+-   [shopify](https://shop.elephantrobotics.com/)
 
-**How to use**
 
-Installing the gripper: <br>
+## How to use
+1 Installing the gripper <br>
 
-- For mycobot320 Adaptive Gripper, insert it into the 485 interface on the top, as shown in the following figure:  <br>
-![](../../../resourse/6-ApplicationBaseRoboFlow/6.5/6.6_2.png)<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RPKjV0IuP5E?si=_AGbac6f1OUW81PM&amp;start=145" title="Installing the gripper" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</video>
 
-Function description: <br>
-- Run RoboFlow, enter the program editing interface, and select M5Stack-basic – Gripper (For the way to enter the program editing interface, see 6.2 Simple use of RoboFlow); <br>
-- click Define New Gripper, fill in Gripper Name as " CAG-1 ” (must be this name), and then click Save; <br>
-- select open or close for Saved status. The overall steps are shown in the following figure: <br>
-![](../../../resourse/6-ApplicationBaseRoboFlow/6.5/6.6.1_3.gif)<br> 
+2 Development with SDK
+[Blockly]()
+[Python]()
+
