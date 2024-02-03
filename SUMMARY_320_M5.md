@@ -6,8 +6,8 @@
 * [4 First Install and Use](4-FirstInstallAndUse/4.2_320_M5_firstUse.md)
 * [5 Basic Application](5-BasicApplication/README.md)
   * [5.2 ApplicationUse](5-BasicApplication/README.md)
-    * [1 myblockly](5-BasicApplication/5.2-ApplicationUse/myblockly/320m5/README.md)
-    * [2 myStudio](5-BasicApplication/5.2-ApplicationUse/mystudio/320m5/README.md)
+    * [1 myblockly](5-BasicApplication/5.2-ApplicationUse/5.2.1-myblockly/320m5/README.md)
+    * [2 myStudio](5-BasicApplication/5.2-ApplicationUse/5.2.2-mystudio/320m5/README.md)
 * [6 SDK Development](6-SDKDevelopment/README.md)
   * [6.1 Development based on python](10-ApplicationBasePython/README.md)
     * [1 Environment Building](10-ApplicationBasePython/10.1_320_PI-ApplicationPython/1_download.md)
@@ -50,7 +50,7 @@
 * [9 About Us](9-AboutUs/README.md)
   * [9.1 Elephant Robotics](9-AboutUs/9.1_company.md)
   * [9.2 Contact us](9-AboutUs/9.2_contact.md)
-  
+
 * [12 ApplicationBaseCPlus](12-ApplicationBaseCPlus/README.md)
   * [12.1 CPlus Download](12-ApplicationBaseCPlus/12.1-download.md)
   * [12.2 build](12-ApplicationBaseCPlus/12.2-build.md)
