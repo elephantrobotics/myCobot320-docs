@@ -77,7 +77,7 @@ After closing the pop-up window, double-click the installation package `myStudio
 
 
 
-#### For Windows install myStudio
+### For Windows install myStudio
 
 Double-click to open the file named`Mystudio_Setup_latest.exe`,and click to `Run`
 
