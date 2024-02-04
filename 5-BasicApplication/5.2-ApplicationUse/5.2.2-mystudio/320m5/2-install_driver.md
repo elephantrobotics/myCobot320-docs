@@ -46,3 +46,6 @@ For Mac OS, before installing make sure system "Preferences->Security & Privacy-
 
 ![CP210C](../../../../resources/5-BasicApplication/5.2.2/m5/img/4.1.1.3-CP210X.jpg)
 
+
+
+[← Previous Page](./1-setup.md) | [Next Page →](./3-flash_firmwares.md)

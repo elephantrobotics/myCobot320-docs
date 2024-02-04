@@ -44,19 +44,19 @@ Step 2 :Select Robot `myCobot 320 for M5`,and click `LOGIN` button.
 Step 3: After logging in, click `Basic`
 	<img src="../../../../resources/5-BasicApplication/5.2.2/m5/img/320/2.png" alt="atom" style="zoom: 67%;" />
 
-Step 4:  click `Download` 
+Step 4:  click `Download`
 
 <img src="../../../../resources/5-BasicApplication/5.2.2/m5/img/320/3.png" style="zoom: 67%;" />
 
 
 
-Step 5: click  `Ok` 
+Step 5: click  `Ok`
 
 <img src="../../../../resources/5-BasicApplication/5.2.2/m5/img/320/4.png" style="zoom:67%;" />
 
 
 
-Step 5: click  `Flash` 
+Step 5: click  `Flash`
 
 <img src="../../../../resources/5-BasicApplication/5.2.2/m5/img/320/5.png" style="zoom:67%;" />
 
@@ -109,3 +109,4 @@ Step 7: click `Flash` to burn.
 ![](../../../../resources/5-BasicApplication/5.2.2/m5/img/320/8.png)
 
 
+[← Previous Page](./2-install_driver.md) | [Next Page →](./4-other_function.md)

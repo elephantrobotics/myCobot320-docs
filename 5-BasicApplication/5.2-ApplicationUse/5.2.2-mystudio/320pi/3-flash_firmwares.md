@@ -58,3 +58,8 @@ Step 4: select picoMain ,after click `Download`    and click `Flash` to burn.
 <img src="../../../../resources/5-BasicApplication/5.2.2/pi/img/320/3.png" alt="atom" style="zoom:80%;" />
 
 <img src="../../../../resources/5-BasicApplication/5.2.2/pi/img/320/4.png" alt="atom" style="zoom:80%;" />
+
+
+
+
+ [← Previous Page](./2-install_driver.md) | [Next Page →](./4-other_function.md)

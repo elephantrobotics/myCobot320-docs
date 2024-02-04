@@ -81,3 +81,8 @@ The graphics code is as follows:
   The jaws close at speed 70,
 
   After the process of opening and closing the jaws is cycled 5 times, the program ends.
+
+
+
+
+ [← Previous Page](./7-ControlSinglesJoint.md) | [Next Page →](./9-PumpUse.md)
