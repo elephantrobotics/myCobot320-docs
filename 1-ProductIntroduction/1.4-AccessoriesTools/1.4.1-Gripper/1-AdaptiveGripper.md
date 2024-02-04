@@ -52,14 +52,12 @@ Mall link:
 
 
 ## How to use
-1 Installing the gripper <br>
+1 Installing <br>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RPKjV0IuP5E" title="myCobot Pro Accessories | The new gripper for myCobot Pro 600" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<!-- 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RPKjV0IuP5E?si=_AGbac6f1OUW81PM&amp;start=0" title="Installing the gripper" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</video> -->
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RPKjV0IuP5E?si=_AGbac6f1OUW81PM&amp;start=0" frameborder="0" allowfullscreen></iframe>
+If the video fails to load, please click the link below to view the video.
+[Installing Vidio](https://www.youtube.com/watch?v=RPKjV0IuP5E)
 
 
 
