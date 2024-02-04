@@ -16,7 +16,7 @@ How to use myBlockly to control the single joint movement of the robotic arm
 
 * method module：`Set Joint`
 
-  <img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/case/singlejoint_item.png" style="zoom: 50%;" />
+  <img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/case/singlejoint_item.png" style="zoom: 80%;" />
 
   <img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/blocks/mid/3.png" />
 
@@ -37,7 +37,7 @@ How to use myBlockly to control the single joint movement of the robotic arm
 
 * The graphics code is as follows:
 
-  <img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/case/singjoint.png" style="zoom: 50%;" />
+  <img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/case/singjoint.png" style="zoom: 80%;" />
 
 * Implementation content:
 

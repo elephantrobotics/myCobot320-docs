@@ -31,7 +31,7 @@ First connect `myCobot 320 M5` to our computer through `USB data cable`,
 
 <img src="../../../../resources/5-BasicApplication/5.2.1/m5/img/connect_pc.jpg" style="zoom: 33%;" />
 
-<img src="../../../../resources/5-BasicApplication/5.2.1/m5/img/connect_ok.gif" style="zoom: 33%;" />
+<img src="../../../../resources/5-BasicApplication/5.2.1/m5/img/connect_ok.gif" style="zoom:80%;" />
 
 
 
@@ -79,7 +79,7 @@ And please click the `X` button to close  pop-up window
 
 ![](C:\Users\Administrator\Desktop\myCobot320-docs\5-BasicApplication\5.2-ApplicationUse\myblockly\320pi\img\power_on_finish.png)
 
-​
+
 
 
 
