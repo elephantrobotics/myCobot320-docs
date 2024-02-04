@@ -247,3 +247,6 @@ python3 demo.py
 
 The blue, red, and green lights on the top of the robot flash 7 times continuously at an interval of 2 seconds.
 
+---
+
+[← Previous Page](../README.md) | [Next Page →](2_API.md)

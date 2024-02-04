@@ -33,3 +33,7 @@ Trajectory recording (including adaptive gripper) and playback can be realized.
     - `s`: Save this recording information, it will save the recording information to the record.txt file in the same directory as `drag_trial_teaching.py`
     - `l`: will load the information in the record.txt file in the same directory as `drag_trial_teaching.py`
     - `f`: relax all joints of the robot arm
+
+---
+
+[← Previous Page](3_TCPIP.md) | [Next Page →](5_Handle_control.md)
