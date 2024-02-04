@@ -145,7 +145,6 @@ It is recommended to install the free version.
 * Firmware burning. Firmware serves as a driver for systems to control robots. 
 
   * **M5Stack version** Make sure to burn ` minirobot` for **Basic** at the bottom. And then choose` Transponder` function (to receive instructions from Basic), Press `Press A`. `Atom: OK` means connect successfully. Refer to [**MyStudio**]((https://docs.elephantrobotics.com/docs/gitbook-en/4-BasicApplication/4.1-myStudio/)) for more information about firmware burning.
-  * **Pi \ jetsonnano version** `AtomMain` for **Atom** at the top is factory burnt.
 
 * pymycobot installation. Type `pip install pymycobot --upgrade --user` via terminal (Win+R) `cmd` command.
 
@@ -182,12 +181,12 @@ pip install pymycobot --upgrade
 
 ## 4 Import of pymycobot 
 
-This part takes MyPalletizer 260-M5 as an example to introduce how to control a robot via python. 
+This part takes MyCobot 320-M5 as an example to introduce how to control a robot via python. 
 
-* Import  pymycobot  library for MyPalletizer :
+* Import  pymycobot  library for MyCobot :
 
 ```python
-from pymycobot.mypalletizer import MyPalletizer
+from pymycobot.mycobot import MyCobot
 ```
 
 > **Notice:**
@@ -217,7 +216,7 @@ import time
 
 # MyCobot class initialization requires two parameters:
 #   The first is the serial port string:
-#       windows: "COM"
+#       windows: "COM3"
 #       linux: "/dev/ttyUSB"
 #   The second is the baud rate:
 #       M5 version is:  115200
@@ -249,3 +248,6 @@ python3 demo.py
 
 The blue, red, and green lights on the top of the robot flash 7 times continuously at an interval of 2 seconds.
 
+---
+
+[← Previous Page](../README.md) | [Next Page →](2_API.md)

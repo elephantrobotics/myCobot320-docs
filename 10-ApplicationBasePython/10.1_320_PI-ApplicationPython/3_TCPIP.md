@@ -59,3 +59,6 @@ mc.send_angles([0,0,0,0,0,0],20)
 ...
 ```
 
+---
+
+[← Previous Page](2_API.md) | [Next Page →](4_drag.md)
