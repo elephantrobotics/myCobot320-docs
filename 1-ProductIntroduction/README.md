@@ -11,12 +11,12 @@ The myCobot 320 Robot Arm, developed by Elephant Robotics, is a collaborative ro
 ## Supported Extension Development
 
 The myCobot 320 encourages users to engage in extension development to fully exploit its potential:
-- **Programming Languages**: Supports Python, C++, among others, offering a diverse selection of programming options.
+- **Programming Languages**: Supports Python, C++, among others, offering a diverse selection of programming options. 
 <img src="../resources/1-ProductIntroduction/code.png" alt="img-1" width="400" height=“auto” /><br> 
 - **Hardware Interfaces**: Includes IO, USB, etc., facilitating the connection to a variety of sensors and actuators.
 - **Software Libraries**: Provides a rich set of open-source libraries and APIs to streamline the development process.
-- **System Compatibility**: Compatible with Windows, Linux, MacOS, accommodating a wide range of development environments.
-<img src="../resources/1-ProductIntroduction/system.png" alt="img-1" width="400" height=“auto” />
+- **System Compatibility**: Compatible with Windows, Linux, MacOS, accommodating a wide range of development environments.   
+   <img src="../resources/1-ProductIntroduction/system.png" alt="img-1" width="400" height=“auto” />
 
 ## Documentation Learning Content
 
