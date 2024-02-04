@@ -2,14 +2,13 @@
 
 > **Compatible models:** myCobot 320, myCobot Pro 600
 
-## product icon
+## Product Icon
 
-![pi](../../../resourse/2-serialproduct/2.7/2.7.3/IMG_0055.JPG)
-
-![pi](../../../resourse/2-serialproduct/2.7/2.7.3/IMG_0120.JPG)
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/FlexibleGripper-1.JPG" alt="img-2" width="800" height="auto" /> <br>
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/FlexibleGripper-2.JPG" alt="img-2" width="800" height="auto" /> <br>
 
 ## Specifications
-
+**Gripper**
 | **name name**                 | **myCobotPro Flexible Gripper**           |
 | ----------------------------- | ----------------------------------------- |
 | Material                      | Metal                                     |
@@ -23,8 +22,17 @@
 | weightweight                  | 365 grams                                 |
 | Fixed method fixed            | screw fixed                               |
 | Use environment requirements  | Temperature and pressure                  |
-| control interface control     | I/O control                               |
+| control interface control     | SAC40A Pneumatic Controller                             |
 | Applicable equipment          | ER myCobot 320 series, ER myCobot Pro 600 |
+
+**Controller**
+| **name name**    | **SAC40A Pneumatic Controller**      |
+| -------------- | ------------------- |
+|Power  | 24V 1.5A   |
+|Controller| IO |
+| Air Source Pressure | > 0.4 MPA      |
+| Flow Rate          | > 40 L/MIN     |
+
 
 ## Use for Gripping Objects
 
@@ -49,4 +57,15 @@
 -   [Taobao](https://shop504055678.taobao.com)
 -   [shopify](https://shop.elephantrobotics.com/)
 
- 
+ ## How to use
+
+1 Installing the gripper: <br>
+
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/3-PneumaticGripper/PneumaticGripper2.jpg" alt="img-2" width="400" height="auto" /> <br>
+
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/3-PneumaticGripper/PneumaticGripper3.jpg" alt="img-2" width="400" height="auto" /> <br>
+
+2 Development with SDK  
+-   [Blockly]()     
+-   [Python]()
+-   [C++]()

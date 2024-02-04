@@ -47,11 +47,6 @@
 
 - Custom fingertips can expand more items
 
-**Appearance introduction**
-
-![pi](../../../resourse/2-serialproduct/gripper_pa1.png)
-
-![pi](../../../resourse/2-serialproduct/gripper_pa2.jpg)
 
 
 ## Mall link
