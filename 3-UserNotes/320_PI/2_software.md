@@ -4,25 +4,31 @@
 - A: You need to build a development environment and install the corresponding project library before you can develop the device.
 
 
-## 1 About mystudio
+## 1 About myStudio
 
-**Q: What is mystudio?**
+**Q: What is myStudio?**
 
 - A: It is the firmware burner. [About more](../../5-BasicApplication/5.2-ApplicationUse/5.2.2-mystudio/320pi/README.md)
 
+**Q: Is there any difference between the firmware used by MyCobot 320 Pi-2020 and 2022 models?**
+
+A:
+- Firmware requirements for the earlier version myCobot 320 Pi are as follows:
+  - ubuntu18.04
+  - atommain 4.1
+ - Firmware requirements for the new version myCobot 320 Pi are as follows:
+    - ubuntu18.04
+    -  picomain 1.3
+    -  atommain 5.0
+
+    This firmware combination is up to mystudio version v3.5.7
 
 **Q: Why can't the device run normally after I burn the firmware to the ATOM terminal?**
-- A: The firmware of the ATOM terminal needs to use our factory firmware. Other unofficial firmware cannot be changed during use. If the device accidentally burns other firmware, you can use the `[myStudio](../../5-BasicApplication/5.2-ApplicationUse/5.2.2-mystudio/320pi/README.md)
-` reburn ATOM firmware.
+- A: The firmware of the ATOM terminal needs to use our factory firmware. Other unofficial firmware cannot be changed during use. If the device accidentally burns other firmware, you can use the [myStudio](../../5-BasicApplication/5.2-ApplicationUse/5.2.2-mystudio/320pi/README.md) reburn ATOM firmware.
 
 
 
-**Q: What should I do if myCobot's serial port is not recognized on mystudio?**
-- A: If your computer equipment does not prompt for the connected myCobot, please install the serial port driver first.
 
-**Q: Can the track recorded by drag teaching be saved to the card?**
-
-- A: Currently it cannot be saved to the memory card. And drag teaching can only save one path at a time, and the next recording will overwrite the previous action.
 
 
 ## 2 About Roboflow
@@ -49,8 +55,8 @@
 
 
 **Q: What version of firmware should myCobot phone controller app be programmed with?**
-- A: You need to burn the atom firmware version atommain 2.5 in mystudio.
-
+- A: You need to burn the atom firmware version atommain 2.5 in myStudio.
+>As of 2023/2/4, the mobile APP control function has been disabled, please pay attention to the release of mystudio firmware version when restarting.
 
 
 ## 4 About myblockly
@@ -62,7 +68,9 @@
 
 - A: Before running the myblockly program, close the serial port occupation.
 
+**Q: myblockly always appears child process exited with code 0 when running, why?**
 
+- A: This is not an error. Real errors need to be analyzed on a case-by-case basis. This string of characters represents the end of the program, and returns the binary number 0, representing termination.
 
 ## 5 About ROS1
 

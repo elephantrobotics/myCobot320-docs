@@ -63,14 +63,14 @@ A2: 180°/s.
 
 
 
-<img src =../resources/3-UserNotes/14-IssueFAQ/参数.png
+<img src =../../resources/3-UserNotes/14-IssueFAQ/参数.png
 width ="500"  align = "center">
 
 
 
 
 
-<img src =../resources/3-UserNotes/14-IssueFAQ/mycobot_pro320.png
+<img src =../../resources/3-UserNotes/14-IssueFAQ/mycobot_pro320.png
 width ="500"  align = "center">
 
 # Questions about Gripper & End
