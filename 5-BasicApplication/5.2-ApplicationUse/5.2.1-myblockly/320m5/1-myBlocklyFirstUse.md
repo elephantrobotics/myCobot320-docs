@@ -11,4 +11,4 @@ Before downloading myBlockly, you need to configure the Python environment and u
 
 
 
-
+[← Previous Page](./README.md) | [Next Page →](./2-install_uninstall.md)

@@ -49,3 +49,8 @@ The graphics code is as follows:
 * Implementation content:
 
   The suction pump vibrates and starts working. The suction pump sucks up the object and puts it down after two seconds. After another two seconds, it repeats the previous action until the program ends.
+
+
+
+
+ [← Previous Page](./8-GripperUse.md) | [Next Page →](./10-Q%26A.md)

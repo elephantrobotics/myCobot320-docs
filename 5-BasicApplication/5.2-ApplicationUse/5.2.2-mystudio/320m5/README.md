@@ -24,7 +24,7 @@
 
   - Linux arm64
 
-    
+
 
 ## 3 myStudio function
 
@@ -32,3 +32,5 @@
 - Provide robot usage tutorials, such as user manuals, video tutorials, Q&A, etc.
 - Information on maintenance and repairs
 
+
+ [← Previous Section](../../5.2.1-myblockly/320m5/README.md) | [Next Page →](./1-setup.md)

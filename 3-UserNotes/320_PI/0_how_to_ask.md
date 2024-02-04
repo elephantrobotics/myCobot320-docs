@@ -7,9 +7,7 @@
 * The other party always despise me and do nothing.
 
 
-### 2 Before asking questions, make sure you have studied chapters three or four.
-
-Chapters **3 and 4** of this document are the basis for using the **my series**. No matter whether you have development experience or not, be sure to read and operate from front to back.
+### 2 Before asking questions, make sure you have studied the document.
 
 Many problems will be solved during this process. Do not ask questions in QQ groups, forums, issues, or emails at the very beginning. Many problems explained in the document at the beginning may not be answered in a timely by the community. To save everyone's time, and for a better community environment, everyone can grow together better, please understand each other.
 
@@ -62,7 +60,7 @@ Try to **don't** appear in such a title:
 * `Why is my board not working again?`
 * `Why is my code not working?`
 * `Why is my screen black?`
-* `[Mycobot question] I received the development board, why is the development board screen red and has a small line of text?` 
+* `[Mycobot question] I received the development board, why is the development board screen red and has a small line of text?`
 * `I ran a program and something went wrong.`
 
 You can ask this:
@@ -86,3 +84,7 @@ In summary, you can ask the following questions:
 * Attach log files, as well as screenshots, or even videos, logs and screenshots must be complete, not just a small part, the answerer may find some problems you did not notice from your full log and screenshots, this is very important.
 * In addition, pay attention to the format when pasting the code. Do not display it in a mess after pasting, and it cannot be seen. Try to copy it and run it directly.
 * Finally, you need to thank the community friends who answered the question.
+
+
+
+[← Previous Page](../3.1_320_PI_userNotes.md) | [Next Page →](./1_driver.md)

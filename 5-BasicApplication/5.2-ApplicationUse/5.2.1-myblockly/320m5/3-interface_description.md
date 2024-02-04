@@ -53,13 +53,13 @@ We use building blocks to implement such a small case: let the robotic arm retur
 
   ![](../../../../resources/5-BasicApplication/5.2.1/m5/img/power_on1.png)
 
-  
 
-  
+
+
 
   ![](../../../../resources/5-BasicApplication/5.2.1/m5/img/power_on2.png)
 
-  
+
 
   Click to `Run` button
 
@@ -69,7 +69,7 @@ We use building blocks to implement such a small case: let the robotic arm retur
 
 If the `End of program` text appears in the popup, the program is finish.
 
-Check whether the device is successfully powered on. 
+Check whether the device is successfully powered on.
 
 If the joint of the machine cannot be broken by hand, it is successfully powered on
 
@@ -79,7 +79,7 @@ And please click the `X` button to close  pop-up window
 
 ![](C:\Users\Administrator\Desktop\myCobot320-docs\5-BasicApplication\5.2-ApplicationUse\myblockly\320pi\img\power_on_finish.png)
 
-​	
+​
 
 
 
@@ -215,3 +215,10 @@ Also click the blue box and click the "Load" option to import the saved program.
 
 
 >**The basic function demonstration is completed, you can check the other information in [here](https://download-elephantrobotics.oss-cn-shenzhen.aliyuncs.com/software/myblockly/README/myblockly%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6-en.pdf)**
+
+
+
+
+
+
+[← Previous Page](./2-install_uninstall.md) | [Next Page →](./4-ControlRGB.md)
