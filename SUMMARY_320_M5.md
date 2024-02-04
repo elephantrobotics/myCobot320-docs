@@ -18,6 +18,7 @@
     * [2 myStudio](5-BasicApplication/5.2-ApplicationUse/5.2.2-mystudio/320m5/README.md)
   * [5.2 FirmwareUse]()
     * [1 firmware update info](5-BasicApplication/5.3-FirmwareUse/m5/1-firmware.md)
+    * [2 how to burn firmware](5-BasicApplication/5.3-FirmwareUse/m5/2-burn_firmware.md)
 * [6 SDK Development](6-SDKDevelopment/README.md)
   * [6.1 Development based on python](10-ApplicationBasePython/README.md)
     * [1 Environment Building](10-ApplicationBasePython/10.1_320_PI-ApplicationPython/1_download.md)
