@@ -55,9 +55,11 @@ Mall link:
 1 Installing the gripper <br>
 
 
+<!-- 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RPKjV0IuP5E?si=_AGbac6f1OUW81PM&amp;start=0" title="Installing the gripper" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</video> -->
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RPKjV0IuP5E?si=_AGbac6f1OUW81PM&amp;start=145" title="Installing the gripper" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RPKjV0IuP5E?si=_AGbac6f1OUW81PM&amp;start=0" frameborder="0" allowfullscreen></iframe>
 
 
 
