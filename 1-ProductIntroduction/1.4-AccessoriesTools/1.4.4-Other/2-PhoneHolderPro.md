@@ -1,16 +1,15 @@
-# **myCobotPro Mobile Phone Holder**
+# myCobotPro Mobile Phone Holder
 
-**Compatible models:** ER myCobot 320 series, ER myCobot 600
+> **Compatible models:** ER myCobot 320 series, ER myCobot 600
 
-**product icon**
+## Product Icon
 
-![pi](../../../resourse/2-serialproduct/2.7/2.7.5/IMG_1558.JPG)
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.4-Other/2-PhoneHoldPro/myCobot_Pro_PhoneHolder_J6-4.jpg" alt="img-1" width="800" height=“auto” /> <br>
 
-![pi](../../../resourse/2-serialproduct/2.7/2.7.5/IMG_1562.JPG)
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.4-Other/2-PhoneHoldPro/myCobot_Pro_PhoneHolder_J6-2.jpg" alt="img-2" width="400" height="auto" /><img src="../../../resources/1-ProductIntroduction/1.4/1.4.4-Other/2-PhoneHoldPro/myCobot_Pro_PhoneHolder_J6-3.jpg" alt="img-2" width="400" height="auto" />
 
-![pi](../../../resourse/2-serialproduct/2.7/2.7.5/IMG_0971.JPG)
 
-**Specifications:**
+## Specifications
 
 | **name**                     | **myCobotPro Mobile Phone Holder**    |
 | ---------------------------- | ------------------------------------- |
@@ -22,7 +21,7 @@
 | Use environment requirements | Temperature and pressure              |
 | Applicable equipment         | ER myCobot 320 series, ER myCobot 600 |
 
-**myCobotPro mobile phone gripper:** used for gripping objects
+## Use for Objects
 
 **Introduction**
 
@@ -32,4 +31,13 @@
 
 - shooting equipment
 
-Mall link:https://shop-elephantrobotics-com.translate.goog/collections/mycobot-pro-600/products/mycobot-pro-adaptive-gripper-black-white-for-mycobot-320-mycobot-pro-600-%E7%9A%84%E5%89%AF%E6%9C%AC?_x_tr_sl=auto&_x_tr_tl=zh-CN
+## Mall link: 
+
+-   [Taobao](https://shop504055678.taobao.com)
+-   [shopify](https://shop-elephantrobotics-com.translate.goog/collections/mycobot-pro-600/products/mycobot-pro-adaptive-gripper-black-white-for-mycobot-320-mycobot-pro-600-%E7%9A%84%E5%89%AF%E6%9C%AC?_x_tr_sl=auto&_x_tr_tl=zh-CN)
+
+ ## How to use
+
+1 Installing : <br>
+
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.4-Other/2-PhoneHoldPro/myCobot_Pro_PhoneHolder_J6-1.jpg" alt="img-1" width="800" height=“auto” /> <br>

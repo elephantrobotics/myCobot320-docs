@@ -1,18 +1,14 @@
-# **myCobotPro Pen Holder**
+# myCobotPro Pen Holder
 
-**Compatible models:** ER myCobot 320 series, ER myPalletizer 600
+> **Compatible models:** ER myCobot 320 series, ER myPalletizer 600
 
-**product icon**
+## Product Icon
 
-![pi](../../../resourse/2-serialproduct/2.7/2.7.5/IMG_0381.JPG)
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.4-Other/1-PenHoldPro/myCobotProPenHolder-1.jpg" alt="img-1" width="800" height=“auto” />
 
-![pi](../../../resourse/2-serialproduct/2.7/2.7.5/IMG_0383.JPG)
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.4-Other/1-PenHoldPro/myCobotProPenHolder-2.jpg" alt="img-2" width="800" height=“auto” />
 
-![pi](../../../resourse/2-serialproduct/2.7/2.7.5/IMG_0385.JPG)
-
-![pi](../../../resourse/2-serialproduct/2.7/2.7.5/IMG_0290.JPG)
-
-**Specifications:**
+## Specifications
 
 | **name**                     | **myCobotPro Pen Holder**                  |
 | ---------------------------- | ------------------------------------------ |
@@ -24,7 +20,9 @@
 | Use environment requirements | Temperature and pressure                   |
 | Applicable equipment         | ER myCobot 320 series, ER myPalletizer 600 |
 
-**myCobotPro Pen Holder:** Used when using the robotic arm to write and draw
+## Use for Objects
+
+Used when using the robotic arm to write and draw
 
 **Introduction**
 
@@ -34,6 +32,13 @@
 
 - Whiteboard pen
 
-Taobao link: [https://item.taobao.com/item.htm?spm=a1z10.5-cs.0.0.6945364bve0QX4&id=667084571424](https://item.taobao.com/item.htm?spm=a1z10.5-c-s.0.0.6945364bve0QX4&id=667084571424)
+## Mall link
 
- 
+-   [Taobao](https://shop504055678.taobao.com)
+-   [shopify](https://shop.elephantrobotics.com/)
+
+ ## How to use
+
+1 Installing : <br>
+
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.4-Other/1-PenHoldPro/myCobotProPenHolder-3.jpg" alt="img-1" width="800" height=“auto” /> <br>

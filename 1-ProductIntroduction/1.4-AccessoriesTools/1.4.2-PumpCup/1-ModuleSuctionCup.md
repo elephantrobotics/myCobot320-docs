@@ -1,12 +1,14 @@
-# **Module suction cup**
+# Module Suction Cup
 
-**Compatible models:** myCobot 320, myCobot Pro 600
+> **Compatible models:** myCobot 320, myCobot Pro 600
 
-**product icon**
+## Product Icon
 
-![pi](../../../resourse/2-serialproduct/IMG_8392.jpg)
 
-**Specifications**
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.2-PumpCup/ModuleSuctionCup-1.jpg" alt="img-1" width="800" height=“auto” />
+
+
+## Specifications
 
 | **name**                     | **Module suction cup**                           |
 | ---------------------------- | ------------------------------------------------ |
@@ -22,7 +24,7 @@
 | Use environment requirements | Temperature and pressure                         |
 | Applicable equipment         | ER myCobot 320 series, ER myCobot Pro 600 series |
 
-**Suction cup suction pump:** used for adsorbing objects
+## Use for Objects
 
 **Introduction**
 
@@ -38,18 +40,19 @@
 
 **Applicable objects :** suitable for objects with flat surfaces
 
-**Appearance introduction**
+## Mall link: 
 
-- Multifunctional expandable suction cups, can install up to 4
+-   [Taobao](https://shop504055678.taobao.com)
+-   [shopify](https://shop.elephantrobotics.com/)
 
-![pi](../../../resourse/2-serialproduct/IMG_8238.jpg)
+ ## How to use
 
-- High pressure resistant hose, can be reused many times
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.2-PumpCup/ModuleSuctionCup-2.jpg" alt="img-1" width="800" height=“auto” />
 
-  ![pi](../../../resourse/2-serialproduct/IMG_8264.jpg)
+For a system incorporating a suction cup, solenoid valve, and vacuum pump, the connection typically works as follows:
 
-- Suction and blowing integrated air compressor, can expand other functions
+1. **Vacuum Pump**: This is the source of vacuum pressure. It should be connected to the solenoid valve's inlet port.
+2. **Solenoid Valve**: Acts as a control mechanism that regulates when and how the vacuum is applied or released to the suction cup. The vacuum pump connects to one side of the solenoid valve, and the suction cup connects to the outlet side.
+3. **Suction Cup**: This is the end-effector that directly interacts with the objects to be manipulated. It connects to the outlet side of the solenoid valve.
 
-  ![pi](../../../resourse/2-serialproduct/IMG_8000.jpg)
-
-**Mall link：**NO...
+In operation, when the solenoid valve is energized, it opens, allowing vacuum pressure from the pump to reach the suction cup, enabling it to grip objects. De-energizing the valve cuts off the vacuum, allowing air to flow back to the suction cup, releasing the grip on the object. This setup is efficient for automation systems requiring precise control over picking and placing items.

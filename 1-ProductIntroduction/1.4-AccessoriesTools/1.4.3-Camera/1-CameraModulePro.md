@@ -1,11 +1,12 @@
-# **myCobotPro camera module**
+# myCobotPro Camera Module
 
-**Compatible models:** myCobot 320, myCobot 600
+> **Compatible models:** myCobot 320, myCobot 600
 
-**product icon**![pi](../../../resourse/2-serialproduct/2.7/2.7.4/IMG_8897.JPG)
-![pi](../../../resourse/2-serialproduct/2.7/2.7.4/IMG_1571.JPG)
+## Product Icon
 
-**Specifications:**
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.3-Camera/myCobotProCameraModule-1.jpg" alt="img-1" width="800" height=“auto” />
+
+## Specifications
 
 | **name**                     | **myCobotPro camera module**                    |
 | ---------------------------- | ----------------------------------------------- |
@@ -18,7 +19,9 @@
 | service life                 | two years                                       |
 | a fixed way                  | screw fixed                                     |
 | Use environment requirements | Temperature and pressure                        |
-| Applicable equipment support | ER myCobot 320 Series ER myCobot Pro 600 Series |
+| Applicable equipment support | ER myCobot 320 Series <br> ER myCobot Pro 600 Series |
+
+## Use for Objects
 
 **Camera Flange:** Machine Vision
 
@@ -26,6 +29,9 @@
 
 - USB high-definition camera can be used with suction pump, self-adaptive gripper, artificial intelligence kit, etc., eye in hand to achieve precise positioning and calibration.
 
-Mall link: https://shop-elephantrobotics-com.translate.goog/collections/mycobot-pro-600/products/mycobotpro-cameraflange?_x_tr_sl=auto&_x_tr_tl=zh-CN
+## Mall link: 
+
+-   [Taobao](https://shop504055678.taobao.com)
+-   [shopify](https://shop-elephantrobotics-com.translate.goog/collections/mycobot-pro-600/products/mycobotpro-cameraflange?_x_tr_sl=auto&_x_tr_tl=zh-CN)
 
  
