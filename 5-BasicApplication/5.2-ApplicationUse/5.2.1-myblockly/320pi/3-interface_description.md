@@ -27,7 +27,9 @@
 
 Before officially starting programming, be sure to select the corresponding **machine model**, otherwise it will easily cause hardware damage.
 
-First  we select the initialization model as `myCobot 320`, the port connected to my computer is `COM8`(**The default serial port on myCobot 320 Pi is `/dev/ttyAMA0`. If you are in myCobot 320 Pi, select  `/dev/ttyAMA0`**)
+First  we select the initialization model as `myCobot 320` 
+
+(**The default serial port on myCobot 320 Pi is `/dev/ttyAMA0`. If you are in myCobot 320 Pi, select  `/dev/ttyAMA0`**)
 
 And the baud rate is `115200`
 
@@ -149,7 +151,7 @@ When using the control panel to control the machine, be sure to select the corre
 
 
 
-Here we choose the Robot `myCobot 320` ,`Port` is `COM8`,and the baud rate `115200`
+Here we choose the Robot `myCobot 320` ,`Port` is `/dev/ttyAMA0`,and the baud rate `115200`
 
 <img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/interface/qm.png" style="zoom: 67%;" />
 
