@@ -78,3 +78,5 @@
 -  **Switch to Negative Pressure**: For negative pressure adjustment, pull up the regulator cap, turn to set, then push down to lock.
 
 Special Reminder ⚠️: Regarding pressure maintenance, both positive and negative pressures can be maintained after 0.5 seconds of activation, allowing the mechanical grip to retain its preset pressure. This approach is energy-efficient, especially since maintaining negative pressure continuously consumes more air. Additionally, it prevents the loss of grip on objects in case of unexpected power or air supply cut-offs, ensuring operational reliability.
+
+[← Accessories Tools Page](../../1.4-AccessoriesTools/1.4-AccessoriesTools.md) 

@@ -1,4 +1,4 @@
-# myCobotPro Pen Holder
+# myCobot Pro Pen Holder
 
 > **Compatible models:** ER myCobot 320 series, ER myPalletizer 600
 
@@ -42,3 +42,6 @@ Used when using the robotic arm to write and draw
 1 Installing : <br>
 
 <img src="../../../resources/1-ProductIntroduction/1.4/1.4.4-Other/1-PenHoldPro/myCobotProPenHolder-3.jpg" alt="img-1" width="800" height=“auto” /> <br>
+
+
+[← Accessories Tools Page](../../1.4-AccessoriesTools/1.4-AccessoriesTools.md) | [Next Page →](../1.4.4-Other/2-PhoneHolderPro.md)

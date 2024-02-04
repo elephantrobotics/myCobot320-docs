@@ -61,8 +61,10 @@ Mall link:
 
 
 
-2 Development with SDK  
+<!-- 2 Development with SDK  
 -   [Blockly]()     
 -   [Python]()
--   [C++]()
+-   [C++]() -->
 
+----
+[← Accessories Tools Page](../../1.4-AccessoriesTools/1.4-AccessoriesTools.md) | [Next Page →](../1.4.1-Gripper/2-ElectricGripper.md)

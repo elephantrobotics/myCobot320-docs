@@ -79,7 +79,9 @@ Mall link:
 <img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/myCobot-Pro-EG2.jpg" alt="img-2" width="480" height="auto" /> <br>
 
 
-2 Development with SDK  
+<!-- 2 Development with SDK  
 -   [Blockly]()     
 -   [Python]()
--   [C++]()
+-   [C++]() -->
+
+[← Accessories Tools Page](../../1.4-AccessoriesTools/1.4-AccessoriesTools.md) | [Next Page →](../1.4.1-Gripper/3-PneumaticGripper.md)

@@ -56,3 +56,5 @@ For a system incorporating a suction cup, solenoid valve, and vacuum pump, the c
 3. **Suction Cup**: This is the end-effector that directly interacts with the objects to be manipulated. It connects to the outlet side of the solenoid valve.
 
 In operation, when the solenoid valve is energized, it opens, allowing vacuum pressure from the pump to reach the suction cup, enabling it to grip objects. De-energizing the valve cuts off the vacuum, allowing air to flow back to the suction cup, releasing the grip on the object. This setup is efficient for automation systems requiring precise control over picking and placing items.
+
+[← Accessories Tools Page](../../1.4-AccessoriesTools/1.4-AccessoriesTools.md) 
