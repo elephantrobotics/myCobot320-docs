@@ -1,12 +1,14 @@
-# **Electric Gripper**
+# Electric Gripper
 
-**Compatible models:** myCobot 320, myCobot Pro 600
+> **Compatible models:** myCobot 320, myCobot Pro 600
 
-**product icon**
+## Product icon
 
-![pi](../../../resourse/2-serialproduct/gripper_pge_50.png)
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/myCobot-Pro-EG1.jpg" alt="img-1" width="800" height=“auto” />
 
-**Specifications:**
+
+
+## Specifications:
 
 | **name**                     | **mycobot Pro Electric Gripper**     |
 | ---------------------------- | ------------------------------------ |
@@ -25,7 +27,7 @@
 | control interface control    | Serial port/IO control               |
 | Applicable equipment         | ER myCobot 320 ，ER myCobot Pro 600  |
 
-**Electric Gripper:** Used to pick up objects
+## Use for Gripping Objects
 
 **Introduction**
 
@@ -45,10 +47,11 @@
 
 - Custom fingertips can expand more items
 
-**Product parameters**
+## Product parameters
 
-![pi](../../../resourse/2-serialproduct/GE-1.png)
-![pi](../../../resourse/2-serialproduct/GE-2.png)
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/myCobot-Pro-EG3.png" alt="img-2" width="800" height="auto" />
+
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/myCobot-Pro-EG4.png" alt="img-2" width="800" height="auto" />
 
 **operating environment**
 
@@ -61,17 +64,22 @@
 | degree of protection    | IP40           |
 | Recommended environment | 0-40℃          |
 
-Mall link:https://shop-elephantrobotics-com.translate.goog/collections/mycobot-pro-600/products/electric-parallel-gripper?_x_tr_sl=auto&_x_tr_tl=zh-CNhttps://item.taobao.com/item.htm?spm=a1z10.5-c-s.0.0.6945364bve0QX4&id=667084571424)
+## Mall link
 
-**How to use**
+Mall link: 
+-   [Taobao](https://shop504055678.taobao.com)
+-   [shopify](https://shop.elephantrobotics.com/)
 
-Installing the gripper: <br>
+<!-- - [Shopify](https://shop-elephantrobotics-com.translate.goog/collections/mycobot-pro-600/products/electric-parallel-gripper?_x_tr_sl=auto&_x_tr_tl=zh-CNhttps://item.taobao.com/item.htm?spm=a1z10.5-c-s.0.0.6945364bve0QX4&id=667084571424) -->
+
+## How to use
+
+1 Installing the gripper: <br>
 - For an electric gripper, insert it into the 485 interface on the top, as shown in the following figure:  <br>
-![](../../../resourse/6-ApplicationBaseRoboFlow/6.5/6.6_2.png)<br>
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/myCobot-Pro-EG2.jpg" alt="img-2" width="480" height="auto" /> <br>
 
 
-It supports myCobot320. Function Description: <br>
-- Run RoboFlow and select M5Stack-basic – Gripper ; <br>
-- click Define New Gripper, fill in Gripper Name as "DH PGE 8” (must be this name), and then click Save; <br>
-- select open or close for Saved status. The overall steps are shown in the following figure: <br>
-![](../../../resourse/6-ApplicationBaseRoboFlow/6.5/6.6.2_3.gif)<br>
+2 Development with SDK  
+-   [Blockly]()     
+-   [Python]()
+-   [C++]()

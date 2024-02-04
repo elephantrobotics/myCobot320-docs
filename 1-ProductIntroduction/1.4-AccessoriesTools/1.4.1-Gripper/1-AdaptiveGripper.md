@@ -2,9 +2,9 @@
 
 > **Compatible models:** myCobot 320, myCobot Pro 600
 
-<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/AdaptiveGripper-3.png" alt="img-1" width="480" height=“auto” />
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/AdaptiveGripper-3.png" alt="img-1" width="800" height=“auto” />
 
-<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/AdaptiveGripper-4.jpg" alt="img-2" width="240" height="auto" /><img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/AdaptiveGripper-1.jpg" alt="img-3" width="240" height="auto" />
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/AdaptiveGripper-4.jpg" alt="img-2" width="400" height="auto" /><img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/AdaptiveGripper-1.jpg" alt="img-3" width="400" height="auto" />
 
 ## Specifications
 
@@ -25,7 +25,7 @@
 | control interface control     | Serial port/IO control                          |
 | Applicable equipment          | ER myCobot 320 series, ER myCobot Pro 600       |
 
-**Adaptive Gripper:** Use for Gripping Objects
+## Use for Gripping Objects
 
 **Introduction**
 
@@ -46,12 +46,15 @@
 - long object
 
 Mall link: 
+
 -   [Taobao](https://shop504055678.taobao.com)
 -   [shopify](https://shop.elephantrobotics.com/)
 
 
 ## How to use
 1 Installing the gripper <br>
+
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RPKjV0IuP5E?si=_AGbac6f1OUW81PM&amp;start=145" title="Installing the gripper" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </video>

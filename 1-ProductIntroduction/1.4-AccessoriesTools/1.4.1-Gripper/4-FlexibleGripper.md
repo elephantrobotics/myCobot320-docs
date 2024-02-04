@@ -1,14 +1,14 @@
-# **Flexible Gripper**
+# Flexible Gripper Pro
 
-**Compatible models:** myCobot 320, myCobot Pro 600
+> **Compatible models:** myCobot 320, myCobot Pro 600
 
-**product icon**
+## product icon
 
 ![pi](../../../resourse/2-serialproduct/2.7/2.7.3/IMG_0055.JPG)
 
 ![pi](../../../resourse/2-serialproduct/2.7/2.7.3/IMG_0120.JPG)
 
-**Specifications:**
+## Specifications
 
 | **name name**                 | **myCobotPro Flexible Gripper**           |
 | ----------------------------- | ----------------------------------------- |
@@ -26,7 +26,7 @@
 | control interface control     | I/O control                               |
 | Applicable equipment          | ER myCobot 320 series, ER myCobot Pro 600 |
 
-**Flexible gripper:** used for gripping objects
+## Use for Gripping Objects
 
 **Introduction**
 
@@ -44,6 +44,9 @@
 
 - Objects of any shape within a reasonable size
 
-Mall link:https://shop-elephantrobotics-com.translate.goog/collections/mycobot-pro-600/products/mycobot-pro-soft-gripper?_x_tr_sl=auto&_x_tr_tl=zh-CN
+## Mall link: 
+
+-   [Taobao](https://shop504055678.taobao.com)
+-   [shopify](https://shop.elephantrobotics.com/)
 
  

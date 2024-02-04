@@ -1,10 +1,10 @@
-# **pneumatic gripper**
+# **Pneumatic gripper**
 
 **Compatible models:** myCobot 320, myCobot Pro 600
 
 **product icon**
 
-![pi](../../../resourse/2-serialproduct/气动.png)
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/3-PneumaticGripper/PneumaticGripper.jpg" alt="img-2" width="800" height="auto" /> <br>
 
 **Specifications:**
 
@@ -25,7 +25,7 @@
 | control interface control    | I/O control                                            |
 | Applicable equipment         | ER myCobot 320 M5 ER myCobot 320 Pi ER myCobot Pro 600 |
 
-**Pneumatic Gripper:** used for gripping objects
+## Use for Gripping Objects
 
 **Introduction**
 
@@ -53,21 +53,23 @@
 
 ![pi](../../../resourse/2-serialproduct/gripper_pa2.jpg)
 
-Specifications
 
+## Mall link
 
+-   [Taobao](https://shop504055678.taobao.com)
+-   [shopify](https://shop.elephantrobotics.com/)
 
-| **Cylinder body (mm)**        | **6**                                                        | **10**  | **16**  | **20** |
-| ----------------------------- | ------------------------------------------------------------ | ------- | ------- | ------ |
-| Guide bearing width           | 5                                                            | 7       | 9       | 12     |
-| use fluid                     | Air                                                          |         |         |        |
-| action mode                   | Double acting                                                |         |         |        |
-| Minimum working pressure      | 0.15MPa                                                      | 0.06MPa | 0.05MPa |        |
-| Maximum working pressure      | 0.7MPa                                                       |         |         |        |
-| Ambient and fluid temperature | Without magnetic switch: -10~+70℃, with magnetic switch: -10~+60℃ (but for freezing) |         |         |        |
-| Piston speed                  | 50-500mm/s                                                   |         |         |        |
-| Allowable kinetic energy J    | 0.0125                                                       | 0.025   | 0.05    | 0.1    |
-| Give oil                      | unnecessary                                                  |         |         |        |
-| buffer                        | Rubber bumpers on both ends                                  |         |         |        |
+<!-- - [Shopify](https://shop-elephantrobotics-com.translate.goog/collections/mycobot-pro-600/products/air-parallel-grippers-air-compressor?_x_tr_sl=auto&_x_tr_tl=zh-CN) -->
 
-Mall link:https://shop-elephantrobotics-com.translate.goog/collections/mycobot-pro-600/products/air-parallel-grippers-air-compressor?_x_tr_sl=auto&_x_tr_tl=zh-CN
+## How to use
+
+1 Installing the gripper: <br>
+
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/3-PneumaticGripper/PneumaticGripper2.jpg" alt="img-2" width="400" height="auto" /> <br>
+
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/3-PneumaticGripper/PneumaticGripper3.jpg" alt="img-2" width="400" height="auto" /> <br>
+
+2 Development with SDK  
+-   [Blockly]()     
+-   [Python]()
+-   [C++]()
