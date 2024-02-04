@@ -44,4 +44,4 @@ Used when using the robotic arm to write and draw
 <img src="../../../resources/1-ProductIntroduction/1.4/1.4.4-Other/1-PenHoldPro/myCobotProPenHolder-3.jpg" alt="img-1" width="800" height=“auto” /> <br>
 
 
-[← Accessories Tools Page](../../1.4-AccessoriesTools/1.4-AccessoriesTools.md) | [Next Page →](../1.4.4-Other/2-PhoneHolderPro.md)
+[← Accessories Tools Page](../../1.4-AccessoriesTools/1.4-AccessoriesTools.md#holder) | [Next Page →](../1.4.4-Other/2-PhoneHolderPro.md)

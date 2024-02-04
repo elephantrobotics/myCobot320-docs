@@ -43,4 +43,4 @@
 <img src="../../../resources/1-ProductIntroduction/1.4/1.4.4-Other/2-PhoneHoldPro/myCobot_Pro_PhoneHolder_J6-1.jpg" alt="img-1" width="800" height=“auto” /> <br>
 
 --------
-[← Accessories Tools Page](../../1.4-AccessoriesTools/1.4-AccessoriesTools.md) 
+[← Accessories Tools Page](../../1.4-AccessoriesTools/1.4-AccessoriesTools.md#holder) 

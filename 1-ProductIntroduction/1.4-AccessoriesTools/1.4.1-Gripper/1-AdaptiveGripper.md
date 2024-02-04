@@ -67,5 +67,5 @@ Mall link:
 -   [C++]() -->
 
 ----
-[← Accessories Tools Page](../1.4-AccessoriesTools.md#Gripper)
+[← Accessories Tools Page](../1.4-AccessoriesTools.md#gripper)
  | [Next Page →](../1.4.1-Gripper/2-ElectricGripper.md)

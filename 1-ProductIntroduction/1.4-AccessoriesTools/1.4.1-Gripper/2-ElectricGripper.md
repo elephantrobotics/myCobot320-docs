@@ -84,4 +84,4 @@ Mall link:
 -   [Python]()
 -   [C++]() -->
 
-[← Accessories Tools Page](../../1.4-AccessoriesTools/1.4-AccessoriesTools.md) | [Next Page →](../1.4.1-Gripper/3-PneumaticGripper.md)
+[← Accessories Tools Page](../1.4-AccessoriesTools.md#gripper) | [Next Page →](../1.4.1-Gripper/3-PneumaticGripper.md)
