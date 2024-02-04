@@ -29,12 +29,12 @@ pip install pymycobot --upgrade
 
 ## 3 Import of pymycobot 
 
-This part takes MyPalletizer 260-M5 as an example to introduce how to control a robot via python. 
+This part takes MyCobot 320 Pi as an example to introduce how to control a robot via python. 
 
-* Import  pymycobot  library for MyPalletizer :
+* Import  pymycobot  library for MyCobot :
 
 ```python
-from pymycobot.mypalletizer import MyPalletizer
+from pymycobot.mycobot import MyCobot
 ```
 
 > **Notice:**
