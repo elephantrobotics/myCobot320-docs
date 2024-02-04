@@ -1,4 +1,4 @@
-# 8 Use of clamping jaws
+# 8 Use of gripper
 
 <i>Preparation before you begin</i>
 
@@ -81,6 +81,22 @@ The graphics code is as follows:
   The jaws close at speed 70,
 
   After the process of opening and closing the jaws is cycled 5 times, the program ends.
+
+
+
+**Note**:
+
+If you can't control the girpper from the above example, maybe you need to set the gripper mode
+
+<img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/case/gripper_item2.png" style="zoom:80%;" />
+
+
+
+<img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/case/gripper_item3.png" style="zoom:80%;" />
+
+And run the program
+
+
 
 
 
