@@ -622,3 +622,6 @@ API or Application Programming Interface refers to a number of preset programs. 
   - `account (str)`: new wifi account. 
   - `password (str)`: new wifi password.
 
+---
+
+[← Previous Page](1_download.md) | [Next Page →](3_TCPIP.md)

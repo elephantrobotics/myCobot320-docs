@@ -254,3 +254,7 @@ print("gripper value:", mc.get_gripper_value())
 <video id="my-video" class="video-js" controls preload="auto" width="100%"
 poster="" data-setup='{"aspectRatio":"16:9"}'>
   <source src="../../resources/10-ApplicationBasePython/myArm/2.7夹爪的安装与使用01.mp4"></video>
+
+---
+
+[← Previous Page](5_Handle_control.md) | [Next Section →](../../11-ApplicationBaseROS/11.1-ROS1/11.1.2-PI.md)
