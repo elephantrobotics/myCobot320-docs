@@ -71,7 +71,7 @@ and please click the `X` button to close  pop-up window
 
 ![](../../../../resources/5-BasicApplication/5.2.1/pi/img/power_on_finish.png)
 
-​
+
 
 
 
@@ -79,9 +79,9 @@ and please click the `X` button to close  pop-up window
 
 - Click the `MDI Control` category in the toolbox, select the `Set Angle` building block and drag it to the workspace
 
-![](../../../../resources/5-BasicApplication/5.2.1/pi/img/interface/小案例1.png)
+<img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/interface/小案例1.png" style="zoom:50%;" />
 
-<img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/interface/小案例2.png" style="zoom:50%;" />
+<img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/interface/小案例2.png" style="zoom:80%;" />
 
 - Click the `Time` category in the toolbox, select the `Sleep` building block and drag it to the workspace; click the mouse on the input box and change the input value of the building block to `5`
 
@@ -91,11 +91,11 @@ and please click the `X` button to close  pop-up window
 
 - Click the `MDI Control` category in the toolbox again, select the `Set Angle` building block and drag it to the workspace; at the same time, change the input value of `J1` to 30
 
-  <img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/interface/小案例5.png" style="zoom: 50%;" />
+  <img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/interface/小案例5.png"  />
 
 
 
-  <img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/interface/小案例6.png" style="zoom: 67%;" />
+  	<img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/interface/小案例6.png" style="zoom: 67%;" />
 
 
 

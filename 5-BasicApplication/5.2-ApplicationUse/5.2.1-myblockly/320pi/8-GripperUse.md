@@ -68,7 +68,7 @@ How to use myBlockly to control the adaptive gripper attached to the myCobot 320
 
 The graphics code is as follows:
 
-<img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/case/gripper.png" style="zoom: 50%;" />
+<img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/case/gripper.png"  />
 
 
 
@@ -85,4 +85,4 @@ The graphics code is as follows:
 
 
 
- [← Previous Page](./7-ControlSinglesJoint.md) | [Next Page →](./9-PumpUse.md)
+ [← Previous Page](./7-ControlSinglesJoint.md) | [Next Page →](./9-api.md)
