@@ -7,20 +7,13 @@
 ## 1 About mystudio
 
 **Q: What is mystudio?**
-- A: It is the firmware burner.
+
+- A: It is the firmware burner. [About more](../../5-BasicApplication/5.2-ApplicationUse/5.2.2-mystudio/320pi/README.md)
 
 
 **Q: Why can't the device run normally after I burn the firmware to the ATOM terminal?**
-- A: The firmware of the ATOM terminal needs to use our factory firmware. Other unofficial firmware cannot be changed during use. If the device accidentally burns other firmware, you can use the "myCobot firmware burner" to select the ATOM terminal - select the serial port - select the ATOMMAIN firmware for ATOM terminal for burning.
-
-
-
-**Q: Can the drag teaching in the minirobot firmware control the gripper?**
-- A: It is achievable.
-
-
-**Q: Why can't drag teaching after the minirobot firmware is burned?**
-- A: First, check whether the M5Stack-basic firmware and atom firmware have been burned, whether the burned firmware corresponds to the requirements to be realized, and whether the burned firmware is the latest version. The bottom M5Stack-basic burns the minirobot, and the top atom burns the atommain.
+- A: The firmware of the ATOM terminal needs to use our factory firmware. Other unofficial firmware cannot be changed during use. If the device accidentally burns other firmware, you can use the `[myStudio](../../5-BasicApplication/5.2-ApplicationUse/5.2.2-mystudio/320pi/README.md)
+` reburn ATOM firmware.
 
 
 
@@ -50,7 +43,8 @@
 
 
 
-	​
+
+
 ## 3 About mycobot phone controller
 
 
@@ -61,6 +55,8 @@
 
 ## 4 About myblockly
 
+**Q: What is myblockly?**
+ - A:[About myblockly](../../5-BasicApplication/5.2-ApplicationUse/5.2.1-myblockly/320pi/README.md)
 
 **Q: Why does a pop-up box always appear when myblockly is running?**
 
@@ -125,3 +121,9 @@ source ~/.bashrc
 ```
 
 - A3: The file name in the instruction may not be the same as the file name in the mycobot_ros package. Please carefully check whether the instruction is incorrect.
+
+
+
+
+
+[← Previous Page](./1_driver.md) | [Next Page →](./3_hardware.md)

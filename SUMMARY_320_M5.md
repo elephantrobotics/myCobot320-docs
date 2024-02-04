@@ -2,7 +2,7 @@
 
 * [1 Product Introduction](1-ProductIntroduction/README.md)
 * [2 Product Feature](2-ProductFreature/README.md)
-* [3 User Notes](3-UserNotes/README.md)
+* [3 User Notes](3-UserNotes/3.2_320_M5_userNotes.md)
 * [4 First Install and Use](4-FirstInstallAndUse/4.2_320_M5_firstUse.md)
 * [5 Basic Application](5-BasicApplication/README.md)
   * [5.2 ApplicationUse](5-BasicApplication/README.md)
