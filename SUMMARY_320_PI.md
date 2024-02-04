@@ -8,6 +8,7 @@
   * [4.2 Product Unboxing Guide](4-FirstInstallAndUse/4.1.2-产品开箱.md)
   * [4.3 Power-on Test Guide](4-FirstInstallAndUse/4.1.3-开机检测.md)
 * [5 Basic Application](5-BasicApplication/README.md)
+  * [5.1 System instruction manual](5-BasicApplication/5.1-SystemUsageInstructions/320pi/5.1-SystemUsageInstructions.md)
   * [5.2 ApplicationUse](5-BasicApplication/README.md)
     * [1 myblockly](5-BasicApplication/5.2-ApplicationUse/5.2.1-myblockly/320pi/README.md)
     * [2 myStudio](5-BasicApplication/5.2-ApplicationUse/5.2.2-mystudio/320pi/README.md)
