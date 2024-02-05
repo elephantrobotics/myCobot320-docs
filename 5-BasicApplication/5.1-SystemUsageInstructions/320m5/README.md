@@ -1,6 +1,8 @@
 # Factory firmware introduction
 
-The myCobot 320 M5 version comes with the built-in miniRoboflow application software, developed independently by Elephant Robotics. With simple button interactions, you can achieve functions such as drag teaching, communication forwarding, status checking, and zero-point calibration. The built-in software has a straightforward user interface and is easy to use. With communication forwarding capability, you can control the robot using various programming languages and development environments, making robot control easily accessible.
+The myCobot 320 M5 version comes with the built-in miniRoboflow application software, developed independently by Elephant Robotics. With simple button interactions, you can achieve functions such as drag teaching, communication forwarding, status checking, and zero-point calibration. 
+
+The built-in software has a straightforward user interface and is easy to use. With communication forwarding capability, you can control the robot using various programming languages and development environments, making robot control easily accessible.
 
 
 ## miniRoboFlow
@@ -15,4 +17,10 @@ The myCobot 320 M5 version comes with the built-in miniRoboflow application soft
   - Communication timeliness is vital to the micro-controller robot arm.For such arm, we often send control instructions to **M5Stack-basic** at the bottom. Through communication forwarding, the end effector analyzes the instructions and then implements target actions. At present, **myCobot280** has three methods of communication: **serial port, Bluetooth, and WIFI**. 
 - [**Information**](/5-BasicApplication/5.1-SystemUsageInstructions/320m5/4.2.4-connection/4.2.4.1-micro_controller.md)
   - Link test is a detection function that uses the motor in the robot arm and the connection state of **Atom**. The function allows the user to remove equipment faults easily. During the link test, the connection state of the equipment for the robot arm, including the **connection of the servo** and the **communication state of Atom** can be seen. In micro-controller devices, the versions of their current firmwares are shown on M5Stack-basic.
+
+
+----
+If you have already read all the content in this chapter, please proceed to the next chapter.<br>
+
+[Next Chapter →](../../5.2-ApplicationUse/5.2.1-myblockly/320m5/README.md)<br>
 
