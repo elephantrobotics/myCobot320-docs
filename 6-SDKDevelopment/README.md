@@ -8,7 +8,7 @@ myCobot 320 for M5 is developed and used on the basis of PC. As there is no buil
 
 In order to meet the diverse application needs of robots in different scenarios, we have adapted the robot for multiple programming languages. So far, we have adapted the following mainstream programming languages. If you find any of the following languages challenging, you can return to the [myBlockly](../5-BasicApplication/5.2-ApplicationUse/5.2.1-myblockly/320m5/README.md) section and use a visual programming language for development. However, we believe that you can use any of the following languages for development. Please make sure to strictly follow the instructions during the operation. Any missed steps may result in the corresponding language not running successfully. We wish you smooth and successful robot usage.
 
-|<img src="../resources/3-UserNotes/3.1-SafetyInstructions/warning.png" alt="img-2" width="600" height=“auto” /> |If you wish to use the following programming languages, please ensure that your robot has been configured under the Transponder section with the USB/Wi-Fi mode and confirm that the connection is correct.|
+|<img src="../resources/3-UserNotes/3.1-SafetyInstructions/warning.png" alt="img-2" width="100" height=“100” /> |If you wish to use the following programming languages, please ensure that your robot has been configured under the Transponder section with the USB/Wi-Fi mode and confirm that the connection is correct.|
 |------------------------|-------------------|
 
 
