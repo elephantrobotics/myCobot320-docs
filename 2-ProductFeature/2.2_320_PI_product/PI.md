@@ -2,7 +2,7 @@
 
 ## 1 Profile
 
-![image-20220524154701032](../../resources/8-FilesDownload/2-serialproduct/320Pi.jpg)
+<img src="../../resources/8-FilesDownload/2-serialproduct/320Pi.jpg " width="800" height="auto" />
 
 **myCobot 320 Pi** belongs to myCobot 320 series and adopts a Raspberry Pi microprocessor. Its body weights 3kg with a load of 1kg and a working radius of 320 mm. The small-sized product is endowed with powerful functions. It is characterized by easy operation, ability to work with human safely and features three advantages of usability, safety and economy, making it a cost-effective product.
 

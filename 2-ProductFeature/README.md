@@ -1,6 +1,6 @@
 # myCobot 320
 
-![320](../resources/8-FilesDownload/2-serialproduct/320.png)
+<img src="../resources/8-FilesDownload/2-serialproduct/320.png " width="800" height="auto" />
 
 *320, meaning 320 mm, refers to the effective working radius of the robot arm.*
 
