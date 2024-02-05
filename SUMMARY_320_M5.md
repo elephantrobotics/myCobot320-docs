@@ -59,6 +59,7 @@
     * [1 arduino Download](16-ArduinoEnv320/16.1-arduino_download.md)
     * [2 API](16-ArduinoEnv320/16.2-api.md)
     * [3 example](16-ArduinoEnv320/16.3-example.md)
+  * [6.7 Communication Message Protocol](/6-SDKDevelopment/6.1-CommunicationDoc.md)
 * [7 Examples of Robots Using](7-ExamplesRobotsUsing/7.2_320_M5_Examples.md)
 * [8 Documents Download](8-FilesDownload/README.md)
   * [8.1 Gitbook Download](https://www.elephantrobotics.com/)

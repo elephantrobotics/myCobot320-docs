@@ -29,4 +29,7 @@ C++ is the inheritance of C Language. It can not only carry out the procedural p
 * [6.6 Arduino](../16-ArduinoEnv320/README.md)<br>
 Arduino is an easy-to-use, open-source electronic prototyping platform that includes hardware (various Arduino-compliant development boards) and software (Arduino IDE and related development kits). The hardware part (or development board) consists of a microcontroller (MCU), flash memory (Flash), and a set of general-purpose input/output interfaces (GPIO), etc. It can be understood as a microcomputer motherboard. The software part is mainly composed of Arduino IDE on the PC side, related board support packages (BSP) and rich third-party function libraries. Users can use Arduino IDE to easily download the BSP related to the development board and the required function library to write program.
 
+* [6.7 Communication](./6.1-CommunicationDoc.md)<br>
+If you happen to have some understanding of information theory, coding, and robot communication functionality, then you should grasp that all communication originates from data transmission. To make it more convenient for users to operate the robot, we have opened up a communication protocol based on serial communication. You can use a serial assistant or encapsulate it into any programming language you are familiar with to control the robot.
+
  
