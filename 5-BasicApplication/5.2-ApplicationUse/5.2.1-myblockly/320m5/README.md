@@ -24,5 +24,10 @@ The process of generating code into the text box is the process of the user drag
 
 - Linux arm64
 
+----
 
-[← Previous Section]() | [Next Page →](./1-myBlocklyFirstUse.md)
+[← Previous Section]() | [Next Page →](./1-myBlocklyFirstUse.md)<br>
+
+----
+
+[Next Chapter →](../../5.2.2-mystudio/320m5/README.md)<br>
