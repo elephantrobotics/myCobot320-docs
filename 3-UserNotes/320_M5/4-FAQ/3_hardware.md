@@ -103,4 +103,4 @@ A2: We doesn't support Android development. If you want to develop it by yoursel
 
 
 
-[← Previous Page](./2_software.md) | [Next Section →](../../4-FirstInstallAndUse/4.2_320_M5_firstUse.md)
+[← Previous Page](./2_software.md) | [Back FAQs Page →](../4-FAQ/3.2_320_M5_userNotes.md)
