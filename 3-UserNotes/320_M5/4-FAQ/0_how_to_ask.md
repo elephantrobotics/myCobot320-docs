@@ -88,4 +88,4 @@ In summary, you can ask the following questions:
 
 
 
-[← Previous Page](../3.2_320_M5_userNotes.md) | [Next Page →](./1_driver.md)
+[← Previous Page](../4-FAQ/3.2_320_M5_userNotes.md) | [Next Page →](./1_driver.md)

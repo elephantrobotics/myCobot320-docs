@@ -1,13 +1,21 @@
 # Elephant Gitbook
 
 * [1 Product Introduction](1-ProductIntroduction/README.md)
+  * [1.1 Design Philosophy](1-ProductIntroduction/1.1-DesignPhilosophy.md)
+  * [1.2 Suitable Users](1-ProductIntroduction/1.2-SuitableUsers.md)
+  * [1.3 Application Scenario](1-ProductIntroduction/1.3-ApplicationScenario.md)
+  * [1.4 Accessories Tools](1-ProductIntroduction/1.4-AccessoriesTools/1.4-AccessoriesTools.md)
 * [2 Product Feature](2-ProductFeature/2.1_320_M5_product/M5.md)
   * [2.1 MachineSpecification](2-ProductFeature/2.1_320_M5_product/2.1.1-MachineSpecification.md)
   * [2.2 ControlCoreParameter](2-ProductFeature/2.1_320_M5_product/2.1.2-ControlCoreParameter.md)
   * [2.3 MechanicalStructureParameter](2-ProductFeature/2.1_320_M5_product/2.1.3-MechanicalStructureParameter.md)
   * [2.4 ElectricalCharacteristicParameter](2-ProductFeature/2.1_320_M5_product/2.1.4-ElectricalCharacteristicParameter.md)
   * [2.4 CoordinateSystem](2-ProductFeature/2.1_320_M5_product/2.1.5-CoordinateSystem.md)
-* [3 User Notes](3-UserNotes/3.2_320_M5_userNotes.md)
+* [3 User Notes]() <br>
+  * [3.1 Safety Instructions](3-UserNotes/320_M5/3.1.1-SafetyInstruction/1-SafetyInstruction.md)
+  * [3.2 Transport and Storage](3-UserNotes/320_M5/3.1.2-TransportandStorage/1-TransportandStorage.md)
+  * [3.3 Maintenance and Care](/3-UserNotes/320_M5/3.1.3-MaintenanceandCare/1-MaintenanceandCare.md)
+  * [3.4 FAQ](3-UserNotes/320_M5/4-FAQ/3.2_320_M5_userNotes.md)
 * [4 First Install and Use](4-FirstInstallAndUse/4.2_320_M5_firstUse.md)
   * [4.1 Product Standard List](4-FirstInstallAndUse/4.2.1-产品清单.md)
   * [4.2 Product Unboxing Guide](4-FirstInstallAndUse/4.2.2-产品开箱.md)
@@ -61,15 +69,3 @@
 * [9 About Us](9-AboutUs/README.md)
   * [9.1 Elephant Robotics](9-AboutUs/9.1_company.md)
   * [9.2 Contact us](9-AboutUs/9.2_contact.md)
-
-* [12 ApplicationBaseCPlus](12-ApplicationBaseCPlus/README.md)
-  * [12.1 CPlus Download](12-ApplicationBaseCPlus/12.1-download.md)
-  * [12.2 build](12-ApplicationBaseCPlus/12.2-build.md)
-  * [12.3 API](12-ApplicationBaseCPlus/12.3-API.md)
-  * [12.4 example](12-ApplicationBaseCPlus/12.3-example.md)
-* [14 communication](14-communication/14-communication.md)
-
-* [16 Arduino](16-ArduinoEnv320/README.md)
-  * [16.1 arduino Download](16-ArduinoEnv320/16.1-arduino_download.md)
-  * [16.2 API](16-ArduinoEnv320/16.2-api.md)
-  * [16.4 example](16-ArduinoEnv320/16.3-example.md)

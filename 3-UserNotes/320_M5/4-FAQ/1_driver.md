@@ -13,7 +13,7 @@
 
 **Q: Are sample tutorials for the python API provided?**
 
-- A: Yes, there is test code in the test folder of github, which can be executed with the terminal. https://github.com/elephantrobotics/pymycobot/tree/main/demo/myCobot_320_demo
+- A: Yes, there is test code in the test folder of github, which can be executed with the terminal. "https://github.com/elephantrobotics/pymycobot/tree/main/demo/myCobot_320_demo"
 
 **Q: Are the python apis the same for different versions of robotic arms?**
 
@@ -41,7 +41,7 @@
 **Q: Can you provide files and programming examples of the rviz model?**
 
 - A: It is available on our github.
-https://github.com/elephantrobotics/mycobot_ros
+"https://github.com/elephantrobotics/mycobot_ros"
 
 
 
@@ -65,4 +65,4 @@ https://github.com/elephantrobotics/mycobot_ros
 
 
 
-[← Previous Page](./0_how_to_ask.md) | [Next Page →](./2_software.md)
+[← Previous Page](./3.2_320_M5_userNotes.md) | [Next Page →](./2_software.md)
