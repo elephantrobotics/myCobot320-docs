@@ -6,7 +6,7 @@ myCobot 320 for M5 is developed and used on the basis of PC. As there is no buil
 
 ## 2 Development Environment
 
-In order to meet the diverse application needs of robots in different scenarios, we have adapted the robot for multiple programming languages. So far, we have adapted the following mainstream programming languages. If you find any of the following languages challenging, you can return to the [myBlockly](../5-BasicApplication/5.2-ApplicationUse/5.2.1-myblockly/320m5/README.md) section and use a visual programming language for development. However, we believe that you can use any of the following languages for development. Please make sure to strictly follow the instructions during the operation. Any missed steps may result in the corresponding language not running successfully. We wish you smooth and successful robot usage.
+In order to meet the diverse application needs of robots in different scenarios, we have adapted the robot for multiple programming languages. So far, we have adapted the following mainstream programming languages. If you find any of the following languages challenging, you can return to the **[myBlockly](../5-BasicApplication/5.2-ApplicationUse/5.2.1-myblockly/320m5/README.md)** section and use a visual programming language for development. However, we believe that you can use any of the following languages for development. Please make sure to strictly follow the instructions during the operation. Any missed steps may result in the corresponding language not running successfully. We wish you smooth and successful robot usage.
 
 |<img src="../resources/3-UserNotes/3.1-SafetyInstructions/warning.png" alt="img-2" width="100" height=“100” /> |If you wish to use the following programming languages, please ensure that your robot has been configured under the Transponder section with the USB/Wi-Fi mode and confirm that the connection is correct.|
 |------------------------|-------------------|
@@ -32,4 +32,5 @@ Arduino is an easy-to-use, open-source electronic prototyping platform that incl
 * [6.7 Communication](./6.1-CommunicationDoc.md)<br>
 If you happen to have some understanding of information theory, coding, and robot communication functionality, then you should grasp that all communication originates from data transmission. To make it more convenient for users to operate the robot, we have opened up a communication protocol based on serial communication. You can use a serial assistant or encapsulate it into any programming language you are familiar with to control the robot.
 
- 
+ ----
+[← Basic Application](../../README.md) | [Files Download →](/8-FilesDownload/README.md)
