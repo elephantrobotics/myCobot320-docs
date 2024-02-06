@@ -23,4 +23,4 @@ By thoroughly reading this section, users will better understand how to use the 
 ----
 
 If you have already read all the content in this chapter, please proceed to the next chapter.   <br>
-[← Previous Chapter](/2-ProductFeature/2.1_320_M5_product/M5.md) | [Next Chapter →](/4-FirstInstallAndUse/README.md)
+[← Previous Chapter](/2-ProductFeature/2.1_320_M5_product/M5.md) | [Next Chapter →](/4-FirstInstallAndUse/4.2-M5/4.2_320_M5_firstUse.md)
