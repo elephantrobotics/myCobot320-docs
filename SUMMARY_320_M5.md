@@ -26,12 +26,12 @@
 
 * [5 Basic Application](5-BasicApplication/README.md)
   * [5.1 miniRoboflow](/5-BasicApplication/5.1-SystemUsageInstructions/320m5/README.md) <br>
-    * [1 Trag & Play](/5-BasicApplication/5.1-SystemUsageInstructions/320m5/4.2.1.1-micro_controller.md) <br>
+    * [1 Drag & Play](/5-BasicApplication/5.1-SystemUsageInstructions/320m5/4.2.1.1-micro_controller.md) <br>
     * [2 Joint Calibration](/5-BasicApplication/5.1-SystemUsageInstructions/320m5/4.2.2.1-micro_controller.md) <br>
     * [3 Computer Connect](/5-BasicApplication/5.1-SystemUsageInstructions/320m5/4.2.3.1-micro_controller.md) <br>
     * [4 Robot Information](/5-BasicApplication/5.1-SystemUsageInstructions/320m5/4.2.4.1-micro_controller.md) <br>  
-  * [5.2 Firmware Vision](5-BasicApplication/5.3-FirmwareUse/m5/1-firmware.md)
-    * [1 how to burn firmware](5-BasicApplication/5.3-FirmwareUse/m5/2-burn_firmware.md)
+  * [5.2 Firmware Description](5-BasicApplication/5.3-FirmwareUse/m5/1-firmware.md)
+    * [1 Burn Firmware](5-BasicApplication/5.3-FirmwareUse/m5/2-burn_firmware.md)
   * [5.3 Application Use](5-BasicApplication/README.md)
     * [1 myblockly](5-BasicApplication/5.2-ApplicationUse/5.2.1-myblockly/320m5/README.md)
     * [2 myStudio](5-BasicApplication/5.2-ApplicationUse/5.2.2-mystudio/320m5/README.md)
@@ -77,8 +77,8 @@
   * [8.2 Product Brochure](8-FilesDownload/8.2_320_M5_Files/8.2_productBrochure.md)
   * [8.3 Software and Source Code](8-FilesDownload/8.2_320_M5_Files/8.3_softwareSource.md)
   * [8.4 System Information](8-FilesDownload/8.2_320_M5_Files/8.4_systemInfo.md)
-  * [8.5 Publicity Material](8-FilesDownload/8.2_320_M5_Files/8.5_publicityMaterial.md)
-  
+  * [8.5 Publicity Material](/8-FilesDownload/8.2_320_M5_Files/8.5_PublicityMaterial.md)
+
 * [9 About Us](9-AboutUs/README.md)
   * [9.1 Elephant Robotics](9-AboutUs/9.1_company.md)
   * [9.2 Contact us](9-AboutUs/9.2_contact.md)
