@@ -2,7 +2,7 @@
 
 * [1 Product Introduction](1-ProductIntroduction/README.md)
 * [2 Product Feature](2-ProductFeature/2.2_320_PI_product/README.md)
-  * [2.1 MachineSpecification](2-ProductFeature/2.2_320_PI_product/2.2.1-MachineSpecification.md)
+  * [2.1 MachineSpecification](2-ProductFeature/2.2_320_PI_product/2.2.ss1-MachineSpecification.md)
   * [2.2 ControlCoreParameter](2-ProductFeature/2.2_320_PI_product/2.2.2-ControlCoreParameter.md)
   * [2.3 MechanicalStructureParameter](2-ProductFeature/2.2_320_PI_product/2.2.3-MechanicalStructureParameter.md)
   * [2.4 ElectricalCharacteristicParameter](2-ProductFeature/2.2_320_PI_product/2.2.4-ElectricalCharacteristicParameter.md)
