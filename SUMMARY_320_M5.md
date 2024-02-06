@@ -5,13 +5,13 @@
   * [1.2 Suitable Users](1-ProductIntroduction/1.2-SuitableUsers.md)
   * [1.3 Application Scenario](1-ProductIntroduction/1.3-ApplicationScenario.md)
   * [1.4 Accessories Tools](1-ProductIntroduction/1.4-AccessoriesTools/1.4-AccessoriesTools.md)
-* [2 Product Feature](2-ProductFeature/2.1_320_M5_product/M5.md)
+* [2 Product Feature](2-ProductFeature/2.1_320_M5_product/README.md)
   * [2.1 Functional Parameters](2-ProductFeature/2.1_320_M5_product/2.1.1-MachineSpecification.md)
   * [2.2 Controller Parameters](2-ProductFeature/2.1_320_M5_product/2.1.2-ControlCoreParameter.md)
   * [2.3 Structural Parameters](2-ProductFeature/2.1_320_M5_product/2.1.3-MechanicalStructureParameter.md)
   * [2.4 Electronic Parameters](2-ProductFeature/2.1_320_M5_product/2.1.4-ElectricalCharacteristicParameter.md)
-  * [2.4 Coordinate System](2-ProductFeature/2.1_320_M5_product/2.1.5-CoordinateSystem.md)
-* [3 User Notes]() <br>
+  * [2.5 Coordinate System](2-ProductFeature/2.1_320_M5_product/2.1.5-CoordinateSystem.md)
+* [3 User Notes](3-UserNotes/320_M5/REMADE.md) <br>
   * [3.1 Safety Instructions](3-UserNotes/320_M5/3.1.1-SafetyInstruction/1-SafetyInstruction.md)
   * [3.2 Transport and Storage](3-UserNotes/320_M5/3.1.2-TransportandStorage/1-TransportandStorage.md)
   * [3.3 Maintenance and Care](/3-UserNotes/320_M5/3.1.3-MaintenanceandCare/1-MaintenanceandCare.md)
