@@ -13,7 +13,7 @@
   * [2.4 Electronic Parameters](2-ProductFeature/2.1_320_M5_product/2.1.4-ElectricalCharacteristicParameter.md)
   * [2.4 Coordinate System](2-ProductFeature/2.1_320_M5_product/2.1.5-CoordinateSystem.md)
 
-* [3 User Notes]() <br>
+* [3 User Notes](/3-UserNotes/320_M5/REMADE.md) <br>
   * [3.1 Safety Instructions](3-UserNotes/320_M5/3.1.1-SafetyInstruction/1-SafetyInstruction.md)
   * [3.2 Transport and Storage](3-UserNotes/320_M5/3.1.2-TransportandStorage/1-TransportandStorage.md)
   * [3.3 Maintenance and Care](/3-UserNotes/320_M5/3.1.3-MaintenanceandCare/1-MaintenanceandCare.md)
@@ -26,12 +26,12 @@
 
 * [5 Basic Application](5-BasicApplication/README.md)
   * [5.1 miniRoboflow](/5-BasicApplication/5.1-SystemUsageInstructions/320m5/README.md) <br>
-    * [1 Trag & Play](/5-BasicApplication/5.1-SystemUsageInstructions/320m5/4.2.1.1-micro_controller.md) <br>
+    * [1 Drag & Play](/5-BasicApplication/5.1-SystemUsageInstructions/320m5/4.2.1.1-micro_controller.md) <br>
     * [2 Joint Calibration](/5-BasicApplication/5.1-SystemUsageInstructions/320m5/4.2.2.1-micro_controller.md) <br>
     * [3 Computer Connect](/5-BasicApplication/5.1-SystemUsageInstructions/320m5/4.2.3.1-micro_controller.md) <br>
     * [4 Robot Information](/5-BasicApplication/5.1-SystemUsageInstructions/320m5/4.2.4.1-micro_controller.md) <br>  
-  * [5.2 Firmware Vision](5-BasicApplication/5.3-FirmwareUse/m5/1-firmware.md)
-    * [1 how to burn firmware](5-BasicApplication/5.3-FirmwareUse/m5/2-burn_firmware.md)
+  * [5.2 Firmware Description](5-BasicApplication/5.3-FirmwareUse/m5/1-firmware.md)
+    * [1 Burn Firmware](5-BasicApplication/5.3-FirmwareUse/m5/2-burn_firmware.md)
   * [5.3 Application Use](5-BasicApplication/README.md)
     * [1 myblockly](5-BasicApplication/5.2-ApplicationUse/5.2.1-myblockly/320m5/README.md)
     * [2 myStudio](5-BasicApplication/5.2-ApplicationUse/5.2.2-mystudio/320m5/README.md)

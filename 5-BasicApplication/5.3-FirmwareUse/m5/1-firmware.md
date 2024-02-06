@@ -1,8 +1,16 @@
+# Firmware Description  
+
+<img src="../../../resources/4-FirstInstallAndUse/320withPC.jpg" alt="img-1" width="600" height=“auto” /> 
+
+The myCobot 320 robot consists of three controller parts: Basic (a small screen with buttons at the base), Pico (a chip inside the flat Type-C interface on the base), and Atom (the LED light board at the robot's end-effector). 
+
+The Basic controller is responsible for handling external interactions, converting data into information that the robot can recognize. So you can use USB Line Connect computer By Basic Type-C Port. (On the left side of the screen.)
+
+The Pico controller manages robot motion algorithms, joint control, and bottom IO control. (No connection is required for normal use.)
+
+The Atom controller is in charge of processing data information from the tool interface and IO control. Together, these three components collaborate to ensure the proper functioning of the robot. (No connection is required for normal use.)
+
 ## Atom(atommain) firmware update instructions
-
-
-
-
 
 | Version                                                      | Firmware function description (function items)               | Version iteration record                                     | Firmware usage instructions                                  | Applicable devices                                           |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
