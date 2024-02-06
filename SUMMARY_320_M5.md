@@ -77,8 +77,8 @@
   * [8.2 Product Brochure](8-FilesDownload/8.2_320_M5_Files/8.2_productBrochure.md)
   * [8.3 Software and Source Code](8-FilesDownload/8.2_320_M5_Files/8.3_softwareSource.md)
   * [8.4 System Information](8-FilesDownload/8.2_320_M5_Files/8.4_systemInfo.md)
-  * [8.5 Publicity Material](8-FilesDownload/8.2_320_M5_Files/8.5_publicityMaterial.md)
-  
+  * [8.5 Publicity Material](/8-FilesDownload/8.2_320_M5_Files/8.5_PublicityMaterial.md)
+
 * [9 About Us](9-AboutUs/README.md)
   * [9.1 Elephant Robotics](9-AboutUs/9.1_company.md)
   * [9.2 Contact us](9-AboutUs/9.2_contact.md)
