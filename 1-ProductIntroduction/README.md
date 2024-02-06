@@ -66,4 +66,4 @@ We greatly appreciate you taking the time to read the myCobot 320 user manual. W
 ----
 If you have already read all the content in this chapter, please proceed to the next chapter.<br>
 
-[Next Chapter →](../../myCobot320-docs/2-ProductFeature/README.md)<br>
+[Next Chapter →](../2-ProductFeature/2.1_320_M5_product/README.md)<br>
