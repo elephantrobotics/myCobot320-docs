@@ -1,13 +1,13 @@
 # Elephant Gitbook
 
 * [1 Product Introduction](1-ProductIntroduction/README.md)
-* [2 Product Feature](2-ProductFeature/2.2_320_PI_product/PI.md)
-  * [2.1 MachineSpecification](2-ProductFeature/2.2_320_PI_product/2.2.1-MachineSpecification.md)
+* [2 Product Feature](2-ProductFeature/2.2_320_PI_product/README.md)
+  * [2.1 MachineSpecification](2-ProductFeature/2.2_320_PI_product/2.2.ss1-MachineSpecification.md)
   * [2.2 ControlCoreParameter](2-ProductFeature/2.2_320_PI_product/2.2.2-ControlCoreParameter.md)
   * [2.3 MechanicalStructureParameter](2-ProductFeature/2.2_320_PI_product/2.2.3-MechanicalStructureParameter.md)
   * [2.4 ElectricalCharacteristicParameter](2-ProductFeature/2.2_320_PI_product/2.2.4-ElectricalCharacteristicParameter.md)
-  * [2.4 CoordinateSystem](2-ProductFeature/2.2_320_PI_product/2.2.5-CoordinateSystem.md)
-* [3 User Notes](3-UserNotes/3.1_320_PI_userNotes.md)
+  * [2.5 CoordinateSystem](2-ProductFeature/2.2_320_PI_product/2.2.5-CoordinateSystem.md)
+* [3 User Notes](3-UserNotes/320_PI/README.md)
 * [4 First Install and Use](4-FirstInstallAndUse/4.1_320_PI_firstUse.md)
   * [4.1 Product Standard List](4-FirstInstallAndUse/4.1.1-产品清单.md)
   * [4.2 Product Unboxing Guide](4-FirstInstallAndUse/4.1.2-产品开箱.md)
