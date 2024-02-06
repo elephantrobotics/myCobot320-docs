@@ -13,8 +13,8 @@
   * [2.4 Electronic Parameters](2-ProductFeature/2.1_320_M5_product/2.1.4-ElectricalCharacteristicParameter.md)
   * [2.5 Coordinate System](2-ProductFeature/2.1_320_M5_product/2.1.5-CoordinateSystem.md)
 
-* [3 User Notes]() <br>
-  * [3.1 Safety Instructions](3-UserNotes/320_M5/REMADE.md)
+* [3 User Notes](3-UserNotes/320_M5/REMADE.md) <br>
+  * [3.1 Safety Instructions](3-UserNotes/320_M5/3.1.1-SafetyInstruction/1-SafetyInstruction.md)
   * [3.2 Transport and Storage](3-UserNotes/320_M5/3.1.2-TransportandStorage/1-TransportandStorage.md)
   * [3.3 Maintenance and Care](/3-UserNotes/320_M5/3.1.3-MaintenanceandCare/1-MaintenanceandCare.md)
   * [3.4 FAQs](3-UserNotes/320_M5/4-FAQ/3.2_320_M5_userNotes.md)
