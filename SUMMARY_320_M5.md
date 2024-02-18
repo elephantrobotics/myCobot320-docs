@@ -35,7 +35,7 @@
     * [1 CPlus Download](12-ApplicationBaseCPlus/12.1-download.md)
     * [2 build](12-ApplicationBaseCPlus/12.2-build.md)
     * [3 API](12-ApplicationBaseCPlus/12.3-API.md)
-    * [4 example](12-ApplicationBaseCPlus/12.3-example.md)
+    * [4 example](12-ApplicationBaseCPlus/12.4-example.md)
   * [6.6 Arduino](16-ArduinoEnv320/README.md)
     * [1 arduino Download](16-ArduinoEnv320/16.1-arduino_download.md)
     * [2 API](16-ArduinoEnv320/16.2-api.md)
