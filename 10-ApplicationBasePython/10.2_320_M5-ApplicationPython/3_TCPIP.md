@@ -77,3 +77,7 @@ Follow the steps below.
 **Step 9:** Press WLAN Server on the M5Stack-basic to connect successfully.
 
 <img src="../../resources/10-ApplicationBasePython/TCPIP/UartAssist7.jpg" alt="7.1.1-1" style="zoom: 25%;" >
+
+---
+
+[← Previous Page](2_API.md) | [Next Page →](4_Handle_control.md)

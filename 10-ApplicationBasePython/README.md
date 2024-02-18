@@ -28,3 +28,7 @@ The interpreter of **Python** is easily extensible, and new functions and data t
 
 - **M5** series version， the bottom **M5Stack-basic** is programmed to miniRobot , select the  **Transponder** function, and the end **ATOM** is programmed to the latest version of atomMain (the factory default has been programmed)
 - **Pi \ jetsonnano** series, **ATOM** burns the latest version of **atomMain** (factory default already burnt)
+
+---
+
+[← Previous Chapter](../5-BasicApplication/5.2-ApplicationUse/5.2.1-myblockly/320m5/1-myBlocklyFirstUse.md) | [Next Page →](../10-ApplicationBasePython/10.2_320_M5-ApplicationPython/1_download.md)

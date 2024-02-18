@@ -9,10 +9,6 @@ While C++ is good at object-oriented programming, it also can be used to carry o
 C++ not only has the practical characteristics of efficient computer operation, but also strives to improve the programming quality of large-scale programs and the problem description ability of programming languages.<br>
 
 **Applicable equipment:**
-
-- myCobot 280
-  - myCobot 280 M5
-  - myCobot 280 for Arduino <br>
   
 - myCobot 320
   - myCobot 320 M5 <br>
@@ -35,3 +31,6 @@ C++ not only has the practical characteristics of efficient computer operation, 
 **C-Free**<br> 
 **MinGW**<br> 
 
+---
+
+[← Previous Section](../15-ApplicationBaseCSharp/15.6C-M5.md) | [Next Page →](12.1-download.md)
