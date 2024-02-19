@@ -1,4 +1,4 @@
-# 7 Control multiple joints
+# Control multiple joints
 
 <i>Preparation before you begin</i>
 

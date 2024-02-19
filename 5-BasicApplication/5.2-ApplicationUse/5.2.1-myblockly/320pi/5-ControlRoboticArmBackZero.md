@@ -1,4 +1,4 @@
-# 5 Control the robotic arm to return to the origin
+# Control the robotic arm to return to the origin
 
 <i>Preparation before you begin</i>
 

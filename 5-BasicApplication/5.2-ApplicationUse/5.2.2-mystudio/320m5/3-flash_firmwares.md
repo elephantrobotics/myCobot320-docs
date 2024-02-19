@@ -1,4 +1,4 @@
-# 3-Burn and update firmware
+# Burn and update firmware
 
 **[myStudio Video tutorial](https://www.bilibili.com/video/BV1Qr4y1N7B5/)**
 

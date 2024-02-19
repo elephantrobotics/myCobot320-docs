@@ -1,4 +1,4 @@
-# 10 Q&A
+# Q&A
 
 This chapter lists common problems with using myBlockly to control robotic arms for reference.
 

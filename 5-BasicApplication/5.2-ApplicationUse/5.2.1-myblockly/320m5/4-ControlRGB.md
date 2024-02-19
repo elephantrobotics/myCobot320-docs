@@ -1,4 +1,4 @@
-# 4 Control RGB light panel
+# Control RGB light panel
 
 <i>Preparation before you begin</i>
 
