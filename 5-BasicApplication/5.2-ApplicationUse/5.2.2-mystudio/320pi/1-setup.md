@@ -1,4 +1,4 @@
-# 1 myStudio environment setup
+# myStudio environment setup
 
 ## Download
 

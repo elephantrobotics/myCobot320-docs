@@ -1,4 +1,4 @@
-# 2 myBlockly download and install
+# myBlockly download and install
 
 ### Download
 

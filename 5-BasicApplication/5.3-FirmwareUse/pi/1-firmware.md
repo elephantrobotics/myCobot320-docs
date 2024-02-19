@@ -1,4 +1,4 @@
-## Atom(atommain) firmware update instructions
+## Atom(atom main) firmware update instructions
 
 | Version                                                      | Firmware function description (function items)               | Version iteration record                                     | Firmware usage instructions                                  | Applicable devices                                           |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |

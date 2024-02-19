@@ -1,4 +1,4 @@
-# 2 Install driver
+# Install driver
 
 Users can click the button below to download the corresponding **CP210X** or **CP34X** driver compressed package according to the operating system they are using. After decompressing the compressed package, select the installation package corresponding to the number of bits of the operating system to install.
 
