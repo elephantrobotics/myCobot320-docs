@@ -1,4 +1,4 @@
-# 2 Install driver
+# Install driver
 
 Users can click the button below to download the corresponding **CP210X** or **CP34X** driver compressed package according to the operating system they are using. After decompressing the compressed package, select the installation package corresponding to the number of bits of the operating system to install.
 
@@ -46,3 +46,6 @@ For Mac OS, before installing make sure system "Preferences->Security & Privacy-
 
 ![CP210C](../../../../resources/5-BasicApplication/5.2.2/m5/img/4.1.1.3-CP210X.jpg)
 
+
+
+[← Previous Page](./1-setup.md) | [Next Page →](./3-flash_firmwares.md)

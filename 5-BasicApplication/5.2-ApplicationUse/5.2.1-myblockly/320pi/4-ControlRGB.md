@@ -1,4 +1,4 @@
-# 4 Control RGB light panel
+# Control RGB light panel
 
 <i>Preparation before you begin</i>
 
@@ -16,7 +16,7 @@ How to control RGB light panel using myBlockly
 
 * method module：`Set color`
 
-  <img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/case/setcolor_item.png" style="zoom: 33%;" />
+  <img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/case/setcolor_item.png" style="zoom: 67%;" />
 
 <img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/blocks/atom/1.png"/>
 
@@ -42,8 +42,12 @@ How to control RGB light panel using myBlockly
 
 The graphics code is as follows:
 
-<img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/case/setcolor.png" style="zoom: 50%;" />
+<img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/case/setcolor.png"  />
 
 * What is implemented:
 
   The color of the robotic arm RGB light panel is controlled to change sequentially from "blue-red-green", and the whole process is cycled seven times.次。
+
+
+
+ [← Previous Page](./3-interface_description.md) | [Next Page →](./5-ControlRoboticArmBackZero.md)

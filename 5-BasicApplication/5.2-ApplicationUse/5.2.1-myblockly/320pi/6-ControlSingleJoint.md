@@ -1,4 +1,4 @@
-# 6 Control single joint movement
+# Control single joint movement
 
 <i>Preparation before you begin</i>
 
@@ -16,7 +16,7 @@ How to use myBlockly to control the single joint movement of the robotic arm
 
 * method module：`Set Joint`
 
-  <img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/case/singlejoint_item.png" style="zoom: 50%;" />
+  <img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/case/singlejoint_item.png" style="zoom: 80%;" />
 
   <img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/blocks/mid/3.png" />
 
@@ -37,7 +37,7 @@ How to use myBlockly to control the single joint movement of the robotic arm
 
 * The graphics code is as follows:
 
-  <img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/case/singjoint.png" style="zoom: 50%;" />
+  <img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/case/singjoint.png" style="zoom: 80%;" />
 
 * Implementation content:
 
@@ -52,3 +52,7 @@ How to use myBlockly to control the single joint movement of the robotic arm
   Control the 5 joints of the robotic arm to run at a speed of 50 to the position of joint 5 with an angle of 20. After one second,
 
   Control the 6 joints of the robotic arm to run at a speed of 50 to the position of the 6 joint angle of 20
+
+
+
+ [← Previous Page](./5-ControlRoboticArmBackZero.md) | [Next Page →](./7-ControlSinglesJoint.md)

@@ -1,8 +1,8 @@
-# 2 myBlockly download and install
+# myBlockly download and install
 
 ### Download
 
-download link**[Official website address](https://www.elephantrobotics.com/en/downloads/)**
+download link **[Official website address](https://www.elephantrobotics.com/en/downloads/)**
 
 You need to download different installation packages according to your operating system.
 
@@ -33,7 +33,7 @@ Click to `Run`
 
 ![](../../../../resources/5-BasicApplication/5.2.1/m5/img/install_2.png)
 
-After clicking `Install`, wait for myblockly installation to complete
+After clicking `Install`, wait for `**myblockly`installation to complete
 
 ![](../../../../resources/5-BasicApplication/5.2.1/m5/img/install_3.png)
 
@@ -53,7 +53,7 @@ The installation is complete, click the `Finish` button to open and run myblockl
 
 ### For Linux systems install myblockly
 
-Download the Linux version of myblockly from the official website and you will get an installation package as shown below
+Download the Linux version of `myblockly` from the official website and you will get an installation package as shown below
 
 ![](../../../../resources/5-BasicApplication/5.2.1/m5/img/appimage.png)
 
@@ -145,3 +145,5 @@ If you want to update myblockly, please go to the [official website](https://www
 
 
 
+
+[← Previous Page](./1-myBlocklyFirstUse.md) | [Next Page →](./3-interface_description.md)

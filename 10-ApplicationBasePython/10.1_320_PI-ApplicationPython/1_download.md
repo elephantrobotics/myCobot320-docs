@@ -11,167 +11,14 @@ At present, Python has two versions: `2.x` and `3.x`. These two versions are inc
 
 ### 1.1 Installing Python
 
-> **Notice:** Before installation, check the operation system of PC. Press right button on the `My Computer` icon and  then select `Properties`. Install the corresponding Python.
->
-> <img src="../../resources/10-ApplicationBasePython/operatingsystemchecking1.jpg" alt="7.1.1-1" style="zoom:50%;" />
->
-> <img src="../../resources/10-ApplicationBasePython/operatingsystemchecking2.jpg" alt="7.1.1-1" style="zoom:50%;" />
+The Raspberry Pi version comes with an Ubuntu (V-20.04) system and a built-in Python development environment, so you don't need to build and manage it.
 
-
-
-* **Go to http://www.python.org/download/ to download Python.**
-* **Click on `Downloads`, and then download begins. Tick `Add Python 3.10 to PATH`. Click on `Install Now`, and then installation begins.**
-
-<img src="../../resources/10-ApplicationBasePython/pythoninstall1.jpg" alt="7.1.1-1" style="zoom:50%;" />
-
-<img src="../../resources/10-ApplicationBasePython/pythoninstall2.jpg" alt="7.1.1-1" style="zoom:50%;" />
-
-<img src="../../resources/10-ApplicationBasePython/pythoninstall3.jpg" alt="7.1.1-1" style="zoom:50%;" />
-
-* **Download and installation complete.**
-
-  <img src="../../resources/10-ApplicationBasePython/pythoninstall4.jpg" alt="7.1.1-1" style="zoom:50%;" />
-
-
-
-### 1.2 Running Python
-Open the command prompt window (Win+R, input `cmd` and press `Enter`). Type `Python`.
-
-**Successful Installation:**
-
-<img src="../../resources/10-ApplicationBasePython/successfulinstallation.jpg" alt="7.1.1-1" style="zoom:50%;" />
-
-This on-screen instruction means that Python is successfully installed. The prompt `>>>` means Python interactive environment. If you input a Python code to get the execution result immediately.
-
-
-
-**Error Report:** 
-
-If a wrong instruction is typed, for example "pythonn", the system may report an error.
-
-<img src="../../resources/10-ApplicationBasePython/installerror.jpg" alt="7.1.1-1" style="zoom: 67%;" />
-
-> **Notice:** Generally, the error results from lack of environment configuration. Refer to **1.3 Environment Configuration** to solve problems.
-
-
-
-### 1.3 Environment Variable Configuration 
-Windows follows the path set by a Path environment variable in search of **python.exe** . Otherwise, an error will be reported. If you fail to tick `Add Python 3.9 to PATH` during installation, you need to manually add the path where python.exe is located into environment variable or download python again. Remember to tick `Add Python 3.9 to PATH` .
-
-Follow the steps below to add python into environment variable manually.
-
-* Right click on `My Computer` icon -->Properties ->Advanced System Settings ->Environment Variables
-
-<img src="../../resources/10-ApplicationBasePython/environment configuration.jpg" alt="7.1.1-1" style="zoom: 50%;" />
-
-* The environment variables include user variables and system variables. For user variables, users can utilize their own downloaded programs via `cmd` command. Write the absolute path of the target program into the user variables.
-
-<img src="../../resources/10-ApplicationBasePython/user variable1.jpg" alt="7.1.1-10" style="zoom:50%;" />
-
-<img src="../../resources/10-ApplicationBasePython/user variable2.jpg" alt="7.1.1-11" style="zoom:50%;" />
-
-* After the configuration, open the command prompt window (Win+R; input `cmd` and press `Enter`), and type `Python`.
-
-<img src="../../resources/10-ApplicationBasePython/user variable3.jpg" alt="7.1.1-7" style="zoom: 67%;" />
-
-## 2 Installation of PyCharm
-
-PyCharm is a powerful python editor with the nature of cross-platform. Follow the steps below to download and install PyCharm.
-
-Go to **[PyCharm](http://www.jetbrains.com/pycharm/download/#section=windows)** to download PyCharm.
-
-### 2.1 Download and Installation
-
-Official website view:
-
-<img src="../../resources/10-ApplicationBasePython/pycharmdownload1.jpg" alt="7.1.1-7" style="zoom: 67%;" />
-
-It is recommended to install the free version.
-
-* Click on `Next`:
-
-<img src="../../resources/10-ApplicationBasePython/pycharmdownload2.jpg" alt="7.1.1-7" style="zoom: 67%;" />
-
-* Select options according to your needs and then select `Next`:
-
-<img src="../../resources/10-ApplicationBasePython/pycharmdownload3.jpg" alt="7.1.1-7" style="zoom: 67%;" />
-
-* Tap `Install`:
-
-<img src="../../resources/10-ApplicationBasePython/pycharmdownload4.jpg" alt="7.1.1-7" style="zoom: 67%;" />
-
-* Installing:
-
-<img src="../../resources/10-ApplicationBasePython/pycharmdownload5.jpg" alt="7.1.1-7" style="zoom: 67%;" />
-
-* Tap `Finish`
-
-  <img src="../../resources/10-ApplicationBasePython/pycharmdownload6.jpg" alt="7.1.1-7" style="zoom: 67%;" />
-
-
-
-### 2.2 Create a new project
-
-* Click `+New Project` :
-
-<img src="../../resources/10-ApplicationBasePython/createproject1.jpg" alt="7.1.1-7" style="zoom: 50%;" />
-
-*  The `Interpreter` is used to interpret python programs. Select  `Add Interpreter` ->`New`to add base interpreter.
-
-  <img src="../../resources/10-ApplicationBasePython/interpreter1.jpg" alt="7.1.1-7" style="zoom: 50%;" />
-
-  <img src="../../resources/10-ApplicationBasePython/interpreter3.jpg" alt="7.1.1-7" style="zoom: 40%;" />
-
-* `Location` refers to the place where to save python file. Choose a file to put your programs.
-
-  <img src="../../resources/10-ApplicationBasePython/location1.jpg" alt="7.1.1-7" style="zoom: 40%;" />
-
-* Click on `Create` and a sample appears:
-  <img src="../../resources/10-ApplicationBasePython/createproject2.jpg" alt="7.1.1-7" style="zoom: 40%;" />
-
-* Right click on the selection that the red arrow points, and create a new python file.
-
-  <img src="../../resources/10-ApplicationBasePython/createproject3.jpg" alt="7.1.1-7" style="zoom: 40%;" />
-
-* Type name for the new file.
-
-  <img src="../../resources/10-ApplicationBasePython/createproject4.jpg" alt="7.1.1-7" style="zoom: 67%;" />
-
-
-
-
-## **3 Preparations**
+## 2 Preparations
 
 * Firmware burning. Firmware serves as a driver for systems to control robots. 
 
-  * **M5Stack version** Make sure to burn ` minirobot` for **Basic** at the bottom. And then choose` Transponder` function (to receive instructions from Basic), Press `Press A`. `Atom: OK` means connect successfully. Refer to [**MyStudio**]((https://docs.elephantrobotics.com/docs/gitbook-en/4-BasicApplication/4.1-myStudio/)) for more information about firmware burning.
   * **Pi \ jetsonnano version** `AtomMain` for **Atom** at the top is factory burnt.
-
-* pymycobot installation. Type `pip install pymycobot --upgrade --user` via terminal (Win+R) `cmd` command.
-
-  ```python
-  pip install pymycobot --upgrade --user
-  ```
-
   
-
-  <img src="../../resources/10-ApplicationBasePython/pymycobotinstall.jpg" alt="7.1.1-7" style="zoom: 80%;" />
-
-* Source code installation. Open a terminal (Win+R, input `cmd` ), and type the command below to install.
-
-  ```python
-  git clone https://github.com/elephantrobotics/pymycobot.git <your-path>   
-  #Fill in your installation address in <your-path>, do not choose the current default path.
-  								
-  cd <your-path>/pymycobot	
-  #Go to the pymycobot folder of the downloaded package.
-  
-  #Run one of the following commands according to your python version.
-  # Install
-   python2 setup.py install	
-  # or
-   python3 setup.py install
-  ```
 
 * Update pymycobot
 
@@ -180,14 +27,14 @@ pip install pymycobot --upgrade
 ```
 
 
-## 4 Import of pymycobot 
+## 3 Import of pymycobot 
 
-This part takes MyPalletizer 260-M5 as an example to introduce how to control a robot via python. 
+This part takes MyCobot 320 Pi as an example to introduce how to control a robot via python. 
 
-* Import  pymycobot  library for MyPalletizer :
+* Import  pymycobot  library for MyCobot :
 
 ```python
-from pymycobot.mypalletizer import MyPalletizer
+from pymycobot.mycobot import MyCobot
 ```
 
 > **Notice:**
@@ -199,7 +46,7 @@ from pymycobot.mypalletizer import MyPalletizer
 
 
 
-## 5 **Simple Demo**
+## 4 **Simple Demo**
 
 Create a new Python file, and type the following codes to set the color of RGB light panel.
 
@@ -247,3 +94,6 @@ python3 demo.py
 
 The blue, red, and green lights on the top of the robot flash 7 times continuously at an interval of 2 seconds.
 
+---
+
+[← Previous Page](../README.md) | [Next Page →](2_API.md)

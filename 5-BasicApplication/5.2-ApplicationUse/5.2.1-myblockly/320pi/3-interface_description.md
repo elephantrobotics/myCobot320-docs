@@ -1,4 +1,4 @@
-# 3 myBlockly interface display and use of basic functions
+# myBlockly interface display and use of basic functions
 
 <img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/interface/1.png" />
 
@@ -27,7 +27,9 @@
 
 Before officially starting programming, be sure to select the corresponding **machine model**, otherwise it will easily cause hardware damage.
 
-First  we select the initialization model as `myCobot 320`, the port connected to my computer is `COM8`(**The default serial port on myCobot 320 Pi is `/dev/ttyAMA0`. If you are in myCobot 320 Pi, select  `/dev/ttyAMA0`**)
+First  we select the initialization model as `myCobot 320` 
+
+(**The default serial port on myCobot 320 Pi is `/dev/ttyAMA0`. If you are in myCobot 320 Pi, select  `/dev/ttyAMA0`**)
 
 And the baud rate is `115200`
 
@@ -71,7 +73,7 @@ and please click the `X` button to close  pop-up window
 
 ![](../../../../resources/5-BasicApplication/5.2.1/pi/img/power_on_finish.png)
 
-​
+
 
 
 
@@ -79,9 +81,9 @@ and please click the `X` button to close  pop-up window
 
 - Click the `MDI Control` category in the toolbox, select the `Set Angle` building block and drag it to the workspace
 
-![](../../../../resources/5-BasicApplication/5.2.1/pi/img/interface/小案例1.png)
+<img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/interface/小案例1.png" style="zoom:50%;" />
 
-<img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/interface/小案例2.png" style="zoom:50%;" />
+<img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/interface/小案例2.png" style="zoom:80%;" />
 
 - Click the `Time` category in the toolbox, select the `Sleep` building block and drag it to the workspace; click the mouse on the input box and change the input value of the building block to `5`
 
@@ -91,11 +93,11 @@ and please click the `X` button to close  pop-up window
 
 - Click the `MDI Control` category in the toolbox again, select the `Set Angle` building block and drag it to the workspace; at the same time, change the input value of `J1` to 30
 
-  <img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/interface/小案例5.png" style="zoom: 50%;" />
+  <img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/interface/小案例5.png"  />
 
 
 
-  <img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/interface/小案例6.png" style="zoom: 67%;" />
+  	<img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/interface/小案例6.png" style="zoom: 67%;" />
 
 
 
@@ -149,7 +151,7 @@ When using the control panel to control the machine, be sure to select the corre
 
 
 
-Here we choose the Robot `myCobot 320` ,`Port` is `COM8`,and the baud rate `115200`
+Here we choose the Robot `myCobot 320` ,`Port` is `/dev/ttyAMA0`,and the baud rate `115200`
 
 <img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/interface/qm.png" style="zoom: 67%;" />
 
@@ -195,3 +197,10 @@ Also click the blue box and click the "Load" option to import the saved program.
 
 
 >**The basic function demonstration is completed, you can check the other information in [here](https://download-elephantrobotics.oss-cn-shenzhen.aliyuncs.com/software/myblockly/README/myblockly%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6-en.pdf)**
+
+
+
+
+
+
+ [← Previous Page](./2-install_uninstall.md) | [Next Page →](./4-ControlRGB.md)

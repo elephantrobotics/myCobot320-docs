@@ -1,4 +1,4 @@
-# 2 Install driver
+# Install driver
 
 > **Notice**: There is no need to download and install the driver in the myCobot 320 Pi system.
 
@@ -51,4 +51,9 @@ For Mac OS, before installing make sure system "Preferences->Security & Privacy-
   * If **Port (COM and LPT)** shows **Silicon Labs CP210x USB to UART Bridge**, it is **CP210X chip**
 
 ![CP210C](../../../../resources/5-BasicApplication/5.2.2/pi/img/4.1.1.3-CP210X.jpg)
+
+
+
+
+ [← Previous Page](./1-setup.md) | [Next Page →](./3-flash_firmwares.md)
 

@@ -23,3 +23,12 @@ The process of generating code into the text box is the process of the user drag
 - macOS
 
 - Linux arm64
+
+----
+
+[← Previous Section](../../../README.md) | [Next Page →](./1-myBlocklyFirstUse.md)<br>
+
+----
+
+[Next Chapter →](../../5.2.2-mystudio/320m5/README.md)<br>
+

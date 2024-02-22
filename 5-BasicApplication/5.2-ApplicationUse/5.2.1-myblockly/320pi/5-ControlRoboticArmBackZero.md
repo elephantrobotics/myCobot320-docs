@@ -1,4 +1,4 @@
-# 5 Control the robotic arm to return to the origin
+# Control the robotic arm to return to the origin
 
 <i>Preparation before you begin</i>
 
@@ -36,8 +36,12 @@ How to use myBlockly to control the robot arm to return to the origin
 
 #### 简单演示
 
-<img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/case/gozero.png" style="zoom: 50%;" />
+<img src="../../../../resources/5-BasicApplication/5.2.1/pi/img/case/gozero.png" style="zoom: 80%;" />
 
 
 
 * Implementation content: Control the movement of the robotic arm to return to the origin, so that the angles of all axes of the robotic arm are 0
+
+
+
+ [← Previous Page](./4-ControlRGB.md) | [Next Page →](./6-ControlSingleJoint.md)

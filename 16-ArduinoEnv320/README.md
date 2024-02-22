@@ -11,16 +11,12 @@ MyCobotBasic library is an open source robot control library developed by our co
 
 **Applicable equipment:**<br>
 
-- myCobot 280
-  - myCobot 280 M5
-  - myCobot 280 for Arduino <br>
 - myCobot 320
   - myCobot 320 M5 <br>
-- myPalletizer 260
-  - myPalletizer 260 M5<br>
-- mechArm 270 <br>
-  - mechArm 270 M5<br>
 
 Preconditions for use<br>
 - **M5** series version， the bottom **M5Stack-basic** is programmed to miniRobot , select the  **Transponder** function, and the end **ATOM** is programmed to the latest version of atomMain (the factory default has been programmed)
 
+---
+
+[← Previous Section](../12-ApplicationBaseCPlus/README.md) | [Next Page →](16.1-arduino_download.md)

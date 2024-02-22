@@ -1,4 +1,4 @@
-# 7 Control multiple joints
+# Control multiple joints
 
 <i>Preparation before you begin</i>
 
@@ -49,3 +49,7 @@ The graphics code is as follows:
   Simultaneously control the 1 joint, 2 joint, 3 joint, 4 joint, 5 joint, and 6 joint of the robotic arm to run at a speed of 50 to -30 degrees, -30 degrees, 30 degrees, -10 degrees, -10 degrees, and -30 degrees respectively. position, after three seconds,
 
   Control all joints of the robotic arm to return to the origin
+
+
+
+  [← Previous Page](./6-ControlSingleJoint.md) | [Next Page →](./8-GripperUse.md)

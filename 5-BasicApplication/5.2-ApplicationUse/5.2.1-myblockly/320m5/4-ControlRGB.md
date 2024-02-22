@@ -1,4 +1,4 @@
-# 4 Control RGB light panel
+# Control RGB light panel
 
 <i>Preparation before you begin</i>
 
@@ -47,3 +47,9 @@ The graphics code is as follows:
 * What is implemented:
 
   The color of the robotic arm RGB light panel is controlled to change sequentially from "blue-red-green", and the whole process is cycled seven times.次。
+
+
+
+
+
+[← Previous Page](./3-interface_description.md) | [Next Page →](./5-ControlRoboticArmBackZero.md)

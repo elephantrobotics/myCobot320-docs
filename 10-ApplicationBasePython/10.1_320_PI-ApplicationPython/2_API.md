@@ -612,3 +612,7 @@ API or Application Programming Interface refers to a number of preset programs. 
 - **Parameters:**
   - `pin_no` (`int`) Pin number
   - `pin_signal` (`int`): 0 / 1
+
+---
+
+[← Previous Page](1_download.md) | [Next Page →](3_TCPIP.md)
