@@ -1,4 +1,4 @@
-# ** myCobotPro 自适应夹爪**
+# **myCobotPro 自适应夹爪**
 
 > **兼容型号：** myCobot 320、myCobot Pro 600
 
