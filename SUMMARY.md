@@ -1,33 +1,6 @@
 # Summary
 
-- [Introduction](README.md)
-- [1 产品介绍](1-ProductIntroduction/README.md)
+* [Introduction](README.md)
+* [320 M5](SUMMARY_320_M5.md)
+* [320 Pi](SUMMARY_320_PI.md)
 
-  - [1.1 设计理念](1-ProductIntroduction/1.1-DesignPhilosophy.md)
-  - [1.2 适用人群](1-ProductIntroduction/1.2-SuitableUsers.md)
-  - [1.3 应用场景](1-ProductIntroduction/1.3-ApplicationScenario.md)
-  - [1.4 周边配件](1-ProductIntroduction/1.4-AccessoriesTools/README.md)
-    - [1 自适应夹爪](1-ProductIntroduction/1.4-AccessoriesTools/1.4.1-Gripper/1-AdaptiveGripper.md)
-    - [2 电动夹爪](1-ProductIntroduction/1.4-AccessoriesTools/1.4.1-Gripper/2-ElectricGripper.md)
-    - [3 气动夹爪](1-ProductIntroduction/1.4-AccessoriesTools/1.4.1-Gripper/3-PneumaticGripper.md)
-    - [4 柔性夹爪](1-ProductIntroduction/1.4-AccessoriesTools/1.4.1-Gripper/4-FlexibleGripper.md)
-    - [5 吸盘模块](1-ProductIntroduction/1.4-AccessoriesTools/1.4.2-PumpCup/1-ModuleSuctionCup.md)
-    - [6 摄像头模块](1-ProductIntroduction/1.4-AccessoriesTools/1.4.3-Camera/1-CameraModulePro.md)
-    - [7 笔夹持器](1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Holder/1-PenHolderPro.md)
-    - [8 手机夹持器](1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Holder/2-PhoneHolderPro.md)
-
-- [2 产品特性](2-ProductFeature/2.2_320_PI_product/README.md)
-
-  - [2.1 机器规格参数](2-ProductFeature/2.2_320_PI_product/2.2.1-MachineSpecification.md)
-  - [2.2 控制核心参数](2-ProductFeature/2.2_320_PI_product/2.2.2-ControlCoreParameter.md)
-  - [2.3 机械结构参数](2-ProductFeature/2.2_320_PI_product/2.2.3-MechanicalStructureParameter.md)
-  - [2.4 电气特性参数](2-ProductFeature/2.2_320_PI_product/2.2.4-ElectricalCharacteristicParameter.md)
-  - [2.5 笛卡尔坐标系](2-ProductFeature/2.2_320_PI_product/2.2.5-CoordinateSystem.md)
-
-- [3 用户须知](3-UserNotes/README.md)
-- [4 首次安装使用](4-FirstInstallAndUse/README.md)
-- [5 基础功能使用](5-BasicApplication/README.md)
-- [6 SDK 开发指南](6-SDKDevelopment/README.md)
-- [7 机械臂使用场景案例](7-ExamplesRobotsUsing/README.md)
-- [8 相关资料下载](8-FilesDownload/README.md)
-- [9 关于我们](9-AboutUs/README.md)
