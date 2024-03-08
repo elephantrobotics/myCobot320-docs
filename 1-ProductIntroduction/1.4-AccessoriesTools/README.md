@@ -1,6 +1,6 @@
 # 周边配件
 
-![周边配件](../../resources/1-ProductIntroduction/1.4-周边配件/1.4周边配件.jpg)
+![周边配件](../../resources/1-ProductIntroduction/1.4/1.4周边配件.jpg)
 
 ## 设计理念
 

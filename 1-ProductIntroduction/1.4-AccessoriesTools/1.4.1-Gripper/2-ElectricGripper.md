@@ -1,18 +1,16 @@
-# 电动夹爪
+# **电动夹爪**
 
 > **兼容型号：** myCobot 320、myCobot Pro 600
-
-## 产品图标
 
 <img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/电动夹爪1.jpg" alt="img-1" width="800" height=“auto” />
 
 ## 规格
 
 | **名称**     | **mycobotpro 电动夹爪**             |
-| ------------ | ----------------------------------- |
+| :----------- | :---------------------------------- |
 | 模型         | myCobotPro_Gripper_PGE_8            |
 | 材料         | 金属 + 7500 尼龙                    |
-| 夹爪范围夹   | 0-14mm                              |
+| 夹取范围     | 0-14mm                              |
 | 夹紧力       | 2-5N                                |
 | 重复性精度   | 1mm                                 |
 | 使用寿命     | 一年                                |
@@ -54,7 +52,7 @@
 **运行环境**
 
 | **周围环境** | **图解说明** |
-| ------------ | ------------ |
+| :----------- | :----------- |
 | 规程         | RS-485       |
 | 工作电压     | 24V          |
 | 额定电流     | 0.25A        |
@@ -76,4 +74,4 @@
 - 对于电动机械手，将其插入顶部的 485 接口，如下图所示: <br>
   <img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/电动夹爪4.jpg" alt="img-2" width="480" height="auto" /> <br>
 
-[← 周边配件页面](../README.md#gripper) | [下一页 →](../1.4.1-Gripper/3-PneumaticGripper.md)
+[← 周边配件页](../README.md#gripper) | [下一页 →](../1.4.1-Gripper/3-PneumaticGripper.md)

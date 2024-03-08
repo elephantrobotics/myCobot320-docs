@@ -1,70 +1,65 @@
 # **气动夹爪**
 
-**兼容型号:** myCobot 320, myCobot Pro 600
+> **兼容型号：** myCobot 320, myCobot Pro 600
 
-**产品图标**
+## **产品图标**
 
-<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/3-PneumaticGripper/PneumaticGripper.jpg" alt="img-2" width="800" height="auto" /> <br>
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/3-PneumaticGripper/气动夹爪1.jpg" alt="img-2" width="800" height="auto" /> <br>
 
-**Specifications:**
+## 规格
 
-| **name**                     | **mycobot320 pneumatic gripper**                       |
-| ---------------------------- | ------------------------------------------------------ |
-| Model model                  | myCobotPro_Gripper_Air_10                              |
-| craft                        | Metal + 7500 Nylon                                     |
-| Clamping rangeClamp size     | 0-8mm                                                  |
-| Clamp force                  | Outer diameter 34N Inner diameter 45N                  |
-| Repeatability precision      | ±0.01mm                                                |
-| Lifetime                     | one year                                               |
-| drive mode drive             | pneumatic                                              |
-| transfer method              | Piston cylinder                                        |
-| size                         | 67.3×38×23.6mm                                         |
-| weightweight                 | 180g                                                   |
-| Fixed method Fixed           | screw fixed                                            |
-| Use environment requirements | Temperature and pressure                               |
-| control interface control    | I/O control                                            |
-| Applicable equipment         | ER myCobot 320 M5 ER myCobot 320 Pi ER myCobot Pro 600 |
+| **名称**     | **mycobot320 气动夹爪**                                |
+| :----------- | :----------------------------------------------------- |
+| 模型         | myCobotPro_Gripper_Air_10                              |
+| 材料         | 金属 + 7500 尼龙                                       |
+| 夹取范围     | 0-8mm                                                  |
+| 夹紧力       | 外径 34N 内径 45N                                      |
+| 重复性精度   | ±0.01mm                                                |
+| 使用寿命     | 一年                                                   |
+| 驱动模式     | 气动                                                   |
+| 传输方式     | 活塞缸                                                 |
+| 尺寸         | 67.3×38×23.6mm                                         |
+| 重量         | 180g                                                   |
+| 固定方法     | 螺丝固定                                               |
+| 使用环境要求 | 温度和压力                                             |
+| 控制接口     | 输入/输出控制                                          |
+| 适用设备     | ER myCobot 320 M5 ER myCobot 320 Pi ER myCobot Pro 600 |
 
-## Use for Gripping Objects
+## 用于抓取物体
 
-**Introduction**
+**引言**
 
-- Pneumatic grippers, also known as pneumatic fingers or pneumatic grippers, are actuators that use compressed air as power to grip or grab workpieces. It is small in size, light in weight, compact in appearance, capable of single- and two-way grabbing, automatic centering, high repeatability, and automatic control of the magnetic switch.
+- 气动夹爪又称气动手指或气动夹钳，是一种利用压缩空气作为动力抓取或抓取工件的执行器。它体积小、重量轻、外形紧凑，能够实现单向和双向抓取、自动对中、高重复精度和自动控制磁性开关。
 
-- Pneumatic gripper set includes gripper flange, air pump, φ8 air pipe, φ6 air pipe, φ8-6 quick connector, solenoid valve and cables. Its main function is to replace human grasping work, which can effectively improve production efficiency and work safety. An external suction pump is required.
+- 气动夹爪套件包括夹爪法兰、气泵、φ8 气管、φ6 气管、φ8-6 快速接头、电磁阀和电缆。其主要功能是代替人力抓取工作，可有效提高生产效率和工作安全性。需要外接吸气泵。
 
-**working principle**
+**工作原理**
 
-- Single piston: the axis drives the crank, and the air claw is driven by the piston to open and close. A corresponding crank groove is respectively arranged on the two claw pieces. In order to reduce the frictional resistance, the claw piece and the body are connected by a steel ball slide rail structure.
+- 单活塞：轴驱动曲柄，气爪由活塞驱动开合。两个爪片上分别布置有相应的曲柄槽。为减小摩擦阻力，爪片与机身之间采用钢珠滑轨结构连接。
 
-- Double piston: It is operated by two pistons, and each piston is connected with a pneumatic finger by a roller and a double crank to form a special drive unit. Realize that the pneumatic fingers always move axially to the center, and each finger cannot move independently. Parallel jaw cylinder If the finger moves in the opposite direction, the previously compressed piston is in the exhausted state, while the other piston is in the compressed state.
+- 双活塞：由两个活塞控制，每个活塞通过一个滚轮和一个双曲柄与一个气动指连接，形成一个特殊的驱动单元。需要注意的是，气动指始终向中心轴向移动，每个气动指不能独立移动。
 
-**Applicable object**
+- 平行钳形气缸：如果气动指朝相反方向移动，则先前被压缩的活塞处于排气状态，而另一个活塞处于压缩状态。
 
-- The volume is smaller than the clamping stroke
+**适用对象**
 
-- The weight is less than the maximum clamping weight
+- 体积小于夹紧行程
 
-- Custom fingertips can expand more items
+- 重量小于最大夹紧重量
 
-## Mall link
+- 自定义指尖可扩展更多用法
 
-- [Taobao](https://shop504055678.taobao.com)
+## 购买链接
+
+- [淘宝](https://shop504055678.taobao.com)
 - [shopify](https://shop.elephantrobotics.com/)
 
-<!-- - [Shopify](https://shop-elephantrobotics-com.translate.goog/collections/mycobot-pro-600/products/air-parallel-grippers-air-compressor?_x_tr_sl=auto&_x_tr_tl=zh-CN) -->
+## 如何使用
 
-## How to use
+1 安装夹具: <br>
 
-1 Installing the gripper: <br>
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/3-PneumaticGripper/气动夹爪2.jpg" alt="img-2" width="400" height="auto" /> <br>
 
-<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/3-PneumaticGripper/PneumaticGripper2.jpg" alt="img-2" width="400" height="auto" /> <br>
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/3-PneumaticGripper/气动夹爪3.jpg" alt="img-2" width="400" height="auto" /> <br>
 
-<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/3-PneumaticGripper/PneumaticGripper3.jpg" alt="img-2" width="400" height="auto" /> <br>
-
-<!-- 2 Development with SDK
--   [Blockly]()
--   [Python]()
--   [C++]() -->
-
-[← Accessories Tools Page](../1.4-AccessoriesTools.md#gripper) | [Next Page →](../1.4.1-Gripper/4-FlexibleGripper.md)
+[← 周边配件页](../README.md#gripper) | [下一页 →](../1.4.1-Gripper/4-FlexibleGripper.md)
