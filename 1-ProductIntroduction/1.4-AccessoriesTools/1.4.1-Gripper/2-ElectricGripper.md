@@ -2,6 +2,8 @@
 
 > **兼容型号：** myCobot 320、myCobot Pro 600
 
+## 产品图片
+
 <img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/电动夹爪1.jpg" alt="img-1" width="800" height=“auto” />
 
 ## 规格

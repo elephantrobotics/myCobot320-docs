@@ -2,6 +2,8 @@
 
 > **兼容型号:** myCobot 320, myCobot Pro 600
 
+## 产品图片
+
 <img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/柔性夹爪1.JPG" alt="img-1" width="800" height="auto" /> <br>
 
 ## 规格
@@ -77,4 +79,4 @@
 
 特别提醒 ⚠️：关于压力保持，正压和负压都可以在启动 0.5 秒后保持，使机械抓手保持其预设压力。这种方法非常节能，特别是因为持续保持负压会消耗更多空气。此外，它还能防止在意外断电或断气的情况下失去对物体的抓力，确保操作的可靠性。
 
-[← 周边配件页](../README.md#gripper)
+[← 周边配件页](../README.md#gripper) | [下一页 →](../1.4.2-PumpCup/1-ModuleSuctionCup.md)

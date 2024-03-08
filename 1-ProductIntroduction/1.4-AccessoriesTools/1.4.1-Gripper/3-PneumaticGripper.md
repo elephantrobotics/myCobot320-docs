@@ -2,7 +2,7 @@
 
 > **兼容型号：** myCobot 320, myCobot Pro 600
 
-## **产品图标**
+## 产品图片
 
 <img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/3-PneumaticGripper/气动夹爪1.jpg" alt="img-2" width="800" height="auto" /> <br>
 

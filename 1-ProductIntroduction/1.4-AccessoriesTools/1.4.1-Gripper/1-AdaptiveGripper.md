@@ -2,6 +2,8 @@
 
 > **兼容型号：** myCobot 320、myCobot Pro 600
 
+## 产品图片
+
 <img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/1.4.1自适应夹爪1.png" alt="img-1" width="800" height=“auto” />  
 <img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/1.4.1自适应夹爪2.jpg" alt="img-2" width="400" height="auto" />
 <img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/1.4.1自适应夹爪3.jpg" alt="img-3" width="400" height="auto" />
