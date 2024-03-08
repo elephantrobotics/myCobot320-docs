@@ -1,6 +1,6 @@
 # 周边配件
 
-![周边配件](../../resources/1-ProductIntroduction/1.4周边配件.jpg)
+![周边配件](../../resources/1-ProductIntroduction/1.4-周边配件/1.4周边配件.jpg)
 
 ## 设计理念
 
@@ -14,13 +14,13 @@
 
 ### 夹爪
 
-- [自适应夹爪](../1.4-周边配件/1.4.1-夹爪/1-自适应夹爪.md)<br/>
+- [自适应夹爪](../1.4-AccessoriesTools/1.4.1-Gripper/1-AdaptiveGripper.md)  
   升级后的自适应机械手可提供更大的夹持力，并支持多种编程环境，适用于各种工业机械臂。
-- [电动夹爪](1.4.1-夹爪/2-电动夹爪.md)<br/>
+- [电动夹爪](../1.4-AccessoriesTools/1.4.1-Gripper/2-ElectricGripper.md)  
   紧凑的结构和多个连接孔使该机械手能满足不同的安装条件。它支持 IO 和串行端口控制，适用于各种工业机械臂。
-- [气动夹爪](/1.4.1-夹爪/3-气动夹爪.md)<br/>
+- [气动夹爪](../1.4-AccessoriesTools/1.4.1-Gripper/3-PneumaticGripper.md)  
   它由气体驱动，通过电磁阀工作，控制方便，抓手的指尖可以更换，便于用户进行二次开发。
-- [柔性夹爪](1.4.1-夹爪/4-柔性夹爪.md)<br/>
+- [柔性夹爪](../1.4-AccessoriesTools/1.4.1-Gripper/4-FlexibleGripper.md)  
   指尖由橡胶制成，依靠气压变形来抓取物体。气动机械手应用广泛，因其柔软性、适应性和高效性而备受青睐。这些优点使它们成为自动化和机器人应用中的强大工具，能够有效地处理各种类型的物体和任务。
 
 ### 吸盘
@@ -38,4 +38,4 @@
 
 ---
 
-[← 上一页](../1-ProductIntroduction/1.3-应用场景.md)
+[← 上一页](../1.3-ApplicationScenario.md)

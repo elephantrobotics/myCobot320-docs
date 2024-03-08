@@ -1,10 +1,10 @@
 # myCobotPro 自适应夹爪
 
-> 兼容型号：myCobot 320、myCobot Pro 600
+> **兼容型号：** myCobot 320、myCobot Pro 600
 
-<img src="../../../resources/1-ProductIntroduction/1.4.1自适应夹爪1.png" alt="img-1" width="800" height=“auto” />  
-<img src="../../../resources/1-ProductIntroduction/1.4.1自适应夹爪2.jpg" alt="img-2" width="400" height="auto" />
-<img src="../../../resources/1-ProductIntroduction/1.4.1自适应夹爪3.jpg" alt="img-3" width="400" height="auto" />
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/1.4.1自适应夹爪1.png" alt="img-1" width="800" height=“auto” />  
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/1.4.1自适应夹爪2.jpg" alt="img-2" width="400" height="auto" />
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/1.4.1自适应夹爪3.jpg" alt="img-3" width="400" height="auto" />
 
 ## 规格
 
@@ -27,7 +27,7 @@
 
 ## 用于抓取物体
 
-**导言**
+**引言**
 
 - 机械手是一种能像人手一样工作的机器人部件。它具有结构复杂、抓取物体牢固、不易掉落、操作简便等优点。
 
@@ -61,5 +61,5 @@
 
 ---
 
-[← 周边配件页面](../1.4-周边配件.md#gripper)
-| [下一页 →](../1.4.1-夹爪/2-电动夹爪.md)
+[← 周边配件页面](../README.md#gripper)
+| [下一页 →](../1.4.1-Gripper/2-ElectricGripper.md)

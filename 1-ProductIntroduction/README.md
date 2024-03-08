@@ -35,4 +35,4 @@ myCobot 320 鼓励用户参与扩展开发：
 ---
 
 如果您已经阅读了本章的所有内容，可以继续阅读下一章。  
-[下一页 →](../1-ProductIntroduction/1.1-设计理念.md)
+[下一页 →](../1-ProductIntroduction/1.1-DesignPhilosophy.md)
