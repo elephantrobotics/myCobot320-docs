@@ -1,10 +1,7 @@
-# How to burn firmware
+# 如何烧录固件
 
+我们可以使用 [myStudio](../../5.2-ApplicationUse/mystudio/320pi/3-flash_firmwares.md) 刻录固件
 
+---
 
-we can use [myStudio](../../5.2-ApplicationUse/5.2.2-mystudio/320pi/3-flash_firmwares.md) to burn the firmware
-
-
-
-
-[← Previous Page](./1-firmware.md)
+[← 上一页](./1-firmware.md) | [基础功能页面 →](../../README_PI.md)

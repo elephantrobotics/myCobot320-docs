@@ -22,4 +22,4 @@
 
 ---
 
-[← 上一页](3_PowerOnStatusDisplay.md) | [下一章](../../../5-BasicApplication/README.md)
+[← 上一页](3_PowerOnStatusDisplay.md) | [下一章](../../../5-BasicApplication/README_PI.md)
