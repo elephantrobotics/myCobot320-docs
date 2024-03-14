@@ -408,7 +408,7 @@
 
 - **原型**: `jog_angle(joint_id, direction, speed)`
 
-- **接口描述**: Jog control angle
+- **接口描述**: 点动控制角度
 
 - **Parameters**
 
@@ -436,7 +436,7 @@
 
 - **原型**: `jog_absolue(coord_id, direction, speed)`
 
-- **接口描述**: Step mode.
+- **接口描述**: 步进模式。
 
 - **Parameters**
 
@@ -450,7 +450,7 @@
 
 - **原型**: `jog_increment(coord_id, direction, speed)`
 
-- **接口描述**: Step mode.
+- **接口描述**: 步进模式。
 
 - **Parameters**
 
@@ -464,7 +464,7 @@
 
 - **原型**: `jog_stop()`
 
-- **接口描述**: Stop jog moving.
+- **接口描述**: 停止点动
 
 ### 暂停
 
@@ -472,7 +472,7 @@
 
 - **原型**: `pause()`
 
-- **接口描述**: Pause movement.
+- **接口描述**: 暂停运动。
 
 ### 恢复
 
@@ -480,7 +480,7 @@
 
 - **原型**: `resume()`
 
-- **接口描述**: Recovery movement.
+- **接口描述**: 恢复运动。
 
 ### 停止
 
@@ -488,7 +488,7 @@
 
 - **原型**: `stop()`
 
-- **接口描述**: Stop moving.
+- **接口描述**: 停止移动。
 
 ### is_paused
 
@@ -496,7 +496,7 @@
 
 - **原型**: `is_paused()`
 
-- **接口描述**: Judge whether the manipulator pauses or not.
+- **接口描述**: 判断操纵者是否暂停。
 
 - **返回**: :
 
@@ -510,7 +510,7 @@
 
 - **原型**: `set_encoder(joint_id, encoder)`
 
-- **接口描述**: Set a single joint rotation to the specified potential value.
+- **接口描述**: 将单个关节旋转设置为指定的电位值。
 
 - **Parameters**
 
@@ -523,7 +523,7 @@
 
 - **原型**: `get_encoder(joint_id)`
 
-- **接口描述**:Obtain the specified joint potential value.
+- **接口描述**: 获取指定的关节电位值。
 
 - **Parameters**: `joint_id`: (`int`) 1 ~ 6
 
@@ -537,7 +537,7 @@
 
 - **原型**: `get_speed()`
 
-- **接口描述**: Get speed.
+- **接口描述**: 获取速度
 
 - **返回**: speed: (`int`)
 
@@ -547,7 +547,7 @@
 
 - **原型**: `set_speed(speed)`
 
-- **接口描述**: Set speed.
+- **接口描述**: 设定速度。
 
 - **Parameters**: speed: (`int`) 0 ~ 100
 
@@ -556,7 +556,7 @@
 ![Alt text](./img/blocks/setting/5.png)
 
 - **原型**: `set_joint_min(id, angle)`
-- **接口描述**: Sets the minimum angle for the specified joint.
+- **接口描述**: 设置指定关节的最小角度。
 
 - **Parameters**:
   - `id`: (`int`) joint id 1-6.
@@ -567,7 +567,7 @@
 ![Alt text](./img/blocks/setting/6.png)
 
 - **原型**: `set_joint_max(id, angle)`
-- **接口描述**: Sets the maximum angle of the specified joint.
+- **接口描述**: 设置指定关节的最大角度。
 
 - **Parameters**:
   - `id`: (`int`) joint id 1-6.
@@ -578,7 +578,7 @@
 ![Alt text](./img/blocks/setting/3.png)
 
 - **原型**: `get_joint_min_angle()`
-- **接口描述**: Gets the minimum movement angle of the specified joint
+- **接口描述**: 获取指定关节的最小移动角度
 
 - **Parameters**: `joint_id`: (`int`)
 
@@ -589,7 +589,7 @@
 ![Alt text](./img/blocks/setting/4.png)
 
 - **原型**: `get_joint_max_angle()`
-- **接口描述**: Gets the maximum movement angle of the specified joint
+- **接口描述**: 获取指定关节的最大移动角度
 - **Parameters**: `joint_id`: (`int`)
 - **返回**: angle value (`float`)
 
@@ -601,7 +601,7 @@
 
 - **原型**: `is_servo_enable(servo_id)`
 
-- **接口描述**: Determine whether all steering gears are connected
+- **接口描述**: 确定所有舵机是否都已连接
 
 - **Parameters**: `servo_id` (`int`) 1 ~ 6
 
@@ -617,7 +617,7 @@
 
 - **原型**: `is_all_servo_enable()`
 
-- **接口描述**: Determine whether the specified steering gear is connected
+- **接口描述**: 确定是否连接了指定的舵机
 
 - **返回**:
 
@@ -630,11 +630,11 @@
 ![Alt text](./img/blocks/servos/3.png)
 
 - **原型**: `set_servo_data(servo_no, data_id, value)`
-- **接口描述**: Set the data parameters of the specified address of the steering gear.
+- **接口描述**: 设置舵机指定地址的数据参数。
 
 - **Parameters**:
-  - `servo_no`: Serial number of articulated steering gear, 1 - 6.
-  - `data_id`: Data address.
+  - `servo_no`: 铰接舵机的序列号，1 - 6。
+  - `data_id`: 数据地址
   - `value`: 0 - 4096
 
 ### get_servo_data
@@ -642,12 +642,12 @@
 ![Alt text](./img/blocks/servos/4.png)
 
 - **原型**: `get_servo_data(servo_no, data_id)`
-- **接口描述**: Read the data parameter of the specified address of the steering gear.
+- **接口描述**: 读取舵机指定地址的数据参数。
 
 - **Parameters**:
 
-  - `servo_no`: Serial number of articulated steering gear, 1 - 6.
-  - `data_id`: Data address.
+  - `servo_no`: 铰接舵机的序列号，1 - 6。
+  - `data_id`: 数据地址
 
 - **返回**: `value`: 0 - 4096
 
@@ -660,10 +660,10 @@
 ![Alt text](./img/blocks/servos/5.png)
 
 - **原型**: `set_servo_calibration(servo_no)`
-- **接口描述**: The current position of the calibration joint actuator is the angle zero point, and the corresponding potential value is 2048.
+- **接口描述**: 校准舵机的当前位置为角度零点，相应的电位值为 2048。
 
 - **Parameters**:
-  - `servo_no`: Serial number of articulated steering gear, 1 - 6.
+  - `servo_no`: 铰接舵机的序列号，1 - 6。
 
 ### release_servo
 
@@ -671,7 +671,7 @@
 
 - **原型**: `release_servo(servo_id)`
 
-- **接口描述**: Power off designated servo
+- **接口描述**: 关闭指定舵机系统的电源
 
 - **Parameters**: `servo_id`: 1 ~ 6
 
@@ -680,7 +680,7 @@
 ![Alt text](./img/blocks/servos/7.png)
 
 - **原型**: `focus_servo(servo_id)`
-- **接口描述**: Power on designated servo
+- **接口描述**: 接通指定舵机的电源
 - **Parameters**: `servo_id`: 1 ~ 6
 
 ## 夹爪
@@ -690,7 +690,7 @@
 ![Alt text](./img/blocks/gripper/1.png)
 
 - **原型**: `set_gripper_calibration()`
-- **接口描述**: Set the current position to zero, set current position value is `2048`.
+- **接口描述**: 将当前位置设置为零，设置当前位置值为 `2048`。
 
 ### set_gripper_state
 
@@ -698,7 +698,7 @@
 
 - **原型**: `set_gripper_state(flag, speed, mode)`
 
-- **接口描述**: Set gripper switch state
+- **接口描述**: 设置夹爪开关状态
 
 - **Parameters**
 
@@ -712,7 +712,7 @@
 
 - **原型**: `set_gripper_value(value, speed, mode)`
 
-- **接口描述**: Set gripper value
+- **接口描述**: 设置夹爪值
 
 - **Parameters**
 
@@ -725,7 +725,7 @@
 ![Alt text](./img/blocks/gripper/4.png)
 
 - **原型**: `get_gripper_value(mode)`
-- **接口描述**: Get gripper value
+- **接口描述**: 获取夹爪值
 - **Return**: gripper value (int)
 
 ### is_gripper_moving
@@ -734,7 +734,7 @@
 
 - **原型**: `is_gripper_moving()`
 
-- **接口描述**: Judge whether the gripper is moving or not
+- **接口描述**: 判断夹爪是否移动
 
 - **返回**:
 
@@ -747,14 +747,14 @@
 ![Alt text](./img/blocks/gripper/6.png)
 
 - **原型**: `init_eletric_gripper()`
-- **接口描述**:Init Eletric Gripper
+- **接口描述**: 初始化电动夹爪
 
 ### Set Eletric Gripper
 
 ![Alt text](./img/blocks/gripper/7.png)
 
 - **原型**: `set_eletric_gripper()`
-- **接口描述**:Init Eletric Gripper
+- **接口描述**: 初始化电动夹爪
 - **Parameters**
 
   - 选择打开或关闭
@@ -765,10 +765,10 @@
 
 - **原型**: `set_gripper_mode(status)`
 
-- **接口描述**: Set gripper mode.
+- **接口描述**: 设置抓取模式。
 
 - **Parameters**
-- `status` (`int`): 0 - transparent transmission. 1 - Port Mode.
+- `status` (`int`): 0 - 透明传输。1 - 端口模式。
 
 ### get_gripper_mode
 
@@ -776,11 +776,11 @@
 
 - **原型**: `get_gripper_mode()`
 
-- **接口描述**: Get gripper mode.
+- **接口描述**: 获取抓取模式。
 
 - **Return**
 
-  - `status` (`int`): 0 - transparent transmission. 1 - Port Mode.
+  - `status` (`int`): 0 - 透明传输。1 - 端口模式。
 
 ## 坐标控制
 
@@ -790,7 +790,7 @@
 
 - **原型**: `get_tool_reference()`
 
-- **接口描述**: Get tool coordinate system.
+- **接口描述**: 获取工具坐标系。
 
 - **Return**: `list` [x, y, z, rx, ry, rz].
 
@@ -800,7 +800,7 @@
 
 - **原型**: `set_tool_reference(coords)`
 
-- **接口描述**: Set tool coordinate system.
+- **接口描述**: 设置工具坐标系。
 
 - **Parameters**:
   - `coords`: (`list`) [x, y, z, rx, ry, rz].
@@ -810,7 +810,7 @@
 ![Alt text](./img/blocks/coords/3.png)
 
 - **原型**: `get_world_reference()`
-- **接口描述**: Get world coordinate system.
+- **接口描述**: 获取世界坐标系。
 - **Return**: `list` [x, y, z, rx, ry, rz].
 
 ### set_world_reference
@@ -819,7 +819,7 @@
 
 - **原型**: `set_world_reference(coords)`
 
-- **接口描述**: Set world coordinate system.
+- **接口描述**: 设置世界坐标系。
 
 - **Parameters**:
   - `coords`: (`list`) [x, y, z, rx, ry, rz].
@@ -830,7 +830,7 @@
 
 - **原型**: `get_reference_frame()`
 
-- **接口描述**: Get base coordinate system.
+- **接口描述**: 获取基本坐标系。
 
 - **Return**: 0 - base 1 - tool.
 
@@ -840,7 +840,7 @@
 
 - **原型**: `set_reference_frame(rftype)`
 
-- **接口描述**: Set base coordinate system.
+- **接口描述**: 设置基本坐标系。
 
 - **Parameters**:
   - `rftype`: 0 - base 1 - tool.
@@ -850,7 +850,7 @@
 ![Alt text](./img/blocks/coords/7.png)
 
 - **原型**: `get_movement_type()`
-- **接口描述**: Get movement type.
+- **接口描述**: 获取运动类型。
 - **Return**: 1 - movel, 0 - moveJ.
 
 ### set_movement_type
@@ -859,7 +859,7 @@
 
 - **原型**: `set_movement_type(move_type)`
 
-- **接口描述**: Set movement type.
+- **接口描述**: 设置运动类型。
 
 - **Parameters**:
   - `move_type`: 1 - movel, 0 - moveJ.
@@ -869,7 +869,7 @@
 ![Alt text](./img/blocks/coords/9.png)
 
 - **原型**: `get_end_type()`
-- **接口描述**: Get end coordinate system.
+- **接口描述**: 获取终点坐标系。
 - **Return**: 0 - flange, 1 - tool.
 
 ### set_end_type
@@ -878,7 +878,7 @@
 
 - **原型**: `set_end_type(end)`
 
-- **接口描述**: Set end coordinate system.
+- **接口描述**: 设置终点坐标系。
 
 - **Parameters**:
   - `end`: 0 - flange, 1 - tool.
@@ -891,9 +891,9 @@
 
 - **原型**: `get_servo_speeds()`
 
-- **接口描述**: Get joint velocity.
+- **接口描述**: 获取关节速度。
 
-- **Return**: `list` Speed of each joint.
+- **Return**: `list` 每个关节的速度
 
 ### get_servo_currents
 
@@ -901,9 +901,9 @@
 
 - **原型**: `get_servo_currents()`
 
-- **接口描述**: Get joint current.
+- **接口描述**: 获取关节电流。
 
-- **Return**: `list` Current of each joint.
+- **Return**: `list` 每个关节的电流。
 
 ### get_servo_voltages
 
@@ -911,9 +911,9 @@
 
 - **原型**: `get_servo_voltages()`
 
-- **接口描述**: Get joint voltage.
+- **接口描述**: 获取关节电压。
 
-- **Return**: `list` Voltage of each joint.
+- **Return**: `list` 每个关节的电压。
 
 ### get_servo_status
 
@@ -921,9 +921,9 @@
 
 - **原型**: `get_servo_status()`
 
-- **接口描述**: Get the state of each joint.
+- **接口描述**: 获取每个关节的状态。
 
-- **Return**: `list` the state of each joint.
+- **Return**: `list` 每个关节的状态。
 
 ### get_servo_temps
 
@@ -931,9 +931,9 @@
 
 - **原型**: `get_servo_temps()`
 
-- **接口描述**: Get the temperature of each joint.
+- **接口描述**: 获取每个关节的温度。
 
-- **Return**: `list` temperature of each joint.
+- **Return**: `list` 每个关节的温度。
 
 ---
 
