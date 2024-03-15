@@ -27,7 +27,7 @@ pymycobot 是一个和 myCobot 进行串口通讯的 Python 包，支持 Python2
 
 - **出现“Setup was successful”提示，说明安装完成**
 
-  <img src="../../resources/10-ApplicationPython/pythoninstall4.jpg" alt="7.1.1-1" style="zoom:50%;" />
+<img src="../../resources/10-ApplicationPython/pythoninstall4.jpg" alt="7.1.1-1" style="zoom:50%;" />
 
 ### 1.2 运行 Python
 
@@ -99,7 +99,7 @@ PyCharm 是一款功能强大的 Python 编辑器，具有跨平台性。首先�
 
 - 点击 `Finish` 结束安装：
 
-  <img src="../../resources/10-ApplicationPython/pycharmdownload6.jpg" alt="7.1.1-7" style="zoom: 67%;" />
+<img src="../../resources/10-ApplicationPython/pycharmdownload6.jpg" alt="7.1.1-7" style="zoom: 67%;" />
 
 ### 2.2 创建项目
 
@@ -111,31 +111,31 @@ PyCharm 安装完成之后进入该软件，创建第一个程序。
 
 - `Interpreter` 用于解释 python 程序。找到 `Interpreter`，开始对解释器进行设置，点击 `Add Interpreter`
 
-  <img src="../../resources/10-ApplicationPython/interpreter1.jpg" alt="7.1.1-7" style="zoom: 50%;" />
+<img src="../../resources/10-ApplicationPython/interpreter1.jpg" alt="7.1.1-7" style="zoom: 50%;" />
 
 - 点击 `New`，找到 python.exe 存储位置，勾选 `Inherit global site-package` 选项：
 
-  <img src="../../resources/10-ApplicationPython/interpreter3.jpg" alt="7.1.1-7" style="zoom: 40%;" />
+<img src="../../resources/10-ApplicationPython/interpreter3.jpg" alt="7.1.1-7" style="zoom: 40%;" />
 
 - 设置 `Location`。Location 是存储 PyCharm 项目的地方，可根据需要自行选择。
 
-  <img src="../../resources/10-ApplicationPython/location1.jpg" alt="7.1.1-7" style="zoom: 40%;" />
+<img src="../../resources/10-ApplicationPython/location1.jpg" alt="7.1.1-7" style="zoom: 40%;" />
 
 - 点击 `Create`，会出现一个样本:
 
-  <img src="../../resources/10-ApplicationPython/createproject2.jpg" alt="7.1.1-7" style="zoom: 40%;" />
+<img src="../../resources/10-ApplicationPython/createproject2.jpg" alt="7.1.1-7" style="zoom: 40%;" />
 
 - 新建 PyCharm 文件。右击箭头指向的文档图标，点击 New，点击 Python File，新建成功:
 
-  <img src="../../resources/10-ApplicationPython/createproject3.jpg" alt="7.1.1-7" style="zoom: 40%;" />
+<img src="../../resources/10-ApplicationPython/createproject3.jpg" alt="7.1.1-7" style="zoom: 40%;" />
 
 - 命名 Python File.
 
-  <img src="../../resources/10-ApplicationPython/createproject4.jpg" alt="7.1.1-7" style="zoom: 67%;" />
+<img src="../../resources/10-ApplicationPython/createproject4.jpg" alt="7.1.1-7" style="zoom: 67%;" />
 
 - 文件创建成功后便进入如下的界面，便可以编写自己的程序了:
 
-  <img src="../../resources/10-ApplicationPython/pycharm界面展示.jpg" alt="7.1.1-7" style="zoom: 67%;" />
+<img src="../../resources/10-ApplicationPython/pycharm界面展示.jpg" alt="7.1.1-7" style="zoom: 67%;" />
 
 ## **3 准备工作**
 

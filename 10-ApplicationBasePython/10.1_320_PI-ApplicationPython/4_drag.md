@@ -21,12 +21,12 @@
 - 3.1 选择机械臂端口
 - 3.2 输入波特率，默认为 1000000
 
-  | **machine type** | **Serial number** | **baud rate** |
-  | :--------------- | :---------------- | :------------ |
-  | 270 PI           | /dev/ttyAMA0      | 1000000       |
-  | 280 PI           | /dev/ttyAMA0      | 1000000       |
-  | 320 PI           | /dev/ttyAMA0      | 115200        |
-  | 280 Jetson Nano  | /dev/ttyTHS1      | 1000000       |
+| **machine type** | **Serial number** | **baud rate** |
+| :--------------- | :---------------- | :------------ |
+| 270 PI           | /dev/ttyAMA0      | 1000000       |
+| 280 PI           | /dev/ttyAMA0      | 1000000       |
+| 320 PI           | /dev/ttyAMA0      | 115200        |
+| 280 Jetson Nano  | /dev/ttyTHS1      | 1000000       |
 
 - 3.3 选择是否需要调试，默认不开启调试
 - 3.4 最后进入功能选择列表，功能选择均通过键盘按键实现：

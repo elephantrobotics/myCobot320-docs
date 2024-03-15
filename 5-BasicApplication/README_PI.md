@@ -35,11 +35,4 @@ Atom 控制器负责处理来自工具接口和 IO 控制的数据信息。这�
 
 ---
 
-[← Basic Application](../../README.md) | [myBlockly →](../../5.2-ApplicationUse/5.2.1-myblockly/320m5/README.md)
-
-miniRoboflow 是 Elephant Robotics 专为嵌入式设备开发的机器人控制软件。<br>
-该软件旨在简化用户与机器人的交互，运行于底部的 Basic 控制器上。用户可通过 USB 接口更新相应的软件版本（在屏幕左侧）。该软件提供**路径拖动示教**、关节零点校准、**上位机信息处理**和机器人状态查询等功能。它是一款结构紧凑、功能丰富的机器人控制软件。<br>
-myBlockly 是一款完全可视化的模块化编程软件，是一种图形化编程语言。<br>
-myBlockly 界面简洁，编程功能全面。它的可视化编程方法适合初次接触机器人产品的用户。
-myStudio 是使用 myRobot/myCobot 等机器人的一站式平台。<br>
-用户可以根据自己的使用场景选择不同的固件并下载，同时学习相关教材并在线浏览教程视频，非常方便。
+[← 上一章](../4-FirstInstallAndUse/4.1-Pi/4.1_320_PI_firstUse.md) | [下一章 →](../6-SDKDevelopment/README.md)

@@ -1,8 +1,8 @@
-# Videos and Codes for Display
+# 演示代码与视频
 
 以下视频供参考。
 
-> **Notice:** 各款设备的对应的波特率不尽相同，使用时请查阅资料了解其波特率，串口编号可通过 [计算器设备管理器](https://docs.elephantrobotics.com/docs/gitbook-en/4-BasicApplication/4.1-myStudio/4.1.1-myStudio_download_driverinstalled.html#4113-how-to-distinguish-between-cp210x-chip-and-cp34x-chip)或串口助手进行查看。
+> **注：** 各款设备的对应的波特率不尽相同，使用时请查阅资料了解其波特率，串口编号可通过 [计算器设备管理器](https://docs.elephantrobotics.com/docs/gitbook-en/4-BasicApplication/4.1-myStudio/4.1.1-myStudio_download_driverinstalled.html#4113-how-to-distinguish-between-cp210x-chip-and-cp34x-chip)或串口助手进行查看。
 
 ## 1 控制 RGB 灯板
 
@@ -44,9 +44,12 @@ while i > 0:
 
 ```
 
-<video controls src="../../resources/10-ApplicationPython/myArm/2.1python控制RGB灯板01.mp4" title="Title"></video>
+<video id="my-video" class="video-js" controls preload="auto" width="100%"
+poster="" data-setup='{"aspectRatio":"16:9"}'>
 
-## 2 控制机械回原点
+  <source src="../../resources/10-ApplicationPython/myArm/2.1python控制RGB灯板01.mp4"></video>
+
+## 2 控机械臂回原点
 
 ```python
 from pymycobot.mycobot import MyCobot
@@ -64,7 +67,10 @@ mc.send_angles([0, 0, 0, 0, 0, 0], 30)
 
 ```
 
-<video controls src="../../resources/10-ApplicationPython/myArm/2.2python控制机械回原点01.mp4" title="Title"></video>
+<video id="my-video" class="video-js" controls preload="auto" width="100%"
+poster="" data-setup='{"aspectRatio":"16:9"}'>
+
+  <source src="../../resources/10-ApplicationPython/myArm/2.2python控制机械回原点01.mp4"></video>
 
 ## 3 单关节运动
 
@@ -100,7 +106,10 @@ mc.send_angle(Angle.J5.value, 90, 40)
 time.sleep(3)
 ```
 
-<video controls src="../../resources/10-ApplicationPython/myArm/2.3控制单关节运动01.mp4"></video>
+<video id="my-video" class="video-js" controls preload="auto" width="100%"
+poster="" data-setup='{"aspectRatio":"16:9"}'>
+
+  <source src="../../resources/10-ApplicationPython/myArm/2.3控制单关节运动01.mp4"></video>
 
 ## 4 多关节运动
 
@@ -143,7 +152,10 @@ mc.send_angles([-90,-45,90,-90,90,-90],50)
 time.sleep(2.5)
 ```
 
-<video controls src="../../resources/10-ApplicationPython/myArm/2.4控制多个关节01.mp4"></video>
+<video id="my-video" class="video-js" controls preload="auto" width="100%"
+poster="" data-setup='{"aspectRatio":"16:9"}'>
+
+  <source src="../../resources/10-ApplicationPython/myArm/2.4控制多个关节01.mp4"></video>
 
 ## 5 坐标控制
 
@@ -197,7 +209,131 @@ mc.send_coord(Coord.X.value, 100, 70)
 
 ```
 
-## 6 夹爪控制
+## 6 控制机械臂左右摆动
+
+```python
+from pymycobot.mycobot import MyCobot
+from pymycobot.genre import Angle
+from pymycobot import PI_PORT, PI_BAUD  # 当使用树莓派版本的mycobot时，可以引用这两个变量进行MyCobot初始化
+import time
+# 初始化一个MyCobot对象
+# Pi版本
+# mc = MyCobot(PI_PORT, PI_BAUD)
+# M5版本
+mc = MyCobot("COM3", 115200)
+# 获得当前位置的坐标
+angle_datas = mc.get_angles()
+print(angle_datas)
+
+# 用数列传递传递坐标参数，让机械臂移动到指定位置
+mc.send_angles([0, 0, 0, 0, 0, 0], 50)
+print(mc.is_paused())
+# 设置等待时间，确保机械臂已经到达指定位置
+# while not mc.is_paused():
+time.sleep(2.5)
+
+# 让关节1移动到90这个位置
+mc.send_angle(Angle.J1.value, 90, 50)
+
+# 设置等待时间，确保机械臂已经到达指定位置
+time.sleep(2)
+
+# 设置循环次数
+num = 5
+
+# 让机械臂左右摇摆
+while num > 0:
+    # 让关节2移动到50这个位置
+    mc.send_angle(Angle.J2.value, 50, 50)
+    # 设置等待时间，确保机械臂已经到达指定位置
+    time.sleep(1.5)
+    # 让关节2移动到-50这个位置
+    mc.send_angle(Angle.J2.value, -50, 50)
+    # 设置等待时间，确保机械臂已经到达指定位置
+    time.sleep(1.5)
+    num -= 1
+# 让机械臂缩起来。你可以手动摆动机械臂，然后使用get_angles()函数获得坐标数列，
+# 通过该函数让机械臂到达你所想的位置。
+mc.send_angles([88.68, -138.51, 155.65, -128.05, -9.93, -15.29], 50)
+
+# 设置等待时间，确保机械臂已经到达指定位置
+time.sleep(2.5)
+# 让机械臂放松，可以手动摆动机械臂
+mc.release_all_servos()
+```
+
+<video id="my-video" class="video-js" controls preload="auto" width="100%"
+poster="" data-setup='{"aspectRatio":"16:9"}'>
+
+  <source src="../../resources/10-ApplicationPython/myArm/2.5python控制机械臂左右摆动01.mp4"></video>
+
+## 7 控制机械臂跳舞
+
+```python
+from pymycobot.mycobot import MyCobot
+from pymycobot import PI_PORT, PI_BAUD  # 当使用树莓派版本的mycobot时，可以引用这两个变量进行MyCobot初始化
+import time
+
+if __name__ == '__main__':
+    # MyCobot 类初始化需要两个参数：
+    #   第一个是串口字符串， 如：
+    #       linux： "/dev/ttyUSB0"
+    #       windows: "COM3"
+    #   第二个是波特率：
+    #       M5版本为： 115200
+    #
+    #   Example:
+    #       mycobot-M5:
+    #           linux:
+    #              mc = MyCobot("/dev/ttyUSB0", 115200)
+    #           windows:
+    #              mc = MyCobot("COM3", 115200)
+    #       mycobot-raspi:
+    #           mc = MyCobot(PI_PORT, PI_BAUD)
+    #
+    # 初始化一个MyCobot对象
+    # 下面为树莓派版本创建对象代码
+    mc = MyCobot(PI_PORT, PI_BAUD)
+    # M5版本
+    # mc = MyCobot("COM3",115200)
+
+    # 设置开始开始时间
+    start = time.time()
+    # 让机械臂到达指定位置
+    mc.send_angles([-1.49, 115, -153.45, 30, -33.42, 137.9], 80)
+    # 判断其是否到达指定位置
+    while not mc.is_in_position([-1.49, 115, -153.45, 30, -33.42, 137.9], 0):
+        # 让机械臂恢复运动
+        mc.resume()
+        # 让机械臂移动0.5s
+        time.sleep(0.5)
+        # 暂停机械臂移动
+        mc.pause()
+        # 判断移动是否超时
+        if time.time() - start > 3:
+            break
+    # 设置开始时间
+    start = time.time()
+    # 让运动持续30秒
+    while time.time() - start < 30:
+        # 让机械臂快速到达该位置
+        mc.send_angles([-1.49, 115, -153.45, 30, -33.42, 137.9], 80)
+        # 将灯的颜色为[0,0,50]
+        mc.set_color(0, 0, 50)
+        time.sleep(0.7)
+        # 让机械臂快速到达该位置
+        mc.send_angles([-1.49, 55, -153.45, 80, 33.42, 137.9], 80)
+        # 将灯的颜色为[0,50,0]
+        mc.set_color(0, 50, 0)
+        time.sleep(0.7)
+```
+
+<video id="my-video" class="video-js" controls preload="auto" width="100%"
+poster="" data-setup='{"aspectRatio":"16:9"}'>
+
+  <source src="../../resources/10-ApplicationPython/myArm/2.6控制机械臂跳舞01.mp4"></video>
+
+## 8 夹爪控制
 
 ```python
 from pymycobot.mycobot import MyCobot
@@ -258,8 +394,8 @@ print("gripper value:", mc.get_gripper_value())
 <video id="my-video" class="video-js" controls preload="auto" width="100%"
 poster="" data-setup='{"aspectRatio":"16:9"}'>
 
-  <source src="../../resources/10-ApplicationBasePython/myArm/2.7夹爪的安装与使用01.mp4"></video>
+  <source src="../../resources/10-ApplicationPython/myArm/2.7夹爪的安装与使用01.mp4"></video>
 
 ---
 
-[← 上一页](4_Handle_control.md) | [下一节 →]()
+[← 上一页](4_Handle_control.md) | [下一章 →](11-ApplicationBaseROS/11.1-ROS1/11.1.2-PI.md)

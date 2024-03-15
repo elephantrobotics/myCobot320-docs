@@ -47,23 +47,23 @@ myCobot 320 for Pi 同 myCobot 320 for M5 一样是生产力工具也是想象�
 请根据兴趣和需求选择以下章节：
 
 <a DesignPhilosophy="my-paragraph-1"></a>
-[2.1-Machine specification](2.2.1-MachineSpecification.md)<br>
+[2.1-机器规格参数](2.2.1-MachineSpecification.md)<br>
 在本节中，我们将介绍产品在行业中通用的基本属性，如机器人描述负载、扭矩、定位精度、尺寸、功能支持和功率参数。<br>
 
 <a SuitableUsers="my-paragraph-2"></a>
-[2.2-Control core parameter](2.2.2-ControlCoreParameter.md)<br>
+[2.2-控制核心参数](2.2.2-ControlCoreParameter.md)<br>
 了解产品的主要控制参数，便于后期定制开发和使用。<br>
 
 <a ApplicationScenario="my-paragraph-3"></a>
-[2.3-Mechanical structure parameter](2.2.2-ControlCoreParameter.md)<br>
+[2.3-机械结构参数](2.2.2-ControlCoreParameter.md)<br>
 在这一部分，我们将详细介绍产品机械结构的重要参数，并为客户提供相应的 3D 模型下载链接，以便客户更好地了解我们的产品。<br>
 
 <a AccessoriesandTools="my-paragraph-4"></a>
-[2.4-Electrical characteristic parameter](2.2.4-ElectricalCharacteristicParameter.md)<br>
+[2.4-电气特性参数](2.2.4-ElectricalCharacteristicParameter.md)<br>
 本章将为客户提供产品的电气特性参数，方便客户后期定制开发和使用。<br>
 
 <a AccessoriesandTools="my-paragraph-4"></a>
-[2.5-Coordinate system](2.2.5-CoordinateSystem.md)<br>
+[2.5-笛卡尔坐标系](2.2.5-CoordinateSystem.md)<br>
 本节介绍了产品的角度和坐标信息，并解释了支持的坐标系控制。同时，还提供了产品的相关参数，用于计算相应的坐标系，如 DH 参数。<br>
 
 请根据您的兴趣点击相应链接，获取更多详细信息。如果您有任何疑问或需要进一步帮助，请随时联系我们的客户支持团队。我们将竭诚为您提供支持和指导。感谢您选择我们的产品，我们期待为您提供卓越的用户体验！<br>
