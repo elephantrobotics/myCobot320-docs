@@ -19,10 +19,10 @@
   * [3.3 Maintenance and Care](/3-UserNotes/320_M5/3.1.3-MaintenanceandCare/1-MaintenanceandCare.md)
   * [3.4 FAQs](3-UserNotes/320_M5/4-FAQ/3.2_320_M5_userNotes.md)
 
-* [4 First Install and Use](4-FirstInstallAndUse/4.2_320_M5_firstUse.md)
-  * [4.1 Product Standard List](4-FirstInstallAndUse/4.2.1-产品清单.md)
-  * [4.2 Product Unboxing Guide](4-FirstInstallAndUse/4.2.2-产品开箱.md)
-  * [4.3 Power-on Test Guide](4-FirstInstallAndUse/4.2.3-开机检测.md)
+* [4 First Install and Use](4-FirstInstallAndUse/4.2-M5/4.2_320_M5_firstUse.md)
+  * [4.1 Product Standard List](4-FirstInstallAndUse/4.2-M5/4.2.1-List.md)
+  * [4.2 Product Unboxing Guide](4-FirstInstallAndUse/4.2-M5/4.2.2-UNbox.md)
+  * [4.3 Power-on Test Guide](4-FirstInstallAndUse/4.2-M5/4.2.3-StartRobot.md)
 
 * [5 Basic Application](5-BasicApplication/README.md)
   * [5.1 miniRoboflow](/5-BasicApplication/5.1-SystemUsageInstructions/320m5/README.md) <br>
