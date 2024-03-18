@@ -39,4 +39,4 @@
 
 ---
 
-[← 上一节](../320pi/4-ControlRGB.md) | [下一节 →](../320pi/6-ControlSingleJoint.md)
+[← 上一页](../320pi/4-ControlRGB.md) | [下一页 →](../320pi/6-ControlSingleJoint.md)

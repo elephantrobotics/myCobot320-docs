@@ -51,4 +51,4 @@
 
 ---
 
-[← 上一节](../320pi/5-ControlRoboticArmBackZero.md) | [下一节 →](../320pi/7-ControlSinglesJoint.md)
+[← 上一页](../320pi/5-ControlRoboticArmBackZero.md) | [下一页 →](../320pi/7-ControlSinglesJoint.md)

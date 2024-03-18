@@ -10,4 +10,4 @@
 
 ---
 
-[← 基础功能页面](../../../../5-BasicApplication/README_PI.md) | [下一节 →](../320pi/2-install_uninstall.md)
+[← 基础功能页面](../../../../5-BasicApplication/README_PI.md) | [下一页 →](../320pi/2-install_uninstall.md)

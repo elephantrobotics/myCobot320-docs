@@ -937,4 +937,4 @@
 
 ---
 
-[← 上一节](../320pi/9-PumpUse.md) | [基础功能页面 →](../../../../5-BasicApplication/README_PI.md)
+[← 上一页](../320pi/9-PumpUse.md) | [基础功能页面 →](../../../../5-BasicApplication/README_PI.md)

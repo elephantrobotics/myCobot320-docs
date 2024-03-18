@@ -42,4 +42,4 @@
 
 ---
 
-[← 上一页](3_TCPIP.md) | [下一节 →](5_Handle_control.md)
+[← 上一页](3_TCPIP.md) | [下一页 →](5_Handle_control.md)

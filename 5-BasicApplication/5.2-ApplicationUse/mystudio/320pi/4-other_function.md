@@ -4,4 +4,4 @@
 
 ---
 
-[← 上一节](./3-flash_firmwares.md) | [基础功能页面 →](../../../../5-BasicApplication/README_PI.md)
+[← 上一页](./3-flash_firmwares.md) | [基础功能页面 →](../../../../5-BasicApplication/README_PI.md)

@@ -47,4 +47,4 @@
 
 ---
 
-[← 上一节](../320pi/6-ControlSingleJoint.md) | [下一节 →](../320pi/8-GripperUse.md)
+[← 上一页](../320pi/6-ControlSingleJoint.md) | [下一页 →](../320pi/8-GripperUse.md)

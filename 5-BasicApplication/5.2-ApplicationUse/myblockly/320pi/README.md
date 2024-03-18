@@ -36,4 +36,4 @@
 
 ---
 
-[← 基础功能页](../../../README_PI.md) | [下一节 →](../../mystudio/320pi/README.md)
+[← 上一节](../../../5.1-SystemUsageInstructions/320pi/5.1-SystemUsageInstructions.md) | [下一节 →](../../mystudio/320pi/README.md)

@@ -88,4 +88,4 @@ myblockly 已卸载，点击`完成`退出即可
 
 ---
 
-[← 上一节](../320pi/1-myBlocklyFirstUse.md) | [下一节 →](../320pi/3-interface_description.md)
+[← 上一页](../320pi/1-myBlocklyFirstUse.md) | [下一页 →](../320pi/3-interface_description.md)

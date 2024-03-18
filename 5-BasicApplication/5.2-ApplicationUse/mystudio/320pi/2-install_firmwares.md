@@ -41,4 +41,4 @@
 
 ---
 
-[← 上一节](./1-setup.md) | [下一节 →](./3-flash_firmwares.md)
+[← 上一页](./1-setup.md) | [下一页 →](./3-flash_firmwares.md)

@@ -29,4 +29,4 @@
 
 ---
 
-[← 基础功能页](../../../README_PI.md) | [下一节 →](../../../5.3-FirmwareUse/pi/1-firmware.md)
+[← 上一节](../../myblockly/320pi/README.md) | [下一节 →](../../../5.3-FirmwareUse/pi/1-firmware.md)

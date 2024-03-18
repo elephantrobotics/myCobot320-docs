@@ -105,4 +105,4 @@ myBlockly 的程序以\*.json 格式保存，点击界面右上角蓝色方框�
 
 ---
 
-[← 上一节](../320pi/2-install_uninstall.md) | [下一节 →](../320pi/4-ControlRGB.md)
+[← 上一页](../320pi/2-install_uninstall.md) | [下一页 →](../320pi/4-ControlRGB.md)

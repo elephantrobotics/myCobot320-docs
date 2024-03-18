@@ -75,4 +75,4 @@ python3 handle_control.py
 
 ---
 
-[← 上一页](4_drag.md) | [下一节 →](6_example.md)
+[← 上一页](4_drag.md) | [下一页 →](6_example.md)

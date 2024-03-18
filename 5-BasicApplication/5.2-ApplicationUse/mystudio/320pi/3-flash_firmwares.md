@@ -42,4 +42,4 @@
 
 ---
 
-[← 上一节](./2-install_firmwares.md) | [下一节 →](./4-other_function.md)
+[← 上一页](./2-install_firmwares.md) | [下一页 →](./4-other_function.md)
