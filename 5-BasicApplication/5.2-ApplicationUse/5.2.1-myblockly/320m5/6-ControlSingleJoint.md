@@ -1,4 +1,4 @@
-# 7 Control single joint movement
+# Control single joint movement
 
 <i>Preparation before you begin</i>
 

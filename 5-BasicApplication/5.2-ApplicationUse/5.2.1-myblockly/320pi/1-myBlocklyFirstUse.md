@@ -1,4 +1,4 @@
-# 1 Preparations before using myBlockl
+# Preparations before using myBlockl
 
 Before downloading myBlockly, you need to configure the Python environment and use myStudio to burn the firmware. Please refer to the following operation methods for details.
 

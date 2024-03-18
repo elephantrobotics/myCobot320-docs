@@ -63,7 +63,7 @@
     * [1 CPlus Download](12-ApplicationBaseCPlus/12.1-download.md)
     * [2 build](12-ApplicationBaseCPlus/12.2-build.md)
     * [3 API](12-ApplicationBaseCPlus/12.3-API.md)
-    * [4 example](12-ApplicationBaseCPlus/12.3-example.md)
+    * [4 example](12-ApplicationBaseCPlus/12.4-example.md)
   * [6.6 Arduino](16-ArduinoEnv320/README.md)
     * [1 arduino Download](16-ArduinoEnv320/16.1-arduino_download.md)
     * [2 API](16-ArduinoEnv320/16.2-api.md)
@@ -78,6 +78,7 @@
   * [8.3 Software and Source Code](8-FilesDownload/8.2_320_M5_Files/8.3_softwareSource.md)
   * [8.4 System Information](8-FilesDownload/8.2_320_M5_Files/8.4_systemInfo.md)
   * [8.5 Publicity Material](/8-FilesDownload/8.2_320_M5_Files/8.5_PublicityMaterial.md)
+
 
 * [9 About Us](9-AboutUs/README.md)
   * [9.1 Elephant Robotics](9-AboutUs/9.1_company.md)

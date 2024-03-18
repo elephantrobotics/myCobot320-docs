@@ -1,4 +1,4 @@
-# 8 Use of gripper
+# Use of gripper
 
 <i>Preparation before you begin</i>
 

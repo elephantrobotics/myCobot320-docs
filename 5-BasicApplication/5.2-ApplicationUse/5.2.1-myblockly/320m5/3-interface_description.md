@@ -1,4 +1,4 @@
-## 3 myBlockly interface display and use of basic functions
+## myBlockly interface display and use of basic functions
 
 <img src="../../../../resources/5-BasicApplication/5.2.1/m5/img/interface/1.png" />
 

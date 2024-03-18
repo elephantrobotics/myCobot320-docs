@@ -1,4 +1,4 @@
-# 11 Detailed explanation of myblockly building blocks
+# Detailed explanation of myblockly building blocks
 
 
 
