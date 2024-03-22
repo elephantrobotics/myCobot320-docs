@@ -18,7 +18,7 @@
 | 支持的系统   | Win7/8/10, Linux, MAC                                |
 | 使用寿命     | 两年                                                 |
 | 固定方式     | 螺丝固定                                             |
-| 使用环境要求 | 温度和压力                                           |
+| 使用环境要求 | 常温常压                                             |
 | 适用设备支持 | ER myCobot 320 Series <br> ER myCobot Pro 600 Series |
 
 ## 用于物体
