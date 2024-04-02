@@ -34,14 +34,20 @@ Used when using the robotic arm to write and draw
 
 ## Mall link
 
--   [Taobao](https://shop504055678.taobao.com)
--   [shopify](https://shop.elephantrobotics.com/)
+- [Taobao](https://shop504055678.taobao.com)
+- [shopify](https://shop.elephantrobotics.com/)
 
- ## How to use
+## How to use
 
-1 Installing : <br>
+**Installation and use**
+
+- mounting
+
+  1. Stick the two short screws into the gripper holes:
+     ![](../../../resources/1-ProductIntroduction/1.4/1.4.4-Other/1-PenHoldPro/安装1.jpg)
+  2. Use an Allen key to secure the gripper to the end of the arm:  
+     ![](../../../resources/1-ProductIntroduction/1.4/1.4.4-Other/1-PenHoldPro/安装2.jpg)
 
 <img src="../../../resources/1-ProductIntroduction/1.4/1.4.4-Other/1-PenHoldPro/myCobotProPenHolder-3.jpg" alt="img-1" width="800" height=“auto” /> <br>
-
 
 [← Accessories Tools Page](../../1.4-AccessoriesTools/1.4-AccessoriesTools.md#holder) | [Next Page →](../1.4.4-Other/2-PhoneHolderPro.md)

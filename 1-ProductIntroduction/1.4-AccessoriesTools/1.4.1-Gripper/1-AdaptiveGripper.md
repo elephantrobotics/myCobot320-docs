@@ -61,7 +61,7 @@ If the video fails to load, please click the link below to view the video.
 
 **Installation and use**
 
-- Gripper mounting：
+- Clamping jaws mounting：
 
   - Structural installation：
 

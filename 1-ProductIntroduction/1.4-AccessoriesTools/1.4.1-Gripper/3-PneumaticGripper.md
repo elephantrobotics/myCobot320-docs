@@ -76,14 +76,6 @@
 
 - Clamping jaws mounted:
 
-  > You can view the installation instructions for the corresponding accessories in the video:
-
-  <video id="my-video" class="video-js" controls preload="auto" width="100%" poster="" data-setup='{"aspectRatio":"16:9"}'>
-
-    <source src="../../../resourse/2-serialproduct/vedio/myCobotPro_accessories.mp4" type='video/mp4' >
-
-  </video>
-
   1. Connect the other end of the red hose from the air compressor to the solenoid valve connection:
      ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/3-PneumaticGripper/结构安装1.png)
   2. The other end of the solenoid valve will be unscrewed another port for the activation of the jaws to control the opening and closing of the use:
