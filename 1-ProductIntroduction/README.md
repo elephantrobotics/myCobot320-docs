@@ -4,8 +4,6 @@
 
 > **The effective working radius of the robot arm is 350 mm.**
 
-> <br>
-
 ## Product Introduction<br>
 
 The myCobot 320 Robot Arm, developed by Elephant Robotics, is a collaborative robot designed specifically for education, research, and light industrial automation. This robot is renowned for its compact design and powerful capabilities, committed to providing unlimited possibilities for innovation and learning. It features a maximum arm reach of 350mm and a maximum payload of 1kg, supporting programming languages of varying difficulty levels, suitable for users of all skill levels.
@@ -37,7 +35,7 @@ If you are interested in purchasing the device, please click the link below.
 
 - Taobao: https://shop504055678.taobao.com
 - shopify: https://shop.elephantrobotics.com/
-- AliExpress：[Elephant Robotics Store - Amazing products with exclusive discounts on AliExpress](https://elephantrobotics.aliexpress.com/store/1101941423)
+- AliExpress：https://elephantrobotics.aliexpress.com/store/1101941423
 
 ## Chapter Summary
 
