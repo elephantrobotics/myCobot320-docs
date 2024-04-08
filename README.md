@@ -1,46 +1,104 @@
-# myCobot 320 Developer Guide
+# myCobot 320
 
-Welcome to the official documentation repository for the myCobot 320 Developer Guide! Our aim is to provide a comprehensive and understandable guide to help developers program and control the myCobot 320 robotic arm using various programming languages and development environments.
+> 面向用户自主编程开发的六轴协作机器人  
+> Six-axis collaborative robots for user-developed autonomous programming
 
-## Getting Started
+## English
 
-Before you begin, please make sure you are familiar with basic Git operations and Markdown syntax. This will help you contribute and retrieve information more efficiently.
+### gitbook-en
 
-## How to Report Issues
+- M5 version:
+  https://docs.elephantrobotics.com/docs/mycobot-320-m5-en/
+- Pi version:
+  https://docs.elephantrobotics.com/docs/mycobot-320-pi-en/
 
-If you encounter any problems while using the guide or developing with the myCobot 320, please follow these steps:
+### Product Diagram
 
-1. Visit the [Issues page](https://github.com/elephantrobotics/myCobot320-docs/issues).
-2. Click the “New Issue” button to create a new issue.
-3. Provide as much detail as possible, including but not limited to:
-   - Description of the issue
-   - Steps to reproduce
-   - Expected vs. actual results
-   - Screenshots or code snippets, if possible.
-4. After submitting, please be patient for our team to respond.
+- M5：  
+  [Product Catalogue](https://download-elephantrobotics.oss-cn-shenzhen.aliyuncs.com/Product_software/myCobot/%E4%BA%A7%E5%93%81%E7%94%BB%E5%86%8C/%E4%BA%A7%E5%93%81%E7%94%BB%E5%86%8Cmycobot320m5v20221013.pdf)
+  ![alt text](resources/1-ProductIntroduction/M5产品主图.jpg)
 
-## How to Submit Merge Requests
+- Pi：  
+  [Product Catalogue](https://download-elephantrobotics.oss-cn-shenzhen.aliyuncs.com/Product_software/myCobot/%E4%BA%A7%E5%93%81%E7%94%BB%E5%86%8C/%E4%BA%A7%E5%93%81%E7%94%BB%E5%86%8CmyCobot320pi20221013.pdf)
+  ![alt text](resources/2-ProductFeature/产品主图.jpg)
 
-We warmly welcome and encourage community members to improve documentation or add new content. If you wish to contribute, please follow these steps:
+### Product Introduction
 
-1. Fork this repository to your GitHub account.
-2. Clone your forked repository to your local machine.
-3. Create a new branch for your changes.
-4. After making your changes, commit them to your fork.
-5. On GitHub, submit a merge request (MR) to the original repository’s `gitbook-en` branch.
-6. In your MR description, clearly describe the changes you've made and why.
-7. After submitting your MR, please be patient for our team to review it.
+Developed by Elephant Robotics, the myCobot 320 Robotic Arm is a collaborative robot designed for education, research and light industrial automation. Renowned for its compact design and powerful features, this robot is dedicated to providing endless possibilities for innovation and learning. It has a maximum arm span of 350 mm, a maximum payload of 1 kg, and supports programming languages of varying difficulty, making it suitable for users of all skill levels.  
+The arm supports Python and has hardware interfaces such as IO and USB, making it easy to connect to a variety of sensors and actuators. It also provides rich open source libraries and APIs to simplify the development process, and is compatible with Windows, Linux, and MacOS, making it suitable for a variety of development environments and encouraging users to participate in extended development.
 
-## Contribution Guidelines
+### catalogue
 
-We aim to maintain an open and welcoming environment, allowing everyone to contribute comfortably. Since we currently do not have a Code of Conduct, we ask you to simply be professional and respectful in your interactions within the project. 
+- M5：
 
-## Adding a Code of Conduct
+  - [1 Product Introduction](1-ProductIntroduction/README.md)
+  - [2 Product Feature](2-ProductFeature/2.1_320_M5_product/README.md)
+  - [3 User Notes](3-UserNotes/320_M5/README.md)
+  - [4 First Install and Use](4-FirstInstallAndUse/4.1-M5/4.1_320_M5_firstUse.md)
+  - [5 Basic Application](5-BasicApplication/README_M5.md)
+  - [6 SDK Development](6-SDKDevelopment/README.md)
+  - [7 Examples of Robots Using](7-ExamplesRobotsUsing/README.md)
+  - [8 Documents Download](8-FilesDownload/README.md)
+  - [9 About Us](9-AboutUs/README.md)
 
-We recommend adding a Code of Conduct to your project to foster a positive and inclusive environment. GitHub offers templates such as the Contributor Covenant, widely adopted across open-source projects. You can create a `CODE_OF_CONDUCT.md` in your repository and reference it here once added.
+- Pi：
 
-## Support and Contact
+  - [1 Product Introduction](1-ProductIntroduction/README.md)
+  - [2 Product Feature](2-ProductFeature/2.2_320_PI_product/README.md)
+  - [3 User Notes](3-UserNotes/320_PI/README.md)
+  - [4 First Install and Use](4-FirstInstallAndUse/4.1-Pi/4.1_320_PI_firstUse.md)
+  - [5 Basic Application](5-BasicApplication/README_PI.md)
+  - [6 SDK Development](6-SDKDevelopment/README.md)
+  - [7 Examples of Robots Using](7-ExamplesRobotsUsing/README.md)
+  - [8 Documents Download](8-FilesDownload/README.md)
+  - [9 About Us](9-AboutUs/README.md)
 
-If you need any help, or have suggestions or feedback, please do not hesitate to contact us through the [Discussions page](https://github.com/elephantrobotics/myCobot320-docs/discussions).
+## 中文
 
-Thank you for your support and contributions!
+### gitbook-cn
+
+- M5 版本：
+  https://docs.elephantrobotics.com/docs/mycobot-320-m5-cn/
+- Pi 版本：
+  https://docs.elephantrobotics.com/docs/mycobot-320-pi-cn/
+
+### 产品图
+
+- M5：  
+  [产品画册](https://download-elephantrobotics.oss-cn-shenzhen.aliyuncs.com/Product_software/myCobot/%E4%BA%A7%E5%93%81%E7%94%BB%E5%86%8C/%E4%BA%A7%E5%93%81%E7%94%BB%E5%86%8Cmycobot320m5v20221013.pdf)
+  ![alt text](resources/1-ProductIntroduction/M5产品主图.jpg)
+
+- Pi：  
+  [产品画册](https://download-elephantrobotics.oss-cn-shenzhen.aliyuncs.com/Product_software/myCobot/%E4%BA%A7%E5%93%81%E7%94%BB%E5%86%8C/%E4%BA%A7%E5%93%81%E7%94%BB%E5%86%8CmyCobot320pi20221013.pdf)
+  ![alt text](resources/2-ProductFeature/产品主图.jpg)
+
+### 产品简介
+
+myCobot 320 机械臂由大象机器人公司开发，是专为教育、研究和轻工业自动化设计的协作机器人。这款机器人以其紧凑的设计和强大的功能而闻名，致力于为创新和学习提供无限可能。它的最大臂展为 350 毫米，最大有效载荷为 1 千克，支持不同难度的编程语言，适合各种技能水平的用户使用。  
+机械臂支持 Python 语言，硬件接口包括 IO、USB 等，便于连接各种传感器和执行器。并且提供丰富的开放源代码库和 API，以简化开发流程，与 Windows、Linux 和 MacOS 兼容，适用于各种开发环境，鼓励用户参与扩展开发。
+
+### 目录
+
+- M5：
+
+  - [1 产品介绍](1-ProductIntroduction/README.md)
+  - [2 产品特性](2-ProductFeature/2.1_320_M5_product/README.md)
+  - [3 用户须知](3-UserNotes/320_M5/README.md)
+  - [4 首次安装使用](4-FirstInstallAndUse/4.1-M5/4.1_320_M5_firstUse.md)
+  - [5 基础功能使用](5-BasicApplication/README_M5.md)
+  - [6 SDK 开发指南](6-SDKDevelopment/README.md)
+  - [7 机械臂使用场景案例](7-ExamplesRobotsUsing/README.md)
+  - [8 相关资料下载](8-FilesDownload/README.md)
+  - [9 关于我们](9-AboutUs/README.md)
+
+- Pi：
+
+  - [1 产品介绍](1-ProductIntroduction/README.md)
+  - [2 产品特性](2-ProductFeature/2.2_320_PI_product/README.md)
+  - [3 用户须知](3-UserNotes/320_PI/README.md)
+  - [4 首次安装使用](4-FirstInstallAndUse/4.1-Pi/4.1_320_PI_firstUse.md)
+  - [5 基础功能使用](5-BasicApplication/README_PI.md)
+  - [6 SDK 开发指南](6-SDKDevelopment/README.md)
+  - [7 机械臂使用场景案例](7-ExamplesRobotsUsing/README.md)
+  - [8 相关资料下载](8-FilesDownload/README.md)
+  - [9 关于我们](9-AboutUs/README.md)
