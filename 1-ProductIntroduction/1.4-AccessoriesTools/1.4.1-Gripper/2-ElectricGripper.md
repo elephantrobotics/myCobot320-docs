@@ -6,8 +6,6 @@
 
 <img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/myCobot-Pro-EG1.jpg" alt="img-1" width="800" height=“auto” />
 
-
-
 ## Specifications:
 
 | **name**                     | **mycobot Pro Electric Gripper**     |
@@ -66,21 +64,66 @@
 
 ## Mall link
 
-Mall link: 
--   [Taobao](https://shop504055678.taobao.com)
--   [shopify](https://shop.elephantrobotics.com/)
+Mall link:
+
+- [Taobao](https://shop504055678.taobao.com)
+- [shopify](https://shop.elephantrobotics.com/)
 
 <!-- - [Shopify](https://shop-elephantrobotics-com.translate.goog/collections/mycobot-pro-600/products/electric-parallel-gripper?_x_tr_sl=auto&_x_tr_tl=zh-CNhttps://item.taobao.com/item.htm?spm=a1z10.5-c-s.0.0.6945364bve0QX4&id=667084571424) -->
 
 ## How to use
 
 1 Installing the gripper: <br>
-- For an electric gripper, insert it into the 485 interface on the top, as shown in the following figure:  <br>
-<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/myCobot-Pro-EG2.jpg" alt="img-2" width="480" height="auto" /> <br>
 
+- For an electric gripper, insert it into the 485 interface on the top, as shown in the following figure: <br>
+  <img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/myCobot-Pro-EG2.jpg" alt="img-2" width="480" height="auto" /> <br>
 
-<!-- 2 Development with SDK  
--   [Blockly]()     
+**Installation and use**
+
+- Check that the kit is complete: screws, hexagonal spanner, clamping jaws with connecting wires, clamping jaws with arm end fixing device
+  ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/物料.jpg)
+
+- Clamping jaws mounted:
+
+  - Structural installation:
+
+    1. Place the short screws into the holes in the fixture:
+       ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/安装1.jpg)
+
+    2. Align the screws with the four screw holes on the end of the robot arm and tighten:
+       ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/安装2.jpg)
+
+    3. Insert the motorised jaws into the fixture and tighten with fine screws on both sides, eight in total:
+       ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/安装3.jpg)
+
+  - Electrical Connections:
+
+    1. Plug the 485 cable into the robot arm control connector:
+       ![](../../../resourse/6-ApplicationBaseRoboFlow/6.5/6.6_2.png)<br>
+
+       ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/电气连接.jpg)
+       <br>
+
+**Instructions for use:**<br>
+
+```python
+from pymycobot.mycobot import MyCobot
+import time
+
+# Initialise a MyCobot object
+mc = MyCobot("COM3", 115200)
+
+# Can control the clamping jaws to open and strike - close and open:
+mc.set_eletric_gripper(0)
+time.sleep(3)
+mc.set_eletric_gripper(1)
+time.sleep(3)
+mc.set_eletric_gripper(0)
+time.sleep(3)
+```
+
+<!-- 2 Development with SDK
+-   [Blockly]()
 -   [Python]()
 -   [C++]() -->
 
