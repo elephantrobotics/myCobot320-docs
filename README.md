@@ -9,6 +9,13 @@
 - Pi 版本：
   https://docs.elephantrobotics.com/docs/mycobot-320-pi-cn/
 
+## gitbook-en
+
+- M5 版本：
+  https://docs.elephantrobotics.com/docs/mycobot-320-m5-en/
+- Pi 版本：
+  https://docs.elephantrobotics.com/docs/mycobot-320-pi-en/
+
 ## 产品图
 
 - M5：  
