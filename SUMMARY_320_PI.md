@@ -57,7 +57,7 @@
     - [3 烧录和更新固件](5-BasicApplication/5.2-ApplicationUse/mystudio/320pi/3-flash_firmwares.md)
     - [4 其他功能](5-BasicApplication/5.2-ApplicationUse/mystudio/320pi/4-other_function.md)
   - [5.3 固件更新说明](5-BasicApplication/5.3-FirmwareUse/pi/1-firmware.md)
-- [6 SDK 开发指南](6-SDKDevelopment/README.md)
+- [6 SDK 开发指南](6-SDKDevelopment/README_PI.md)
   - [6.1 基于 python 开发使用](10-ApplicationBasePython/README.md)
     - [6.1.1 环境配置](10-ApplicationBasePython/10.1_320_PI-ApplicationPython/1_download.md)
     - [6.1.2 API 使用说明](10-ApplicationBasePython/10.1_320_PI-ApplicationPython/2_API.md)

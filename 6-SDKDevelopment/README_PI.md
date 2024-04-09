@@ -15,7 +15,7 @@ myCobot 320 for PI 机械臂有内置系统，将机械臂与显示屏相连接�
   我们的机器人支持 Python，Python API 库的开发也日趋完善。机器人的关节角度、坐标、抓手和其他方面都可以通过 Python 进行控制。<br
 
 - [6.2 Robot Operating System 1 (ROS1) ](/11-ApplicationBaseROS/11.1-ROS1/11.1.2-PI.md)<br>
-  ROS 是开源的，是用于机器人控制的后操作系统，或称二次操作系统。利用 ROS，可以在虚拟环境中实现对机械手的模拟控制。通过 rviz 平台可以对机械臂进行可视化，并以多种方式操作机械臂。它还可以通过自由控制机械臂来规划和执行机械臂的动作路径。<br
+  ROS 是开源的，是用于机器人控制的后操作系统，或称二次操作系统。利用 ROS，可以在虚拟环境中实现对机械手的模拟控制。通过 rviz 平台可以对机械臂进行可视化，并以多种方式操作机械臂。它还可以通过自由控制机械臂来规划和执行机械臂的动作路径。<br>
 
 - [6.3 Robot Operating System 2 (ROS2)](/11-ApplicationBaseROS/11.2-ROS2/11.2.2-PI.md)<br>
   ROS2 的前身是 ROS，ROS 即机器人操作系统（Robot Operating System）。但 ROS 本身并不是操作系统，而是一个软件库和工具集。Ros 的出现解决了机器人各个组件的通信问题。后来，越来越多的机器人算法被集成到 ROS 中。ROS2 继承了 ROS，比 ROS 更强大、更优秀。
