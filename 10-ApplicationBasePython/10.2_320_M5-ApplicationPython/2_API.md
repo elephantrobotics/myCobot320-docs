@@ -1,627 +1,615 @@
-# Introduction to API
+# API 使用说明
 
-API or Application Programming Interface refers to a number of preset programs. Before utilization, it is required to import API library:
+API（Application Programming Interface），即应用程序接口函数，是一些预先定义好的函数。在使用下列函数接口的时候请先在开头导入我们的 API 库，即输入下方代码，否则无法运行成功：
 
+```python
+#适用于myCobot、mechArm系列
+from pymycobot.mycobot import MyCobot
 
-## 1. System Status
+#适用于myPalletizer系列
+from pymycobot.mypalletizer import MyPalletizer
+
+#适用于myBuddy系列
+from pymycobot.mybuddy import MyBuddy
+
+# 适用于myArm
+from pymycobot.myarm import MyArm
+```
+
+## 1. 系统状态
 
 **1.1** `get_system_version()`
 
-- **Function:** get the version of firmware
-- **Parameters:** None
-- **Return value:** None
+- **功能:** 获取固件版本
+- **参数:** 无
+- **返回值:** 无
 
+## 2. 总体状况
 
-## 2. Overall Status
+**2.1** `power_on()`
 
+- **功能:** Atom 打开通信（默认为打开）
 
-**2.1**  `power_on()`
+- **返回值:** 无
 
-- **Function:** atom open communication (default open)
+**2.2** `power_off()`
 
-- **Return Value:** None
+- **功能:** Atom 关闭通信
 
-**2.2**  `power_off()`
+- **返回值:** 无
 
-- **Function:** atom turn off communication
+**2.3** `is_power_on()`
 
-- **Return Value:** None
+- **功能:** 判断机械臂是否通电
 
-**2.3**  `is_power_on()`
+- **返回值:**
+  - 1- 机械臂已通电
+  - 0 - 机械臂已断电
+  - -1- 错误
 
-- **Function:** judge whether robot arms is powered on or not
+**2.4** `release_all_servos()`
 
-- **Return Value:**
-  - 1: power on
-  - 0: power off
-  - -1: error
+- **功能:** 设置机械臂为自由移动模式（能手动自由摆动机械臂）
+- **返回值:** 无
 
-**2.4**  `release_all_servos()`
+**2.5** `is_controller_connected()`
 
-- **Function:** release all robot arms
-- **Return Value:** None
+- **功能:** 判断是否与 Atom 连接
 
-**2.5**  `is_controller_connected()`
+* **返回值:**
+  - 1- 已连接
+  - 0 - 未连接
+  - -1- 错误
 
-- **Function:** check if connected with Atom.
+**2.6** `read_next_error()`
 
-* **Return Value:**
-  - 1: connected
-  - 0: not connected
-  - -1: error
+- **Fuction:** 机械臂错误检测
 
-**2.6**  `read_next_error()`
+- **返回值:**
+  - 0- 无异常
+  - 1 - 通讯中断
+  - 2 - 通讯不稳定
+  - 3 - 舵机异常
 
-- **Fuction:** robot Error detection
+**2.7** `set_fresh_mode(mode)`
 
-- **Return Value:**
-  - 0: No abnormality
-  - 1: Communication disconnected
-  - 2: Unstable communication
-  - 3 : Servo abnormality
-
-**2.7**  `set_fresh_mode(mode)`
-
-- **Fuction:** set command refresh mode
-- **Parameters:**
+- **Fuction:** 设置插补/刷新运动模式
+- **参数:**
   - **mode** – int  
-    1 - Always execute the latest command first.  
-    0 - Execute instructions sequentially in the form of a queue.
-- **Return Value:** None
+    1：执行第一个指令
+    0：按序执行指令
+- **返回值:** 无
 
-**2.8**  `get_fresh_mode()`
+**2.8** `get_fresh_mode()`
 
-- **Fuction**: get command refresh mode
+- **Fuction**: 查询插补/刷新运动模式
 
-- **Return Value:**
-  - 1 - Always execute the latest command first.
-  - 0 - Execute instructions sequentially in the form of a queue.
+- **返回值:**
+  - 0：按序执行指令
+  - 1: 执行第一个指令
 
-**2.9**  `set_free_mode(mode)`
+**2.9** `set_free_mode(mode)`
 
-- **Fuction:** set free mode
-- **Parameters:**
-  - **mode** – int  
-    1 -   close free mode  
-    0 -   open free mode
-- **Return Value:** None
+- **Fuction:** 设置自由模式
+- **参数:**
+  - **mode** – int
+    - 0 - 关闭
+    - 1 - 打开
+- **返回值:** 无
 
-**2.10**  `is_free_mode()`
+**2.10** `is_free_mode()`
 
-- **Fuction:** check whether it is in free movement mode
+- **Fuction:** 检查是否为自由模式
 
-- **Return Value:**
-  - 1 - close
-  - 0 - open
+- **返回值:**
+  - 0 - 否
+  - 1 - 是
 
+## 3. 输入程序控制模式（MDI 模式
 
+**3.1** `get_angles()`
 
-## 3. MDI Mode and Operation
+- **功能:** 获取所有关节角度
+- **返回值**: `list` 一个浮点值的列表代，表示所有关节的角度
 
-**3.1**  `get_angles()`
+**3.2** `send_angle(id, degree, speed)`
 
-- **Function:** get the degree of all joints
-- **Returns**: a float list of all degree
+- **功能:** 发送指定的单个关节运动至指定的角度
 
-**3.2**  `send_angle(id, degree, speed)`
+- **参数:**
 
-- **Function:** send one degree of joint to robot arm
+  - `id`: 代表机械臂的关节，六轴有六个关节，四轴有四个关节，有特定的表示方法 关节一的表示法：`Angle.J1.value`。（也可以用数字 1-6 来表示）
+  - `degree`: 表示关节的角度
+  - `speed`：表示机械臂运动的速度，范围 0~100
 
-- **Parameters:**
+**3.3** `send_angles(degrees, speed)`
 
-  - id: Joint id(`genre.Angle`) / int 1-6
-  - degree: degree value(`float`)
-  - speed: (`int`) 0 ~ 100
+- **功能:** 发送所有角度给机械臂所有关节
+- **参数:**
+  - `degrees`: (List[float])包含所有关节的角度 ,六轴机器人有六个关节所以长度为 6，四轴长度为 4，表示方法为：[20,20,20,20,20,20]
+  - `speed`: 表示机械臂运动的速度，取值范围是 0-100
 
-**3.3**  `send_angles(degrees, speed)`
+**3.4** `get_coords()`
 
-- **Function:** send the degrees of all joints to robot arm
-- **Parameters:**
-  - degrees: a list of degree value(`List[float]`), length 6
-  - speed: (`int`) 0 ~ 100
+- **功能:** 获取当前坐标和姿态
 
-**3.4**  `get_coords()`
+- **返回值:** `list` 包含坐标和姿态的列表:
+  - 六轴：长度为 6，`[x, y, z, rx, ry, rz]`
+  - 四轴：长度为 4，`[x, y, z, rx]`
 
-- **Function:** get the Coords from robot arm, coordinate system based on base.
+**3.5** `send_coord(id, coord, speed)`
 
-- **Returns:** a float list of coord:`[x, y, z, rx, ry, rz]` or  `[x, y, z, rx]`
+- **功能:** 发送单个坐标值给机械臂进行移动
 
-**3.5**  `send_coord(id, coord, speed)`
+- **参数:**
+  - `id`:代表机械臂的坐标，六轴有六个坐标，四轴有四个坐标，有特定的表示方法 X 坐标的表示法：`Coord.X.value`，也有简易的表示方法：如 X 轴可以填写 1,Y 填写 2,以此类推
+  - `coord`: 输入您想要到达的坐标值
+  - `speed`: 表示机械臂运动的速度，范围是 0-100
 
-- **Function:** send one coord to robot arm
+**3.6** `send_coords(coords, speed, mode)`
 
-- **Parameters:**
-  - id: coord id(`genre.Coord`) / int 1-6
-  - coord: coord value(`float`)
-  - speed: (`int`) 0 ~ 100
+- **功能:** 发送整体坐标和姿态,让机械臂头部从原来点移动到您指定点
+- **参数:**
+  - `coords`:
+    - 六轴：[x,y,z,rx,ry,rz]的坐标值，长度为 6
+    - 四轴：[x,y,z,rx]的坐标值，长度为 4
+  - speed: (`int`) 表示机械臂运动的速度，范围是 0-100
+  - mode: (`int`): 取值限定 0 和 1
+    - 0 表示机械臂头部移动的路径为非线性，即随机规划路线，只要机械臂头部以保持规定的姿态移动到指定点即可。
+    - 1 表示机械臂头部移动的路径为线性的，即智能规划路线让机械臂头部以直线的方式移动到指定点.
 
-**3.6**  `send_coords(coords, speed, mode)`
+**3.7** `is_in_position(data, flag)`
 
-- **Function:** send all coords to robot arm
-- **Parameters:**
-  - coords: a list of coords value(`List[float]`), length 6.
-  - speed: (`int`) 0 ~ 100
-  - mode: (`int`): `0` - angular, `1` - linear
+- **功能:** 判断机器人有没有到达指定的位置
+- **参数:**
+  - `data`: 您给出的一组数据可以是角度也可以是坐标值,如：[10,20,20,10,20,10]
+  - `flag`: 数据类型(取值范围 0 或 1)
+    - 0: 表示给入的数值是角度值
+    - 1: 表示给入的数值是坐标值
+- **返回值:**
+  - 1 - 已到达
+  - 0 - 未到达
+  - -1 - 错误
 
+**3.8** `is_moving()	`
 
-**3.7**  `is_in_position(data, flag)`
+- **功能:** 判断机械臂有没有移动
+- **返回值:**
+  - 1 正在移动
+  - 0 没有移动
+  - -1 错误
 
-- **Function:** judge whether in the position.  
-- **Parameters:**  
-  - data: A data list, angles or coords, length 6.
-  - flag: Tag the data type, `0` - angles, `1` - coords.  
-- **Return Value:**
-  - 1 - true
-  - 0 - false
-  - -1 - error
+**3.9** `pause()`
 
-**3.8**  `is_moving()	`
+- **功能:** 让机械臂暂停当前运动
+- **返回值**: 无.
 
-- **Function:** judge whether the robot is moving
-- **Return Value:**
-  - 1 moving
-  - 0 not moving
-  - -1 error
+**3.10** `is_paused()`
 
-  
-**3.9**  `pause()`
+- **功能:** 判断机械臂是否为暂停状态
+- **返回值:**
+  - 1 - 已经暂停
+  - 0 - 没有暂停
+  - -1 - 错误
 
-- **Function:** pause robot movement.
-- **Returns**: None.
+**3.11** `resume()`
 
-**3.10**  `is_paused()`
+- **功能:** 让机械臂恢复之前所设置的运动
+- **返回值**: 无
 
-- **Function:** detect if the bot is paused
-- **Returns:**
-  - 1 - paused 
-  - 0 - not paused 
-  - -1 - error
+**3.12** `stop()`
 
-**3.11**  `resume()`
-
-- **Function:** resume the robot movement and complete the previous command
-- **Returns**: a float list of all degree
-
-**3.12**  `stop()`
-
-- **Function:** stop all movements of robot
-- **Returns**: None
+- **功能:** 让机械臂停止所有运动
+- **返回值**: 无
 
 **3.13** `get_joint_min_angle(joint_id)`
 
-- **Function:** get minimum speed of a joint
-- **Parameter:** range from 1-6
-- **Return Value:** angle value
+- **功能:** 获取指定关节最小能运行到的角度
+- **Parameter:** 范围为 1-6
+- **返回值:** 度数
 
 **3.14** `get_joint_max_angle(joint_id)`
 
-- **Function:** get maximum speed of a joint
-- **Parameter:** range from 1-6
-- **Return Value:** angle value
+- **功能:** 获取指定关节最大能运行到的角度
+- **Parameter:** 范围为 1-6
+- **返回值:** 度数
 
 **3.15** `set_joint_min(id,angle)`
 
-- **Function:** Sets the minimum angle for the specified joint.
+- **功能:** 设置指定关节最小能运行到的角度
 
-- **Parameters**:
+- **参数**:
   - `id`: (`int`) 1-6.
   - `angle`: 0 - 180.
-- **Return Value:** None
+- **返回值:** 无
 
 **3.16** `set_joint_max(id,angle)`
 
-- **Function:** Sets the maximum angle of the specified joint.
+- **功能:** 设置指定关节最大能运行到的角度
 - **Parameter:**
   - `id`: (`int`) 1-6.
   - `angle`: 0 - 180
-- **Return Value:** None
-
+- **返回值:** 无
 
 ## 4. JOG Mode and Operation
 
 **4.1** `jog_angle(joint_id, direction, speed)`
 
-- **Function:** jog control angle
+- **功能:** 控制机器人按照指定的角度持续移动
 
-- **Parameters:**
+- **参数:**
   - `joint_id`: (`int`) 1 ~ 6
-  - `direction`: `0` - decrease, `1` - increase
+  - `direction`: 主要控制机器臂移动的方向，给入 0 为负值移动，给入 1 为正值移动
   - `speed`: 0 ~ 100
 
 **4.2** `jog_coord(coord_id, direction, speed)`
 
-- **Function:** jog control coord.
+- **功能:** 控制机器人按照指定的坐标或姿态值持续移动
 
-- **Parameters:**
-  - `coord_id`: (`int`) 1 ~ 6
-  - `direction`: `0` - decrease, `1` - increase
+- **参数:**
+  - `coord_id`: (`int`) 1 ~ 6，代表机械臂的关节，按照关节 id 给入 1~6 来表示
+  - `direction`: 主要控制机器臂移动的方向，给入 0 为负值移动，给入 1 为正值移动
   - `speed`: 0 ~ 100
 
+**4.3** `jog_increment(joint_id,angle,speed)`
 
-**4.3** `jog_increment(joint_id,increment,speed)`
-
-- **Function:** step mode
-- **Parameters**:
-  - `coord_id`: (`int`) 1-6
-  - `direction`:
+- **功能:** 步进模式，使运动角度以给定的增量运行
+- **参数**:
+  - `joint_id`: (`int`) 1-6，代表机械臂的关节，按照关节 id 给入 1~6 来表示
+  - `angle`: 增量范围
   - `speed`: 0 ~ 100
-- **Returns**: None
+- **返回值**: 无
 
-
-## 5. Motor Control
+## 5. 电机控制
 
 **5.1** `set_encoder(joint_id, encoder)`
 
-- **Function:** set a single joint rotation to the specified potential value
-- **Parameters:**
-  - `joint_id`: (`int`) 1 ~ 6
-  - `encoder`: 0 ~ 4096
+- **功能:** 发送指定的单个关节运动至指定的电位值
+- **参数:**
+  - `joint_id`: (`int`) 1 ~ 6，代表机械臂的关节，六轴机器人有六个关节所以长度为 6，四轴长度为 4，有特定的表示方法, 关节一的表示法：`Angle.J1.value`（也可以用数字 1-6 来表示）
+  - `encoder`: 表示机械臂的电位值，取值范围是 0 ~ 4096
 
 **5.2** `get_encoder(joint_id)`
 
-- **Function:** obtain the specified joint potential value
-- **Parameters:** `joint_id`: (`int`) 1 ~ 6
-- **Returns:**
-  - `encoder`: 0 ~ 4096
+- **功能:** 获取机械臂指定的单个关节的电位值
+
+- **参数:** `joint_id`: (`int`) 1 ~ 6，代表机械臂的关节，六轴机器人有六个关节所以长度为 6，四轴长度为 4，有特定的表示方法, 关节一的表示法：`Angle.J1.value`（也可以用数字 1-6 来表示）
+- **返回值:**
+  - `encoder`: 表示机械臂的电位值，取值范围是 0 ~ 4096
 
 **5.3** `set_encoders(encoders, speed)`
 
-- **Function:** set the six joints of the manipulator to execute synchronously to the specified position
+- **功能:** 发送电位值给机械臂所有关节
 
-- **Parameters:**
-  - `encoders`: a encoder list, length 6.
-  - `speed`: 0 - 100
+- **参数:**
+  - `encoders`: 表示机械臂的电位值，取值范围是 0 ~ 4096，六轴长度为 6，四轴长度为 4，表示方法为：[2048,2048,2048,2048,2048,2048]
+  - `sp`: 表示机械臂运动的速度，取值范围是 0-100
 
 **5.4** `get_encoders()`
 
-- **Function:** get the six joints of the manipulator
+- **功能:** 获取机械臂所有关节的电位值
 
-- **Returns**: a list of encoder (`list`)
+- **返回值**:包含机械臂所有关节电位值的列表 (`list`)
 
-
-## 6. Servo Control
+## 6. 伺服控制
 
 **6.1** `is_servo_enable(servo id)`
 
-- **Function:** judge whether a servo is enabled
-- **Parameter:** range from 1-6
-- **Return Value:**
+- **功能:** 判断舵机是否连接
+- **Parameter:** 从 1-6
+- **返回值:**
   - `1`: enabled
   - `0`: not enabled
   - `-1`: error
 
 **6.2** `is_all_servo_enable()`
 
-- **Function:** judge whether all servos are enabled
-- **Return Value:**
-  - `1`: enabled
-  - `0`: not enabled
-  - `-1`: error
+- **功能:** 判断机器人的所有关节是否连通
+- **返回值:**
+  - `1`: 连通
+  - `0`: 不连通
+  - `-1`: 错误
 
 **6.3** `release_servo(servo_id)`
 
-- **Function:** release a servo
-- **Parameter:** range from 1-6
-- **Return Value:**
-  - `1`: enabled
-  - `0`: not enabled
-  - `-1`: error
-
+- **功能:** 放松指定的关节
+- **Parameter:** 范围 1-6
+- **返回值:**
+  - `1`: 放松
+  - `0`: 未放送
+  - `-1`: 错误
 
 **6.4** `set_servo_data(servo_no, data_id, value)`
 
-- **Function:** set the data parameters of the specified address of the steering gear
+- **功能:** 设置舵机指定地址的数据参数
 
-- **Parameters**:
-  - `servo_no`: Serial number of articulated steering gear, 1 - 6.
-  - `data_id`: Data address.
-  - `value`: 0 - 4096
-- **Return Value:** None
-
+- **参数**:
+  - `servo_no`: 舵机的序列号，按照关节 id 给入 1 - 6
+  - `data_id`: 数据地址
+  - `value`: 取值范围 0 - 4096
+- **返回值:** 无
 
 **6.5** `get_servo_data(servo_no, data_id)`
 
-- **Function:** read the data parameter of the specified address of the steering gear
+- **功能:** 读取舵机指定地址的数据参数。
 
-- **Parameters**:
+- **参数**:
 
-  - `servo_no`: Serial number of articulated steering gear, 1 - 6.
-  - `data_id`: Data address.
+  - `servo_no`: 各个舵机的序列号，按照关节 id 给入 1 - 6
+  - `data_id`: 数据地址
 
-- **Returns**: `value`: 0 - 4096
-  - `0`: disable
-  - `1`: enable
-  - `-1`: error
-
+- **返回值**: 数据参数值，范围 0-4096
 
 **6.6** `set_servo_calibration(servo_no)`
 
-- **Function:** the current position of the calibration joint actuator is the angle zero point, and the corresponding potential value is 2048.
-- **Parameters**:
-  - `servo_no`: Serial number of articulated steering gear, 1 - 6.
-- **Return Value:** None
+- **功能:** 校准指定关节，设置当前位置为角度零点，对应电位值为 2048
+- **参数**:
+  - `servo_no`: 机械臂的指定关节，1 - 6。
+- **返回值:** 无
 
 **6.7** `focus_servo(servo_id)`
 
-- **Function:** power on designated servo
-- **Parameters**: `servo_id`: 1 ~ 6
-- **Return Value:** None
+- **功能:** 给指定关节上电
+- **参数**: `servo_id`: 1 ~ 6
+- **返回值:** 无
 
 **6.8** `joint_brake(joint_id)`
 
-- **Function:** make it stop when the joint is in motion, and the buffer distance is positively related to the existing speed
-- **Parameters**: `joint_id`: 1~6
-- **Return Value:** None
+- **功能:** 在关节运动的状态下使其停止运动，缓冲距离与现有速度正相关
+- **参数**: `joint_id`: 机械臂的指定关节,范围为 1~6
+- **返回值:** 无
 
 **6.9** `get_servo_speeds()`
 
-- **Function:** Get joint velocity.
-- **Return Value:** `list` Speed of each joint.
+- **功能:** 获得关节运行速度
+- **返回值:** `list` 每个关节的运行速度
 
 **6.10** `get_servo_currents()`
 
-- **Function:** Get joint current.
-- **Return Value:** `list` Current of each joint.
+- **功能:** 获得关节当前运行速度
+- **返回值:** `list` 每个关节的速度
 
 **6.11** `get_servo_voltages()`
 
-- **Function:** Get joint voltage.
-- **Return Value:** `list` Voltage of each joint.
+- **功能:** 获得关节电压
+- **返回值:** `list` 每个关节的电压
 
 **6.12** `get_servo_temps()`
 
-- **Function:** Get the temperature of each joint.
-- **Return Value:** `list` the temperature of each joint.
+- **功能:** 获得关节的温度
+- **返回值:** `list` 每个关节的温度
 
 **6.13** `get_servo_status()`
 
-- **Function:** power on designated servo
-- **Return Value:** `list` the state of each joint.
-
+- **功能:** 获得关节状态
+- **返回值:** `list` 每个关节的状态
 
 **6.14** `get_servo_last_pdi(id)`
 
-- **Function:** Obtain the pdi of a single steering gear before modification
-- **Return Value:** the pdi of the joint.
+- **功能:** 获取修改前单个舵机的 pdi 值
+- **返回值:** 关节的 pdi 值
 
-## 7. Atom IO 
-
+## 7. Atom IO
 
 **7.1** `set_pin_mode(pin_no, pin_mode)`
 
-- **Function:** set the state mode of the specified pin in atom
-- **Parameters:**
-- `pin_no` (int): Pin number.
-- `pin_mode` (int): 0 - input, 1 - output, 2 - input_pullup
+- **功能:** 设置 atom 中指定引脚的状态模式
+- **参数:**
+- `pin_no` (int): 引脚号
+- `pin_mode` (int): 0 - 输入, 1 - 输出, 2 - 上拉输入
 
-* **Return Value:** None
+* **返回值:** 无
 
 **7.2** `set_digital_output(pin_no, pin_signal)`
 
-- **Function:** set digital state of a pin
-- **Parameters**
-  - `pin_no` (int):
-  - `pin_signal` (int): 0 / 1
+- **功能:** 设置末端引脚号的工作状态
+- **参数**
+  - `pin_no` (int): 设备末端标注的编号仅取数字部分
+  - `pin_signal` (int): 输入 0 表示设置为运行状态，输入 1 表示停止状态
 
-* **Return Value:** None
+* **返回值:** 无
 
 **7.3** `get_digital_input(self, pin_no)`
 
-- **Function:** get digital state of a pin
-- **Parameters**: `pin_no` (int)
-- **Return Value**: signal value
+- **功能:** 获取末端引脚号的工作状态
+- **参数**: `pin_no` (int) 表示机械臂末端的具体引脚号
+- **返回值**: 当返回的值为 0 表示在工作状态运行，1 表示停止状态
 
 **7.4** `set_pwm_output(channel, frequency, pin_val)`
 
-- **Function:** PWM control.
-- **Parameters**:
-  - `channel` (`int`): IO number.
-  - `frequency` (`int`): clock frequency
-  - `pin_val` (`int`): Duty cycle 0 ~ 256; 128 means 50%
-- **Return Value**: None
+- **功能:** 脉宽调制控制(pwmS)
+- **参数**:
+  - `channel` (`int`): 机械臂顶部的具体引脚号
+  - `frequency` (`int`): 时钟频率
+  - `pin_val` (`int`): 占空比 0~256；128 为 50%
+- **返回值**: 无
 
+## 8. 夹爪控制
 
-## 8. Gripper Control
 **8.1** `set_eletric_gripper(mode)`
 
-- **Function:** set the gripper to open and close
-- **Parameters:**
-  - `1`: close
-  - `0`: open
-- **Return Value:** None
+- **功能:** 设置夹爪模式(仅作用于 350)
+- **参数:**
+  - `1`: 表示夹爪合拢状态
+  - `0`: 表示夹爪打开状态。
+- **返回值:** 无
 
 **8.2** `init_eletric_gripper()`
 
-- **Function:** initialize the electric gripper  
-- **Return Value:** None
+- **功能:** 初始化电动夹爪
+- **返回值:** 无
 
 **8.3** `set_gripper_mode(mode)`
 
-- **Function:** set the mode of gripper
-- **Parameters:** 
-  - `1`: port mode
-  - `0`: transparent transmission
-- **Return Value:** None
+- **功能:** 设置夹爪模式
+- **参数:**
+  - `1`: 串口模式
+  - `0`: 透传模式
+- **返回值:** 无
 
 **8.4** `get_gripper_mode(mode)`
 
-- **Function:** set the mode of gripper
-- **Return Value:** 
-  - `1`: port mode
-  - `0`: transparent transmission
-
+- **功能:** 获取夹爪状态
+- **返回值:**
+  - `1`: 串口模式
+  - `0`: 透传模式
 
 **8.5** `is_gripper_moving()`
 
-- **Function:** judge whether the gripper is moving or not
+- **功能:** 判断夹爪是否在移动
 
-- **Return Value:**
-  - `0` : not moving
-  - `1` : is moving
-  - `-1`: error data
+- **返回值:**
+  - `0` : 不动
+  - `1` : 正在移动
+  - `-1`: 错误数据
 
-**8.6** `set_gripper_value(value, speed, gripper_type=None)`
+**8.6** `set_gripper_value(value, speed, gripper_type=无)`
 
-- **Function:** Let the gripper rotate to the specified position at the specified speed
-- **Parameter Description:**
-  - `value`: Indicates the position that the clamping jaw wants to reach, the value range is 0~256
-  - `speed`: indicates the speed at which to rotate, the value range is 0~100
-  - `gripper_type`: Gripper type, the default is adaptive gripper
-    - `1`: Adaptive gripper
-    - `3`: Parallel jaws
-    - `4`: Flexible gripper
-- **Return value:** None
+- **功能:** 让夹爪以指定的速度转动到指定的位置
+- **参数说明:**
+  - `value`: 表示夹爪所要到达的位置，取值范围 0~256
+  - `speed`: 表示以多少的速度转动，取值范围 0~1000
+  - `gripper_type`: 夹爪类型，默认为自适应夹爪
+    - `1`: 自适应夹爪
+    - `3`: 平行钳口
+    - `4`: 柔性夹爪
+- **返回值:** 无
 
-**8.7** `get_gripper_value(gripper_type=None)`
+**8.7** `get_gripper_value(gripper_type=无)`
 
-- **Function:** Get the current position data information of the gripper
-- **Parameter Description:**
-  - `gripper_type`: Gripper type, the default is adaptive gripper
-    - `1`: Adaptive gripper
-    - `3`: Parallel jaws
-    - `4`: Flexible gripper
-- **Return value:** Gripper data information
+- **功能:** 获取夹爪的当前位置数据信息
+- **参数说明:**
+  - `gripper_type`: 夹爪类型，默认为自适应夹爪
+    - `1`: 自适应夹爪
+    - `3`: 平行钳口
+    - `4`: 柔性夹爪
+- **返回值:** 夹爪数据信息
 
 **8.8** `set_gripper_calibration()`
 
-- **Function:** Set the initial position of the gripper and set the current position to 2048
-- **Return value:** None
+- **功能:** 设置夹爪初始化位置，设置当前位置为 2048
+- **返回值:** 无
 
-**8.9** `set_gripper_state(flag, speed, _type=None)`
+**8.9** `set_gripper_state(flag, speed, _type=无)`
 
-- **Function:** Let the gripper enter the specified state at the specified speed
-- **Parameter Description:**
-  - `flag`: 1 means the clamping jaw is closed, 0 means the clamping jaw is open.
-  - `speed`: Indicates how fast to reach the specified state, the value range is 0~100
-  - `_type`: Gripper type, the default is adaptive gripper
-    - `1`: Adaptive gripper
-    - `2`: Five-fingered dexterity
-    - `3`: Parallel jaws
-    - `4`: Flexible gripper
-- **Return value:** None
+- **功能:** 让夹爪以指定的速度进入到指定的状态
+- **参数说明:**
+  - `flag`: 1 表示夹爪合拢状态，0 表示夹爪打开状态。
+  - `speed`: 表示以多快的速度达到指定的状态，取值范围 0~100
+  - `_type`: 夹爪类型，默认为自适应夹爪
+    - `1`: 自适应夹爪
+    - `2`: 五指灵活夹爪
+    - `3`: 平行钳口
+    - `4`: 柔性夹爪
+- **返回值:** 无
 
-## 9. Atom RGB Control
+## 9. Atom RGB 控制
+
 **9.1** `set_color(r, g, b)`
 
-- **Function:** set the color of RGB light panel
-- **Parameters:**
+- **功能:** 设置 RGB 灯光面板的颜色
+- **参数:**
   - `R`: 0-255
   - `G`: 0-255
   - `B`: 0-255
-- **Return Value:** None
+- **返回值:** 无
 
-
-## 10. Coordinate Setting
+## 10. 坐标设置
 
 **10.1** `set_tool_reference(coords)`
 
-- **Function**: Set tool coordinate system.
-
-- **Parameters**:
+- **功能**: 设置工具坐标系。
+- **参数**:
 
   - `coords`: (`list`) [x, y, z, rx, ry, rz].
 
-- **Return**:None
+- **Return**:无
 
 **10.2** `set_world_reference(coords)`
 
-- **Function**: Set world coordinate system.
-
-- **Parameters**:
+- **功能**: 设置世界坐标系。
+- **参数**:
   - `coords`: (`list`) [x, y, z, rx, ry, rz].
-- **Return**:None
+- **Return**:无
 
 **10.3** `get_world_reference()`
 
-- **Function**: Get world coordinate system.
+- **功能**: 获取世界坐标系
 
 - **Return**: `list` [x, y, z, rx, ry, rz].
 
 **10.4** `set_reference_frame(rftype)`
 
-- **Function**: Set base coordinate system.
+- **功能**: 设置基坐标系
 
-- **Parameters**:
+- **参数**:
 
-  - `rftype`: 0 - base 1 - tool.
+  - `rftype`: 0 - 基坐标（默认） 1 - 世界坐标
 
-- **Return**:None
+- **Return**:无
 
 **10.5** `get_reference_frame()`
 
-- **Function**: Get base coordinate system.
+- **功能**: 获取基坐标系
 
-- **Return**: 0 - base 1 - tool.
+- **Return**: 0 - 基坐标 1 - 工具坐标.
 
 **10.6** `set_movement_type(move_type)`
 
-- **Function**: Set movement type.
+- **功能**: 设置移动类型
 
-- **Parameters**:
+- **参数**:
 
   - `move_type`: 1 - movel, 0 - moveJ.
 
-- **Return**:None
+- **Return**:无
 
 **10.7** `get_movement_type()`
 
-- **Function**: Get movement type.
+- **功能**: 获取移动类型
 
 - **Return**: 1 - movel, 0 - moveJ.
 
 **10.8** `set_end_type(end)`
 
-- **Function**: Set end coordinate system.
-- **Parameters**:
-  - `end`: 0 - flange, 1 - tool.
-- **Return**:None
+- **功能**: 设置末端坐标系
+- **参数**:
+  - `end`: 0 - 法兰（默认） 1 - 工具
+- **Return**:无
 
 **10.9** `get_end_type()`
 
-- **Function**: Get end coordinate system.
+- **功能**: 获取末端坐标系
 
-- **Return**: 0 - flange, 1 - tool.
+- **Return**: 0 - 法兰（默认） 1 - 工具
 
 **10.10** `get_tool_reference()`
 
-- **Function**: get tool coordinate system
+- **功能**: 获取工具坐标系
 
 - **Return**:
 
   - `coords`: (`list`) [x, y, z, rx, ry, rz]
 
-## 11. Basic IO Control
+## 11. 基本 IO 控制
+
 **11.1** `get_basic_input(pin_no)`
 
-- **Function:** get bottom pin
-- **Parameters:**
-- `pin_no` (`int`) Pin number.
-- **Return Value:**
-  - `0 `: in working state
-  - `1`: not in working state
+- **功能:** 获取底部引脚号的工作状态
+- **参数:**
+- `pin_no` (`int`) 引脚号
+- **返回值:**
+  - `0 `: 工作状态
+  - `1`: 停止状态
 
 **11.2** `set_basic_output(pin_no, pin_signal)`
 
-- **Function:** set bottom pin
+- **功能:** 设置底部引脚号的工作状态。
 
-- **Parameters:**
-  - `pin_no` (`int`) Pin number
-  - `pin_signal` (`int`): 0 / 1
-
-## 12. TCP/IP
-**12.1** `get_ssid_pwd(pin_no)`
-
-- **Function:** get connected wifi account and password.(Apply to m5)  
-- **Return Value:**  (account, password)
-
-**12.2** `set_ssid_pwd(account, password)`
-
-- **Function:** change connected wifi.(Apply to m5)
-
-- **Parameters:**
-  - `account (str)`: new wifi account. 
-  - `password (str)`: new wifi password.
+- **参数:**
+  - `pin_no` (`int`) 引脚号
+  - `pin_signal` (`int`): 输入 0 表示设置为运行状态，输入 1 表示停止状态
 
 ---
 
-[← Previous Page](1_download.md) | [Next Page →](3_TCPIP.md)
+[← 上一页](1_download.md) | [下一页 →](3_TCPIP.md)
