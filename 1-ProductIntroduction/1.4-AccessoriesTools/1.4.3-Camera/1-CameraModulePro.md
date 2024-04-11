@@ -23,13 +23,11 @@
 
 ## 用于物体
 
-**相机法兰:** 机器视觉
-
-**引言**
+### 引言
 
 - USB 高清摄像头可与吸泵、自适应抓手、人工智能套件等配合使用，手眼并用，实现精确定位和校准。
 
-**安装使用**
+### 安装使用
 
 - 检查配件包东西是否齐全：螺丝及内六角扳手、带 usb 线的摄像头模组
   ![](../../../resources/1-ProductIntroduction/1.4/1.4.3-Camera/物料.jpg)
@@ -91,7 +89,7 @@
     输入：
 
     ```bash
-    python gripper.py
+    python camera.py
     ```
 
     ![](../../../resources/1-ProductIntroduction/1.4/1.4.3-Camera/python使用5.png)
@@ -112,7 +110,7 @@
   示例结果：
   ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.3-Camera/python使用7-查询设备号.png)
 
-## 购买链接:
+### 购买链接:
 
 - [淘宝](https://shop504055678.taobao.com)
 - [shopify](https://shop-elephantrobotics-com.translate.goog/collections/mycobot-pro-600/products/mycobotpro-cameraflange?_x_tr_sl=auto&_x_tr_tl=zh-CN)

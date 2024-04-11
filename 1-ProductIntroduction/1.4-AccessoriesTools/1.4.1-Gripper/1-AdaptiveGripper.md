@@ -29,17 +29,17 @@
 
 ## 用于抓取物体
 
-**引言**
+### 引言
 
 - 机械手是一种能像人手一样工作的机器人部件。它具有结构复杂、抓取物体牢固、不易掉落、操作简便等优点。
 
 - 抓手套件包括抓手连接线和法兰，通过可编程系统控制机械臂的末端效应器，实现抓取物体和多点定位等功能。抓手可用于所有开发环境，如 ROS、Arduino、Roboflow 等。
 
-**工作原理**
+### 工作原理
 
 - 在电机的驱动下，机械手的手指表面做直线往复运动，实现打开或关闭动作。电动机械手的加减速可控，对工件的冲击最小，定位点可控，夹紧可控。
 
-**适用对象**
+### 适用对象
 
 - 小方块
 
@@ -52,7 +52,7 @@
 - [淘宝](https://shop504055678.taobao.com)
 - [shopify](https://shop.elephantrobotics.com/)
 
-**安装使用**
+### 安装使用
 
 - 夹爪安装：
 
@@ -90,31 +90,6 @@
     ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/python使用3.png)
 
     > 代码如下：
-
-    - M5 版本：
-
-    ```python
-    from pymycobot.mycobot import MyCobot
-    import time
-
-    # 初始化一个MyCobot对象
-    mc = MyCobot("COM3", 115200)
-
-    #设置夹爪为485模式
-    mc.set_gripper_mode(0)
-    # 控制夹爪打开-关闭-打开：
-    #使用夹爪状态接口0为张开，1为关闭
-    mc.set_gripper_state(0, 80)
-    time.sleep(3)
-    mc.set_gripper_state(1, 80)
-    time.sleep(3)
-    mc.set_gripper_state(0, 80)
-    time.sleep(3)
-
-    # 详细接口使用可以查看python API
-    ```
-
-    - Pi 版本：
 
     ```python
     from pymycobot.mycobot import MyCobot
@@ -184,7 +159,7 @@
 - 安装过程视频演示
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RPKjV0IuP5E" title="myCobot Pro Accessories | The new gripper for myCobot Pro 600" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-如果视频无法加载，请点击下面的链接观看视频。
+如果视频无法加载，请点击下面的链接观看视频。  
 [安装视频](https://www.youtube.com/watch?v=RPKjV0IuP5E)
 
 ---

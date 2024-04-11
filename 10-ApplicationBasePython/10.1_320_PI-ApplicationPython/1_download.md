@@ -10,7 +10,7 @@ pymycobot 是一个和 myCobot 进行串口通讯的 Python 包，支持 Python2
 
 ### 1.1 安装 Python
 
-> **注意：** 安装之前，请先确认您的电脑是 64 位还是 32 位。右键点击我的电脑，选择属性。如下图显示是 64 位的操作系统，所以选择 64 位的 Python 安装包。
+> **注意：** 安装之前，请先确认您的电脑是 64 位还是 32 位。右键点击`我的电脑`，选择`属性`。如下图显示是 64 位的操作系统，所以选择 64 位的 Python 安装包。
 >
 > <img src="../../resources/10-ApplicationPython/operatingsystemchecking1.jpg" alt="7.1.1-1" style="zoom:50%;" />
 >
