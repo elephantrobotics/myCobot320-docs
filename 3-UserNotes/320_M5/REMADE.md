@@ -19,4 +19,4 @@
 ## 通过全面阅读本节内容，用户可以更好地了解如何安全有效地使用产品，最大限度地提高性能和使用寿命。
 
 如果您已经阅读了本章的所有内容，请继续阅读下一章。 <br>
-[← Previous Chapter](/2-ProductFeature/2.1_320_M5_product/README.md) | [Next Chapter →](/4-FirstInstallAndUse/4.2-M5/4.2_320_M5_firstUse.md)
+[← 上一章](/2-ProductFeature/2.1_320_M5_product/README.md) | [下一章 →](/4-FirstInstallAndUse/4.2-M5/4.2_320_M5_firstUse.md)

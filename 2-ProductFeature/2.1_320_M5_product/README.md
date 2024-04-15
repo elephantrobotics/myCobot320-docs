@@ -62,4 +62,4 @@ myCobot 320 M5 不仅是生产工具，也是拓展想象力边界的工具。�
 
 如果您已经阅读了本章的所有内容，可以继续阅读下一章。
 
-[← 上一章](../../1-ProductIntroduction/README.md)| [下一章 →](../../3-UserNotes/320_M5/REMADE.md)
+[← 上一章](../../1-ProductIntroduction/README.md) | [下一章 →](../../3-UserNotes/320_M5/REMADE.md)
