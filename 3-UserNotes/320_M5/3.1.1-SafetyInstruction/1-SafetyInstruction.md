@@ -1,4 +1,4 @@
-# Safety Instructions
+# 安全说明
 
 ## 1 简介
 

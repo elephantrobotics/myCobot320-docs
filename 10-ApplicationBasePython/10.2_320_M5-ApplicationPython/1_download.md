@@ -248,7 +248,6 @@ while i > 0:
 python3 demo.py
 ```
 
-The blue, red, and green lights on the top of the robot flash 7 times continuously at an interval of 2 seconds.
 机械臂末端的蓝，红，绿灯交替循环点亮，点亮时间持续 2 秒，共 7 次。
 
 ---
