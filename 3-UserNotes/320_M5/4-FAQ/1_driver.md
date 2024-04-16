@@ -1,11 +1,6 @@
 # Drive Related
 
-
-
 ## 1 About python
-
-
-
 
 **Q: send_coords([x,y,z,rx,ry,rz], speed, 1) What do the parameters in this API mean? What do rx, ry, and rz correspond to Euler angles? What is the rotation order of Euler angles? And what is the value range of each parameter?**
 
@@ -19,20 +14,11 @@
 
 - A: The API is the same.
 
-
-
-
-
-
-
 ## 2 About ROS
-
-
 
 **Q: How do a microcontroller-based myCobot and a microprocessor-based myCobot run ROS?**
 
 - A: The use of ROS for a microcontroller-based myCobot is currently on Ubuntu, and you can also develop your own ROS. A microprocessor-based myCobot have its own ROS environment and can be used directly.
-
 
 **Q: Can a microprocessor-based myCobot connect to a PC to use ROS and moveit?**
 
@@ -41,10 +27,7 @@
 **Q: Can you provide files and programming examples of the rviz model?**
 
 - A: It is available on our github.
-"https://github.com/elephantrobotics/mycobot_ros"
-
-
-
+  "https://github.com/elephantrobotics/mycobot_ros"
 
 **Q: Why is the error permission denied: '/dev/ttyUSB0' reported when using ROS to start the rviz model file?**
 
@@ -54,7 +37,6 @@
   sudo chmod 777 /dev/ttyUSB0
   ```
 
-
 **Q: Why is the error _init_() takes exactly 2 arguments (3 given) reported when running the slider control and model follow commands of ROS?**
 
 - A: The pymycobot library is not installed and started.
@@ -63,6 +45,4 @@
 
 - A: It is very likely that the zero position of the myCobot is not calibrated, and the zero position of the myCobot needs to be calibrated.
 
-
-
-[← Previous Page](./3.2_320_M5_userNotes.md) | [Next Page →](./2_software.md)
+[← Previous Page](./0_how_to_ask.md) | [Next Page →](./2_software.md)

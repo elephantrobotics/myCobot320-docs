@@ -6,6 +6,14 @@
   - [1.2 Suitable Users](1-ProductIntroduction/1.2-SuitableUsers.md)
   - [1.3 Application Scenario](1-ProductIntroduction/1.3-ApplicationScenario.md)
   - [1.4 Accessories Tools](1-ProductIntroduction/1.4-AccessoriesTools/1.4-AccessoriesTools.md)
+    - [1.4.1 AdaptiveGripper](1-ProductIntroduction/1.4-AccessoriesTools/1.4.1-Gripper/1-AdaptiveGripper.md)
+    - [1.4.2 ElectricGripper](1-ProductIntroduction/1.4-AccessoriesTools/1.4.1-Gripper/2-ElectricGripper.md)
+    - [1.4.3 PneumaticGripper](1-ProductIntroduction/1.4-AccessoriesTools/1.4.1-Gripper/3-PneumaticGripper.md)
+    - [1.4.4 FlexibleGripper](1-ProductIntroduction/1.4-AccessoriesTools/1.4.1-Gripper/4-FlexibleGripper.md)
+    - [1.4.5 ModulSuctionCup](1-ProductIntroduction/1.4-AccessoriesTools/1.4.2-PumpCup/1-ModuleSuctionCup.md)
+    - [1.4.6 CameraModulePro](1-ProductIntroduction/1.4-AccessoriesTools/1.4.3-Camera/1-CameraModulePro.md)
+    - [1.4.7 PenHolderPro](1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Other/1-PenHolderPro.md)
+    - [1.4.8 PhoneHolderPro](1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Other/2-PhoneHolderPro.md)
 
 - [2 Product Feature](2-ProductFeature/2.1_320_M5_product/README.md)
 
@@ -21,6 +29,10 @@
   - [3.2 Transport and Storage](3-UserNotes/320_M5/3.1.2-TransportandStorage/1-TransportandStorage.md)
   - [3.3 Maintenance and Care](/3-UserNotes/320_M5/3.1.3-MaintenanceandCare/1-MaintenanceandCare.md)
   - [3.4 FAQs](3-UserNotes/320_M5/4-FAQ/3.2_320_M5_userNotes.md)
+    - [3.4.1 how to ask](3-UserNotes/320_M5/4-FAQ/0_how_to_ask.md)
+    - [3.4.2 driver](3-UserNotes/320_M5/4-FAQ/1_driver.md)
+    - [3.4.3 software](3-UserNotes/320_M5/4-FAQ/2_software.md)
+    - [3.4.4 hardware](3-UserNotes/320_M5/4-FAQ/3_hardware.md)
 
 - [4 First Install and Use](4-FirstInstallAndUse/4.2-M5/4.2_320_M5_firstUse.md)
 
@@ -39,7 +51,21 @@
     - [1 Burn Firmware](5-BasicApplication/5.3-FirmwareUse/m5/2-burn_firmware.md)
   - [5.3 Application Use](5-BasicApplication/README.md)
     - [1 myblockly](5-BasicApplication/5.2-ApplicationUse/5.2.1-myblockly/320m5/README.md)
+      - [1 FirstUse](5-BasicApplication/5.2-ApplicationUse/5.2.1-myblockly/320m5/1-myBlocklyFirstUse.md)
+      - [2 install_uninstall](5-BasicApplication/5.2-ApplicationUse/5.2.1-myblockly/320m5/2-install_uninstall.md)
+      - [3 Interface Description](5-BasicApplication/5.2-ApplicationUse/5.2.1-myblockly/320m5/3-interface_description.md)
+      - [4 Control RGB](5-BasicApplication/5.2-ApplicationUse/5.2.1-myblockly/320m5/4-ControlRGB.md)
+      - [5 Control Robotic Arm Back](5-BasicApplication/5.2-ApplicationUse/5.2.1-myblockly/320m5/5-ControlRoboticArmBackZero.md)
+      - [6 Control Single Joint](5-BasicApplication/5.2-ApplicationUse/5.2.1-myblockly/320m5/6-ControlSingleJoint.md)
+      - [7 Control Singles Joint](5-BasicApplication/5.2-ApplicationUse/5.2.1-myblockly/320m5/7-ControlSinglesJoint.md)
+      - [8 Gripper Use](5-BasicApplication/5.2-ApplicationUse/5.2.1-myblockly/320m5/8-GripperUse.md)
+      - [9 API](5-BasicApplication/5.2-ApplicationUse/5.2.1-myblockly/320m5/9-api.md)
+      - [10 Q&A](5-BasicApplication/5.2-ApplicationUse/5.2.1-myblockly/320m5/10-Q&A.md)
     - [2 myStudio](5-BasicApplication/5.2-ApplicationUse/5.2.2-mystudio/320m5/README.md)
+      - [1 setup](5-BasicApplication/5.2-ApplicationUse/5.2.2-mystudio/320m5/1-setup.md)
+      - [2 install](5-BasicApplication/5.2-ApplicationUse/5.2.2-mystudio/320m5/2-install_driver.md)
+      - [3 flash](5-BasicApplication/5.2-ApplicationUse/5.2.2-mystudio/320m5//3-flash_firmwares.md)
+      - [4 other function](5-BasicApplication/5.2-ApplicationUse/5.2.2-mystudio/320m5/4-other_function.md)
 
 - [6 SDK Development](6-SDKDevelopment/README.md)
 

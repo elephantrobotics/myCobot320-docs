@@ -26,7 +26,7 @@
 
 - Pi：  
   [Product Catalogue](https://download-elephantrobotics.oss-cn-shenzhen.aliyuncs.com/Product_software/myCobot/%E4%BA%A7%E5%93%81%E7%94%BB%E5%86%8C/%E4%BA%A7%E5%93%81%E7%94%BB%E5%86%8CmyCobot320pi20221013.pdf)
-  ![alt text](resources/2-ProductFeature/产品主图.jpg)
+  ![alt text](resources/1-ProductIntroduction/产品主图.jpg)
 
 ### Product Introduction
 
@@ -43,6 +43,14 @@ The arm supports Python and has hardware interfaces such as IO and USB, making i
     - [1.2 Suitable Users](1-ProductIntroduction/1.2-SuitableUsers.md)
     - [1.3 Application Scenario](1-ProductIntroduction/1.3-ApplicationScenario.md)
     - [1.4 Accessories Tools](1-ProductIntroduction/1.4-AccessoriesTools/1.4-AccessoriesTools.md)
+      - [1.4.1 AdaptiveGripper](1-ProductIntroduction/1.4-AccessoriesTools/1.4.1-Gripper/1-AdaptiveGripper.md)
+      - [1.4.2 ElectricGripper](1-ProductIntroduction/1.4-AccessoriesTools/1.4.1-Gripper/2-ElectricGripper.md)
+      - [1.4.3 PneumaticGripper](1-ProductIntroduction/1.4-AccessoriesTools/1.4.1-Gripper/3-PneumaticGripper.md)
+      - [1.4.4 FlexibleGripper](1-ProductIntroduction/1.4-AccessoriesTools/1.4.1-Gripper/4-FlexibleGripper.md)
+      - [1.4.5 ModulSuctionCup](1-ProductIntroduction/1.4-AccessoriesTools/1.4.2-PumpCup/1-ModuleSuctionCup.md)
+      - [1.4.6 CameraModulePro](1-ProductIntroduction/1.4-AccessoriesTools/1.4.3-Camera/1-CameraModulePro.md)
+      - [1.4.7 PenHolderPro](1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Other/1-PenHolderPro.md)
+      - [1.4.8 PhoneHolderPro](1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Other/2-PhoneHolderPro.md)
 
   - [2 Product Feature](2-ProductFeature/2.1_320_M5_product/README.md)
 
