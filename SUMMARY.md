@@ -49,7 +49,7 @@
     - [4 Robot Information](/5-BasicApplication/5.1-SystemUsageInstructions/320m5/4.2.4.1-micro_controller.md) <br>
   - [5.2 Firmware Description](5-BasicApplication/5.3-FirmwareUse/m5/1-firmware.md)
     - [1 Burn Firmware](5-BasicApplication/5.3-FirmwareUse/m5/2-burn_firmware.md)
-  - [5.3 Application Use](5-BasicApplication/README.md)
+  - [5.3 Application Use](5-BasicApplication/README.md#software-description)
     - [1 myblockly](5-BasicApplication/5.2-ApplicationUse/5.2.1-myblockly/320m5/README.md)
       - [1 FirstUse](5-BasicApplication/5.2-ApplicationUse/5.2.1-myblockly/320m5/1-myBlocklyFirstUse.md)
       - [2 install_uninstall](5-BasicApplication/5.2-ApplicationUse/5.2.1-myblockly/320m5/2-install_uninstall.md)

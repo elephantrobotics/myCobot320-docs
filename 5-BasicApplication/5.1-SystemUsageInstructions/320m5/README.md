@@ -22,4 +22,4 @@ The built-in software has a straightforward user interface and is easy to use. W
 
 If you have already read all the content in this chapter, please proceed to the next chapter.<br>
 
-[Next Chapter →](../../5.2-ApplicationUse/5.2.1-myblockly/320m5/README.md)<br>
+[Next Section →](../../5.2-ApplicationUse/5.2.1-myblockly/320m5/README.md)<br>

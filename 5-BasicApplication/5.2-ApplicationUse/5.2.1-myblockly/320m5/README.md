@@ -12,10 +12,6 @@ From the user's perspective, **myBlockly** is a simple and easy-to-use visual to
 
 The process of generating code into the text box is the process of the user dragging it in **myBlockly**.
 
-
-
-
-
 ## The operating systems supported by myBlockly are as follows:
 
 - Windows
@@ -24,11 +20,6 @@ The process of generating code into the text box is the process of the user drag
 
 - Linux arm64
 
-----
+---
 
-[← Previous Section](../../../README.md) | [Next Page →](./1-myBlocklyFirstUse.md)<br>
-
-----
-
-[Next Chapter →](../../5.2.2-mystudio/320m5/README.md)<br>
-
+[← Previous Section](../../../5.1-SystemUsageInstructions/320m5/README.md) | [Next Section →](../../5.2.2-mystudio/320m5/README.md)<br>
