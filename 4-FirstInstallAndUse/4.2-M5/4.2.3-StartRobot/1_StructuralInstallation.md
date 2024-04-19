@@ -8,7 +8,7 @@ myCobot 重 3.3 千克。由于重心会随着机器人在使用过程中的移�
 
 - 底座固定孔是机器人与其他底座或平面之间的接口。具体孔径如下图所示。有 4 个直径为 4.5 毫米的沉孔，可用 M6 螺栓固定。
 
-<img src="../../resources/4-FirstInstallAndUse/底座尺寸.jpg" alt="img-1" width="400" height=“auto” /> <br>
+<img src="../../../resources/4-FirstInstallAndUse/底座尺寸.jpg" alt="img-1" width="400" height=“auto” /> <br>
 
 - 末端安装有法兰，可与乐高组件孔和螺纹孔兼容。安装前请确保固定底座上有相应的螺纹孔。
 
@@ -30,7 +30,7 @@ myCobot 重 3.3 千克。由于重心会随着机器人在使用过程中的移�
 
 **如需了解更多安装细节，请扫描代码观看视频：**
 
-![image-20220524105531296](../..//resources/4-FirstInstallAndUse/320QRcode.png)
+![image-20220524105531296](../../../resources/4-FirstInstallAndUse/320QRcode.png)
 
 ---
 

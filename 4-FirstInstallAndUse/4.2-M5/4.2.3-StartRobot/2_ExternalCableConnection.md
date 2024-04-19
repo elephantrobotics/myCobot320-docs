@@ -12,34 +12,34 @@ myCobot 必须使用外部电源供电，以提供足够的电力：
 
 - 插头类型: R7B
 
-  ![image-20220620175457856](../../resources/4-FirstInstallAndUse/320-R7B.png)
+  ![image-20220620175457856](../../../resources/4-FirstInstallAndUse/320-R7B.png)
 
 **请注意，不能只使用插入 M5Stack-basic 的 TypeC 供电。** 请使用官方认可的电源，以免损坏机械臂。
 
 用例图如下图所示：（请仔细对齐用例图，以便进行连接）
 
 **Step 1:**<br>
-<img  src="../../resources/4-FirstInstallAndUse/connect/急停安装1.jpg" width="500" />
+<img  src="../../../resources/4-FirstInstallAndUse/connect/急停安装1.jpg" width="500" />
 <br/>
 
 **Step 2:**<br>
-<img  src="../../resources/4-FirstInstallAndUse/connect/急停安装2.jpg" width="500" />
+<img  src="../../../resources/4-FirstInstallAndUse/connect/急停安装2.jpg" width="500" />
 <br/>
 
 **Step 3:**<br>
-<img  src="../../resources/4-FirstInstallAndUse/connect/急停安装3.jpg" width="500" />
+<img  src="../../../resources/4-FirstInstallAndUse/connect/急停安装3.jpg" width="500" />
 <br/>
 
 **Step 4:**<br>
-<img  src="../../resources/4-FirstInstallAndUse/connect/电源安装1.jpg" width="500" />
+<img  src="../../../resources/4-FirstInstallAndUse/connect/电源安装1.jpg" width="500" />
 <br/>
 
 **Step 5:**<br>
-<img  src="../../resources/4-FirstInstallAndUse/connect/电源安装2.jpg" width="500" />
+<img  src="../../../resources/4-FirstInstallAndUse/connect/电源安装2.jpg" width="500" />
 <br/>
 
 **Step 6:**<br>
-<img  src="../../resources/4-FirstInstallAndUse/connect/电源安装3.jpg" width="500" />
+<img  src="../../../resources/4-FirstInstallAndUse/connect/电源安装3.jpg" width="500" />
 <br/>
 
 ---
