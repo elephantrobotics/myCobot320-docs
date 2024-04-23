@@ -21,18 +21,18 @@ Atom 控制器负责处理来自工具接口和 IO 控制的数据信息。这�
 
 ## 小节跳转
 
-- [5.1 系统使用说明](./5.1-SystemUsageInstructions/320pi/5.1-SystemUsageInstructions.md)<br>
+- [5.1 miniRoboflow](./5.1-SystemUsageInstructions/320m5/README.md)<br>
   本节介绍开发之前所要具备掌握的 Linux 操作系统基础知识，远程连接系统的网络配置和提供刷镜像系统操作的使用说明。
 
 - 5.2 软件使用说明  
   本节说明机器内置提供的软件（myBlockly、myStudio），并且提供使用要求、软件更新和卸载的使用教程，提供软件用户界面的介绍和使用教程，并且说明使用场景。
 
-  - [myBlockly](./5.2-ApplicationUse/myblockly/320pi/README.md)
-  - [myStudio](./5.2-ApplicationUse/mystudio/320pi/README.md)
+  - [myBlockly](./5.2-ApplicationUse/myblockly/320m5/README.md)
+  - [myStudio](./5.2-ApplicationUse/mystudio/320m5/README.md)
 
-- [5.3 固件功能说明](./5.3-FirmwareUse/pi/1-firmware.md)<br>  
+- [5.3 固件功能说明](./5.3-FirmwareUse/m5/1-firmware.md)<br>  
   本节提供固件更新日表格，说明改动后的提升效果，提供刷写固件的使用教程。
 
 ---
 
-[← 上一章](../4-FirstInstallAndUse/4.1-Pi/4.1_320_PI_firstUse.md) | [下一章 →](../6-SDKDevelopment/README.md)
+[← 上一章](../4-FirstInstallAndUse/4.1-Pi/4.1_320_PI_firstUse.md) | [下一章 →](../6-SDKDevelopment/README_M5.md)

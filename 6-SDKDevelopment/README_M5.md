@@ -20,9 +20,6 @@ myCobot 320 for M5 是基于 PC 开发和使用的。由于机械臂内没有内
 - [6.3 Robot Operating System 2 (ROS2)](/11-ApplicationBaseROS/11.2-ROS2/11.2.2-PI.md)<br>
   ROS2 的前身是 ROS，ROS 即机器人操作系统（Robot Operating System）。但 ROS 本身并不是操作系统，而是一个软件库和工具集。Ros 的出现解决了机器人各个组件的通信问题。后来，越来越多的机器人算法被集成到 ROS 中。ROS2 继承了 ROS，比 ROS 更强大、更优秀。
 
-- [6.4 Communication](./6.1-CommunicationDoc.md)<br>
-  如果您对信息论、编码和机器人通信功能有一定的了解，那么您就应该明白，所有的通信都源于数据传输。为了方便用户操作机器人，我们开放了基于串口通信的通信协议。您可以使用串口助手或将其封装到您熟悉的任何编程语言中来控制机器人。
-
 - [6.4 C Sharp (C#)](../15-ApplicationBaseCSharp/15.6C-M5.md)<br>
   C# 是微软公司发布的一种源于 C 和 C++ 的面向对象编程语言，是一种运行在 .NET Framework 和 .NET Core（完全开源和跨平台）上的高级编程语言。使用 C#，您可以通过我公司提供的 C# 动态库自由开发程序（坐标控制、角度控制、io 控制、抓手控制等），并控制部分机器人。<br>
 
@@ -37,4 +34,4 @@ myCobot 320 for M5 是基于 PC 开发和使用的。由于机械臂内没有内
 
 ---
 
-[← 上一章](../5-BasicApplication/README_M5.md) | [下一章 →](../7-ExamplesRobotsUsing/README.md)
+[← 上一章](../5-BasicApplication/README_M5.md) | [下一章 →](../7-ExamplesRobotsUsing/7.2_320_M5_Examples.md)
