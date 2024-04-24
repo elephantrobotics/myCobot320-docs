@@ -9,34 +9,36 @@
 ## Specifications
 
 **Gripper**
-| Picture | <img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/FlexibleGripper-2.JPG" alt="img-2" width="200" height="auto" /> <br> |
-| ----------------------------- | ----------------------------------------- |
-| Material | Metal |
-| clamping rangeclamp size | 36-136mm |
-| clamp force | Vertical 600g wrap 1080g |
-| Repeatability precision | 0.5 mm |
-| service life lifetime | 1 year |
-| drive mode drive | pneumatic |
-| Transmission modetransmission | deformation |
-| size | 170x128x195mm |
-| weightweight | 365 grams |
-| Fixed method fixed | screw fixed |
-| Use environment requirements | Temperature and pressure |
-| control interface control | SAC40A Pneumatic Controller |
-| Applicable equipment | ER myCobot 320 series, ER myCobot Pro 600 |
+
+| Picture                       | <img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/FlexibleGripper-2.JPG" alt="img-2" width="200" height="auto" /> <br> |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Material                      | Metal                                                                                                                                                       |
+| clamping rangeclamp size      | 36-136mm                                                                                                                                                    |
+| clamp force                   | Vertical 600g wrap 1080g                                                                                                                                    |
+| Repeatability precision       | 0.5 mm                                                                                                                                                      |
+| service life lifetime         | 1 year                                                                                                                                                      |
+| drive mode drive              | pneumatic                                                                                                                                                   |
+| Transmission modetransmission | deformation                                                                                                                                                 |
+| size                          | 170x128x195mm                                                                                                                                               |
+| weightweight                  | 365 grams                                                                                                                                                   |
+| Fixed method fixed            | screw fixed                                                                                                                                                 |
+| Use environment requirements  | Temperature and pressure                                                                                                                                    |
+| control interface control     | SAC40A Pneumatic Controller                                                                                                                                 |
+| Applicable equipment          | ER myCobot 320 series, ER myCobot Pro 600                                                                                                                   |
 
 **Controller**
-| **Picture** | <img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/PneumaticController-1.JPG" alt="img-2" width="200" height="auto" /> <br> |
-| -------------- | ------------------- |
-|Power | 24V 1.5A |
-|Controller| IO |
-| Air Source Pressure | > 0.4 MPA |
-| Flow Rate | > 40 L/MIN |
-| IO| <img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/PneumaticController-2.JPG" alt="img-3" width="100" height="auto" /> <br> |
-|Value State | IN1: HIGH & IN2: LOW = Close Gripper <br> IN1: LOW & IN2: HIGH = Open Gripper <br> Caution ⚠️: When using IO control, ensure the three-position toggle switch above is set to the middle position. |
-|船型开关|The term "船型开关" translates to "toggle switch," specifically referring to a three-position toggle switch.|
-|正压|Gripper Close|
-|负压|Gripper Open|
+
+| **Picture**         | <img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/PneumaticController-1.JPG" alt="img-2" width="200" height="auto" /> <br>                                    |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Power               | 24V 1.5A                                                                                                                                                                                           |
+| Controller          | IO                                                                                                                                                                                                 |
+| Air Source Pressure | > 0.4 MPA                                                                                                                                                                                          |
+| Flow Rate           | > 40 L/MIN                                                                                                                                                                                         |
+| IO                  | <img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/PneumaticController-2.JPG" alt="img-3" width="100" height="auto" /> <br>                                    |
+| Value State         | IN1: HIGH & IN2: LOW = Close Gripper <br> IN1: LOW & IN2: HIGH = Open Gripper <br> Caution ⚠️: When using IO control, ensure the three-position toggle switch above is set to the middle position. |
+| 船型开关            | The term "船型开关" translates to "toggle switch," specifically referring to a three-position toggle switch.                                                                                       |
+| 正压                | Gripper Close                                                                                                                                                                                      |
+| 负压                | Gripper Open                                                                                                                                                                                       |
 
 ## Use for Gripping Objects
 
