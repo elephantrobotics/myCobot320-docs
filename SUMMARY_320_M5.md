@@ -23,7 +23,7 @@
   - [2.4 电气特性参数](2-ProductFeature/2.1_320_M5_product/2.1.4-ElectricalCharacteristicParameter.md)
   - [2.5 笛卡尔坐标系](2-ProductFeature/2.1_320_M5_product/2.1.5-CoordinateSystem.md)
 
-- [3 用户须知](3-UserNotes/320_M5/REMADE.md) <br>
+- [3 用户须知](3-UserNotes/320_M5/README.md) <br>
 
   - [3.1 安全须知](3-UserNotes/320_M5/3.1.1-SafetyInstruction/1-SafetyInstruction.md)
   - [3.2 运输和储存](3-UserNotes/320_M5/3.1.2-TransportandStorage/1-TransportandStorage.md)
@@ -48,14 +48,28 @@
 
   - [5.1 miniRoboflow](/5-BasicApplication/5.1-SystemUsageInstructions/320m5/README.md) <br>
     - [1 拖动示教](/5-BasicApplication/5.1-SystemUsageInstructions/320m5/4.2.1.1-micro_controller.md) <br>
-    - [2 关节校准](/5-BasicApplication/5.1-SystemUsageInstructions/320m5/4.2.2.1-micro_controller.md) <br>
-    - [3 电脑连接](/5-BasicApplication/5.1-SystemUsageInstructions/320m5/4.2.3.1-micro_controller.md) <br>
-    - [4 机器信息](/5-BasicApplication/5.1-SystemUsageInstructions/320m5/4.2.4.1-micro_controller.md) <br>
-  - [5.2 固件说明](5-BasicApplication/5.3-FirmwareUse/m5/1-firmware.md)
-    - [1 刻录固件](5-BasicApplication/5.3-FirmwareUse/m5/2-burn_firmware.md)
-  - [5.3 应用使用](5-BasicApplication/README_M5.md)
+    - [2 手臂校准](/5-BasicApplication/5.1-SystemUsageInstructions/320m5/4.2.2.1-micro_controller.md) <br>
+    - [3 通信控制](/5-BasicApplication/5.1-SystemUsageInstructions/320m5/4.2.3.1-micro_controller.md) <br>
+    - [4 连接检测](/5-BasicApplication/5.1-SystemUsageInstructions/320m5/4.2.4.1-micro_controller.md) <br>
+  - [5.2 应用使用](5-BasicApplication/README_M5.md)
     - [1 myblockly](5-BasicApplication/5.2-ApplicationUse/myblockly/320m5/README.md)
+      - [myblockly 使用前的准备工作](5-BasicApplication/5.2-ApplicationUse/myblockly/320m5/1-myBlocklyFirstUse.md)
+      - [myblockly 下载安装](5-BasicApplication/5.2-ApplicationUse/myblockly/320m5/2-install_uninstall.md)
+      - [myblockly 界面展示及基础功能的使用](5-BasicApplication/5.2-ApplicationUse/myblockly/320m5/3-interface_description.md)
+      - [控制 RGB 灯板](5-BasicApplication/5.2-ApplicationUse/myblockly/320m5/4-ControlRGB.md)
+      - [控制机械臂回到原点](5-BasicApplication/5.2-ApplicationUse/myblockly/320m5/5-ControlRoboticArmBackZero.md)
+      - [控制单关节运动](5-BasicApplication/5.2-ApplicationUse/myblockly/320m5/6-ControlSingleJoint.md)
+      - [控制多关节运动](5-BasicApplication/5.2-ApplicationUse/myblockly/320m5/7-ControlSinglesJoint.md)
+      - [夹爪的使用](5-BasicApplication/5.2-ApplicationUse/myblockly/320m5/8-GripperUse.md)
+      - [吸泵的使用](5-BasicApplication/5.2-ApplicationUse/myblockly/320m5/9-PumpUse.md)
+      - [Q&A](5-BasicApplication/5.2-ApplicationUse/myblockly/320m5/10-Q&A.md)
+      - [API](5-BasicApplication/5.2-ApplicationUse/myblockly/320m5/11-api.md)
     - [2 myStudio](5-BasicApplication/5.2-ApplicationUse/mystudio/320m5/README.md)
+      - [myStudio 环境搭建](5-BasicApplication/5.2-ApplicationUse/mystudio/320m5/1-setup.md)
+      - [安装驱动](5-BasicApplication/5.2-ApplicationUse/mystudio/320m5/2-install_driver.md)
+      - [烧录和更新固件](5-BasicApplication/5.2-ApplicationUse/mystudio/320m5/3-flash_firmwares.md)
+  - [5.3 固件说明](5-BasicApplication/5.3-FirmwareUse/m5/1-firmware.md)
+    - [1 刻录固件](5-BasicApplication/5.3-FirmwareUse/m5/2-burn_firmware.md)
 
 - [6 SDK 开发指南](6-SDKDevelopment/README_M5.md)
 
@@ -73,7 +87,7 @@
     - [4 基础功能](11-ApplicationBaseROS/11.1-ROS1/11.1.1-320M5/11.1.1.4-基础功能.md)
   - [6.3 基于 ROS2 开发使用](11-ApplicationBaseROS/11.2-ROS2/11.2.1-M5.md)
     - [1 环境搭建](11-ApplicationBaseROS/11.2-ROS2/11.2.1-320M5/11.2.1.1-环境搭建.md)
-    - [2 ROS2 基础](11-ApplicationBaseROS/11.2-ROS2/11.2.1-320M5/11.2.1.2-ROS基础.md)
+    - [2 ROS2 基础](11-ApplicationBaseROS/11.2-ROS2/11.2.1-320M5/11.2.1.2-ROS2基础.md)
     - [3 rviz2 介绍](11-ApplicationBaseROS/11.2-ROS2/11.2.1-320M5/11.2.1.3-rviz2介绍.md)
     - [4 基础功能](11-ApplicationBaseROS/11.2-ROS2/11.2.1-320M5/11.2.1.4-基础功能.md)
   - [6.4 C Sharp (C#)](15-ApplicationBaseCSharp/15.6C-M5.md)
@@ -96,7 +110,7 @@
 
 - [8 相关资料下载](8-FilesDownload/README.md)
 
-  - [8.1 产品资料](https://www.elephantrobotics.com/)
+  - [8.1 产品资料](8-FilesDownload/8.2_320_M5_Files/8.1_files.md)
   - [8.2 产品图纸](8-FilesDownload/8.2_320_M5_Files/8.2_productBrochure.md)
   - [8.3 软件资料及源码](8-FilesDownload/8.2_320_M5_Files/8.3_softwareSource.md)
   - [8.4 系统资料](8-FilesDownload/8.2_320_M5_Files/8.4_systemInfo.md)
