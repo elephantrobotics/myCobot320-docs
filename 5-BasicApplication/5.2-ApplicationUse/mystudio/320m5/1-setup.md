@@ -31,19 +31,19 @@
 
 从官网下载 Linux 版本的 myStudio 可得到一个如下图的安装包
 
-![](C:\Users\Administrator\Desktop\320_pi_mystudio_gitbook\zh\img\320\appimage.png)
+![](./img\320\appimage.png)
 
 选中`myStudio-latest.AppImage`鼠标右键打开，点击`Properties`打开
 
-<img src="C:\Users\Administrator\Desktop\320_pi_mystudio_gitbook\zh\img\320\appimage1.png"  />
+<img src="./img\320\appimage1.png"  />
 
 点击 进入`Permissions`
 
-<img src="C:\Users\Administrator\Desktop\320_pi_mystudio_gitbook\zh\img\320\appimage2.png"  />
+<img src="./img\320\appimage2.png"  />
 
 `Permissions` 页内勾选`Allow executing file as program`, 后可点击`Close`按钮关闭弹窗
 
-<img src="C:\Users\Administrator\Desktop\320_pi_mystudio_gitbook\zh\img\320\appimage3.png"  />
+<img src="./img\320\appimage3.png"  />
 
 关闭弹窗后 鼠标双击 安装包 `myStudio-latest.AppImage` 即可打开 myStudio
 
@@ -65,13 +65,13 @@
 
 ![](.\img\install_4.png)
 
-![](C:\Users\Administrator\Desktop\320_mystudio_gitbook截图\zh\img\install_5.png)
+![](./img\install_5.png)
 
 ### 对于 Mac 系统安装 myStudio
 
 从官网下载 Mac 版本的 myblockly 可得到一个如下图的安装包，鼠标双击打开即可
 
-![](C:\Users\Administrator\Desktop\320_pi_mystudio_gitbook\zh\img\mac.png)
+![](./\img\mac.png)
 
 **注意**：对于 MacOS，在安装之前确保系统 "偏好设置->安全性和隐私->通用" ，并允许从 App Store 和被认可的开发者。
 
@@ -91,21 +91,21 @@
 
 进入 myStudio 的文件目录，点击运行`Uninstall myStudio.exe`
 
-![](C:\Users\Administrator\Desktop\320_mystudio_gitbook截图\zh\img\uninstall_1.png)
+![](./img\uninstall_1.png)
 
 点击 `下一步`
 
-![](C:\Users\Administrator\Desktop\320_mystudio_gitbook截图\zh\img\uninstall_2.png)
+![](./img\uninstall_2.png)
 
 myblockly 已卸载，点击`完成`退出
 
-![](C:\Users\Administrator\Desktop\320_mystudio_gitbook截图\zh\img\uninstall_3.png)
+![](./img\uninstall_3.png)
 
 ## 更新
 
 **在 myStudio 中您可以点击`Update`按钮进行更新**
 
-![](C:\Users\Administrator\Desktop\320_mystudio_gitbook截图\zh\img\update.png)
+![](./img\update.png)
 
 ---
 

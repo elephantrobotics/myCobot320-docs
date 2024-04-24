@@ -23,21 +23,21 @@
 
     - [ **Windows10** ](https://download.elephantrobotics.com/software/drivers/CDM21228_Setup.zip)
 
-![P210X_install](C:\Users\Administrator\Desktop\320_mystudio_gitbook截图\zh\img\4.1.1.2-CP210X_install.gif)
+![P210X_install](./img\4.1.1.2-CP210X_install.gif)
 
 ## How to distinguish CP210X and CP34X chips
 
 - As shown in the figure below, open **Device Manager** and view **Ports (COM and LPT)**
 
-![frimware_check](C:\Users\Administrator\Desktop\320_mystudio_gitbook截图\zh\img\4.1.1.3-firmware_check.gif)
+![frimware_check](./img\4.1.1.3-firmware_check.gif)
 
 - If **Port (COM and LPT)** displays **USB-Enhanced-SERIAL CH9102**, it is **CP34X chip**
 
-![CP34X](C:\Users\Administrator\Desktop\320_mystudio_gitbook截图\zh\img\4.1.1.3-CP34X.png)
+![CP34X](./img\4.1.1.3-CP34X.png)
 
 - If **Port (COM and LPT)** shows **Silicon Labs CP210x USB to UART Bridge**, it is **CP210X chip**
 
-![CP210C](C:\Users\Administrator\Desktop\320_mystudio_gitbook截图\en\img\4.1.1.3-CP210X.png)
+![CP210C](./img\4.1.1.3-CP210X.png)
 
 ---
 
