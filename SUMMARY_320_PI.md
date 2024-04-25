@@ -20,11 +20,11 @@
   - [2.4 ElectricalCharacteristicParameter](2-ProductFeature/2.2_320_PI_product/2.2.4-ElectricalCharacteristicParameter.md)
   - [2.5 CoordinateSystem](2-ProductFeature/2.2_320_PI_product/2.2.5-CoordinateSystem.md)
 - [3 User Notes](3-UserNotes/320_PI/README.md)
-- [4 First Install and Use](4-FirstInstallAndUse/4.1-PI/4.1_320_PI_firstUse.md)
+- [4 First Install and Use](4-FirstInstallAndUse/4.1-Pi/4.1_320_PI_firstUse.md)
 
-  - [4.1 Product Standard List](4-FirstInstallAndUse/4.1-PI/4.1.1-产品清单.md)
-  - [4.2 Product Unboxing Guide](4-FirstInstallAndUse/4.1-PI/4.1.2-产品开箱.md)
-  - [4.3 Power-on Test Guide](4-FirstInstallAndUse/4.1-PI/4.1.3-开机检测.md)
+  - [4.1 Product Standard List](4-FirstInstallAndUse/4.1-Pi/4.1.1-产品清单.md)
+  - [4.2 Product Unboxing Guide](4-FirstInstallAndUse/4.1-Pi/4.1.2-产品开箱.md)
+  - [4.3 Power-on Test Guide](4-FirstInstallAndUse/4.1-Pi/4.1.3-开机检测.md)
 
 - [5 Basic Application](5-BasicApplication/README.md)
   - [5.1 System instruction manual](5-BasicApplication/5.1-SystemUsageInstructions/320pi/5.1-SystemUsageInstructions.md)
