@@ -4,13 +4,13 @@
 
 ## 产品图片
 
-<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/柔性夹爪1.JPG" alt="img-1" width="800" height="auto" /> <br>
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/柔性夹爪1.jpg" alt="img-1" width="800" height="auto" /> <br>
 
 ## 规格
 
 **夹具**
 
-| **图片**     | <img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/柔性夹爪2.JPG" alt="img-2" width="200" height="auto" /> |
+| **图片**     | <img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/柔性夹爪2.jpg" alt="img-2" width="200" height="auto" /> |
 | :----------- | :--------------------------------------------------------------------------------------------------------------------------------------------- |
 | 材料         | 金属                                                                                                                                           |
 | 夹取范围     | 36-136mm                                                                                                                                       |

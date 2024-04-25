@@ -6,7 +6,7 @@
 
 需要根据自己的操作系统选择下载不同的安装包。
 
-![](C:\Users\Administrator\Desktop\320gitbook截图\zh\img\download.png)
+![](img\download.png)
 
 ## 安装
 
@@ -14,21 +14,21 @@
 
 双击打开名为 `myblockly-Setup-latest.exe`
 
-![](C:\Users\Administrator\Desktop\320gitbook截图\zh\img\install_1.png)
+![](img\install_1.png)
 
 点击运行
 
-![](C:\Users\Administrator\Desktop\320gitbook截图\zh\img\install_2.png)
+![](img\install_2.png)
 
 点击`安装`后，等待 myblockly 安装完成
 
-![](C:\Users\Administrator\Desktop\320gitbook截图\zh\img\install_3.png)
+![](img\install_3.png)
 
 安装完成，点击 `完成` 按钮即可打开运行 myblockly
 
-![](C:\Users\Administrator\Desktop\320gitbook截图\zh\img\install_4.png)
+![](img\install_4.png)
 
-![](C:\Users\Administrator\Desktop\320gitbook截图\zh\img\install_5.png)
+![](img\install_5.png)
 
 ### 对于 Linux 系统安装
 
@@ -74,11 +74,11 @@
 
 进入到 myblockly 的文件目录，点击运行 `Uninstall myblockly.exe`
 
-![](C:\Users\Administrator\Desktop\320gitbook截图\zh\img\uninstall_1.png)
+![](img\uninstall_1.png)
 
 点击 `解除安装`
 
-![](C:\Users\Administrator\Desktop\320gitbook截图\zh\img\uninstall_2.png)
+![](img\uninstall_2.png)
 
 myblockly 已卸载，点击`完成`退出即可
 
