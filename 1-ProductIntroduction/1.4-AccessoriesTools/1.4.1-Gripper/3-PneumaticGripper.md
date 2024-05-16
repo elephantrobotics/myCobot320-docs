@@ -1,6 +1,6 @@
 # **Pneumatic gripper**
 
-**Compatible models:** myCobot 320, myCobot Pro 600
+**Compatible models:** myCobot 320, myCobot Pro 630
 
 **product icon**
 

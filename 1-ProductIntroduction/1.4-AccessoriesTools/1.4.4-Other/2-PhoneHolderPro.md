@@ -1,6 +1,6 @@
 # myCobot Pro Mobile Phone Holder
 
-> **Compatible models:** ER myCobot 320 series, ER myCobot 600
+> **Compatible models:** ER myCobot 320 series, ER myCobot 630
 
 ## Product Icon
 
