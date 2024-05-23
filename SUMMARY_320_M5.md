@@ -10,10 +10,11 @@
     - [2 电动夹爪](1-ProductIntroduction/1.4-AccessoriesTools/1.4.1-Gripper/2-ElectricGripper.md)
     - [3 气动夹爪](1-ProductIntroduction/1.4-AccessoriesTools/1.4.1-Gripper/3-PneumaticGripper.md)
     - [4 柔性夹爪](1-ProductIntroduction/1.4-AccessoriesTools/1.4.1-Gripper/4-FlexibleGripper.md)
-    - [5 吸盘模块](1-ProductIntroduction/1.4-AccessoriesTools/1.4.2-PumpCup/1-ModuleSuctionCup.md)
-    - [6 摄像头模块](1-ProductIntroduction/1.4-AccessoriesTools/1.4.3-Camera/1-CameraModulePro.md)
-    - [7 笔夹持器](1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Holder/1-PenHolderPro.md)
-    - [8 手机夹持器](1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Holder/2-PhoneHolderPro.md)
+    - [5 柔性夹爪-两指电动](1-ProductIntroduction/1.4-AccessoriesTools/1.4.1-Gripper/5-FlexibleElectricGripper.md)
+    - [6 吸盘模块](1-ProductIntroduction/1.4-AccessoriesTools/1.4.2-PumpCup/1-ModuleSuctionCup.md)
+    - [7 摄像头模块](1-ProductIntroduction/1.4-AccessoriesTools/1.4.3-Camera/1-CameraModulePro.md)
+    - [8 笔夹持器](1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Holder/1-PenHolderPro.md)
+    - [9 手机夹持器](1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Holder/2-PhoneHolderPro.md)
 
 - [2 产品特性](2-ProductFeature/2.1_320_M5_product/README.md)
 
