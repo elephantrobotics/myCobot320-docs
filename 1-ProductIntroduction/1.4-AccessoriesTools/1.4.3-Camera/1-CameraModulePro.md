@@ -1,6 +1,6 @@
 # myCobotPro Camera Module
 
-> **Compatible models:** myCobot 320, myCobot 600
+> **Compatible models:** myCobot 320, myCobot 630
 
 ## Product Icon
 

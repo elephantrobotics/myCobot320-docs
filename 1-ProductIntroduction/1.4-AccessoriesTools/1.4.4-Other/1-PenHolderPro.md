@@ -1,6 +1,6 @@
 # myCobot Pro Pen Holder
 
-> **Compatible models:** ER myCobot 320 series, ER myPalletizer 600
+> **Compatible models:** ER myCobot 320 series, ER myPalletizer 630
 
 ## Product Icon
 

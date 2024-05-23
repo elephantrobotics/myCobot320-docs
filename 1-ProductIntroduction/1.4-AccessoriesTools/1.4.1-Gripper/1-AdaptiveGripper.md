@@ -1,6 +1,6 @@
-# **myCobotPro Adaptive Gripper**
+# **myCobot Pro Adaptive Gripper**
 
-> **Compatible models:** myCobot 320, myCobot Pro 600
+> **Compatible models:** myCobot 320, myCobot Pro 630
 
 <img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/AdaptiveGripper-3.png" alt="img-1" width="800" height=“auto” />
 
@@ -8,7 +8,7 @@
 
 ## Specifications
 
-| **name name**                 | **myCobotPro Adaptive Gripper Black and White** |
+| **name**                 | **myCobotPro Adaptive Gripper Black and White** |
 | ----------------------------- | ----------------------------------------------- |
 | Material                      | Photosensitive resin + nylon                    |
 | process technology            | 3D printing                                     |
