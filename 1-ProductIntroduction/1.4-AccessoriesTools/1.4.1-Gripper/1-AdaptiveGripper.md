@@ -201,6 +201,7 @@ If the video fails to load, please click the link below to view the video.
          ```
 
 - **IO Control Mode:**
+   > Note: When switching back to IO mode from pass-through mode, you need to power off and restart the machine before you can use IO mode normally.  
    1. Setting the `Set Gripper Mode` module to Port Mode.
       ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用16.png)
    2. Again select the `repeat` module and loop through it three times.
