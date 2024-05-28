@@ -122,9 +122,6 @@ mc.set_eletric_gripper(0)
 time.sleep(3)
 ```
 
-<!-- 2 Development with SDK
--   [Blockly]()
--   [Python]()
--   [C++]() -->
+--- 
 
 [← Accessories Tools Page](../1.4-AccessoriesTools.md#gripper) | [Next Page →](../1.4.1-Gripper/3-PneumaticGripper.md)

@@ -119,21 +119,36 @@ Special Reminder ⚠️: Regarding pressure maintenance, both positive and negat
   > To test if the jaws are available after installation, use myBlockly.
   > [myblockly download](../../../5-ProgramingApplication-myblockly-uiflow-mind/5.1-myblockly/5.1.1-myBlocklyFirstUse.md#myblockly下载安装)
 
-  1. After confirming that the structural and electrical connections are complete, start the arm and open the myblockly software when the graphical interface appears.
-     ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/myblockly验证0.png)
-  2. Modify the baud rate to 115200:
-     ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/myblockly验证1.png)
-  3. Find `Base` in the list on the left and select the `Set Pin Out` module:
-     ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/myblockly验证2.png)
-  4. Set `pin number` to `1` and `output` to `0`:
-     ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/myblockly验证3.png)
-  5. Find `Time` and select the `Sleep` module:
-     ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/myblockly验证4.png)
-  6. Set the time as desired, here it is set to `1s`:
-     ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/myblockly验证5.png)
-  7. Repeat the above steps for the final setup as follows:
-     ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/myblockly验证6.png)
-  8. Click on the green run button in the top right corner to see the jaws close-open once.
+   1. After confirming that the structural and electrical connections are complete, start the arm and open the myblockly software when the graphical interface appears.
+      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/myblockly验证0.png)
+   2. Modify the baud rate to 115200:
+      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/myblockly验证1.png)
+   3. Find `Base` in the list on the left and select the `Set Pin Out` module:
+      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/myblockly验证2.png)
+   4. Set `pin number` to `1` and `output` to `0`:
+      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/myblockly验证3.png)
+   5. Find `Time` and select the `Sleep` module:
+      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/myblockly验证4.png)
+   6. Set the time as desired, here it is set to `1s`:
+      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/myblockly验证5.png)
+   7. Repeat the above steps for the final setup as follows:
+      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/myblockly验证6.png)
+   8. Final code:
+      ```python
+      from pymycobot.mycobot import MyCobot
+      import time
+
+      mc = MyCobot('/dev/ttyAMA0', 115200)
+      mc.set_basic_output(1, 0)
+      time.sleep(1)
+      mc.set_basic_output(2, 1)
+      time.sleep(1)
+      mc.set_basic_output(1, 1)
+      time.sleep(1)
+      mc.set_basic_output(2, 0)
+      time.sleep(1)
+      ```
+   9. Click on the green run button in the top right corner to see the jaws close-open once.
 
 - Programming Development:
 
@@ -187,5 +202,7 @@ Special Reminder ⚠️: Regarding pressure maintenance, both positive and negat
      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/python使用5.png)
 
      > Clamping jaws can be seen closed-open
+
+---
 
 [← Accessories Tools Page](../1.4-AccessoriesTools.md#gripper)
