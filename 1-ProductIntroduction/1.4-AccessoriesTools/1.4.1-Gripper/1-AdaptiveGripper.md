@@ -59,7 +59,7 @@ Mall link:
 If the video fails to load, please click the link below to view the video.
 [Installing Vidio](https://www.youtube.com/watch?v=RPKjV0IuP5E)
 
-**Installation and use**
+### **Installation and use**
 
 - Clamping jaws mounting：
 
@@ -80,9 +80,9 @@ If the video fails to load, please click the link below to view the video.
 
 <br>
 
-**myCobot Pro 320 Instructions for use**
+### **myCobot Pro 320 Instructions for use**
 
-- Programming development (python)：
+#### Programming development (python)：
 
   > Programming and development of the jaws using python:
   > [python environment download](../../../7-ApplicationBasePython/7.1_download.md)
@@ -135,37 +135,105 @@ If the video fails to load, please click the link below to view the video.
 
      > You can see the jaws open-close-open
 
-- Programming Development (myblockly):
+#### Programming Development (myblockly):
 
-  > Programming and development of the jaws using myblockly:
-  > [myblockly download](../../../5-BasicApplication/5.2-ApplicationUse/myblockly/320pi/2-install_uninstall.md)  
-  > Note that before developing with myblockly, you need to have run `mc.set_gripper_mode(0)` with a python program to set the jaws to 485 mode.
+  > Programming and development of the gripper using myblockly:
+  > [myblockly download](../../../5-BasicApplication/5.2-ApplicationUse/5.2.1-myblockly/320pi/2-install_uninstall.md)
 
-  1. After confirming that the structural and electrical connections are complete, start the arm and open the myblockly software when the graphical interface appears.  
-     ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用1.png)
-  2. Modify the baud rate to 115200
-     ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用2.png)
-  3. Find `Jaws` in the list on the left and select the `Set Jaw Value` module.
-     ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用3.png)
-  4. The drag module is attached under the `initialise mycobot` module, modify the degree of spread and speed as required, here it is set to `70`.
-     ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用4.png)
-  5. In `Time`, select `Sleep` module
-     ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用5.png)
-  6. Set the time to `2 seconds` to allow time for the jaws to move.  
-     ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用6.png)
-  7. Repeat the selection of the `Set Jaw Value` and `Sleep` modules to change the `Set Jaw Value` opening level to `0`.  
-     ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用7.png)
-     ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用8.png)
-  8. Find `Jaws` in the list on the left and select the `Set Jaw Value` module.
-     ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用9.png)
-  9. Modify status to `open' and speed to `70'.
-     ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用10.png)
-  10. Click on the green running icon in the upper right corner to see the jaws `open-close-open` in motion
+- **Port Passthrough Mode Method 1:**
 
-<!-- 2 Development with SDK
--   [Blockly]()
--   [Python]()
--   [C++]() -->
+   1. After confirming that the structural and electrical connections are complete, start the arm and open the myblockly software when the graphical interface appears.  
+      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用1.png)
+   2. Modify the baud rate to 115200.
+      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用2.png)
+   3. Find `Gripper` in the list on the left and select the `Set Gripper Mode` module.
+      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用3.png)
+   4. Drag and drop under the `init` module and select `Transparent Transmission`.
+      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用4.png)
+   5. In `Loops`, select `repeat` module.
+      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用5.png)
+   6. Set the times to `3 times`.
+      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用6.png)
+   7. In `Gripper`, select the `Set Gripper State` module, put it in the `repeat` module, set it to open at 20 speed, and the gripper type to Adaptive Gripper.
+      ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用7.png)
+      ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用8.png)
+   8. In `Time`, find the `Sleep` module and set the time to 2s, the purpose is to give the gripper time to make a movement.
+      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用9.png)
+      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用10.png)
+   9. In `Gripper`, select the `Set Gripper State` module, put it in the `repeat` module, set it to close at 20 speed, and the gripper type to Adaptive Gripper.
+      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用11.png)
+   10. In `Time`, find the `Sleep` module and set the time to 2s, the purpose is to give the gripper time to make a movement.
+      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用12.png)
+   11. Final flowchart and code.
+      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用13.png)
+
+         ```python
+         from pymycobot.mycobot import MyCobot
+         import time
+
+         mc = MyCobot('/dev/ttyAMA0', 115200)
+         mc.set_gripper_mode(0)
+         for count in range(3):
+            mc.set_gripper_state(0,20,1)
+            time.sleep(2)
+            mc.set_gripper_state(1,20,1)
+            time.sleep(2)
+         ```
+   12. Click on the green running icon in the upper right corner to see the jaws `open-close-open` in motion.
+
+- **Port Passthrough Mode Method 2:**
+   1. The process framework is the same as method 1, except that the `Set Gripper Mode` module is replaced by `Set Gripper Value`.
+      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用14.png)
+   2. Final flowchart and code.
+      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用15.png)
+
+         ```python
+         from pymycobot.mycobot import MyCobot
+         import time
+
+         mc = MyCobot('/dev/ttyAMA0', 115200)
+         mc.set_gripper_mode(0)
+         for count in range(3):
+            mc.set_gripper_value(10,50,1)
+            time.sleep(2)
+            mc.set_gripper_value(90,50,1)
+            time.sleep(2)
+         ```
+
+- **IO Control Mode:**
+   > Note: When switching back to IO mode from pass-through mode, you need to power off and restart the machine before you can use IO mode normally.  
+   1. Setting the `Set Gripper Mode` module to Port Mode.
+      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用16.png)
+   2. Again select the `repeat` module and loop through it three times.
+      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用17.png)
+   3. In `ATOM IO` select the `Setting IO value` module.
+      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用18.png)
+   4. Set the IO port to 33 with a value of 0.
+      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用19.png)
+   5. In `Time` select the `Sleep` module.
+      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用20.png)
+   6. Setting time to 2s.
+      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用21.png)
+   7. Repeat the selection of the `Setting IO value` and `Sleep` modules, noting the change of IO number and the change of value.
+      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用22.png)
+   8. Final flowchart and code.
+      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用23.png)
+         ```python
+         from pymycobot.mycobot import MyCobot
+         import time
+
+         mc = MyCobot('/dev/ttyAMA0', 115200)
+         mc.set_gripper_mode(1)
+         for count in range(3):
+            mc.set_digital_output(33, 0)
+            time.sleep(2)
+            mc.set_digital_output(33, 1)
+            time.sleep(2)
+            mc.set_digital_output(23, 0)
+            time.sleep(2)
+            mc.set_digital_output(23, 1)
+            time.sleep(2)
+         ```
 
 ---
 

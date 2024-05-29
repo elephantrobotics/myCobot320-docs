@@ -25,9 +25,7 @@
 | fixed method         | screw                                 |
 | Use environment requirements  | atmospheric and atmospheric pressure |
 | control interface control       | Serial / IO Control          |
-| Applicable equipment               | ER myCobot 320 M5
-ER myCobot 320 Pi
-ER myCobot Pro 600 |
+| Applicable equipment               | ER myCobot 320 M5、ER myCobot 320 Pi、ER myCobot Pro 600 |
 
 **Flexible gripper:** used for gripping objects
 
