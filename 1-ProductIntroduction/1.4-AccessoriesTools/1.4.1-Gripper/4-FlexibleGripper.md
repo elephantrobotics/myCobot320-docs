@@ -48,7 +48,7 @@
 
 - The modular design of the soft-touch gripper is light in weight and can be freely arranged and combined according to the size of the panel.
 
-- The clamping force of traditional cylinders is generally large, and the force is difficult to control. The edge of the clamping panel is easy to pinch and warp. The single-finger clamping force of the flexible jaws is precise and controllable, and will not pinch fragile workpieces.
+- The clamping force of traditional cylinders is generally large, and the force is difficult to control. The edge of the clamping panel is easy to pinch and warp. The single-finger clamping force of the flexible gripper is precise and controllable, and will not pinch fragile workpieces.
 
 **working principle**
 
@@ -91,7 +91,7 @@ Special Reminder ⚠️: Regarding pressure maintenance, both positive and negat
   3. The red button is the on/off switch, pulling it outwards turns it on, pressing it back turns the machine off:
      ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/空压机按钮.png)
 
-- Clamping jaws mounted:
+- gripper mounted:
 
   </video>
 
@@ -112,11 +112,11 @@ Special Reminder ⚠️: Regarding pressure maintenance, both positive and negat
   - Pneumatic controller terminal, power supply wire red connects to pneumatic controller 24V, black connects to pneumatic controller GND, control wire red connects to IN1, black connects to IN2:
     ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/电气连接2.png)
     > Be careful to connect to the "Positive Voltage" side, if the power supply is successful the display will light up.
-    > You can test the connection manually to see if it is working properly by switching the air compressor on and pressing the button on the pneumatic controller, pressing it to the left (positive pressure) will contract the jaws and pressing it to the right (negative pressure) will open the jaws.
+    > You can test the connection manually to see if it is working properly by switching the air compressor on and pressing the button on the pneumatic controller, pressing it to the left (positive pressure) will contract the gripper and pressing it to the right (negative pressure) will open the gripper.
 
 - Software-driven testing:
 
-  > To test if the jaws are available after installation, use myBlockly.
+  > To test if the gripper are available after installation, use myBlockly.
   > [myblockly download](../../../5-ProgramingApplication-myblockly-uiflow-mind/5.1-myblockly/5.1.1-myBlocklyFirstUse.md#myblockly下载安装)
 
    1. After confirming that the structural and electrical connections are complete, start the arm and open the myblockly software when the graphical interface appears.
@@ -148,11 +148,11 @@ Special Reminder ⚠️: Regarding pressure maintenance, both positive and negat
       mc.set_basic_output(2, 0)
       time.sleep(1)
       ```
-   9. Click on the green run button in the top right corner to see the jaws close-open once.
+   9. Click on the green run button in the top right corner to see the gripper close-open once.
 
 - Programming Development:
 
-  > Programming the jaws using python
+  > Programming the gripper using python
   > [python environment download](../../../7-ApplicationBasePython/7.1_download.md)
 
   1. Create a new python file:  
@@ -175,8 +175,8 @@ Special Reminder ⚠️: Regarding pressure maintenance, both positive and negat
      # Initialise a MyCobot object
      mc = MyCobot("COM3", 115200)
 
-     # Controls jaws closed-open:
-     # Using the jaw status interface 0 is open, 1 is closed
+     # Controls gripper closed-open:
+     # Using the gripper status interface 0 is open, 1 is closed
      mc.set_basic_output(1, 0)
      time.sleep(1)
      mc.set_basic_output(2, 1)
@@ -201,7 +201,7 @@ Special Reminder ⚠️: Regarding pressure maintenance, both positive and negat
 
      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/python使用5.png)
 
-     > Clamping jaws can be seen closed-open
+     > gripper can be seen closed-open
 
 ---
 

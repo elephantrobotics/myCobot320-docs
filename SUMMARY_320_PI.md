@@ -25,9 +25,11 @@
   - [3.3 Maintenance and Care](/3-UserNotes/320_M5/3.1.3-MaintenanceandCare/1-MaintenanceandCare.md)
   - [3.4 FAQs](3-UserNotes/320_PI/3.1_320_PI_userNotes.md)
     - [3.4.1 how to ask](3-UserNotes/320_PI/0_how_to_ask.md)
-    - [3.4.2 driver](3-UserNotes/320_PI/1_driver.md)
+    - [3.4.2 driver](3-UserNotes/320_PI/1-first_time_self_check.md)
     - [3.4.3 software](3-UserNotes/320_PI/2_software.md)
     - [3.4.4 hardware](3-UserNotes/320_PI/3_hardware.md)
+    - [3.4.5 accessory](3-UserNotes/320_PI/4_accessory.md)
+    - [3.4.6 other](3-UserNotes/320_PI/5_other.md)
 - [4 First Install and Use](4-FirstInstallAndUse/4.1-Pi/4.1_320_PI_firstUse.md)
 
   - [4.1 Product Standard List](4-FirstInstallAndUse/4.1-Pi/4.1.1-产品清单.md)

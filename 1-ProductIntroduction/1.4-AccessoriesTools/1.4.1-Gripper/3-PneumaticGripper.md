@@ -37,7 +37,7 @@
 
 - Single piston: the axis drives the crank, and the air claw is driven by the piston to open and close. A corresponding crank groove is respectively arranged on the two claw pieces. In order to reduce the frictional resistance, the claw piece and the body are connected by a steel ball slide rail structure.
 
-- Double piston: It is operated by two pistons, and each piston is connected with a pneumatic finger by a roller and a double crank to form a special drive unit. Realize that the pneumatic fingers always move axially to the center, and each finger cannot move independently. Parallel jaw cylinder If the finger moves in the opposite direction, the previously compressed piston is in the exhausted state, while the other piston is in the compressed state.
+- Double piston: It is operated by two pistons, and each piston is connected with a pneumatic finger by a roller and a double crank to form a special drive unit. Realize that the pneumatic fingers always move axially to the center, and each finger cannot move independently. Parallel gripper cylinder If the finger moves in the opposite direction, the previously compressed piston is in the exhausted state, while the other piston is in the compressed state.
 
 **Applicable object**
 
@@ -74,18 +74,18 @@
   3. The red button is the on/off switch, pulling it outwards turns it on, pressing it back turns the machine off:
      ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/3-PneumaticGripper/空压机按钮.png)
 
-- Clamping jaws mounted:
+- gripper mounted:
 
   1. Connect the other end of the red hose from the air compressor to the solenoid valve connection:
      ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/3-PneumaticGripper/结构安装1.png)
-  2. The other end of the solenoid valve will be unscrewed another port for the activation of the jaws to control the opening and closing of the use:
+  2. The other end of the solenoid valve will be unscrewed another port for the activation of the gripper to control the opening and closing of the use:
      ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/3-PneumaticGripper/结构安装2.png)
      ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/3-PneumaticGripper/结构安装3.png)
   3. Use the two matching clear hoses with one end connected to the two ports of the solenoid valve:
      ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/3-PneumaticGripper/结构安装4.png)
-  4. The other end of the transparent hose is connected to the two connections of the clamping jaws:
+  4. The other end of the transparent hose is connected to the two connections of the gripper:
      ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/3-PneumaticGripper/结构安装5.png)
-  5. Secure the jaws to the end of the arm with the matching screws:
+  5. Secure the gripper to the end of the arm with the matching screws:
      ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/3-PneumaticGripper/结构安装6.png)
 
 - Electrical Connections:
@@ -95,7 +95,7 @@
 
 - Software-driven testing:
 
-  > To test if the jaws are available after installation, use myBlockly.
+  > To test if the gripper are available after installation, use myBlockly.
   > [myblockly 下载](../../../5-ProgramingApplication-myblockly-uiflow-mind/5.1-myblockly/5.1.1-myBlocklyFirstUse.md#myblockly下载安装)
 
    1. After confirming that the structural and electrical connections are complete, start the arm and open the myblockly software when the graphical interface appears:
@@ -123,11 +123,11 @@
       mc.set_basic_output(1, 1)
       time.sleep(2)
       ```
-   9. Click on the green run button in the top right corner to see the jaws close-open once.
+   9. Click on the green run button in the top right corner to see the gripper close-open once.
 
 - Programming Development:
 
-  > Programming the jaws using python
+  > Programming the gripper using python
   > [python environment download](../../../7-ApplicationBasePython/7.1_download.md)
 
   1. Create a new python file:  
@@ -150,8 +150,8 @@
      # Initialise a MyCobot object
      mc = MyCobot("COM3", 115200)
 
-     # Controls jaws closed-open:
-     # Using the jaw status interface 0 is open, 1 is closed
+     # Controls gripper closed-open:
+     # Using the gripper status interface 0 is open, 1 is closed
      mc.set_basic_output(1, 0)
      time.sleep(1)
      mc.set_basic_output(2, 1)
@@ -176,7 +176,7 @@
 
      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/3-PneumaticGripper/python使用5.png)
 
-     > Clamping jaws can be seen closed-open
+     > gripper can be seen closed-open
 
 ---
 

@@ -35,7 +35,7 @@
 
 - The modular design of the soft-touch gripper is light in weight and can be freely arranged and combined according to the size of the panel.
 
-- The clamping force of traditional cylinders is generally large, and the force is difficult to control. The edge of the clamping panel is easy to pinch and warp. The single-finger clamping force of the flexible jaws is precise and controllable, and will not pinch fragile workpieces.
+- The clamping force of traditional cylinders is generally large, and the force is difficult to control. The edge of the clamping panel is easy to pinch and warp. The single-finger clamping force of the flexible gripper is precise and controllable, and will not pinch fragile workpieces.
 
 **working principle**
 
@@ -54,14 +54,14 @@
     1. Align the spacer with the hole in the end of the arm and tighten it with the screw:
        ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/5-FlexibleElectricGripper/安装1.png)
 
-    2. Align the screw holes in the jaws with the holes around the gasket and tighten with the fine screws:
+    2. Align the screw holes in the gripper with the holes around the gasket and tighten with the fine screws:
        ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/5-FlexibleElectricGripper/安装2.png)
 
   - Electrical connection:
     > Take care to do this with the robotic arm powered off.
     1. Align the m8 cable with the connector of the robotic arm, note that the connector is notched and the connecting cable has a corresponding protrusion, confirm the direction and then insert and tighten:
        ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/5-FlexibleElectricGripper/电气连接1.png)
-    2. Insert the jaw control connector, again paying attention to the orientation of the notch:
+    2. Insert the gripper control connector, again paying attention to the orientation of the notch:
        ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/5-FlexibleElectricGripper/电气连接2.png)
 
 <br>
@@ -70,7 +70,7 @@
 
 - Programming development (python):
 
-  > Programming development of the clamping jaws using python:
+  > Programming development of the gripper using python:
   > [python environment download](../../../7-ApplicationBasePython/7.1_download.md)
 
   1. Create a new python file:  
@@ -95,9 +95,9 @@
      # Initialise a MyCobot object
      mc = MyCobot("COM3", 115200)
 
-     # Set the gripper jaws to 485 mode
+     # Set the gripper gripper to 485 mode
      mc.set_gripper_mode(0)
-     # Controls the gripper jaws to open-close-open:
+     # Controls the gripper gripper to open-close-open:
      # Use gripper status interface 0 for open, 1 for closed
      mc.set_gripper_state(0, 80)
      time.sleep(3)
@@ -119,9 +119,9 @@
      # Initialise a MyCobot object
      mc = MyCobot(PI_PORT, 115200)
 
-     # Set the gripper jaws to 485 mode
+     # Set the gripper gripper to 485 mode
      mc.set_gripper_mode(0)
-     # Controls the gripper jaws to open-close-open:
+     # Controls the gripper gripper to open-close-open:
      # Use gripper status interface 0 for open, 1 for closed
      mc.set_gripper_state(0, 80)
      time.sleep(3)
@@ -145,11 +145,11 @@
 
      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/5-FlexibleElectricGripper/python使用5.png)
 
-     > You can see the jaws open-close-open.
+     > You can see the gripper open-close-open.
 
 - Programming Development (myblockly):
 
-  > Programming development of the jaws using myblockly:
+  > Programming development of the gripper using myblockly:
   > [myblockly download](../../../5-BasicApplication/5.2-ApplicationUse/myblockly/320pi/2-install_uninstall.md)  
   > Before developing with myblockly, you need to run `mc.set_gripper_mode(0)` in python to set the gripper to 485 mode.
 
@@ -157,19 +157,19 @@
      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/5-FlexibleElectricGripper/myblockly使用1.png)
   2. Modify the baud rate to 115200  
      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/5-FlexibleElectricGripper/myblockly使用2.png)
-  3. Find `Jaws` in the list on the left and select the `Set Jaw Value` module.   
+  3. Find `gripper` in the list on the left and select the `Set gripper Value` module.   
      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/5-FlexibleElectricGripper/myblockly使用3.png)
   4. The drag module is attached under the `initialise mycobot' module, modifying the degree of spread and speed as required, which is set to `70' here.  
      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/5-FlexibleElectricGripper/myblockly使用4.png)
   5. In `Time', select `Sleep' module  
      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/5-FlexibleElectricGripper/myblockly使用5.png)
-  6. Set the time to `2 seconds' to allow time for the jaws to move.  
+  6. Set the time to `2 seconds' to allow time for the gripper to move.  
      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/5-FlexibleElectricGripper/myblockly使用6.png)
-  7. Repeat the selection of the `Set Jaw Value' and `Sleep' modules to change the `Set Jaw Value' opening level to `0'.  
+  7. Repeat the selection of the `Set gripper Value' and `Sleep' modules to change the `Set gripper Value' opening level to `0'.  
      ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/5-FlexibleElectricGripper/myblockly使用7.png)
      ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/5-FlexibleElectricGripper/myblockly使用8.png)
-  8. Find `Jaws' in the list on the left and select the `Set Jaw Value' module.
+  8. Find `gripper' in the list on the left and select the `Set gripper Value' module.
      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/5-FlexibleElectricGripper/myblockly使用9.png)
   9. Modify status to `open' and speed to `70'.
      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/5-FlexibleElectricGripper/myblockly使用10.png)
-  10. Click on the green running icon in the upper right corner to see the `open-close-open' movement of the jaws.
+  10. Click on the green running icon in the upper right corner to see the `open-close-open' movement of the gripper.
