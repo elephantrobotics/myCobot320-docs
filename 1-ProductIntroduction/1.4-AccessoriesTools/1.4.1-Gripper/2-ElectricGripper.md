@@ -80,10 +80,10 @@ Mall link:
 
 **Installation and use**
 
-- Check that the kit is complete: screws, hexagonal spanner, clamping jaws with connecting wires, clamping jaws with arm end fixing device
+- Check that the kit is complete: screws, hexagonal spanner, gripper with connecting wires, gripper with arm end fixing device
   ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/物料.jpg)
 
-- Clamping jaws mounted:
+- gripper mounted:
 
   - Structural installation:
 
@@ -93,7 +93,7 @@ Mall link:
     2. Align the screws with the four screw holes on the end of the robot arm and tighten:
        ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/安装2.jpg)
 
-    3. Insert the motorised jaws into the fixture and tighten with fine screws on both sides, eight in total:
+    3. Insert the motorised gripper into the fixture and tighten with fine screws on both sides, eight in total:
        ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/安装3.jpg)
 
   - Electrical Connections:
@@ -113,7 +113,7 @@ import time
 # Initialise a MyCobot object
 mc = MyCobot("COM3", 115200)
 
-# Can control the clamping jaws to open and strike - close and open:
+# Can control the gripper to open and strike - close and open:
 mc.set_eletric_gripper(0)
 time.sleep(3)
 mc.set_eletric_gripper(1)

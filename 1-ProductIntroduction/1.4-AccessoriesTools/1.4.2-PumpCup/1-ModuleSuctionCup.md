@@ -86,7 +86,7 @@ In operation, when the solenoid valve is energized, it opens, allowing vacuum pr
 
 - Software-driven testing:
 
-  > To test if the jaws are available after installation, use myBlockly.
+  > To test if the gripper are available after installation, use myBlockly.
   > [myblockly download](../../../5-ProgramingApplication-myblockly-uiflow-mind/5.1-myblockly/5.1.1-myBlocklyFirstUse.md#myblockly下载安装)
 
    1. After confirming that the structural and electrical connections are complete, start the arm and open the myblockly software when the graphical interface appears.

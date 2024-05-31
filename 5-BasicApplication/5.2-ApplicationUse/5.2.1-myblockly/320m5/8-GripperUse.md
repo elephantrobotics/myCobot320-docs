@@ -46,7 +46,7 @@ How to use myBlockly to control the adaptive gripper attached to the myCobot 320
 
   This module has two parameters that can be adjusted:
 
-  * The parameter of the clamping jaw value: indicates the position that the clamping jaw wants to reach, and the value range is 0~100.
+  * The parameter of the gripper value: indicates the position that the gripper wants to reach, and the value range is 0~100.
   * Speed parameter: indicates the speed at which to rotate, the value range is 0~100.
   * Clamp type parameter: select adaptive clamp here
 
@@ -75,11 +75,11 @@ The graphics code is as follows:
 
   Move joint 2 of the robotic arm to 30 degrees at a speed of 50. After two seconds,
 
-  The clamping jaw opens at a speed of 70. After two seconds,
+  The gripper opens at a speed of 70. After two seconds,
 
-  The jaws close at speed 70,
+  The gripper close at speed 70,
 
-  After the process of opening and closing the jaws is cycled 5 times, the program ends.
+  After the process of opening and closing the gripper is cycled 5 times, the program ends.
 
 
 

@@ -24,8 +24,8 @@ The movement of the machine can be controlled by the gamepad, and the grasping o
 - **12**: RZ direction coordinate value increases
 - **13**: Wake up the handle. After the handle is not used for a long time after connection, it will enter sleep mode. You need to press this button to wake up.
 - **14**: Check the connection status of the machine. The atom LED flashes green three times to indicate that the machine is normal; flashes red three times to indicate that the state is abnormal.
-- **X**: Press and hold the button, the jaws continue to open
-- **Y**: Press and hold the button, the jaws continue to close
+- **X**: Press and hold the button, the gripper continue to open
+- **Y**: Press and hold the button, the gripper continue to close
 - **A**: open suction pump
 - **B**: Shut down the suction pump
 - **Left 1**: Press and hold for 2s to initialize the robot to the joint zero state.

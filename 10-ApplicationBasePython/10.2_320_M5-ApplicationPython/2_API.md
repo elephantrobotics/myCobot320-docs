@@ -464,11 +464,11 @@ API or Application Programming Interface refers to a number of preset programs. 
 
 - **Function:** Let the gripper rotate to the specified position at the specified speed
 - **Parameter Description:**
-  - `value`: Indicates the position that the clamping jaw wants to reach, the value range is 0~256
+  - `value`: Indicates the position that the gripper wants to reach, the value range is 0~256
   - `speed`: indicates the speed at which to rotate, the value range is 0~100
   - `gripper_type`: Gripper type, the default is adaptive gripper
     - `1`: Adaptive gripper
-    - `3`: Parallel jaws
+    - `3`: Parallel gripper
     - `4`: Flexible gripper
 - **Return value:** None
 
@@ -478,7 +478,7 @@ API or Application Programming Interface refers to a number of preset programs. 
 - **Parameter Description:**
   - `gripper_type`: Gripper type, the default is adaptive gripper
     - `1`: Adaptive gripper
-    - `3`: Parallel jaws
+    - `3`: Parallel gripper
     - `4`: Flexible gripper
 - **Return value:** Gripper data information
 
@@ -491,12 +491,12 @@ API or Application Programming Interface refers to a number of preset programs. 
 
 - **Function:** Let the gripper enter the specified state at the specified speed
 - **Parameter Description:**
-  - `flag`: 1 means the clamping jaw is closed, 0 means the clamping jaw is open.
+  - `flag`: 1 means the gripper is closed, 0 means the gripper is open.
   - `speed`: Indicates how fast to reach the specified state, the value range is 0~100
   - `_type`: Gripper type, the default is adaptive gripper
     - `1`: Adaptive gripper
     - `2`: Five-fingered dexterity
-    - `3`: Parallel jaws
+    - `3`: Parallel gripper
     - `4`: Flexible gripper
 - **Return value:** None
 

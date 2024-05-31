@@ -1,3 +1,58 @@
+# How to get after-sales technical support
+
+Dear Elephant Robotics Users:
+
+The Elephant Robot Technical Support Team is delighted to assist you in resolving any product usage issues!
+
+In order to find solutions more effectively, please make sure to **review the entire GitBook product documentation and Frequently Asked Questions (FAQs) section** before contacting our after-sales technical support staff. These resources typically contain detailed information about the product and solutions to common issues. By consulting these documents, you may find answers to your questions in a short time, thereby resolving the encountered problems more quickly.
+
+If you have already reviewed the relevant documents but still have questions or need further assistance, please follow the question format below when asking. We will make every effort to assist you. Thank you!
+The Product Usage Inquiry Template requirements are as follows:
+
+**1. Please provide product order number from Elephant Robotics and describe the specific product model, the order number is the basis for obtaining after-sales technical services**  
+For example: My order number is: #xxxxxx, and the purchased model is: mycobot280M5.
+
+**2. Describe the problem you encountered and specify which specific case from the GitBook you are referring to.**  
+For example: When I control the joints using the myblockly tutorial in Chapter 6 of the mycobot280M5 GitBook, an error message pops up indicating communication failure. How should I resolve this?
+
+**3. Describe what attempts you have made so far, the corresponding results, and the desired outcome.**  
+For example: I have tried checking the FAQ documentation and flashing the firmware version Atom 6.5, but the same error message still occurs. I would like to know if there is a perfect solution to this error so that my program can run smoothly.
+
+**4. Please provide some images or videos detailing the problem to help technicians quickly identify the issue.**  
+For example: Below is my control code and error message. Please assist me in analyzing. Thank you.
+
+![alt text](../../../resources/3-UserNotes/myblockly错误消息1.png)
+
+![alt text](../../../resources/3-UserNotes/myblockly错误消息2.png)
+
+**Please list each question separately if you have multiple questions.**  
+
+For example:  
+Hello,  
+My order number is: SP#xxxxxx, and the purchased model is: mycobot280M5.
+I have three questions that I need your assistance with: 
+The first question is xxx   
+(detailed description + attached images or videos)  
+The second question is xxx  
+(detailed description + attached images or videos) 
+The third question is xxx  
+ (detailed description + attached images or videos)  
+Thank you for your support and help!  
+
+**If you encounter product problems, please try to ask questions in the above format, which will help technical support staff to quickly locate and assist you in solving the problem, thank you for your support and cooperation, I wish you a smooth use of the product!**  
+
+**Elephant after-sales technical support WeChat contact:**  
+ *ElephantRobotics 2020*  
+
+**Elephant after-sales technical support email contact:**   
+*support@elephantrobotics.com*
+
+**Working Time:** 
+Beijing time Monday to Friday 9:00-18:00, legal holidays and normal rest.  
+
+**Note:** If your product was not purchased directly from the official direct sales channel of Elephant Robot and does not have an order number from Elephant Robot, please contact the corresponding purchasing platform or channel for after-sales support services.
+
+
 # How To Ask Questions Gracefully
 
 ### 1 When asking questions in various places, you will find several phenomena:
@@ -85,6 +140,6 @@ In summary, you can ask the following questions:
 * In addition, pay attention to the format when pasting the code. Do not display it in a mess after pasting, and it cannot be seen. Try to copy it and run it directly.
 * Finally, you need to thank the community friends who answered the question.
 
-
+---
 
 [← Previous Page](../3.1_320_PI_userNotes.md) | [Next Page →](./1_driver.md)

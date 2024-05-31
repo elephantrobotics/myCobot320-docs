@@ -52,30 +52,29 @@ Mall link:
 
 ## How to use
 
-1 Installing <br>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RPKjV0IuP5E" title="myCobot Pro Accessories | The new gripper for myCobot Pro 600" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+1. Installing <br>
+<iframe width="738" height="415" src="https://www.youtube.com/embed/RPKjV0IuP5E" title="myCobot Pro Accessories | The new gripper for myCobot Pro 600" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 If the video fails to load, please click the link below to view the video.
 [Installing Vidio](https://www.youtube.com/watch?v=RPKjV0IuP5E)
 
 ### **Installation and use**
 
-- Clamping jaws mounting：
+- gripper mounting：
 
-  - Structural installation：
-
-    1. Align the spacer with the hole at the end of the arm and tighten with the screws：
-       ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/安装1.png)
-
-    2. Align the screw holes in the jaws with the holes around the gasket and tighten with the fine screws.：
-       ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/安装2.png)
+**Structural installation：**
+  
+1. Align the spacer with the hole at the end of the arm and tighten with the screws：  
+![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/安装1.png)  
+   
+2. Align the screw holes in the gripper with the holes around the gasket and tighten with the fine screws.：  
+![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/安装2.png)
 
   - electrical connection：
     > Take care to do this with the robotic arm powered off.
     1. Align the m8 cable with the connector of the robot arm, note that the connector has a notch and the connecting cable has a corresponding protrusion, confirm the direction and then insert it and tighten it:
        ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/电气连接1.png)
-    2. Insert the jaw control connector, again paying attention to the orientation of the notch:
+    2. Insert the gripper control connector, again paying attention to the orientation of the notch:
        ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/电气连接2.png)
 
 <br>
@@ -84,7 +83,7 @@ If the video fails to load, please click the link below to view the video.
 
 #### Programming development (python)：
 
-  > Programming and development of the jaws using python:
+  > Programming and development of the gripper using python:
   > [python environment download](../../../7-ApplicationBasePython/7.1_download.md)
 
   1. Create a new python file:  
@@ -107,10 +106,10 @@ If the video fails to load, please click the link below to view the video.
      # Initialise a MyCobot object
      mc = MyCobot("COM3", 115200)
 
-     # Setting the jaws to 485 mode
+     # Setting the gripper to 485 mode
      mc.set_gripper_mode(0)
-     # Controls jaws open-close-open:
-     # Using the jaw status interface 0 is open, 1 is closed
+     # Controls gripper open-close-open:
+     # Using the gripper status interface 0 is open, 1 is closed
      mc.set_gripper_state(0, 80)
      time.sleep(3)
      mc.set_gripper_state(1, 80)
@@ -133,7 +132,7 @@ If the video fails to load, please click the link below to view the video.
 
      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/python使用5.png)
 
-     > You can see the jaws open-close-open
+     > You can see the gripper open-close-open
 
 #### Programming Development (myblockly):
 
@@ -179,7 +178,7 @@ If the video fails to load, please click the link below to view the video.
             mc.set_gripper_state(1,20,1)
             time.sleep(2)
          ```
-   12. Click on the green running icon in the upper right corner to see the jaws `open-close-open` in motion.
+   12. Click on the green running icon in the upper right corner to see the gripper `open-close-open` in motion.
 
 - **Port Passthrough Mode Method 2:**
    1. The process framework is the same as method 1, except that the `Set Gripper Mode` module is replaced by `Set Gripper Value`.
