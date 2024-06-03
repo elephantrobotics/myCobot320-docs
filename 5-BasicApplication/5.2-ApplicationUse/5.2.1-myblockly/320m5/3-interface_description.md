@@ -37,6 +37,9 @@ First connect `myCobot 320 M5` to our computer through `USB data cable`,
 
 And then we select the initialization model as `myCobot 320`, the port connected to my computer is `COM8`, and the baud rate is `115200`
 
+> The com port number is not fixed, you need to choose according to the actual port number of the individual PC connection  
+> How to choose the corresponding port number: by unplugging the usb cable on the side of the M5stack to see if there is any change in the corresponding port number to choose, unplugged in both cases there is a change in the com port is the machine's communication serial port.
+
 ![](../../../../resources/5-BasicApplication/5.2.1/m5/img/interface/2.png)
 
 
