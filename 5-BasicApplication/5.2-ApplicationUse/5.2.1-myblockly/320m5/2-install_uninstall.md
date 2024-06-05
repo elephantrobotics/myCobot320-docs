@@ -144,6 +144,22 @@ myblockly has been uninstalled, click `Finish` to exit
 If you want to update myblockly, please go to the [official website](https://www.elephantrobotics.com/en/downloads/) to download the latest version.
 
 
+## Serial Driver Installation
+
+Before using myStudio to burn, you need to download the serial driver, i.e. CP210X or CP34X driver zip.There are currently two driver chip versions, CP210X (for CP2104 version) / CP34X (for CH9102 version) driver zip. If you are not sure which USB chip your device uses, you can install both drivers at the same time. (CH9102_VCP_SER_MacOS may report an error during the installation process, but the installation is actually complete, so just ignore it). Please click the link below to download the driver according to your computer system (please refer to [5.2.2-myStudio driver installation](../../5.2.2-mystudio/320m5/2-install_driver.md) for detailed installation steps).
+
+- Download the **M5Stack-basic** serial port driver at the bottom
+
+  - **CP210X**
+    - [ **Windows10** ](https://download.elephantrobotics.com/software/drivers/CP210x_VCP_Windows.zip)
+    - [ **MacOS** ](https://download.elephantrobotics.com/software/drivers/CP210x_VCP_MacOS.zip)
+    - [ **Linux** ](https://download.elephantrobotics.com/software/drivers/CP210x_VCP_Linux.zip)
+
+    - **CP34X**
+
+      - [ **Windows10** ](https://download.elephantrobotics.com/software/drivers/CH9102_VCP_SER_Windows.exe)
+
+      - [ **MacOS** ](https://download.elephantrobotics.com/software/drivers/CH9102_VCP_MacOS.zip)
 
 
 [← Previous Page](./1-myBlocklyFirstUse.md) | [Next Page →](./3-interface_description.md)

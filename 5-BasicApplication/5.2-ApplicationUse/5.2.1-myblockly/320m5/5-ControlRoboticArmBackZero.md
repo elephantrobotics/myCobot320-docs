@@ -34,7 +34,7 @@ How to use myBlockly to control the robot arm to return to the origin
 
 
 
-#### 简单演示
+#### Simple Demonstration
 
 <img src="../../../../resources/5-BasicApplication/5.2.1/m5/img/case/gozero.png" style="zoom: 50%;" />
 

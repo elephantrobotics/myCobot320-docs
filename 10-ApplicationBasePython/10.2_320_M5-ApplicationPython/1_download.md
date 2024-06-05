@@ -4,8 +4,31 @@ pymycobot is a Python package used for serial communication with myCobot. It sup
 
 Before using pymycobot, make sure to build a Python environment. Follow the steps below to install Python.
 
-## 1 Download and Installation of Python
+## Installing Python
 
+![README2](../../resources/10-ApplicationBasePython/myArm/python-README2.jpg)
+
+- **Python** Python's official downloading address：https://www.python.org/downloads/
+- [**Python** downloading and Installation Tutorial](https://python.land/installing-python#Install_Python_on_Windows) for reference only
+
+### 1 Download and Installation of Python
+
+Python is applicable to:
+
+- myCobot 280：
+  - myCobot 280 M5
+  - myCobot 280 PI
+  - myCobot 280 Jetson Nano
+  - myCobot 280 for Arduino
+- myCobot 320：
+  - myCobot 320 M5
+  - myCobot 320 PI
+- myPalletizer 260：
+  - myPalletizer 260 M5
+  - myPalletizer 260 PI
+- mechArm-270：
+  - mechArm-270 M5
+  - mechArm-270 PI
 
 At present, Python has two versions: `2.x` and `3.x`. These two versions are incompatible with each other. This section takes the version `3.x` as an example due to its increasing popularity.
 
@@ -195,58 +218,6 @@ from pymycobot.mycobot import MyCobot
 > 2. if a red wavy line appears, got to the address **https://github.com/elephantrobotics/pymycobot** to download pymycobot manually and put it into python library.
 >
 > <img src="../../resources/10-ApplicationBasePython/pymycobotdownload.jpg" alt="7.1.1-7" style="zoom: 33%;" />
-
-
-
-## 5 **Simple Demo**
-
-Create a new Python file, and type the following codes to set the color of RGB light panel.
-
->  **Notice:** The baud rates are different according to types of devices. Refer to **[calculator device manager](https://docs.elephantrobotics.com/docs/gitbook-en/4-BasicApplication/4.1-myStudio/4.1.1-myStudio_download_driverinstalled.html#4113-%E5%A6%82%E4%BD%95%E5%8C%BA%E5%88%86cp210x%E5%92%8Ccp34x%E8%8A%AF%E7%89%87)** to check the corresponding number.
-
-
-
-* **Codes for MyCobot:**
-
-```python
-# demo.py
-from pymycobot.mycobot import MyCobot
-import time
-#The above codes are required to be written, which means importing the project package
-
-# MyCobot class initialization requires two parameters:
-#   The first is the serial port string:
-#       windows: "COM3"
-#       linux: "/dev/ttyUSB"
-#   The second is the baud rate:
-#       M5 version is:  115200
-#
-#    Example:
-#       mycobot-M5: mc = MyCobot("COM3", 115200)
-
-# Initiate MyCobot
-# Create object code here for windows version
-mc = MyCobot("COM3", 115200)
-
-i = 7
-#loop 7 times
-while i > 0:							
-    mc.set_color(0,0,255) #blue light on
-    time.sleep(2)	#wait for 2 seconds				
-    mc.set_color(255,0,0) #red light on
-    time.sleep(2)	#wait for 2 seconds
-    mc.set_color(0,255,0) #green light on
-    time.sleep(2)	#wait for 2 seconds
-    i -= 1
-```
-
-Run the example file:
-```bash
-python3 demo.py
-```
-
-
-The blue, red, and green lights on the top of the robot flash 7 times continuously at an interval of 2 seconds.
 
 ---
 
