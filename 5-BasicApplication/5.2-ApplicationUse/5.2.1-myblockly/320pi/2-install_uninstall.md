@@ -16,8 +16,7 @@ Different suffixes represent different systems, please download the correspondin
 * *.exe : Window system
 
 
-
-![](C:\Users\Administrator\Desktop\320gitbook截图\en\img\download.png)
+![](../../../../resources/5-BasicApplication/5.2.1/pi/img/download.png)
 
 
 
@@ -121,7 +120,6 @@ Download the Mac version of myblockly from the official website to get an instal
 
 Enter the file directory of myblockly and click to run `Uninstall myblockly.exe`
 
-<img src="C:\Users\Administrator\Desktop\320gitbook截图\en\img\uninstall.png"  />
 
 ![](../../../../resources/5-BasicApplication/5.2.1/pi/img/uninstall_1.png)
 

@@ -80,7 +80,7 @@ If the joint of the machine cannot be broken by hand, it is successfully powered
 
 And please click the `X` button to close  pop-up window
 
-![](C:\Users\Administrator\Desktop\myCobot320-docs\5-BasicApplication\5.2-ApplicationUse\myblockly\320pi\img\power_on_finish.png)
+![](../../../../resources/5-BasicApplication/5.2.1/pi/img/power_on_finish.png)
 
 
 
