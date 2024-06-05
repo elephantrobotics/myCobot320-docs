@@ -46,7 +46,7 @@ The graphics code is as follows:
 
 * What is implemented:
 
-  The color of the robotic arm RGB light panel is controlled to change sequentially from "blue-red-green", and the whole process is cycled seven times.次。
+  The color of the robotic arm RGB light panel is controlled to change sequentially from "blue-red-green", and the whole process is cycled seven times.
 
 
 

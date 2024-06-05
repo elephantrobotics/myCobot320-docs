@@ -96,29 +96,9 @@ Finally. run the program.
 python3 handle_control.py
 ```
 
-#### myArm
-
-Edit the myarm_handle_control.py file
-
-```python
-import pygame
-import time
-from pymycobot import MyArm
-import threading
-# Change com7 to the port number detected by your computer
-
-mc = MyArm("/dev/ttyAMA0",115200)
-...
-```
-
-Finally. run the program
-
-```bash
-python3 myarm_handle_control.py
-```
 
 > Note: After running the program, first click the **14** button to check the machine connection status, the machine connection status is normal (if it is abnormal, you will not be able to perform other operations, please solve the abnormal connection problem first), and then click **Right 1** button, other operations can only be performed after the machine reaches the initial point.
 
 ---
 
-[← Previous Page](4_drag.md) | [Next Section →](6_example.md)
+[← Previous Page](3_TCPIP.md) | [Next Section →](5_example.md)

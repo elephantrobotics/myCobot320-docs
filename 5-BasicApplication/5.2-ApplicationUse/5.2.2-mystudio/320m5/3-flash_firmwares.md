@@ -1,8 +1,8 @@
 # Burn and update firmware
 
-**[myStudio Video tutorial](https://www.bilibili.com/video/BV1Qr4y1N7B5/)**
 
-
+> Customers get the machine does not need to be burned in non-essential cases, the factory has already been burned, only a few cases need to be burned.  
+> For example: minirobot corresponding to the need to burn the scene of the LCD screen does not light up, burn the Arduino program needs to be switched to python program control, Atom firmware corresponding to the need to burn the scene of the joints can not be locked, Atom lights do not light up and so on.
 
 ## Burn Atom firmware
 

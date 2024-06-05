@@ -72,12 +72,11 @@
 - [6 SDK Development](6-SDKDevelopment/README.md)
 
   - [6.1 Python](10-ApplicationBasePython/README.md)
-    - [1 Environment Building](10-ApplicationBasePython/10.1_320_PI-ApplicationPython/1_download.md)
-    - [2 Introduction to API](10-ApplicationBasePython/10.1_320_PI-ApplicationPython/2_API.md)
-    - [3 TCP/IP Control](10-ApplicationBasePython/10.1_320_PI-ApplicationPython/3_TCPIP.md)
-    - [4 Drag to teach](10-ApplicationBasePython/10.2_320_M5-ApplicationPython/4_drag.md)
-    - [5 Handle Control](10-ApplicationBasePython/10.1_320_PI-ApplicationPython/5_Handle_control.md)
-    - [6 Videos and Codes for Display](10-ApplicationBasePython/10.2_320_M5-ApplicationPython/6_example.md)
+    - [1 Environment Building](10-ApplicationBasePython/10.2_320_M5-ApplicationPython/1_download.md)
+    - [2 Introduction to API](10-ApplicationBasePython/10.2_320_M5-ApplicationPython/2_API.md)
+    - [3 TCP/IP Control](10-ApplicationBasePython/10.2_320_M5-ApplicationPython/3_TCPIP.md)
+    - [4 Handle Control](10-ApplicationBasePython/10.2_320_M5-ApplicationPython/4_Handle_control.md)
+    - [5 Videos and Codes for Display](10-ApplicationBasePython/10.2_320_M5-ApplicationPython/5_example.md)
   - [6.2 Robot Operating System 1 (ROS1) ](11-ApplicationBaseROS/11.1-ROS1/11.1.1-M5.md)
     - [1 Environment Building](11-ApplicationBaseROS/11.1-ROS1/11.1.1-320M5/11.1.1.1-环境搭建.md)
     - [2 ROS basics](11-ApplicationBaseROS/11.1-ROS1/11.1.1-320M5/11.1.1.2-ROS基础.md)
@@ -108,7 +107,7 @@
 
 - [8 Documents Download](8-FilesDownload/README.md)
 
-  - [8.1 Gitbook Download](https://www.elephantrobotics.com/)
+  - [8.1 Gitbook Download](https://www.elephantrobotics.com/en)
   - [8.2 Product Brochure](8-FilesDownload/8.2_320_M5_Files/8.2_productBrochure.md)
   - [8.3 Software and Source Code](8-FilesDownload/8.2_320_M5_Files/8.3_softwareSource.md)
   - [8.4 System Information](8-FilesDownload/8.2_320_M5_Files/8.4_systemInfo.md)
