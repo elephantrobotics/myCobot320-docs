@@ -13,8 +13,8 @@
 
 ### 1.3 状态展示
 
-机械臂底部的**LED 灯板将点亮**。**BASIC 接口**将显示**Atom 通信状态**。
-![系统用户界面](../../../resources/4-FirstInstallAndUse/blockly-1.png)
+机械臂末端的**LED 灯板将点亮**。底部屏幕将显示相关信息。
+![系统用户界面](../../../resources/4-FirstInstallAndUse/PowerOnStatusDisplay.jpg)
 
 ---
 

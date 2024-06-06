@@ -76,8 +76,8 @@
 
   - [6.1 基于 Python 开发使用](10-ApplicationBasePython/README.md)
     - [1 环境配置](10-ApplicationBasePython/10.1_320_PI-ApplicationPython/1_download.md)
-    - [2 API 使用说明](10-ApplicationBasePython/10.1_320_PI-ApplicationPython/2_API.md)
-    - [3 TCP/IP](10-ApplicationBasePython/10.1_320_PI-ApplicationPython/3_TCPIP.md)
+    - [2 API 使用说明](10-ApplicationBasePython/10.2_320_M5-ApplicationPython/2_API.md)
+    - [3 TCP/IP](10-ApplicationBasePython/10.2_320_M5-ApplicationPython/3_TCPIP.md)
     - [4 拖动示教](10-ApplicationBasePython/10.2_320_M5-ApplicationPython/4_drag.md)
     - [5 手柄控制](10-ApplicationBasePython/10.1_320_PI-ApplicationPython/5_Handle_control.md)
     - [6 使用案例](10-ApplicationBasePython/10.2_320_M5-ApplicationPython/6_example.md)
