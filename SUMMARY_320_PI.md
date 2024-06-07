@@ -74,7 +74,7 @@
 
 - [7 Examples of Robots Using](7-ExamplesRobotsUsing/7.1_320_PI_Examples.md)
 - [8 Documents Download](8-FilesDownload/README.md)
-  - [8.1 Gitbook Download](https://www.elephantrobotics.com/)
+  - [8.1 Gitbook Download](https://www.elephantrobotics.com/en)
   - [8.2 Product Brochure](8-FilesDownload/8.1_320_PI_Files/8.2_productBrochure.md)
   - [8.3 Software and Source Code](8-FilesDownload/8.1_320_PI_Files/8.3_softwareSource.md)
   - [8.4 System Information](8-FilesDownload/8.1_320_PI_Files/8.4_systemInfo.md)

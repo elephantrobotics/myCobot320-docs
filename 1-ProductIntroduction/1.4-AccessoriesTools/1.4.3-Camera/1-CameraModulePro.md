@@ -12,6 +12,8 @@
 | ---------------------------- | ---------------------------------------------------- |
 | model                        | myCobot_Pro_cameraHolder_J6                          |
 | Material                     | photosensitive resin                                 |
+| resolution (of a photo)      | 1080P                                                |
+| thread length                | 1.5m                                                 |
 | USB protocol                 | USB2.0 HS/FS                                         |
 | lens focal length            | Standard 1.7mm                                       |
 | Field of view                | about 60°                                            |

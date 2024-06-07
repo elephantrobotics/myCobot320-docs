@@ -96,7 +96,7 @@ If you can't control the girpper from the above example, maybe you need to set t
 
 And run the program
 
-
+<img src="../../../../resources/5-BasicApplication/5.2.1/m5/img/case/gripper_trans.png"  />
 
 
 

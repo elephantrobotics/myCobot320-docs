@@ -185,14 +185,14 @@ print(coords)
 mc.send_angles([0, 0, -90, 0, 90, 0], 50)
 time.sleep(2.5)
 
-# Intelligent planning of the route, allowing the head to reach the coordinates of [173.9, -11.0, 169.1] in a linear manner, and maintain the posture of [-176.69, -0.69, -89.27], with a speed of 80mm/s
-mc.send_coords([173.9, -11.0, 169.1, -176.69, -0.69, -89.27], 80, 1)
+# Intelligent planning of the route, allowing the head to reach the coordinates of [-2.3, -153.2, 400.8] in a linear manner, and maintain the posture of [-120.0, 0.7, 179.73], with a speed of 40mm/s
+mc.send_coords([-2.3, -153.2, 400.8, -120.0, 0.7, 179.73], 40, 1)
 
 # Set the waiting time to 1.5 seconds
 time.sleep(1.5)
 
-# Intelligent planning of the route, allowing the head to reach the coordinates of [213.8, -87.4, 236.1] in a linear manner, and maintain the posture of [177.8, -0.27, -90.07], with a speed of 80mm/s
-mc.send_coords([213.8, -87.4, 236.1, 177.8, -0.27, -90.07], 80, 1)
+# Intelligent planning of the route, allowing the head to reach the coordinates of [0.0, -120.4, 500.3] in a linear manner, and maintain the posture of [-70.81, -22.17, -163.49], with a speed of 50mm/s
+mc.send_coords([0.0, -120.4, 500.3, -70.81, -22.17, -163.49], 50, 1)
 
 # Set the waiting time to 1.5 seconds
 time.sleep(1.5)
