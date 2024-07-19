@@ -8,7 +8,7 @@
 
 ## 3 硬件链接
 **整体连接示意图**
-![](./resource/PLC2.png)
+![](./PLC2.png)
 
 
 **机械臂的输入与PLC的输出接线**
@@ -16,30 +16,30 @@
 PLC为西门子1200，PLC的输出类型是PNP，机械臂的输入类型是NPN，所以需要外接一个中间继电器，用来转换信号。
 
 先给PLC输出接入24V
-![](./resource/1.jpg)
+![](./1.jpg)
 
 再给将继电器的线圈接入到PLC的公共端和Q0.0上
-![](./resource/3.jpg)
-![](./resource/4.jpg)
+![](./3.jpg)
+![](./4.jpg)
 
 再将继电器常开触点的线接到端子上
-![](./resource/5.jpg)
+![](./5.jpg)
 
 再将端子接入机器人的IN1上
-![](./resource/66.jpg)
+![](./66.jpg)
 
 **机械臂的输出与PLC的输入接线**
 
 PLC为西门子1200，PLC的输入类型支持PNP或NPN，机械臂的输出类型是PNP，所以PLC的输入采取PNP型接法
 
 先给PLC输入端接入24V
-![](./resource/7.jpg)
+![](./7.jpg)
 
 再将机械臂的GND和OUT1接到PLC的公共端和I0.0上
-![](./resource/8.jpg)
+![](./8.jpg)
 
 再将端子插入机械臂的输出上
-![](./resource/10.jpg)
+![](./10.jpg)
 
 ## 4 软件编程
 
@@ -60,7 +60,7 @@ while 1:
 mc.set_basic_output(1,1)
 ```
 **PLC端的程序**
-![](./resource/plc1.png)
+![](./plc1.png)
 
 ## 5 效果展示
-![](./resource/video.gif)
+![](./video.gif)
