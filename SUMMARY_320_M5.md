@@ -14,7 +14,7 @@
     - [1.4.6 CameraModulePro](1-ProductIntroduction/1.4-AccessoriesTools/1.4.3-Camera/1-CameraModulePro.md)
     - [1.4.7 PenHolderPro](1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Other/1-PenHolderPro.md)
     - [1.4.8 PhoneHolderPro](1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Other/2-PhoneHolderPro.md)
-    - [1.4.9 CameraModulePro](1-ProductIntroduction/1.4-AccessoriesTools/1.4.3-Camera/PLC.md)
+    - [1.4.9 PLC IO interactive control case](1-ProductIntroduction/1.4-AccessoriesTools/1.4.3-Camera/PLC.md)
 
 - [2 Product Feature](2-ProductFeature/2.1_320_M5_product/README.md)
 
