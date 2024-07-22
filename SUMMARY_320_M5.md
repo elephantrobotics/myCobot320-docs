@@ -15,7 +15,7 @@
     - [7 摄像头模块](1-ProductIntroduction/1.4-AccessoriesTools/1.4.3-Camera/1-CameraModulePro.md)
     - [8 笔夹持器](1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Holder/1-PenHolderPro.md)
     - [9 手机夹持器](1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Holder/2-PhoneHolderPro.md)
-    - [10 PLC IO交互控制案例](1-ProductIntroduction/1.4-AccessoriesTools/1.4.3-Camera/PLC.md)
+    
 
 - [2 产品特性](2-ProductFeature/2.1_320_M5_product/README.md)
 
@@ -109,6 +109,7 @@
   - [6.7 串口通信](/6-SDKDevelopment/6.1-CommunicationDoc.md)
 
 - [7 机械臂使用场景案例](7-ExamplesRobotsUsing/7.2_320_M5_Examples.md)
+  - [7.1 基于PLC的机械臂控制](1-ProductIntroduction/1.4-AccessoriesTools/1.4.3-Camera/PLC.md)
 
 - [8 相关资料下载](8-FilesDownload/README.md)
 
