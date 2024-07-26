@@ -74,6 +74,7 @@
   - [4 Use Cases](15-ApplicationBaseCSharp/15.5.1-case-PI.md)
 
 - [7 Examples of Robots Using](7-ExamplesRobotsUsing/7.1_320_PI_Examples.md)
+  - [7.1 PLC IO interactive control case](1-ProductIntroduction/1.4-AccessoriesTools/1.4.3-Camera/PLC.md)
 - [8 Documents Download](8-FilesDownload/README.md)
   - [8.1 Gitbook Download](https://www.elephantrobotics.com/en)
   - [8.2 Product Brochure](8-FilesDownload/8.1_320_PI_Files/8.2_productBrochure.md)
