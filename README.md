@@ -140,6 +140,7 @@ The arm supports Python and has hardware interfaces such as IO and USB, making i
   - [6.7 Communication Message Protocol](/6-SDKDevelopment/6.1-CommunicationDoc.md)
 
 - [7 Examples of Robots Using](7-ExamplesRobotsUsing/7.2_320_M5_Examples.md)
+  - [7.1 PLC IO interactive control case](1-ProductIntroduction/1.4-AccessoriesTools/1.4.3-Camera/PLC.md)
 
 - [8 Documents Download](8-FilesDownload/README.md)
 
