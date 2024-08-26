@@ -44,7 +44,8 @@ grab_point=[214.5, -189.9, 185.5, -177.5, 1.91, 173.49]#抓取点的坐标
 place_point=[214.5, -50.9, 185.5, -177.5, 1.91, 173.49]#放置点的坐标
 
 arm=MyCobot(PI_PORT,PI_BAUD)
-if __name__=="__main__":    
+if __name__=="__main__":
+    arm.set_gripper_mode(0)    
     arm.set_gripper_state(0,100)#夹爪先张开  
     time.sleep(1)  
     arm.send_angles(init_angles,100)#运动初始位置
