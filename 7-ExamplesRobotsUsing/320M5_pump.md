@@ -62,4 +62,3 @@ if __name__=="__main__":
 ```
 ## 6 效果展示
 ![](./img/video_pump.gif)
-![](./img/video_pump.gif)
