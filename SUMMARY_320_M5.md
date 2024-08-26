@@ -108,8 +108,10 @@
     - [3 案例](16-ArduinoEnv320/16.3-example.md)
   - [6.7 串口通信](/6-SDKDevelopment/6.1-CommunicationDoc.md)
 
-- [7 机械臂使用场景案例](7-ExamplesRobotsUsing/7.2_320_M5_Examples.md)
-  - [7.1 基于PLC的机械臂控制](1-ProductIntroduction/1.4-AccessoriesTools/1.4.3-Camera/PLC.md)
+- [7 机械臂使用场景案例]()
+  - [1 基于PLC的机械臂控制](1-ProductIntroduction/1.4-AccessoriesTools/1.4.3-Camera/PLC.md)
+  - [2 机器人夹爪搬运木块案例](7-ExamplesRobotsUsing/320M5_gripper.md)
+  - [3 机器人吸泵搬运木块案例](7-ExamplesRobotsUsing/320M5_pump.md)
 
 - [8 相关资料下载](8-FilesDownload/README.md)
 
