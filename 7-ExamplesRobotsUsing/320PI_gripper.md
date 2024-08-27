@@ -36,7 +36,7 @@ if __name__=="__main__":
 
 ## 5 复合应用
 ```python
-from pymycobot import MyCobotPI_PORT,PI_BAUD
+from pymycobot import MyCobot,PI_PORT,PI_BAUD
 import time
 
 init_angles=[-3.25, -2.46, -95.09, 9.22, 86.39, 93.33]#初始位置的6个关节角度
