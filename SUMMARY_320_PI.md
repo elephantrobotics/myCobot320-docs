@@ -13,7 +13,7 @@
     - [1.4.6 CameraModulePro](1-ProductIntroduction/1.4-AccessoriesTools/1.4.3-Camera/1-CameraModulePro.md)
     - [1.4.7 PenHolderPro](1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Other/1-PenHolderPro.md)
     - [1.4.8 PhoneHolderPro](1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Other/2-PhoneHolderPro.md)
-    - [1.4.9 PLC IO interactive control case](1-ProductIntroduction/1.4-AccessoriesTools/1.4.3-Camera/PLC.md)
+    
 - [2 Product Feature](2-ProductFeature/2.2_320_PI_product/README.md)
   - [2.1 MachineSpecification](2-ProductFeature/2.2_320_PI_product/2.2.1-MachineSpecification.md)
   - [2.2 ControlCoreParameter](2-ProductFeature/2.2_320_PI_product/2.2.2-ControlCoreParameter.md)
@@ -73,8 +73,10 @@
   - [3 myCobot API](15-ApplicationBaseCSharp/15.4.1-API-PI.md)
   - [4 Use Cases](15-ApplicationBaseCSharp/15.5.1-case-PI.md)
 
-- [7 Examples of Robots Using](7-ExamplesRobotsUsing/7.1_320_PI_Examples.md)
-  - [7.1 PLC IO interactive control case](1-ProductIntroduction/1.4-AccessoriesTools/1.4.3-Camera/PLC.md)
+- [7 Examples of Robots Using]()
+  - [1 PLC-based robotic arm control](1-ProductIntroduction/1.4-AccessoriesTools/1.4.3-Camera/PLC.md)
+  - [2 Robot gripper carrying wood block example](7-ExamplesRobotsUsing/320PI_gripper.md)
+  - [3 Robot suction pump carrying wood block example](7-ExamplesRobotsUsing/320PI_pump.md)
 - [8 Documents Download](8-FilesDownload/README.md)
   - [8.1 Gitbook Download](https://www.elephantrobotics.com/en)
   - [8.2 Product Brochure](8-FilesDownload/8.1_320_PI_Files/8.2_productBrochure.md)

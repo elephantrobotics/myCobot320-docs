@@ -103,9 +103,11 @@
     - [3 example](16-ArduinoEnv320/16.3-example.md)
   - [6.7 Communication Message Protocol](/6-SDKDevelopment/6.1-CommunicationDoc.md)
 
-- [7 Examples of Robots Using](7-ExamplesRobotsUsing/7.2_320_M5_Examples.md)
-  - [7.1 PLC IO interactive control case](1-ProductIntroduction/1.4-AccessoriesTools/1.4.3-Camera/PLC.md)
-
+- [7 Examples of Robots Using]()
+  - [1 PLC-based robotic arm control](1-ProductIntroduction/1.4-AccessoriesTools/1.4.3-Camera/PLC.md)
+  - [2 Robot gripper carrying wood block example](7-ExamplesRobotsUsing/320M5_gripper.md)
+  - [3 Robot suction pump carrying wood block example](7-ExamplesRobotsUsing/320M5_pump.md)
+  
 
 - [8 Documents Download](8-FilesDownload/README.md)
 
