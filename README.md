@@ -33,6 +33,7 @@
 Developed by Elephant Robotics, the myCobot 320 Robotic Arm is a collaborative robot designed for education, research and light industrial automation. Renowned for its compact design and powerful features, this robot is dedicated to providing endless possibilities for innovation and learning. It has a maximum arm span of 350 mm, a maximum payload of 1 kg, and supports programming languages of varying difficulty, making it suitable for users of all skill levels.  
 The arm supports Python and has hardware interfaces such as IO and USB, making it easy to connect to a variety of sensors and actuators. It also provides rich open source libraries and APIs to simplify the development process, and is compatible with Windows, Linux, and MacOS, making it suitable for a variety of development environments and encouraging users to participate in extended development.
 
+<!--
 ### catalogue
 
 - M5：
@@ -228,3 +229,4 @@ The arm supports Python and has hardware interfaces such as IO and USB, making i
 - [9 About Us](9-AboutUs/README.md)
   - [9.1 Elephant Robotics](9-AboutUs/9.1_company.md)
   - [9.2 Contact us](9-AboutUs/9.2_contact.md)
+-->
