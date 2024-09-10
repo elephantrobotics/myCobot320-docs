@@ -7,16 +7,16 @@
 ### gitbook-en
 
 - M5 version:
-  https://docs.elephantrobotics.com/docs/mycobot-320-m5-en-test//
+  https://docs.elephantrobotics.com/docs/mycobot-320-m5-en-test/
 - Pi version:
-  https://docs.elephantrobotics.com/docs/mycobot-320-pi-en-test//
+  https://docs.elephantrobotics.com/docs/mycobot-320-pi-en-test/
 
 ### gitbook-cn
 
 - M5 version:
-  https://docs.elephantrobotics.com/docs/mycobot-320-m5-cn-test//
+  https://docs.elephantrobotics.com/docs/mycobot-320-m5-cn-test/
 - Pi version:
-  https://docs.elephantrobotics.com/docs/mycobot-320-pi-cn-test//
+  https://docs.elephantrobotics.com/docs/mycobot-320-pi-cn-test/
 
 ### Product Diagram
 
