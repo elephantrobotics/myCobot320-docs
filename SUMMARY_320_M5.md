@@ -113,6 +113,7 @@
   - [1 基于PLC的机械臂控制](1-ProductIntroduction/1.4-AccessoriesTools/1.4.3-Camera/PLC.md)
   - [2 机器人夹爪搬运木块案例](7-ExamplesRobotsUsing/320M5_gripper.md)
   - [3 机器人吸泵搬运木块案例](7-ExamplesRobotsUsing/320M5_pump.md)
+  - [4 手柄遥控机器人案例](7-ExamplesRobotsUsing/320M5.md)
 
 - [8 相关资料下载](8-FilesDownload/README.md)
 
