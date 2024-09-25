@@ -83,6 +83,7 @@
    - [1 基于PLC的机械臂控制](1-ProductIntroduction/1.4-AccessoriesTools/1.4.3-Camera/PLC.md)
    - [2 机器人夹爪搬运木块案例](7-ExamplesRobotsUsing/320PI_gripper.md)
    - [3 机器人吸泵搬运木块案例](7-ExamplesRobotsUsing/320PI_pump.md)
+   - [4 手柄遥控机器人案例](7-ExamplesRobotsUsing/320PI.md)
 - [8 相关资料下载](8-FilesDownload/README.md)
   - [8.1 产品资料](8-FilesDownload/8.1_320_PI_Files/8.1_files.md)
   - [8.2 产品图纸](8-FilesDownload/8.1_320_PI_Files/8.2_productBrochure.md)
