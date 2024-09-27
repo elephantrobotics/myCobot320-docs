@@ -66,8 +66,8 @@
     - [6.1.2 API 使用说明](10-ApplicationBasePython/10.1_320_PI-ApplicationPython/2_API.md)
     - [6.1.3 TCP/IP](10-ApplicationBasePython/10.1_320_PI-ApplicationPython/3_TCPIP.md)
     - [6.1.4 拖动示教](10-ApplicationBasePython/10.1_320_PI-ApplicationPython/4_drag.md)
-    - [6.1.5 手柄控制](10-ApplicationBasePython/10.1_320_PI-ApplicationPython/5_Handle_control.md)
-    - [6.1.6 使用案例](10-ApplicationBasePython/10.1_320_PI-ApplicationPython/6_example.md)
+    <!-- [6.1.5 手柄控制](10-ApplicationBasePython/10.1_320_PI-ApplicationPython/5_Handle_control.md)-->
+    - [6.1.5 使用案例](10-ApplicationBasePython/10.1_320_PI-ApplicationPython/6_example.md)
   - [6.2 基于 ROS1 开发使用](11-ApplicationBaseROS/11.1-ROS1/11.1.2-PI.md)
     - [6.2.1 环境搭建](11-ApplicationBaseROS/11.1-ROS1/11.1.2-320PI/11.1.2.1-环境搭建.md)
     - [6.2.2 ROS 基础](11-ApplicationBaseROS/11.1-ROS1/11.1.2-320PI/11.1.2.2-ROS基础.md)
