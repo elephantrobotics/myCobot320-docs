@@ -78,6 +78,7 @@
   - [1 PLC-based robotic arm control](1-ProductIntroduction/1.4-AccessoriesTools/1.4.3-Camera/PLC.md)
   - [2 Robot gripper carrying wood block example](7-ExamplesRobotsUsing/320PI_gripper.md)
   - [3 Robot suction pump carrying wood block example](7-ExamplesRobotsUsing/320PI_pump.md)
+  - [4 Examples of Remote Control Robots](7-ExamplesRobotsUsing/320PI_EN.md)
   
   
 - [8 Documents Download](8-FilesDownload/README.md)
