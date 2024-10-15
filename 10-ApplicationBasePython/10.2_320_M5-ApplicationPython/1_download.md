@@ -163,7 +163,7 @@ It is recommended to install the free version.
 
 
 
-## **3 Preparations**
+## 3 Preparations
 
 * Firmware burning. Firmware serves as a driver for systems to control robots. 
 
@@ -204,12 +204,12 @@ pip install pymycobot --upgrade
 
 ## 4 Import of pymycobot 
 
-This part takes MyCobot 320-M5 as an example to introduce how to control a robot via python. 
+This part takes MyCobot 320 M5 as an example to introduce how to control a robot via python. 
 
-* Import  pymycobot  library for MyCobot :
+* Import  pymycobot  library for MyCobot320 :
 
 ```python
-from pymycobot.mycobot import MyCobot
+from pymycobot.mycobot import MyCobot320
 ```
 
 > **Notice:**

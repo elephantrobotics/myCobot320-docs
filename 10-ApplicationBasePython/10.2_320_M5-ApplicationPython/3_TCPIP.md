@@ -1,12 +1,10 @@
-# TCP/IP
+## TCP/IP
 
 TCP/IP, or Transmission Control Protocol/Internet Protocol, is one of the most fundemental communicative protocol on Internet, which stipulates the standard and methods of the Internet communication. Users can control robotic arms remotely through connecting with IP address instead of the USB port.
 
 In this chapter, myCobot 280 M5 is used as an example for explanation.
 
 **Make sure that M5Stack-basic and Atom are both burnt before using.**
-
-## myCobot
 
 ### Connection
 

@@ -31,10 +31,10 @@ pip install pymycobot --upgrade
 
 This part takes MyCobot 320 Pi as an example to introduce how to control a robot via python. 
 
-* Import  pymycobot  library for MyCobot :
+* Import  pymycobot  library for MyCobot320 :
 
 ```python
-from pymycobot.mycobot import MyCobot
+from pymycobot.mycobot320 import MyCobot320
 ```
 
 > **Notice:**
@@ -46,7 +46,7 @@ from pymycobot.mycobot import MyCobot
 
 
 
-## 4 **Simple Demo**
+## 4 Simple Demo
 
 Create a new Python file, and type the following codes to set the color of RGB light panel.
 
@@ -58,7 +58,7 @@ Create a new Python file, and type the following codes to set the color of RGB l
 
 ```python
 # demo.py
-from pymycobot.mycobot import MyCobot
+from pymycobot.mycobot320 import MyCobot320
 import time
 #The above codes are required to be written, which means importing the project package
 
@@ -70,13 +70,13 @@ import time
 #    Example:
 #       mycobot-Pi: mc = MyCobot('/dev/ttyAMA0', 115200)
 
-# Initiate MyCobot
+# Initiate MyCobot320
 # Create object code here.
 mc = MyCobot("/dev/ttyAMA0", 115200)
 
 i = 7
 #loop 7 times
-while i > 0:							
+while i > 0:
     mc.set_color(0,0,255) #blue light on
     time.sleep(2)	#wait for 2 seconds				
     mc.set_color(255,0,0) #red light on

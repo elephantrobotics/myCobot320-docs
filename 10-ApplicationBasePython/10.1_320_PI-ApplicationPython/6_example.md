@@ -7,21 +7,21 @@ Videos given below are for reference.
 ## 1 Controlling RGB Light Panel
 
 ```python
-from pymycobot.mycobot import MyCobot
+from pymycobot.mycobot320 import MyCobot320
 
 import time
 
 # The above needs to be written at the beginning of the code, which means importing the project package
 
-# MyCobot class initialization requires two parameters:
+# MyCobot320 class initialization requires two parameters:
 #   The first is the serial port string:"/dev/ttyAMA0"
 #   The second is the baud rate: 115200
 #
 #    Example:
-#           mc = MyCobot("/dev/ttyAMA0", 115200)
+#           mc = MyCobot320("/dev/ttyAMA0", 115200)
 #
-# Initialize a MyCobot object
-mc = MyCobot("/dev/ttyAMA0", 115200)
+# Initialize a MyCobot320 object
+mc = MyCobot320("/dev/ttyAMA0", 115200)
 
 i = 7
 # loop 7 times
@@ -45,19 +45,19 @@ poster="" data-setup='{"aspectRatio":"16:9"}'>
 ## 2 Controlling Arms to Move Them to Starting Point
 
 ```python
-from pymycobot.mycobot import MyCobot
+from pymycobot.mycobot320 import MyCobot320
 
 #The above needs to be written at the beginning of the code, which means importing the project package
 
-# MyCobot class initialization requires two parameters:
+# MyCobot320 class initialization requires two parameters:
 #   The first is the serial port string:"/dev/ttyAMA0"
 #   The second is the baud rate: 115200
 #
 #    Example:
-#           mc = MyCobot("/dev/ttyAMA0", 115200)
+#           mc = MyCobot320("/dev/ttyAMA0", 115200)
 #
-# Initialize a MyCobot object
-mc = MyCobot("/dev/ttyAMA0", 115200)
+# Initialize a MyCobot320 object
+mc = MyCobot320("/dev/ttyAMA0", 115200)
 
 # Check whether the program can be burned into the robot arm
 if mc.is_controller_connected() != 1:
@@ -77,42 +77,41 @@ poster="" data-setup='{"aspectRatio":"16:9"}'>
 ## 3  Single-Joint Motion
 
 ```python
-from pymycobot.mycobot import MyCobot
-from pymycobot.genre import Angle
+from pymycobot.mycobot320 import MyCobot320
 import time
 
-# MyCobot class initialization requires two parameters:
+# MyCobot320 class initialization requires two parameters:
 #   The first is the serial port string:"/dev/ttyAMA0"
 #   The second is the baud rate: 115200
 #
 #    Example:
-#           mc = MyCobot("/dev/ttyAMA0", 115200)
+#           mc = MyCobot320("/dev/ttyAMA0", 115200)
 #
-# Initialize a MyCobot object
-mc = MyCobot("/dev/ttyAMA0", 115200)
+# Initialize a MyCobot320 object
+mc = MyCobot320("/dev/ttyAMA0", 115200)
 
 # Robotic arm recovery
 mc.send_angles([0, 0, 0, 0, 0, 0], 40)
 time.sleep(3)
 
 # Control joint 3 to move 70°
-mc.send_angle(Angle.J3.value, 70, 40)
+mc.send_angle(3, 70, 40)
 time.sleep(3)
 
 # Control joint 4 movement -70°
-mc.send_angle(Angle.J4.value, -70, 40)
+mc.send_angle(4, -70, 40)
 time.sleep(3)
 
 # Control joint 1 to move 90°
-mc.send_angle(Angle.J1.value, 90, 40)
+mc.send_angle(1, 90, 40)
 time.sleep(3)
 
 # Control joint 5 movement -90°
-mc.send_angle(Angle.J5.value, -90, 40)
+mc.send_angle(5, -90, 40)
 time.sleep(3)
 
 # Control joint 5 to move 90°
-mc.send_angle(Angle.J5.value, 90, 40)
+mc.send_angle(5, 90, 40)
 time.sleep(3)
 ```
 
@@ -126,17 +125,17 @@ poster="" data-setup='{"aspectRatio":"16:9"}'>
 
 ```python
 import time
-from pymycobot import MyCobot
+from pymycobot import MyCobot320
 
-# MyCobot class initialization requires two parameters:
+# MyCobot320 class initialization requires two parameters:
 #   The first is the serial port string:"/dev/ttyAMA0"
 #   The second is the baud rate: 115200
 #
 #    Example:
-#           mc = MyCobot("/dev/ttyAMA0", 115200)
+#           mc = MyCobot320("/dev/ttyAMA0", 115200)
 #
-# Initialize a MyCobot object
-mc = MyCobot("/dev/ttyAMA0", 115200)
+# Initialize a MyCobot320 object
+mc = MyCobot320("/dev/ttyAMA0", 115200)
 
 # Robotic arm recovery
 mc.send_angles([0, 0, 0, 0, 0, 0], 50)
@@ -163,19 +162,18 @@ poster="" data-setup='{"aspectRatio":"16:9"}'>
 ## 5 Coordinate control
 
 ```python
-from pymycobot.mycobot import MyCobot
-from pymycobot.genre import Coord
+from pymycobot.mycobot320 import MyCobot320
 import time
 
-# MyCobot class initialization requires two parameters:
+# MyCobot320 class initialization requires two parameters:
 #   The first is the serial port string:"/dev/ttyAMA0"
 #   The second is the baud rate: 115200
 #
 #    Example:
-#           mc = MyCobot("/dev/ttyAMA0", 115200)
+#           mc = MyCobot320("/dev/ttyAMA0", 115200)
 #
-# Initialize a MyCobot object
-mc = MyCobot("/dev/ttyAMA0", 115200)
+# Initialize a MyCobot320 object
+mc = MyCobot320("/dev/ttyAMA0", 115200)
 
 # Get the coordinates and posture of the current head
 coords = mc.get_coords()
@@ -198,25 +196,25 @@ mc.send_coords([0.0, -120.4, 500.3, -70.81, -22.17, -163.49], 50, 1)
 time.sleep(1.5)
 
 # Only change the x-coordinate of the head, setting the x-coordinate of the head to 100. Let it intelligently plan the route to move the head to the changed position at a speed of 70mm/s
-mc.send_coord(Coord.X.value, 100, 70)
+mc.send_coord(1, 100, 70)
 
 ```
 
 ## 6 Controlling Gripper
 
 ```python
-from pymycobot.mycobot import MyCobot
+from pymycobot.mycobot320 import MyCobot320
 import time
 
-# MyCobot class initialization requires two parameters:
+# MyCobot320 class initialization requires two parameters:
 #   The first is the serial port string:"/dev/ttyAMA0"
 #   The second is the baud rate: 115200
 #
 #    Example:
-#           mc = MyCobot("/dev/ttyAMA0", 115200)
+#           mc = MyCobot320("/dev/ttyAMA0", 115200)
 #
-# Initialize a MyCobot object
-mc = MyCobot("/dev/ttyAMA0", 115200)
+# Initialize a MyCobot320 object
+mc = MyCobot320("/dev/ttyAMA0", 115200)
 # make it move to zero position
 mc.send_angles([0, 0, 0, 0, 0, 0], 40)
 time.sleep(3)
