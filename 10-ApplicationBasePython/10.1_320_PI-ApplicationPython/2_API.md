@@ -112,6 +112,25 @@ mc.send_angle(1, 40, 20)
   - `1`: Always execute the latest command first.
   - `0`: Execute instructions sequentially in the form of a queue.
 
+#### 2.10 `get_robot_status()`
+
+- **Function:** Get the robot self-check status to see if important parameters are normal.
+
+- **Abnormal description:**
+  - 0: Communication abnormality, please check whether the line, servo firmware version is normal, whether the power is plugged in, whether the firmware is burned correctly, whether the baud rate is correct, etc.
+  - 1: The servo motor model is wrong and the motor needs to be replaced
+  - 2: The servo motor firmware version is low and needs to be upgraded using FD
+  - 3: The servo motor p value is abnormal, the default is 32, this abnormality will be automatically restored
+  - 4: The servo motor D value is abnormal, the default is 8, this abnormality will be automatically restored
+  - 5: The servo motor I value is abnormal, the default is 0, this abnormality will be automatically restored
+  - 6: The servo motor clockwise insensitive zone parameter is abnormal, the default is 3, this abnormality will be automatically restored
+  - 7: The servo motor counterclockwise insensitive zone parameter is abnormal, the default is 3, this abnormality will be automatically restored
+  - 8: The servo motor phase is abnormal, this abnormality will be automatically restored
+  - 9: The servo motor return delay is abnormal, the default is 0, this abnormality will be automatically restored
+  - 10: The servo motor minimum starting force is abnormal, the default is 0, this abnormality will be automatically restored
+  - 11: The servo motor is abnormal. When the servo is abnormal, the machine cannot be controlled. Please query the servo feedback interface get_servo_status to check the specific error.
+  - 255: Unknown error
+
 ### 3.MDI Mode and Operation
 
 #### 3.1 `get_angles()`
@@ -469,6 +488,13 @@ mc.send_angle(1, 40, 20)
 
 - **function**：Get the movement status of all joints
 - **Return value**： A list,[voltage, sensor, temperature, current, angle, overload], a value of `0` means no error, a value of `1` indicates an error
+
+- **Abnormal description**:
+  - 0: Servo motor undervoltage/overvoltage, check the voltage, if it is 0, you need to modify the servo parameters; if it is greater than the actual value, the heat sink may be damaged
+  - 1: Servo motor magnetic encoding abnormality
+  - 2: Servo motor overtemperature
+  - 3: Servo motor overcurrent
+  - 5: Servo motor overload
 
 #### 7.5 `get_servo_temps()`
 
