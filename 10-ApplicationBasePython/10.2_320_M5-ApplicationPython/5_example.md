@@ -10,12 +10,12 @@ Videos given below are for reference.
 ## 1 Controlling RGB Light Panel
 
 ```python
-from pymycobot.mycobot import MyCobot
+from pymycobot.mycobot320 import MyCobot320
 import time
 
 # The above needs to be written at the beginning of the code, which means importing the project package
 
-# MyCobot class initialization requires two parameters:
+# MyCobot320 class initialization requires two parameters:
 #   The first is the serial port string, such as:
 #       linux: "/dev/ttyUSB0"
 #          or "/dev/ttyACM0"
@@ -26,14 +26,14 @@ import time
 #    Example:
 #       mycobot-M5:
 #           linux:
-#              mc = MyCobot("/dev/ttyUSB0", 115200)
-#          or mc = MyCobot("/dev/ttyAMA0", 115200)
+#              mc = MyCobot320("/dev/ttyUSB0", 115200)
+#          or mc = MyCobot320("/dev/ttyACM0", 115200)
 #           windows:
-#              mc = MyCobot("COM3", 115200)
+#              mc = MyCobot320("COM3", 115200)
 
-# Initialize a MyCobot object
+# Initialize a MyCobot320 object
 # Create object code here for windows version
-mc = MyCobot("COM13", 115200)
+mc = MyCobot320("COM13", 115200)
 
 i = 7
 # loop 7 times
@@ -59,9 +59,9 @@ poster="" data-setup='{"aspectRatio":"16:9"}'>
 ## 2 Controlling Arms to Move Them to Starting Point
 
 ```python
-from pymycobot.mycobot import MyCobot
+from pymycobot.mycobot320 import MyCobot320
 
-mc = MyCobot("COM3", 115200)
+mc = MyCobot320("COM3", 115200)
 
 # Check whether the program can be burned into the robot arm
 if mc.is_controller_connected() != 1:
@@ -82,34 +82,33 @@ poster="" data-setup='{"aspectRatio":"16:9"}'>
 ## 3  Single-Joint Motion
 
 ```python
-from pymycobot.mycobot import MyCobot
-from pymycobot.genre import Angle
+from pymycobot.mycobot320 import MyCobot320
 import time
 
-mc = MyCobot('COM3', 115200)
+mc = MyCobot320('COM3', 115200)
 
 # Robotic arm recovery
 mc.send_angles([0, 0, 0, 0, 0, 0], 40)
 time.sleep(3)
 
 # Control joint 3 to move 70°
-mc.send_angle(Angle.J3.value, 70, 40)
+mc.send_angle(3, 70, 40)
 time.sleep(3)
 
 # Control joint 4 movement -70°
-mc.send_angle(Angle.J4.value, -70, 40)
+mc.send_angle(4, -70, 40)
 time.sleep(3)
 
 # Control joint 1 to move 90°
-mc.send_angle(Angle.J1.value, 90, 40)
+mc.send_angle(1, 90, 40)
 time.sleep(3)
 
 # Control joint 5 movement -90°
-mc.send_angle(Angle.J5.value, -90, 40)
+mc.send_angle(5, -90, 40)
 time.sleep(3)
 
 # Control joint 5 to move 90°
-mc.send_angle(Angle.J5.value, 90, 40)
+mc.send_angle(5, 90, 40)
 time.sleep(3)
 ```
 
@@ -123,9 +122,9 @@ poster="" data-setup='{"aspectRatio":"16:9"}'>
 
 ```python
 import time
-from pymycobot import MyCobot
+from pymycobot import MyCobot320
 
-# MyCobot class initialization requires two parameters:
+# MyCobot320 class initialization requires two parameters:
 #   The first is the serial port string, such as:
 #       linux: "/dev/ttyUSB0"
 #          or "/dev/ttyACM0"
@@ -135,13 +134,13 @@ from pymycobot import MyCobot
 #    Example:
 #       mycobot-M5:
 #           linux:
-#              mc = MyCobot("/dev/ttyUSB0", 115200)
+#              mc = MyCobot320("/dev/ttyUSB0", 115200)
 #           windows:
-#              mc = MyCobot("COM3", 115200)
+#              mc = MyCobot320("COM3", 115200)
 #
 #
-# Initialize a MyCobot object
-mc = MyCobot('COM3', 115200)
+# Initialize a MyCobot320 object
+mc = MyCobot320('COM3', 115200)
 
 # Robotic arm recovery
 mc.send_angles([0, 0, 0, 0, 0, 0], 50)
@@ -170,26 +169,25 @@ poster="" data-setup='{"aspectRatio":"16:9"}'>
 ## 5 Coordinate control
 
 ```python
-from pymycobot.mycobot import MyCobot
-from pymycobot.genre import Coord
+from pymycobot.mycobot import MyCobot320
 import time
 
-# MyCobot class initialization requires two parameters:
+# MyCobot320 class initialization requires two parameters:
 # The first one is the serial port string, such as:
-# linux: "/dev/ttyUSB0"
-# windows: "COM3"
-# The second is the baud rate:
-# M5 version is: 115200
-#   like:
-# mycobot-M5:
-# linux:
-# mc = MyCobot("/dev/ttyUSB0", 115200)
-# windows:
-# mc = MyCobot("COM3", 115200)
-#
-# Initialize a MyCobot object
+      # linux: "/dev/ttyUSB0"
+      # windows: "COM3"
+      # The second is the baud rate:
+      # M5 version is: 115200
+        #   like:
+        # mycobot-M5:
+          # linux:
+          # mc = MyCobot320("/dev/ttyUSB0", 115200)
+          # windows:
+          # mc = MyCobot320("COM3", 115200)
+          
+# Initialize a MyCobot320 object
 # Create the object code below for the windows version
-mc = MyCobot("COM3", 115200)
+mc = MyCobot320("COM3", 115200)
 
 # Get the coordinates and posture of the current head
 coords = mc.get_coords()
@@ -219,13 +217,13 @@ mc.send_coord(Coord.X.value, 100, 70)
 ## 6 Controlling Gripper
 
 ```python
-from pymycobot.mycobot import MyCobot
+from pymycobot.mycobot320 import MyCobot320
 import time
 
-# MyCobot class initialization requires two parameters:
+# MyCobot320 class initialization requires two parameters:
 #   The first is the serial port string, such as:
 #       linux: "/dev/ttyUSB0"
-#          or "/dev/ttyAMA0"
+#          or "/dev/ttyACM0"
 #       windows: "COM3"
 #   The second is the baud rate::
 #       M5 version is: 115200
@@ -233,13 +231,13 @@ import time
 #    such as:
 #       mycobot-M5:
 #           linux:
-#              mc = MyCobot("/dev/ttyUSB0", 115200)
-#          or mc = MyCobot("/dev/ttyAMA0", 115200)
+#              mc = MyCobot320("/dev/ttyUSB0", 115200)
+#          or mc = MyCobot320("/dev/ttyACM0", 115200)
 #           windows:
-#              mc = MyCobot("COM3", 115200)
+#              mc = MyCobot320("COM3", 115200)
 
-# Initialize a MyCobot object
-mc = MyCobot("COM13", 115200)
+# Initialize a MyCobot320 object
+mc = MyCobot320("COM13", 115200)
 # make it move to zero position
 mc.send_angles([0, 0, 0, 0, 0, 0], 40)
 time.sleep(3)
