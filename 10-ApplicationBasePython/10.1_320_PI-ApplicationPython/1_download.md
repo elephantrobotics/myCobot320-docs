@@ -137,7 +137,7 @@ PyCharm 安装完成之后进入该软件，创建第一个程序。
 
 <img src="../../resources/10-ApplicationPython/pycharm界面展示.jpg" alt="7.1.1-7" style="zoom: 67%;" />
 
-## **3 准备工作**
+## 3 准备工作
 
 - 固件烧录。固件是系统控制机器人的驱动程序。 [**MyStudio**](<(https://docs.elephantrobotics.com/docs/gitbook-en/4-BasicApplication/4.1-myStudio/)>)。
 
@@ -176,12 +176,12 @@ pip install pymycobot --upgrade
 
 ## 4 导入 pymycobot
 
-上述准备工作完成之后，开始通过 Python 代码实现对机械臂的操控。这里以 myPalletizer 320 pi 版本为例进行演示。
+上述准备工作完成之后，开始通过 Python 代码实现对机械臂的操控。这里以 myCobot 320 PI 版本为例进行演示。
 
 - 输入以下代码，导入我们的库：
 
 ```python
-from pymycobot.mycobot import MyCobot
+from pymycobot.mycobot320 import MyCobot320
 ```
 
 > **注意：**
@@ -191,7 +191,7 @@ from pymycobot.mycobot import MyCobot
 >
 > <img src="../../resources/10-ApplicationPython/pymycobotdownload.jpg" alt="7.1.1-7" style="zoom: 33%;" />
 
-## 5 **简单演示**
+## 5 简单演示
 
 创建一个新的 Python 文件，输入以下代码来设置 RGB 灯光面板的颜色。
 
@@ -201,29 +201,15 @@ from pymycobot.mycobot import MyCobot
 
 ```python
 # demo.py
-from pymycobot.mycobot import MyCobot # 当使用树莓派版本的mycobot时，可以引用这两个变量进行MyCobot初始化，如不是可不填该行代码
+from pymycobot.mycobot320 import MyCobot320 
 import time
 # 以上需写在代码开头，意为导入项目包
 
-# MyCobot 类初始化需要两个参数：串口和波特率
-#   第一个是串口字符串， 如：
-#       linux： "/dev/ttyUSB0"
-#       windows: "COM3"
-#   第二个是波特率：
-#       M5版本为： 115200
-#
-#   以下:
-#       mycobot-M5:
-#           linux:
-#              mc = MyCobot("/dev/ttyUSB0", 115200)
-#           windows:
-#              mc = MyCobot("COM3", 115200)
-#       mycobot-raspi:
-#           mc = MyCobot(PI_PORT, PI_BAUD)
+# MyCobot320 类初始化需要两个参数：串口和波特率
 
-# 初始化一个MyCobot对象
+# 初始化一个MyCobot320对象
 # 下面为 mycobot-raspi 版本创建对象代码
-mc = MyCobot("/dev/ttyAMA0", 115200)
+mc = MyCobot320("/dev/ttyAMA0", 115200)
 
 i = 7
 # 循环7次

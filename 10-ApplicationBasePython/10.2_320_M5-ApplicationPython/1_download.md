@@ -177,41 +177,39 @@ pip install pymycobot --upgrade
 
 ## 4 Python 简单使用
 
-上述准备工作完成之后，开始通过 Python 代码实现对机械臂的操控。这里以 myPalletizer 260 M5 版本为例进行演示。
+上述准备工作完成之后，开始通过 Python 代码实现对机械臂的操控。这里以 myCobot 320 M5 版本为例进行演示。
 
 首先，打开您安装好的 PyCharm，新建一个 Python 文件，输入以下代码，导入我们的库：
 
 ```python
-from pymycobot.mypalletizer import MyPalletizer
+from pymycobot.mycobot320 import MyCobot320
 ```
 
 **注意：**
 
-1. 如果输入`from pymycobot.mypalletizer import MyPalletizer`，字体下方没有出现红色波浪线证明已经安装成功可以使用了，如果出现红色波浪线可以参考[**如何安装 API 库** ](https://www.cnblogs.com/xiaoguan-bky/p/11184740.html)，[**如何调用 API 库**](https://jingyan.baidu.com/article/25648fc1e86917d191fd009d.html)。
+1. 如果输入`from pymycobot.mycobot320 import MyCobot320`，字体下方没有出现红色波浪线证明已经安装成功可以使用了，如果出现红色波浪线可以参考[**如何安装 API 库** ](https://www.cnblogs.com/xiaoguan-bky/p/11184740.html)，[**如何调用 API 库**](https://jingyan.baidu.com/article/25648fc1e86917d191fd009d.html)。
 
 2. 如果不想通过上述命令安装 API 库，可以通过以下 github 下载项目到本地。
 
-   首先，进入项目地址：**https://github.com/elephantrobotics/pymycobot**。然后点击网页右边 Code 按钮，再点击 Download ZIP 下载到本地，将压缩包 pymycobot 文件项目中的 pymycobot 文件夹放入你 python 依赖库目录中，就可以直接导入使用。
+   首先，进入项目地址：**https://github.com/elephantrobotics/pymycobot** 。然后点击网页右边 Code 按钮，再点击 Download ZIP 下载到本地，将压缩包 pymycobot 文件项目中的 pymycobot 文件夹放入你 python 依赖库目录中，就可以直接导入使用。
 
    > <img src="../../resources/10-ApplicationPython/pymycobotdownload.jpg" alt="7.1.1-7" style="zoom: 33%;" />
 
-## 5 **简单演示**
+## 5 简单演示
 
-在 PyCharm 中新建一个 Python 文件，输入以下代码可执行 LED 闪烁（myCobot 280-M5、myCobot 320-M5 以及 myPalletizer 260 可参考以下代码）。
+在 PyCharm 中新建一个 Python 文件，输入以下代码可执行 LED 闪烁。
 
-> **注意：** 各款设备的对应的波特率不尽相同，使用时请查阅资料了解其波特率，串口编号可通过**[计算器设备管理器](https://docs.elephantrobotics.com/docs/gitbook/4-BasicApplication/4.1-myStudio/4.1.1-myStudio_download_driverinstalled.html#4113-%E5%A6%82%E4%BD%95%E5%8C%BA%E5%88%86cp210x%E5%92%8Ccp34x%E8%8A%AF%E7%89%87)**或串口助手进行查看。
+> **注意：** 各款设备的对应的波特率不尽相同，使用时请查阅资料了解其波特率，串口编号可通过 [计算器设备管理器](https://docs.elephantrobotics.com/docs/gitbook/4-BasicApplication/4.1-myStudio/4.1.1-myStudio_download_driverinstalled.html#4113-%E5%A6%82%E4%BD%95%E5%8C%BA%E5%88%86cp210x%E5%92%8Ccp34x%E8%8A%AF%E7%89%87) 或串口助手进行查看。
 
-以下是 myCobot 和 myPalletizer 相应的代码。
-
-- **MyCobot:**
+- **MyCobot相应代码:**
 
 ```python
 # demo.py
-from pymycobot.mycobot import MyCobot
+from pymycobot.mycobot320 import MyCobot320
 import time
 # 以上需写在代码开头，意为导入项目包
 
-# MyCobot 类初始化需要两个参数：串口和波特率
+# MyCobot320 类初始化需要两个参数：串口和波特率
 #   第一个是串口字符串， 如：
 #       linux： "/dev/ttyUSB0"
 #       windows: "COM3"
@@ -220,15 +218,13 @@ import time
 #   以下为如:
 #       mycobot-M5:
 #           linux:
-#              mc = MyCobot("/dev/ttyUSB0", 115200)
+#              mc = MyCobot320("/dev/ttyUSB0", 115200)
 #           windows:
-#              mc = MyCobot("COM3", 115200)
-#       mycobot-raspi:
-#           mc = MyCobot(PI_PORT, PI_BAUD)
-#
-# 初始化一个MyCobot对象
+#              mc = MyCobot320("COM3", 115200)
+
+# 初始化一个MyCobot320对象
 # 下面为 windows版本创建对象代码
-mc = MyCobot("COM3", 115200)
+mc = MyCobot320("COM3", 115200)
 
 i = 7
 # 循环7次
