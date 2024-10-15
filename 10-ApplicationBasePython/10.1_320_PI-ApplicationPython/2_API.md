@@ -42,10 +42,14 @@ mc.send_angle(1, 40, 20)
 #### 2.1 `power_on()`
 
 - **function:** atom open communication (default open)
+- **Return value:**
+  - `1`: complete
 
 #### 2.2 `power_off()`
 
 - **function:** Power off of the robotic arm
+- **Return value:**
+  - `1`: complete
 
 #### 2.3 `is_power_on()`
 
@@ -56,11 +60,13 @@ mc.send_angle(1, 40, 20)
   - `0`: power off
   - `-1`: error
 
-#### 2.4 `release_all_servos()`
+#### 2.4 `release_all_servos(data=None)`
 
 - **function:** release all robot arms
   - Attentions：After the joint is disabled, it needs to be enabled to control within 1 second
 - **Parameters**：`data`（optional）：The way to relax the joints. The default is damping mode, and if the 'data' parameter is provided, it can be specified as non damping mode (1- Undamping).
+- **Return value:**
+  - `1`: complete
 
 #### 2.5 `focus_servos(servo_id)`
 
@@ -68,6 +74,8 @@ mc.send_angle(1, 40, 20)
 
 - **Parameters:** 
   - `servo_id:` int, 1-6
+- **Return value:**
+  - `1`: complete
 
 #### 2.6 `is_controller_connected()`
 
@@ -127,6 +135,8 @@ mc.send_angle(1, 40, 20)
     | 6 | -180 ~ 180 |
 
   - `speed`：the speed and range of the robotic arm's movement 1~100
+- **Return value:**
+  - `1`: complete
 
 #### 3.3 `send_angles(angles, speed)`
 
@@ -134,6 +144,8 @@ mc.send_angle(1, 40, 20)
 - **Parameters:**
   - `angles`: a list of degree value(`List[float]`), length 6
   - `speed`: (`int`) 1 ~ 100
+- **Return value:**
+  - `1`: complete
 
 #### 3.4 `get_coords()`
 
@@ -155,6 +167,8 @@ mc.send_angle(1, 40, 20)
     | ry | -180 ~ 180 |
     | rz | -180 ~ 180 |
   - `speed`: (`int`) 1-100
+- **Return value:**
+  - `1`: complete
 
 #### 3.6 `send_coords(coords, speed, mode)`
 
@@ -163,6 +177,8 @@ mc.send_angle(1, 40, 20)
   - coords: ： a list of coords value `[x,y,z,rx,ry,rz]`,length6
   - speed`(int)`: 1 ~ 100
   - mode: `(int)` 0 - angluar, 1 - linear
+- **Return value:**
+  - `1`: complete
 
 #### 3.7 `pause()`
 
@@ -172,20 +188,26 @@ mc.send_angle(1, 40, 20)
   - `0` - not stop
   - `-1` - error
 
-#### 3.8 `sync_send_angles(angles, speed)`
+#### 3.8 `sync_send_angles(angles, speed, timeout=15)`
 
 - **function：** Send the angle in synchronous state and return when the target point is reached
 - **Parameters:**
   - `angles`: a list of degree value(`List[float]`), length 6
   - `speed`: (`int`) 1 ~ 100
+  - `timeout`: default 15 s
+- **Return value:**
+  - `1`: complete
 
-#### 3.9 `sync_send_coords(coords, mode, speed)`
+#### 3.9 `sync_send_coords(coords, speed, mode=0, timeout=15)`
 
 - **function：** Send the coord in synchronous state and return when the target point is reached
 - **Parameters:**
   - `coords`: a list of coord value(`List[float]`), length 6
   - `speed`: (`int`) 1 ~ 100
   - `mode`: (`int`) 0 - angular（default）, 1 - linear
+  - `timeout`: default 15 s
+- **Return value:**
+  - `1`: complete
 
 #### 3.10 `get_angles_coords()`
 
@@ -204,6 +226,8 @@ mc.send_angle(1, 40, 20)
 #### 3.12 `resume()`
 
 - **function:** resume the robot movement and complete the previous command
+- **Return value:**
+  - `1`: complete
 
 #### 3.13 `stop()`
 
@@ -243,6 +267,8 @@ mc.send_angle(1, 40, 20)
   - `joint_id`: Represents the joints of the robotic arm, represented by joint IDs ranging from 1 to 6
   - `direction(int)`: To control the direction of movement of the robotic arm, input `0` as negative value movement and input `1` as positive value movement
   - `speed`: 1 ~ 100
+- **Return value:**
+  - `1`: complete
 
 #### 4.2 `jog_coord(coord_id, direction, speed)`
 
@@ -251,6 +277,8 @@ mc.send_angle(1, 40, 20)
   - `coord_id`: (`int`) Coordinate range of the robotic arm: 1~6
   - `direction`: (`int`) To control the direction of machine arm movement, `0` - negative value movement, `1` - positive value movement
   - `speed`: 1 ~ 100
+- **Return value:**
+  - `1`: complete
 
 #### 4.3 `jog_rpy(end_direction, direction, speed)`
 
@@ -259,6 +287,8 @@ mc.send_angle(1, 40, 20)
   - `end_direction`: (`int`) Roll, Pitch, Yaw (1-3)
   - `direction`: (`int`) To control the direction of machine arm movement, `1` - forward rotation, `0` - reverse rotation
   - `speed`: (`int`) 1 ~ 100
+- **Return value:**
+  - `1`: complete
 
 #### 4.4 `jog_increment(joint_id, increment, speed)`
 
@@ -267,6 +297,8 @@ mc.send_angle(1, 40, 20)
   - `joint_id`: 1-6
   - `increment`: Incremental movement based on the current position angle
   - `speed`: 1 ~ 100
+- **Return value:**
+  - `1`: complete
 
 #### 4.5 `set_encoder(joint_id, encoder, speed)`
 
@@ -277,6 +309,8 @@ mc.send_angle(1, 40, 20)
   - `joint_id`: (`int`) 1-6
   - `encoder`: 0 ~ 4096
   - `speed`: 1 ~ 100
+- **Return value:**
+  - `1`: complete
 
 #### 4.6 `get_encoder(joint_id)`
 
@@ -297,6 +331,8 @@ mc.send_angle(1, 40, 20)
   - `joint_id`: (`int`) 1-6
   - `encoder`: 0 ~ 4096
   - `speed`: 1 ~ 100
+- **Return value:**
+  - `1`: complete
 
 #### 4.8 `get_encoders()`
 
@@ -326,6 +362,8 @@ mc.send_angle(1, 40, 20)
 - **Parameters:**
   - `id` : Enter joint ID (range 1-6)
   - `angle`: Refer to the limit information of the corresponding joint in the [send_angle()](#32-send_angleid-degree-speed) interface, which must not be less than the minimum value
+- **Return value:**
+  - `1`: complete
 
 #### 5.4 `set_joint_max(id, angle)`
 
@@ -333,6 +371,8 @@ mc.send_angle(1, 40, 20)
 - **Parameters:**
   - `id` : Enter joint ID (range 1-6)
   - `angle`: Refer to the limit information of the corresponding joint in the [send_angle()](#32-send_angleid-degree-speed) interface, which must not be greater than the maximum value
+- **Return value:**
+  - `1`: complete
   
 ### 6. Joint motor control
 
@@ -358,6 +398,8 @@ mc.send_angle(1, 40, 20)
 - **function:** The current position of the calibration joint actuator is the angle zero point
 - **Parameters**:
   - `servo_id`: 1 - 6
+- **Return value:**
+  - `1`: complete
 
 #### 6.4 `release_servo(servo_id)`
 
@@ -386,6 +428,8 @@ mc.send_angle(1, 40, 20)
   - `data_id`: (`int`) Data address
   - `value`: (`int`) 0 - 4096
   - `mode`: 0 - indicates that value is one byte(default), 1 - 1 represents a value of two bytes.
+- **Return value:**
+  - `1`: complete
 
 #### 6.7 `get_servo_data(servo_id, data_id, mode=None）`
 
@@ -401,6 +445,8 @@ mc.send_angle(1, 40, 20)
 - **function:** Make it stop when the joint is in motion, and the buffer distance is positively related to the existing speed
 - **Parameters**：
   - `joint_id`: (`int`) joint id 1 - 6
+- **Return value:**
+  - `1`: complete
 
 ### 7. Servo state value
 
@@ -434,6 +480,8 @@ mc.send_angle(1, 40, 20)
 - **function:** Set void compensation mode
 - **Parameters**：
   - `mode`: (`int`)  0 - close, 1 - open
+- **Return value:**
+  - `1`: complete
 
 ### 8. Robotic arm end IO control
 
@@ -448,13 +496,17 @@ mc.send_angle(1, 40, 20)
   - `g (int)`: 0 ~ 255
 
   - `b (int)`: 0 ~ 255
-  
+- **Return value:**
+  - `1`: complete
+ 
 #### 8.2 `set_digital_output(pin_no, pin_signal)`
 
 - **function:** set IO statue
 - **Parameters**
   - `pin_no` (int): Pin number
   - `pin_signal` (int): 0 / 1
+- **Return value:**
+  - `1`: complete
 
 #### 8.3 `get_digital_input(pin_no)`
 
@@ -468,6 +520,8 @@ mc.send_angle(1, 40, 20)
 - **Parameters**
   - `pin_no` (int): Pin number
   - `pin_mode` (int): 0 - input, 1 - output, 2 - input_pullup
+- **Return value:**
+  - `1`: complete
 
 ### 9. Robotic arm end gripper control
 
@@ -490,6 +544,8 @@ mc.send_angle(1, 40, 20)
     - `3` : Parallel gripper
 
     - `4` : Flexible gripper
+- **Return value:**
+  - `1`: complete
 
 #### 9.2 `set_gripper_value(gripper_value, speed, gripper_type=None)`
 
@@ -510,26 +566,36 @@ mc.send_angle(1, 40, 20)
     - `3` : Parallel gripper
 
     - `4` : Flexible gripper
+- **Return value:**
+  - `1`: complete
 
 #### 9.3 `set_gripper_calibration()`
 
 - **function**: Set the current position of the gripper to zero
+- **Return value:**
+  - `1`: complete
 
 #### 9.4 `init_eletric_gripper()`
 
 - **function**: Electric gripper initialization (it needs to be initialized once after inserting and removing the gripper)
+- **Return value:**
+  - `1`: complete
 
 #### 9.5 `set_eletric_gripper(status)`
 
 - **function**: Set Electric Gripper Mode
 - **Parameters**: 
   - `status`: 0 - open, 1 - close.
+- **Return value:**
+  - `1`: complete
 
 #### 9.6 `set_gripper_mode(mode)`
 
 - **function**: Set gripper mode
 - **Parameters**: 
   - `mode`: 0 - transparent transmission. 1 - Port Mode.
+- **Return value:**
+  - `1`: complete
 
 #### 9.7 `get_gripper_mode()`
 
@@ -545,6 +611,8 @@ mc.send_angle(1, 40, 20)
 - **Parameters**：
   - `pin_no` (`int`) Pin port number
   - `pin_signal` (`int`): 0 - low. 1 - high
+- **Return value:**
+  - `1`: complete
 
 #### 10.2 `get_basic_input(pin_no)`
 
@@ -567,18 +635,24 @@ mc.send_angle(1, 40, 20)
 - **function:** Set tool coordinate system.
 - **Parameters**：
   - `coords`: (`list`) [x, y, z, rx, ry, rz].
+- **Return value:**
+  - `1`: complete
 
 #### 12.2 `get_tool_reference(coords)`
 
 - **function:** Get tool coordinate system.
 - **Return value:** 
   - `oords`: (`list`) [x, y, z, rx, ry, rz]
+- **Return value:**
+  - `1`: complete
 
 #### 12.3 `set_world_reference(coords)`
 
 - **function:** Set world coordinate system.
 - **Parameters**：
   - `coords`: (`list`) [x, y, z, rx, ry, rz].
+- **Return value:**
+  - `1`: complete
 
 #### 12.4 `get_world_reference()`
 
@@ -590,6 +664,8 @@ mc.send_angle(1, 40, 20)
 - **function:** Set base coordinate system.
 - **Parameters：**
   - `rftype`: 0 - base 1 - tool.
+- **Return value:**
+  - `1`: complete
 
 #### 12.6 `get_reference_frame()`
 
@@ -601,6 +677,8 @@ mc.send_angle(1, 40, 20)
 - **function:** Set movement type.
 - **Parameters**：
   - `move_type`: 1 - movel, 0 - moveJ.
+- **Return value:**
+  - `1`: complete
 
 #### 12.8 `get_movement_type()`
 
@@ -614,6 +692,8 @@ mc.send_angle(1, 40, 20)
 - **function:** Set end coordinate system
 - **Parameters:**
   - `end (int)`: `0` - flange, `1` - tool
+- **Return value:**
+  - `1`: complete
 
 #### 12.10 `get_end_type()`
 
