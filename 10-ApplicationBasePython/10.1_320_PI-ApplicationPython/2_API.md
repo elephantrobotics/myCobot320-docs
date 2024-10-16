@@ -144,8 +144,9 @@ mc.send_angle(1, 40, 20)
 - **Parameters:**
   - `id`: Joint id(`genre.Angle`), range int 1-6
   - `degree`: degree value(`float`)
+  
     | Joint Id | range |
-    | ---- | ---- |
+    | :---- | :---- |
     | 1 | -170 ~ 170 |
     | 2 | -137 ~ 137 |
     | 3 | -151 ~ 142 |
@@ -177,14 +178,16 @@ mc.send_angle(1, 40, 20)
 - **Parameters:**
   - `id`:send one coord to robot arm, 1-6 corresponds to [x, y, z, rx, ry, rz]
   - `coord`: coord value(`float`)
+  
     | Coord Id | range |
-    | ---- | ---- |
+    | :---- | :---- |
     | x | -350 ~ 350 |
     | y | -350 ~ 350 |
     | z | -41 ~ 523.9 |
     | rx | -180 ~ 180 |
     | ry | -180 ~ 180 |
     | rz | -180 ~ 180 |
+
   - `speed`: (`int`) 1-100
 - **Return value:**
   - `1`: complete
@@ -774,7 +777,7 @@ from pymycobot import utils
   - `value`: The parameter value corresponding to the command number.
 
     | Function | gripper_id | address | value|
-    | ---- | ---- |---- |----- |
+    | :---- | :---- | :---- | :----- |
     | Set gripper ID | 14 | 3 | 1 ~ 254 |
     | Set gripper enable status | 14 | 10 | 0 or 1, 0 - off enable; 1 - on enable |
     | Set gripper clockwise runnable error | 14 | 21 | 0 ~ 16 |
@@ -790,7 +793,7 @@ from pymycobot import utils
   - Please refer to the following table:
 
     | Function | return |
-    | ---- | ---- |
+    | :---- | :---- |
     | Set gripper ID | 0 - Failure; 1 - Success |
     | Set gripper enable status | 0 - Failure; 1 - Success |
     | Set gripper clockwise runnable error | 0 - Failure; 1 - Success |
@@ -810,7 +813,7 @@ from pymycobot import utils
   - `address` (`int`): The command number of the gripper.
 
     | Function | gripper_id | address |
-    | ---- | ---- |---- |
+    | :---- | :---- | :---- |
     | Read firmware major version number | 14 | 1 |
     | Read firmware minor version number | 14 | 2 |
     | Read gripper ID | 14 | 3 |
@@ -827,7 +830,7 @@ from pymycobot import utils
   - See the following table (if the return value is -1, it means that no data can be read):
 
     | Function | return |
-    | ---- | ---- |
+    | :---- | :---- |
     | Read the firmware major version number | Major version number |
     | Read the firmware minor version number | Minor version number |
     | Read the gripper ID | 1 ~ 254 |
