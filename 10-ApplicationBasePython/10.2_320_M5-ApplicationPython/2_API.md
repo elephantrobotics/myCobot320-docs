@@ -133,6 +133,24 @@ mc.send_angle(1, 40, 20)
   - 11: The servo motor is abnormal. When the servo is abnormal, the machine cannot be controlled. Please query the servo feedback interface get_servo_status to check the specific error.
   - 255: Unknown error
 
+#### 2.11 `focus_all servos()`
+
+- **Function:** All servos are powered on
+
+- **Return value:**
+  - `1`: complete
+
+#### 2.12 `set_vision_mode()`
+
+- **Function:** Set the vision tracking mode, limit the attitude flip of send_coords in refresh mode. (Applicable only to vision tracking function)
+
+- **Parameter:**
+  - `1`: open
+  - `0`: close
+
+- **Return value:**
+  - `1`: complete
+
 ### 3.MDI Mode and Operation
 
 #### 3.1 `get_angles()`
@@ -144,16 +162,39 @@ mc.send_angle(1, 40, 20)
 
 - **function:** send one degree of joint to robot arm
 - **Parameters:**
-  - `id`: Joint id(`genre.Angle`), range int 1-6
+  - `id`: Joint id, range int 1-6
   - `degree`: degree value(`float`)
-    | Joint Id | range |
-    | ---- | ---- |
-    | 1 | -170 ~ 170 |
-    | 2 | -137 ~ 137 |
-    | 3 | -151 ~ 142 |
-    | 4 | -148 ~ 184 |
-    | 5 | -169 ~ 169 |
-    | 6 | -180 ~ 180 |
+
+<table>
+  <tr>
+    <th>Joint Id</th>
+    <th>Range</th>
+  </tr>
+  <tr>
+    <td style="text-align: center;">1</td>
+    <td>-170 ~ 170</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">2</td>
+    <td>-137 ~ 137</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">3</td>
+    <td>-151 ~ 142</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">4</td>
+    <td>-148 ~ 184</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">5</td>
+    <td>-169 ~ 169</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">6</td>
+    <td>-180 ~ 180</td>
+  </tr>
+</table>
 
   - `speed`：the speed and range of the robotic arm's movement 1~100
 - **Return value:**
@@ -179,14 +220,38 @@ mc.send_angle(1, 40, 20)
 - **Parameters:**
   - `id`:send one coord to robot arm, 1-6 corresponds to [x, y, z, rx, ry, rz]
   - `coord`: coord value(`float`)
-    | Coord Id | range |
-    | ---- | ---- |
-    | x | -350 ~ 350 |
-    | y | -350 ~ 350 |
-    | z | -41 ~ 523.9 |
-    | rx | -180 ~ 180 |
-    | ry | -180 ~ 180 |
-    | rz | -180 ~ 180 |
+
+<table>
+  <tr>
+    <th>Coord Id</th>
+    <th>Range</th>
+  </tr>
+  <tr>
+    <td style="text-align: center;">x</td>
+    <td>-350 ~ 350</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">y</td>
+    <td>-350 ~ 350</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">z</td>
+    <td>-41 ~ 523.9</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">rx</td>
+    <td>-180 ~ 180</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">ry</td>
+    <td>-180 ~ 180</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">rz</td>
+    <td>-180 ~ 180</td>
+  </tr>
+</table>
+
   - `speed`: (`int`) 1-100
 - **Return value:**
   - `1`: complete
@@ -311,17 +376,27 @@ mc.send_angle(1, 40, 20)
 - **Return value:**
   - `1`: complete
 
-#### 4.4 `jog_increment(joint_id, increment, speed)`
+#### 4.4 `jog_increment_angle(joint_id, increment, speed)`
 
-- **function:** Single joint angle increment control
-- **Parameters**:
+- **Function**: Angle stepping, single joint angle increment control
+- **Parameter**:
   - `joint_id`: 1-6
   - `increment`: Incremental movement based on the current position angle
-  - `speed`: 1 ~ 100
+  - `speed`: 1~100
 - **Return value:**
-  - `1`: complete
+  - `1`: Completed
 
-#### 4.5 `set_encoder(joint_id, encoder, speed)`
+#### 4.5 `jog_increment_coord(id, increment, speed)`
+
+- **Function**: Coordinate stepping, single coordinate increment control
+- **Parameter**:
+  - `id`: Coordinate axis 1-6
+  - `increment`: Incremental movement based on the current position coordinate
+  - `speed`: 1~100
+- **Return value:**
+  - `1`: Completed
+
+#### 4.6 `set_encoder(joint_id, encoder, speed)`
 
 - **function**: Set a single joint rotation to the specified potential value
 
@@ -333,7 +408,7 @@ mc.send_angle(1, 40, 20)
 - **Return value:**
   - `1`: complete
 
-#### 4.6 `get_encoder(joint_id)`
+#### 4.7 `get_encoder(joint_id)`
 
 - **function**: Set a single joint rotation to the specified potential value
 
@@ -343,7 +418,7 @@ mc.send_angle(1, 40, 20)
 
 - **Return value:** (`int`) Joint potential value
 
-#### 4.7 `set_encoders(encoders, speed)`
+#### 4.8 `set_encoders(encoders, speed)`
 
 - **function**: Set the six joints of the manipulator to execute synchronously to the specified position.
 
@@ -355,7 +430,7 @@ mc.send_angle(1, 40, 20)
 - **Return value:**
   - `1`: complete
 
-#### 4.8 `get_encoders()`
+#### 4.9 `get_encoders()`
 
 - **function**: Get the six joints of the manipulator.
 
@@ -780,34 +855,125 @@ from pymycobot import utils
   - `address` (`int`): The command number of the gripper.
   - `value`: The parameter value corresponding to the command number.
 
-    | Function | gripper_id | address | value|
-    | ---- | ---- |---- |----- |
-    | Set gripper ID | 14 | 3 | 1 ~ 254 |
-    | Set gripper enable status | 14 | 10 | 0 or 1, 0 - off enable; 1 - on enable |
-    | Set gripper clockwise runnable error | 14 | 21 | 0 ~ 16 |
-    | Set gripper counterclockwise runnable error | 14 | 23 | 0 ~ 16 |
-    | Set gripper minimum starting force | 14 | 25 | 0 ~ 254 |
-    | IO output settings | 14 | 29 | 0, 1, 16, 17 |
-    | Set IO opening angle | 14 | 30 | 0 ~ 100 |
-    | Set IO closing angle | 14 | 31 | 0 ~ 100 |
-    | Set servo virtual position value | 14 | 41 | 0 ~ 100 |
-    | Set clamping current | 14 | 43 | 1 ~ 254 |
+<table>
+  <tr>
+    <th>Function</th>
+    <th>gripper_id</th>
+    <th>address</th>
+    <th>value</th>
+  </tr>
+  <tr>
+    <td>Set gripper ID</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">3</td>
+    <td>1 ~ 254</td>
+  </tr>
+  <tr>
+    <td>Set gripper enable status</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">10</td>
+    <td>0 or 1, 0 - off enable; 1 - on enable</td>
+  </tr>
+  <tr>
+    <td>Set gripper clockwise runnable error</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">21</td>
+    <td>0 ~ 16</td>
+  </tr>
+  <tr>
+    <td>Set gripper counterclockwise runnable error</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">23</td>
+    <td>0 ~ 16</td>
+  </tr>
+  <tr>
+    <td>Set gripper minimum starting force</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">25</td>
+    <td>0 ~ 254</td>
+  </tr>
+  <tr>
+    <td>IO output settings</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">29</td>
+    <td>0, 1, 16, 17</td>
+  </tr>
+  <tr>
+    <td>Set IO opening angle</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">30</td>
+    <td>0 ~ 100</td>
+  </tr>
+  <tr>
+    <td>Set IO closing angle</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">31</td>
+    <td>0 ~ 100</td>
+  </tr>
+  <tr>
+    <td>Set servo virtual position value</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">41</td>
+    <td>0 ~ 100</td>
+  </tr>
+  <tr>
+    <td>Set clamping current</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">43</td>
+    <td>1 ~ 254</td>
+  </tr>
+</table>
 
 - **Return value**:
   - Please refer to the following table:
 
-    | Function | return |
-    | ---- | ---- |
-    | Set gripper ID | 0 - Failure; 1 - Success |
-    | Set gripper enable status | 0 - Failure; 1 - Success |
-    | Set gripper clockwise runnable error | 0 - Failure; 1 - Success |
-    | Set gripper counterclockwise runnable error | 0 - Failure; 1 - Success |
-    | Set gripper minimum starting force | 0 - Failure; 1 - Success |
-    | IO output setting | 0 - Failure; 1 - Success |
-    | Set IO opening angle | 0 - Failure; 1 - Success |
-    | Set IO closing angle | 0 - Failed; 1 - Success |
-    | Set servo virtual position value | 0 - Failed; 1 - Success |
-    | Set holding current | 0 - Failed; 1 - Success |
+<table>
+  <tr>
+    <th>Function</th>
+    <th>Return</th>
+  </tr>
+  <tr>
+    <td>Set gripper ID</td>
+    <td>0 - Failure; 1 - Success</td>
+  </tr>
+  <tr>
+    <td>Set gripper enable status</td>
+    <td>0 - Failure; 1 - Success</td>
+  </tr>
+  <tr>
+    <td>Set gripper clockwise runnable error</td>
+    <td>0 - Failure; 1 - Success</td>
+  </tr>
+  <tr>
+    <td>Set gripper counterclockwise runnable error</td>
+    <td>0 - Failure; 1 - Success</td>
+  </tr>
+  <tr>
+    <td>Set gripper minimum starting force</td>
+    <td>0 - Failure; 1 - Success</td>
+  </tr>
+  <tr>
+    <td>IO output setting</td>
+    <td>0 - Failure; 1 - Success</td>
+  </tr>
+  <tr>
+    <td>Set IO opening angle</td>
+    <td>0 - Failure; 1 - Success</td>
+  </tr>
+  <tr>
+    <td>Set IO closing angle</td>
+    <td>0 - Failed; 1 - Success</td>
+  </tr>
+  <tr>
+    <td>Set servo virtual position value</td>
+    <td>0 - Failed; 1 - Success</td>
+  </tr>
+  <tr>
+    <td>Set holding current</td>
+    <td>0 - Failed; 1 - Success</td>
+  </tr>
+</table>
+
 
 #### 15.2 `get_pro_gripper(gripper_id, address)`
 
@@ -816,36 +982,122 @@ from pymycobot import utils
   - `gripper_id` (`int`): Gripper ID, default 14, value range 1 ~ 254.
   - `address` (`int`): The command number of the gripper.
 
-    | Function | gripper_id | address |
-    | ---- | ---- |---- |
-    | Read firmware major version number | 14 | 1 |
-    | Read firmware minor version number | 14 | 2 |
-    | Read gripper ID | 14 | 3 |
-    | Read gripper clockwise runnable error | 14 | 22 |
-    | Read gripper counterclockwise runnable error | 14 | 24 |
-    | Read gripper minimum starting force | 14 | 26 |
-    | Read IO opening angle | 14 | 34 |
-    | Read IO closing angle | 14 | 35 |
-    | Get the amount of data in the current queue | 14 | 40 |
-    | Read servo virtual position value | 14 | 42 |
-    | Read the clamping current | 14 | 44 |
+<table>
+  <tr>
+    <th>Function</th>
+    <th>gripper_id</th>
+    <th>address</th>
+  </tr>
+  <tr>
+    <td>Read firmware major version number</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">1</td>
+  </tr>
+  <tr>
+    <td>Read firmware minor version number</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">2</td>
+  </tr>
+  <tr>
+    <td>Read gripper ID</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">3</td>
+  </tr>
+  <tr>
+    <td>Read gripper clockwise runnable error</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">22</td>
+  </tr>
+  <tr>
+    <td>Read gripper counterclockwise runnable error</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">24</td>
+  </tr>
+  <tr>
+    <td>Read gripper minimum starting force</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">26</td>
+  </tr>
+  <tr>
+    <td>Read IO opening angle</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">34</td>
+  </tr>
+  <tr>
+    <td>Read IO closing angle</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">35</td>
+  </tr>
+  <tr>
+    <td>Get the amount of data in the current queue</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">40</td>
+  </tr>
+  <tr>
+    <td>Read servo virtual position value</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">42</td>
+  </tr>
+  <tr>
+    <td>Read the clamping current</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">44</td>
+  </tr>
+</table>
 
 - **Return value**:
   - See the following table (if the return value is -1, it means that no data can be read):
 
-    | Function | return |
-    | ---- | ---- |
-    | Read the firmware major version number | Major version number |
-    | Read the firmware minor version number | Minor version number |
-    | Read the gripper ID | 1 ~ 254 |
-    | Read the gripper clockwise runnable error | 0 ~ 254 |
-    | Read the gripper counterclockwise runnable error | 0 ~ 254 |
-    | Read the gripper minimum starting force | 0 ~ 254 |
-    | Read the IO opening angle | 0 ~ 100 |
-    | Read the IO closing angle | 0 ~ 100 |
-    | Get the amount of data in the current queue | Return the amount of data in the current absolute control queue |
-    | Read the servo virtual position value | 0 ~ 100 |
-    | Read the clamping current | 1 ~ 254 |
+<table>
+  <tr>
+    <th>Function</th>
+    <th>Return</th>
+  </tr>
+  <tr>
+    <td>Read the firmware major version number</td>
+    <td>Major version number</td>
+  </tr>
+  <tr>
+    <td>Read the firmware minor version number</td>
+    <td>Minor version number</td>
+  </tr>
+  <tr>
+    <td>Read the gripper ID</td>
+    <td>1 ~ 254</td>
+  </tr>
+  <tr>
+    <td>Read the gripper clockwise runnable error</td>
+    <td>0 ~ 254</td>
+  </tr>
+  <tr>
+    <td>Read the gripper counterclockwise runnable error</td>
+    <td>0 ~ 254</td>
+  </tr>
+  <tr>
+    <td>Read the gripper minimum starting force</td>
+    <td>0 ~ 254</td>
+  </tr>
+  <tr>
+    <td>Read the IO opening angle</td>
+    <td>0 ~ 100</td>
+  </tr>
+  <tr>
+    <td>Read the IO closing angle</td>
+    <td>0 ~ 100</td>
+  </tr>
+  <tr>
+    <td>Get the amount of data in the current queue</td>
+    <td>Return the amount of data in the current absolute control queue</td>
+  </tr>
+  <tr>
+    <td>Read the servo virtual position value</td>
+    <td>0 ~ 100</td>
+  </tr>
+  <tr>
+    <td>Read the clamping current</td>
+    <td>1 ~ 254</td>
+  </tr>
+</table>
   
 #### 15.3 `set_pro_gripper_angle(gripper_id, gripper_angle)`
 
