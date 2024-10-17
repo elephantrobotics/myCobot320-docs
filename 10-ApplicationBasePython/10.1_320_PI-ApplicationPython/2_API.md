@@ -67,7 +67,7 @@ mc.send_angle(1, 40, 20)
 - **返回值:**
   - `1`: 完成
 
-#### 2.5 `focus_servos(servo_id)`
+#### 2.5 `focus_servo(servo_id)`
 
 - **功能:** 单个舵机上电
 
@@ -130,6 +130,24 @@ mc.send_angle(1, 40, 20)
   - 11: 伺服电机异常，当舵机异常时，无法控制机器运动，请查询舵机反馈接口get_servo_status，查看具体报错
   - 255: 未知错误
 
+#### 2.11 `focus_all servos()`
+
+- **功能:** 所有舵机上电
+
+- **返回值:**
+  - `1`: complete
+
+#### 2.12 `set_vision_mode()`
+
+- **功能:** 设置视觉跟踪模式，限制刷新模式下send_coords的姿态翻转。（仅适用于视觉跟踪功能）
+  
+- **参数:**
+  - `1`: 打开
+  - `0`: 关闭
+
+- **返回值:**
+  - `1`: 完成
+
 ### 3. MDI运行与操作
 
 #### 3.1 `get_angles()`
@@ -141,19 +159,41 @@ mc.send_angle(1, 40, 20)
 
 - **功能：** 向机械臂发送一个关节度数
 - **参数：**
-  - `id`：关节 id（`genre.Angle`），范围 int 1-6
+  - `id`：关节 id，范围 int 1-6
   - `degree`：度数值（`float`）
   
-      | 关节 Id | 范围      |
-      | :---- | :--------- |
-      | 1     | -170 ~ 170 |
-      | 2     | -137 ~ 137 |
-      | 3     | -151 ~ 142 |
-      | 4     | -148 ~ 148 |
-      | 5     | -169 ~ 169 |
-      | 6     | -180 ~ 180 |
+<table>
+  <tr>
+    <th>关节 Id</th>
+    <th>范围</th>
+  </tr>
+  <tr>
+    <td style="text-align: center;">1</td>
+    <td>-170 ~ 170</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">2</td>
+    <td>-137 ~ 137</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">3</td>
+    <td>-151 ~ 142</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">4</td>
+    <td>-148 ~ 148</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">5</td>
+    <td>-169 ~ 169</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">6</td>
+    <td>-180 ~ 180</td>
+  </tr>
+</table>
 
-    - `speed`：机械臂运动速度及范围 1~100
+  - `speed`：机械臂运动速度及范围 1~100
 - **返回值:**
   - `1`: 完成
 
@@ -178,14 +218,36 @@ mc.send_angle(1, 40, 20)
   - `id`：向机械臂发送一个坐标，1-6 对应 [x, y, z, rx, ry, rz]
   - `coord`：坐标值（`float`）
   
-      | 坐标 ID | 范围 |
-      | :---- | :---- |
-      | x | -350 ~ 350 |
-      | y | -350 ~ 350 |
-      | z | -41 ~ 523.9 |
-      | rx | -180 ~ 180 |
-      | ry | -180 ~ 180 |
-      | rz | -180 ~ 180 |
+<table>
+  <tr>
+    <th>坐标 ID</th>
+    <th>范围</th>
+  </tr>
+  <tr>
+    <td style="text-align: center;">x</td>
+    <td>-350 ~ 350</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">y</td>
+    <td>-350 ~ 350</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">z</td>
+    <td>-41 ~ 523.9</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">rx</td>
+    <td>-180 ~ 180</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">ry</td>
+    <td>-180 ~ 180</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">rz</td>
+    <td>-180 ~ 180</td>
+  </tr>
+</table>
 
   - `speed`：（`int`）1-100
 - **返回值:**
@@ -311,17 +373,27 @@ mc.send_angle(1, 40, 20)
 - **返回值:**
   - `1`: 完成
 
-#### 4.4 `jog_increment(joint_id, increment, speed)`
+#### 4.4 `jog_increment_angle(joint_id, increment, speed)`
 
-- **功能**：单关节角度增量控制
+- **功能**：角度步进，单关节角度增量控制
 - **参数**：
   - `joint_id`：1-6
   - `increment`：基于当前位置角度的增量移动
   - `speed`：1~100
-- **返回值:**
+- **返回值：**
   - `1`: 完成
 
-#### 4.5 `set_encoder(joint_id,coder,speed)`
+#### 4.5 `jog_increment_coord(id, increment, speed)`
+
+- **功能**：坐标步进，单坐标增量控制
+- **参数**：
+  - `id`：坐标轴 1-6
+  - `increment`：基于当前位置坐标的增量移动
+  - `speed`：1~100
+- **返回值：**
+  - `1`: 完成
+
+#### 4.6 `set_encoder(joint_id,coder,speed)`
 
 - **功能**：设置单关节旋转为指定的潜在值
 
@@ -332,7 +404,7 @@ mc.send_angle(1, 40, 20)
 - **返回值:**
   - `1`: 完成
 
-#### 4.6 `get_encoder(joint_id)`
+#### 4.7 `get_encoder(joint_id)`
 
 - **功能**: 将单关节旋转设置为指定的电位值
 
@@ -342,7 +414,7 @@ mc.send_angle(1, 40, 20)
 
 - **返回值:** (`int`) 关节电位值
 
-#### 4.7 `set_encoders(encoders, speed)`
+#### 4.8 `set_encoders(encoders, speed)`
 
 - **功能**: 设置机械手六个关节同步执行到指定位置。
 
@@ -354,7 +426,7 @@ mc.send_angle(1, 40, 20)
 - **返回值:**
   - `1`: 完成
 
-#### 4.8 `get_encoders()`
+#### 4.9 `get_encoders()`
 
 - **功能**：获取机械臂的六个关节电位值。
 
@@ -761,34 +833,125 @@ from pymycobot import utils
   - `address` (`int`): 夹爪的指令序号。
   - `value` ：指令序号对应的参数值。
 
-    | 功能 | gripper_id | address | value|
-    | :---- | :---- | :---- | :----- |
-    | 设置夹爪ID | 14 | 3 | 1 ~ 254 |
-    | 设置夹爪使能状态 | 14 | 10 | 0或者1, 0 - 掉使能; 1 - 上使能 |
-    | 设置夹爪顺时针可运行误差 | 14 | 21 | 0 ~ 16 |
-    | 设置夹爪逆时针可运行误差 | 14 | 23 | 0 ~ 16 |
-    | 设置夹爪最小启动力 | 14 | 25 | 0 ~ 254 |
-    | IO输出设置 | 14 | 29 | 0, 1, 16, 17 |
-    | 设置IO张开角度 | 14 | 30 | 0 ~ 100 |
-    | 设置IO闭合角度 | 14 | 31 | 0 ~ 100 |
-    | 设置舵机虚位数值 | 14 | 41 | 0 ~ 100 |
-    | 设置夹持电流 | 14 | 43 | 1 ~ 254 |
+<table>
+  <tr>
+    <th>功能</th>
+    <th>gripper_id</th>
+    <th>address</th>
+    <th>value</th>
+  </tr>
+  <tr>
+    <td>设置夹爪ID</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">3</td>
+    <td>1 ~ 254</td>
+  </tr>
+  <tr>
+    <td>设置夹爪使能状态</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">10</td>
+    <td>0或者1, 0 - 掉使能; 1 - 上使能</td>
+  </tr>
+  <tr>
+    <td>设置夹爪顺时针可运行误差</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">21</td>
+    <td>0 ~ 16</td>
+  </tr>
+  <tr>
+    <td>设置夹爪逆时针可运行误差</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">23</td>
+    <td>0 ~ 16</td>
+  </tr>
+  <tr>
+    <td>设置夹爪最小启动力</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">25</td>
+    <td>0 ~ 254</td>
+  </tr>
+  <tr>
+    <td>IO输出设置</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">29</td>
+    <td>0, 1, 16, 17</td>
+  </tr>
+  <tr>
+    <td>设置IO张开角度</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">30</td>
+    <td>0 ~ 100</td>
+  </tr>
+  <tr>
+    <td>设置IO闭合角度</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">31</td>
+    <td>0 ~ 100</td>
+  </tr>
+  <tr>
+    <td>设置舵机虚位数值</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">41</td>
+    <td>0 ~ 100</td>
+  </tr>
+  <tr>
+    <td>设置夹持电流</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">43</td>
+    <td>1 ~ 254</td>
+  </tr>
+</table>
 
 - **返回值**:
   - 请查看如下表格：
 
-    | 功能 | return |
-    | :---- | :---- |
-    | 设置夹爪ID | 0 - 失败； 1 - 成功 |
-    | 设置夹爪使能状态 | 0 - 失败； 1 - 成功 |
-    | 设置夹爪顺时针可运行误差 | 0 - 失败； 1 - 成功 |
-    | 设置夹爪逆时针可运行误差 | 0 - 失败； 1 - 成功 |
-    | 设置夹爪最小启动力 | 0 - 失败； 1 - 成功 |
-    | IO输出设置 | 0 - 失败； 1 - 成功 |
-    | 设置IO张开角度 | 0 - 失败； 1 - 成功 |
-    | 设置IO闭合角度 | 0 - 失败； 1 - 成功 |
-    | 设置舵机虚位数值 | 0 - 失败； 1 - 成功 |
-    | 设置夹持电流 | 0 - 失败； 1 - 成功 |
+<table>
+  <tr>
+    <th>功能</th>
+    <th>返回值</th>
+  </tr>
+  <tr>
+    <td>设置夹爪ID</td>
+    <td>0 - 失败； 1 - 成功</td>
+  </tr>
+  <tr>
+    <td>设置夹爪使能状态</td>
+    <td>0 - 失败； 1 - 成功</td>
+  </tr>
+  <tr>
+    <td>设置夹爪顺时针可运行误差</td>
+    <td>0 - 失败； 1 - 成功</td>
+  </tr>
+  <tr>
+    <td>设置夹爪逆时针可运行误差</td>
+    <td>0 - 失败； 1 - 成功</td>
+  </tr>
+  <tr>
+    <td>设置夹爪最小启动力</td>
+    <td>0 - 失败； 1 - 成功</td>
+  </tr>
+  <tr>
+    <td>IO输出设置</td>
+    <td>0 - 失败； 1 - 成功</td>
+  </tr>
+  <tr>
+    <td>设置IO张开角度</td>
+    <td>0 - 失败； 1 - 成功</td>
+  </tr>
+  <tr>
+    <td>设置IO闭合角度</td>
+    <td>0 - 失败； 1 - 成功</td>
+  </tr>
+  <tr>
+    <td>设置舵机虚位数值</td>
+    <td>0 - 失败； 1 - 成功</td>
+  </tr>
+  <tr>
+    <td>设置夹持电流</td>
+    <td>0 - 失败； 1 - 成功</td>
+  </tr>
+</table>
+
 
 #### 15.2 `get_pro_gripper(gripper_id, address)`
 
@@ -797,37 +960,123 @@ from pymycobot import utils
   - `gripper_id` (`int`): 夹爪ID，默认14，取值范围 1 ~ 254。
   - `address` (`int`): 夹爪的指令序号。
 
-    | 功能 | gripper_id | address |
-    | :---- | :---- | :---- |
-    | 读取固件主版本号 | 14 | 1 |
-    | 读取固件次版本号 | 14 | 2 |
-    | 读取夹爪ID | 14 | 3 |
-    | 读取夹爪顺时针可运行误差 | 14 | 22 |
-    | 读取夹爪逆时针可运行误差 | 14 | 24 |
-    | 读取夹爪最小启动力 | 14 | 26 |
-    | 读取IO张开角度 | 14 | 34 |
-    | 读取IO闭合角度 | 14 | 35 |
-    | 获取当前队列的数据量 | 14 | 40 |
-    | 读取舵机虚位数值 | 14 | 42 |
-    | 读取夹持电流 | 14 | 44 |
+<table>
+  <tr>
+    <th>功能</th>
+    <th>gripper_id</th>
+    <th>address</th>
+  </tr>
+  <tr>
+    <td>读取固件主版本号</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">1</td>
+  </tr>
+  <tr>
+    <td>读取固件次版本号</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">2</td>
+  </tr>
+  <tr>
+    <td>读取夹爪ID</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">3</td>
+  </tr>
+  <tr>
+    <td>读取夹爪顺时针可运行误差</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">22</td>
+  </tr>
+  <tr>
+    <td>读取夹爪逆时针可运行误差</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">24</td>
+  </tr>
+  <tr>
+    <td>读取夹爪最小启动力</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">26</td>
+  </tr>
+  <tr>
+    <td>读取IO张开角度</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">34</td>
+  </tr>
+  <tr>
+    <td>读取IO闭合角度</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">35</td>
+  </tr>
+  <tr>
+    <td>获取当前队列的数据量</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">40</td>
+  </tr>
+  <tr>
+    <td>读取舵机虚位数值</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">42</td>
+  </tr>
+  <tr>
+    <td>读取夹持电流</td>
+    <td style="text-align: center;">14</td>
+    <td style="text-align: center;">44</td>
+  </tr>
+</table>
 
 - **返回值**：
   - 查看如下表格（若返回值为 -1，则表示读不到数据）：
   
-    | 功能 | return |
-    | :---- | :---- |
-    | 读取固件主版本号 | 主版本号 |
-    | 读取固件次版本号 | 次版本号 |
-    | 读取夹爪ID | 1 ~ 254 |
-    | 读取夹爪顺时针可运行误差 | 0 ~ 254 |
-    | 读取夹爪逆时针可运行误差 | 0 ~ 254 |
-    | 读取夹爪最小启动力 | 0 ~ 254 |
-    | 读取IO张开角度 | 0 ~ 100 |
-    | 读取IO闭合角度 | 0 ~ 100 |
-    | 获取当前队列的数据量 | 返回当前绝对控制队列中的数据量 |
-    | 读取舵机虚位数值 | 0 ~ 100 |
-    | 读取夹持电流 | 1 ~ 254 |
-  
+<table>
+  <tr>
+    <th>功能</th>
+    <th>返回值</th>
+  </tr>
+  <tr>
+    <td>读取固件主版本号</td>
+    <td>主版本号</td>
+  </tr>
+  <tr>
+    <td>读取固件次版本号</td>
+    <td>次版本号</td>
+  </tr>
+  <tr>
+    <td>读取夹爪ID</td>
+    <td>1 ~ 254</td>
+  </tr>
+  <tr>
+    <td>读取夹爪顺时针可运行误差</td>
+    <td>0 ~ 254</td>
+  </tr>
+  <tr>
+    <td>读取夹爪逆时针可运行误差</td>
+    <td>0 ~ 254</td>
+  </tr>
+  <tr>
+    <td>读取夹爪最小启动力</td>
+    <td>0 ~ 254</td>
+  </tr>
+  <tr>
+    <td>读取IO张开角度</td>
+    <td>0 ~ 100</td>
+  </tr>
+  <tr>
+    <td>读取IO闭合角度</td>
+    <td>0 ~ 100</td>
+  </tr>
+  <tr>
+    <td>获取当前队列的数据量</td>
+    <td>返回当前绝对控制队列中的数据量</td>
+  </tr>
+  <tr>
+    <td>读取舵机虚位数值</td>
+    <td>0 ~ 100</td>
+  </tr>
+  <tr>
+    <td>读取夹持电流</td>
+    <td>1 ~ 254</td>
+  </tr>
+</table>
+
 #### 15.3 `set_pro_gripper_angle(gripper_id, gripper_angle)`
 
 - **功能**：设置力控夹爪角度。
