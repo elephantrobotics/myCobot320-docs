@@ -2,19 +2,6 @@
 
 > 面向用户自主编程开发的六轴协作机器人
 
-## gitbook-cn
-
-- M5 版本：
-  https://docs.elephantrobotics.com/docs/mycobot-320-m5-cn-test/
-- Pi 版本：
-  https://docs.elephantrobotics.com/docs/mycobot-320-pi-cn-test/
-
-## gitbook-en
-
-- M5 版本：
-  https://docs.elephantrobotics.com/docs/mycobot-320-m5-en-test/
-- Pi 版本：
-  https://docs.elephantrobotics.com/docs/mycobot-320-pi-en-test/
 
 ## 产品图
 
