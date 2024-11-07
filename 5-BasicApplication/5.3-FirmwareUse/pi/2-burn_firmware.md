@@ -2,7 +2,7 @@
 
 
 
-we can use [myStudio](../../5.2-ApplicationUse/5.2.2-mystudio/320pi/3-flash_firmwares.md) to burn the firmware
+we can use [myStudio](https://www.bilibili.com/video/BV1Qr4y1N7B5/) to burn the firmware
 
 
 

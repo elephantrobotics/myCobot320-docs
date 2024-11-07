@@ -60,13 +60,13 @@
 
     - When using TCP/IP examples in the Python section, make sure the M5's LCD screen remains in the WiFi communication interface.
 
-    ![alt text](../../../resources/3-UserNotes/5-other/wifi-m5stack.png)  
+    ![alt text](../../resources/3-UserNotes/5-other/wifi-m5stack.png)  
 
     **Bluetooth Communication Method:**
 
     - When controlling with a mobile app, ensure that the M5's LCD screen stays in the Bluetooth communication interface.
 
-    ![alt text](../../../resources/3-UserNotes/5-other/bluetooth-m5stack.png)
+    ![alt text](../../resources/3-UserNotes/5-other/bluetooth-m5stack.png)
 
     After ensuring that the communication mode status is correctly selected, try controlling the robotic arm again.
 
@@ -90,9 +90,9 @@
 
     You can refer to the coordinate system diagram in the following document for more information.
 
-    ![alt text](../../../resources/3-UserNotes/5-other/机械臂坐标系1.png)
+    ![alt text](../../resources/3-UserNotes/5-other/机械臂坐标系1.png)
 
-    ![alt text](../../../resources/3-UserNotes/5-other/机械臂坐标系2.png)
+    ![alt text](../../resources/3-UserNotes/5-other/机械臂坐标系2.png)
 
 
 **Q:Is there more explanation about Offset of DH parameter, is Offset rotating around z?**
@@ -130,6 +130,6 @@ Update pip: Make sure you have the latest version of pip installed by running:
 
 ***Q：The drawing case with the 280 machine is to find that the shape trajectory is not very straight, how can this be optimised?***
 
-![alt text](../../../resources/3-UserNotes/5-other/draw.png)
+![alt text](../../resources/3-UserNotes/5-other/draw.png)
 
 - A: Using hard stationery such as signature pens may result in trajectory deviations, which is quite normal. There are mainly two reasons for such deviations. Firstly, because MyCobot uses servo motors, there is a certain precision deviation (especially for machines that have been used for a long time, as joint aging may lead to greater deviations). Secondly, the contact distance with the desktop is crucial when using hard pens for drawing. If the distance is too large, interruptions in the trajectory may occur easily; if it's too small, there may be issues with excessive resistance and pauses of the pen tip. Therefore, the resulting drawing effect may not be ideal. Currently, it is recommended to use soft stationery such as brushes, which may help improve the drawing effect.

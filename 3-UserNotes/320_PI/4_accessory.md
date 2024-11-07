@@ -1,7 +1,7 @@
 # Accessory issue
 
 **Q: IO connection diagram between 280pi and suction pump**
-![alt text](../../../resources/3-UserNotes/4-accessory/IO接口.png)
+![alt text](../../resources/3-UserNotes/4-accessory/IO接口.png)
 
 **Q: How to deal with the inability to control the opening and closing of the 320+ adaptive gripper?**
 
@@ -11,11 +11,11 @@ In the case where the robot arm can be controlled normally, manually open the gr
 MyBlockly controls the gripper source code:  
 IO mode (Note that when switching from transparent mode to IO mode, the gripper needs to be powered off and reconnected):  
 
-![alt text](../../../resources/3-UserNotes/4-accessory/夹爪控制myblockly.png)  
+![alt text](../../resources/3-UserNotes/4-accessory/夹爪控制myblockly.png)  
 
 - Transparent mode：  
 
-![alt text](../../../resources/3-UserNotes/4-accessory/夹爪控制myblockly2.png)
+![alt text](../../resources/3-UserNotes/4-accessory/夹爪控制myblockly2.png)
 Python control code for the gripper:
 
 ```python
@@ -73,7 +73,7 @@ print("gripper calibrated successfully！")
 
 - You can run it several times until you see the following message, indicating that calibration is complete.  
 
-![alt text](../../../resources/3-UserNotes/4-accessory/several_notice.png)  
+![alt text](../../resources/3-UserNotes/4-accessory/several_notice.png)  
 
 **Q: Should the protrusion indicated by the arrow on the modular suction cup be removed?**
 

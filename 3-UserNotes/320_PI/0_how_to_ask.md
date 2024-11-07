@@ -21,9 +21,9 @@ For example: I have tried checking the FAQ documentation and flashing the firmwa
 **4. Please provide some images or videos detailing the problem to help technicians quickly identify the issue.**  
 For example: Below is my control code and error message. Please assist me in analyzing. Thank you.
 
-![alt text](../../../resources/3-UserNotes/myblockly错误消息1.png)
+![alt text](../../resources/3-UserNotes/myblockly错误消息1.png)
 
-![alt text](../../../resources/3-UserNotes/myblockly错误消息2.png)
+![alt text](../../resources/3-UserNotes/myblockly错误消息2.png)
 
 **Please list each question separately if you have multiple questions.**  
 

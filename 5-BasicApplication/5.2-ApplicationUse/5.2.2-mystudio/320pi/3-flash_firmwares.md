@@ -3,7 +3,7 @@
 **[myStudio Video tutorial](https://www.bilibili.com/video/BV1Qr4y1N7B5/)**
 
 
-
+    
 ## Burn Atom firmware
 
 Step 1:  Connect the Atom at the end with USB.
