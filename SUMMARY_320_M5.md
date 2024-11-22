@@ -16,7 +16,7 @@
     - [8 笔夹持器](1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Holder/1-PenHolderPro.md)
     - [9 手机夹持器](1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Holder/2-PhoneHolderPro.md)
     - [10 独头吸泵](1-ProductIntroduction/1.4-AccessoriesTools/1.4.2-PumpCup/singel_pump.md)
-    - [10 力控夹爪](1-ProductIntroduction/1.4-AccessoriesTools/1.4.1-Gripper/jiazhua_m5.md)
+    - [11 力控夹爪](1-ProductIntroduction/1.4-AccessoriesTools/1.4.1-Gripper/jiazhua_m5.md)
     
 
 - [2 产品特性](2-ProductFeature/2.1_320_M5_product/README.md)
