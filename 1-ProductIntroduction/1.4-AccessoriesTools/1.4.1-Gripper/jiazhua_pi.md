@@ -35,14 +35,17 @@
 ## 5 安装方式
 
 用螺丝和垫片将夹爪连接件安装到机械臂末端法兰
+
 <img src="./img/1.png" width="50%" >
 
 再用螺丝将夹爪安装在连接件上
+
 <img src="./img/2.png" width="50%" >
 
 <img src="./img/3.png" width="50%" >
 
 最后用M8航空线将夹爪和机械臂就行连接
+
 <img src="./img/4.jpg" width="50%" >
 
 
