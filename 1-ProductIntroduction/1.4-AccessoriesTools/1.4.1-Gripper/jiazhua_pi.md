@@ -52,7 +52,7 @@
 ## 6 python控制方式
 
 机械臂需要烧录支持力控夹爪的pico固件，以及安装支持力控夹爪的pymycobot驱动库，但由于两者还在内测中，并未正式发布，如有需要，请联系售后人员获取
-
+**注意事项**：夹爪每条指令的调用的时间间隔要大于1.5秒。
 ### 6.1 python控制方式API说明
 
 #### `set_pro_gripper(gripper_id, address, value)`
