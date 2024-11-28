@@ -15,6 +15,7 @@
     - [1.4.7 PenHolderPro](1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Other/1-PenHolderPro.md)
     - [1.4.8 PhoneHolderPro](1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Other/2-PhoneHolderPro.md)
     - [1.4.9 Single-ended suction pump](1-ProductIntroduction/1.4-AccessoriesTools/1.4.2-PumpCup/singel_pump_en.md)
+    - [1.4.10 Force control gripper](1-ProductIntroduction/1.4-AccessoriesTools/1.4.1-Gripper/jiazhua_m5_en.md)
     
 - [2 Product Feature](2-ProductFeature/2.1_320_M5_product/README.md)
 
