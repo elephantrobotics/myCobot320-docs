@@ -662,13 +662,13 @@ mc.send_angle(1, 40, 20)
 - **返回值：** 
   - 1 - 完成
 
-#### 9.4 `init_eletric_gripper()`
+#### 9.4 `init_electric_gripper()`
 
 - **功能**：电动夹爪初始化（插入和移除夹爪后需初始化一次）
 - **返回值：** 
   - 1 - 完成
 
-#### 9.5 `set_eletric_gripper(status)`
+#### 9.5 `set_electric_gripper(status)`
 
 - **功能**：设置电动夹爪模式
 - **参数**：
@@ -986,7 +986,7 @@ from pymycobot import utils
   <tr>
     <td>读取夹爪ID</td>
     <td style="text-align: center;">14</td>
-    <td style="text-align: center;">3</td>
+    <td style="text-align: center;">4</td>
   </tr>
   <tr>
     <td>读取夹爪顺时针可运行误差</td>
