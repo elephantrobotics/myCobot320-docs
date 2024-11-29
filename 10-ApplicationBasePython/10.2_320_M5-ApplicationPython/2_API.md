@@ -172,15 +172,15 @@ mc.send_angle(1, 40, 20)
   </tr>
   <tr>
     <td style="text-align: center;">1</td>
-    <td>-170 ~ 170</td>
+    <td>-168 ~ 168</td>
   </tr>
   <tr>
     <td style="text-align: center;">2</td>
-    <td>-137 ~ 137</td>
+    <td>-135 ~ 135</td>
   </tr>
   <tr>
     <td style="text-align: center;">3</td>
-    <td>-151 ~ 142</td>
+    <td>-145 ~ 145</td>
   </tr>
   <tr>
     <td style="text-align: center;">4</td>
@@ -188,7 +188,7 @@ mc.send_angle(1, 40, 20)
   </tr>
   <tr>
     <td style="text-align: center;">5</td>
-    <td>-169 ~ 169</td>
+    <td>-168 ~ 168</td>
   </tr>
   <tr>
     <td style="text-align: center;">6</td>
@@ -676,13 +676,13 @@ mc.send_angle(1, 40, 20)
 - **Return value:**
   - `1`: complete
 
-#### 9.4 `init_eletric_gripper()`
+#### 9.4 `init_electric_gripper()`
 
 - **function**: Electric gripper initialization (it needs to be initialized once after inserting and removing the gripper)
 - **Return value:**
   - `1`: complete
 
-#### 9.5 `set_eletric_gripper(status)`
+#### 9.5 `set_electric_gripper(status)`
 
 - **function**: Set Electric Gripper Mode
 - **Parameters**: 
@@ -1001,7 +1001,7 @@ from pymycobot import utils
   <tr>
     <td>Read gripper ID</td>
     <td style="text-align: center;">14</td>
-    <td style="text-align: center;">3</td>
+    <td style="text-align: center;">4</td>
   </tr>
   <tr>
     <td>Read gripper clockwise runnable error</td>
