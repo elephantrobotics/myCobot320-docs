@@ -169,15 +169,15 @@ mc.send_angle(1, 40, 20)
   </tr>
   <tr>
     <td style="text-align: center;">1</td>
-    <td>-170 ~ 170</td>
+    <td>-168 ~ 168</td>
   </tr>
   <tr>
     <td style="text-align: center;">2</td>
-    <td>-137 ~ 137</td>
+    <td>-135 ~ 135</td>
   </tr>
   <tr>
     <td style="text-align: center;">3</td>
-    <td>-151 ~ 142</td>
+    <td>-145 ~ 145</td>
   </tr>
   <tr>
     <td style="text-align: center;">4</td>
@@ -185,7 +185,7 @@ mc.send_angle(1, 40, 20)
   </tr>
   <tr>
     <td style="text-align: center;">5</td>
-    <td>-169 ~ 169</td>
+    <td>-168 ~ 168</td>
   </tr>
   <tr>
     <td style="text-align: center;">6</td>
