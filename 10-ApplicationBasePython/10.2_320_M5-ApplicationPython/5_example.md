@@ -214,7 +214,125 @@ mc.send_coord(Coord.X.value, 100, 70)
 
 ```
 
-## 6 Controlling Gripper
+## 6 Control the robot arm to swing left and right
+
+```python
+from pymycobot.mycobot320 import MyCobot320
+
+import time
+# Initialize a MyCobot320 object
+
+# M5 version
+mc = MyCobot320("COM3", 115200)
+# Get the coordinates of the current position
+angle_datas = mc.get_angles()
+print(angle_datas)
+
+# Use a sequence to pass the coordinate parameters and let the robot move to the specified position
+mc.send_angles([0, 0, 0, 0, 0, 0], 50)
+print(mc.is_paused())
+# Set the waiting time to ensure that the robot has reached the specified position
+# while not mc.is_paused():
+time.sleep(2.5)
+
+# Move joint 1 to the position of 90
+mc.send_angle(1, 90, 50)
+
+# Set the waiting time to ensure that the robot has reached the specified position
+time.sleep(2)
+
+# Set the number of loops
+num = 5
+
+# Let the robot swing left and right
+while num > 0:
+    # Move joint 2 to position 50
+    mc.send_angle(2, 50, 50)
+    # Set the waiting time to ensure that the robot has reached the specified position
+    time.sleep(1.5)
+    # Move joint 2 to position -50
+    mc.send_angle(2, -50, 50)
+    # Set the waiting time to ensure that the robot has reached the specified position
+    time.sleep(1.5)
+    num -= 1
+# Retract the robot. You can manually swing the robot, and then use the get_angles() function to get the coordinate sequence,
+# Use this function to make the robot reach the position you want.
+mc.send_angles([88.68, -135, 145, -128.05, -9.93, -15.29], 50)
+
+# Set the waiting time to ensure that the robot arm has reached the specified position
+time.sleep(2.5)
+# Let the robot arm relax and you can swing it manually
+mc.release_all_servos()
+```
+
+<video id="my-video" class="video-js" controls preload="auto" width="100%"
+poster="" data-setup='{"aspectRatio":"16:9"}'>
+
+  <source src="../../resources/10-ApplicationBasePython/myArm/2.5python控制机械臂左右摆动01.mp4"></video>
+
+## 7 Controlling the robotic arm to dance
+
+```python
+from pymycobot.mycobot320 import MyCobot320
+import time
+
+if __name__ == '__main__':
+    # MyCobot320 class initialization requires two parameters:
+    # The first is the serial port string, such as:
+        # Linux: "/dev/ttyUSB0"
+        # Windows: "COM3"
+    # The second is the baud rate:
+        # M5 version: 115200
+
+    # Example:
+        # mycobot-M5:
+            # Linux:
+              # mc = MyCobot320("/dev/ttyUSB0", 115200)
+            # Windows:
+              # mc = MyCobot320("COM3", 115200)
+
+    # Initialize a MyCobot320 object
+    # M5 version
+    mc = MyCobot320("COM3",115200)
+
+    # Set the start time
+    start = time.time()
+    # Let the robot reach the specified position
+    mc.send_angles([-1.49, 115, -145, 30, -33.42, 137.9], 80)
+    # Determine whether it has reached the specified position
+    while not mc.is_in_position([-1.49, 115, -145, 30, -33.42, 137.9], 0):
+        # Let the robot resume movement
+        mc.resume()
+        # Let the robot move for 0.5s
+        time.sleep(0.5)
+        # Pause the movement of the robot
+        mc.pause()
+        # Determine whether the movement has timed out
+        if time.time() - start > 3:
+            break
+    # Set the start time
+    start = time.time()
+    # Let the exercise last for 30 seconds
+    while time.time() - start < 30:
+        # Let the robot quickly reach this position
+        mc.send_angles([-1.49, 115, -145, 30, -33.42, 137.9], 80)
+        # Set the color of the light to [0,0,50]
+        mc.set_color(0, 0, 50)
+        time.sleep(0.7)
+        # Let the robot quickly reach this position
+        mc.send_angles([-1.49, 55, -145, 80, 33.42, 137.9], 80)
+        # Set the color of the light to [0,50,0]
+        mc.set_color(0, 50, 0)
+        time.sleep(0.7)
+```
+
+<video id="my-video" class="video-js" controls preload="auto" width="100%"
+poster="" data-setup='{"aspectRatio":"16:9"}'>
+
+  <source src="../../resources/10-ApplicationBasePython/myArm/2.6控制机械臂跳舞01.mp4"></video>
+
+
+## 8 Controlling Gripper
 
 ```python
 from pymycobot.mycobot320 import MyCobot320
