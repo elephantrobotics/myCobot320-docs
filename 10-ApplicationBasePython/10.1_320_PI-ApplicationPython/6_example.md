@@ -223,7 +223,7 @@ poster="" data-setup='{"aspectRatio":"16:9"}'>
 ## 7 控制机械臂跳舞
 
 ```python
-from pymycobot.mycobot import MyCobot320
+from pymycobot.mycobot320 import MyCobot320
 import time
 
 if __name__ == '__main__':
