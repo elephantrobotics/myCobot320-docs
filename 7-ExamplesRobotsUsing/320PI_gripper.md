@@ -18,9 +18,9 @@ Then use the gripper cable to connect the gripper box to the end IO of the robot
 ## 3 Gripper test
 Run the following program, the gripper will repeat the action of closing and opening twice
 ```python
-from pymycobot import MyCobot,PI_PORT,PI_BAUD
+from pymycobot import MyCobot320,PI_PORT
 import time
-arm=MyCobot(PI_PORT,PI_BAUD)
+arm=MyCobot320(PI_PORT,115200)
 
 if __name__=="__main__":
     arm.set_gripper_mode(0)#Gripper is set to transparent mode
@@ -36,14 +36,14 @@ Use the fast movement function of myblockly to teach the grabbing point and plac
 
 ## 5 Composite Application
 ```python
-from pymycobot import MyCobot,PI_PORT,PI_BAUD
+from pymycobot import MyCobot320,PI_PORT
 import time
 
 init_angles=[-3.25, -2.46, -95.09, 9.22, 86.39, 93.33]#6 joint angles at the initial position
 grab_point=[214.5, -189.9, 185.5, -177.5, 1.91, 173.49]#Coordinates of the grab point
 place_point=[214.5, -50.9, 185.5, -177.5, 1.91, 173.49]#Coordinates of the placement point
 
-arm=MyCobot(PI_PORT,PI_BAUD)
+arm=MyCobot320(PI_PORT,115200)
 
 if __name__=="__main__":
     arm.set_gripper_state(0,100)#Open the gripper first    

@@ -13,9 +13,9 @@ Then connect the wire of the suction pump control box to the base IO of the robo
 ## 3 Suction pump test
 Run the following program, the suction pump will repeat the opening and closing action twice
 ```python
-from pymycobot import MyCobot,PI_PORT,PI_BAUD
+from pymycobot import MyCobot,PI_PORT
 import time
-arm=MyCobot(PI_PORT,PI_BAUD)
+arm=MyCobot320(PI_PORT,115200)
 for i in range(2):
     arm.set_basic_output(1,0)#OUT1 output open
     time.sleep(2)
@@ -29,13 +29,13 @@ Use the fast movement function of myblockly to teach the grabbing point and plac
 
 ## 5 Composite Application
 ```python
-from pymycobot import MyCobot,PI_PORT,PI_BAUD
+from pymycobot import MyCobot320,PI_PORT
 import time
 
 init_angles=[-3.25, -2.46, -95.09, 9.22, 86.39, 93.33]#6 joint angles at the initial position
 grab_point=[196.9, -197.1, 124.5, -178.8, 1.25, 173.32]#Coordinates of the grab point
 place_point=[196.9, -97.1, 124.5, -178.8, 1.25, 173.32]#Coordinates of the placement point
-arm=MyCobot(PI_PORT,PI_BAUD)
+arm=MyCobot320(PI_PORT,115200)
 
 if __name__=="__main__":
     arm.set_basic_output(1,1)#Turn off the suction pump first   
