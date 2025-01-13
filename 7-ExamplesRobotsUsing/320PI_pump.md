@@ -13,9 +13,9 @@
 ## 3 吸泵测试
 运行下面程序，吸泵会重复2次打开关闭的动作
 ```python
-from pymycobot import MyCobot,PI_PORT,PI_BAUD
+from pymycobot import MyCobot320,PI_PORT
 import time
-arm=MyCobot(PI_PORT,PI_BAUD)
+arm=MyCobot320(PI_PORT,115200)
 for i in range(2):
     arm.set_basic_output(1,0)#OUT1输出打开
     time.sleep(2)
@@ -29,14 +29,14 @@ for i in range(2):
 
 ## 5 复合应用
 ```python
-from pymycobot import MyCobot,PI_PORT,PI_BAUD
+from pymycobot import MyCobot320,PI_PORT
 import time
 
 init_angles=[-3.25, -2.46, -95.09, 9.22, 86.39, 93.33]#初始位置的6个关节角度
 grab_point=[196.9, -197.1, 124.5, -178.8, 1.25, 173.32]#抓取点的坐标
 place_point=[196.9, -97.1, 124.5, -178.8, 1.25, 173.32]#放置点的坐标
 
-arm=MyCobot(PI_PORT,PI_BAUD)
+arm=MyCobot320(PI_PORT,115200)
 if __name__=="__main__":    
     arm.set_basic_output(1,1)#先关闭吸泵 
     time.sleep(1)  
