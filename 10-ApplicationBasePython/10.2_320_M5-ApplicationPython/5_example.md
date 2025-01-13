@@ -169,7 +169,7 @@ poster="" data-setup='{"aspectRatio":"16:9"}'>
 ## 5 Coordinate control
 
 ```python
-from pymycobot.mycobot import MyCobot320
+from pymycobot.mycobot320 import MyCobot320
 import time
 
 # MyCobot320 class initialization requires two parameters:
