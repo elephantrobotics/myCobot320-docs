@@ -341,6 +341,21 @@ mc.send_angle(1, 40, 20)
   - `0` 未运动
   - `-1` 错误
 
+#### 3.16 `angles_to_coords(angles)`
+
+- **功能** : 将角度转为坐标。
+- **参数：**
+  - `angles`：`list` 所有角度的浮点列表。
+- **返回值**: `list` 所有坐标的浮点列表。
+
+#### 3.17 `solve_inv_kinematics(target_coords, current_angles)`
+
+- **功能** : 将坐标转为角度。
+- **参数：**
+  - `target_coords`: `list` 所有坐标的浮点列表。
+  - `current_angles`: `list` 所有角度的浮点列表，机械臂当前角度
+- **返回值**: `list` 所有角度的浮点列表。
+
 ### 4. JOG运行与操作
 
 #### 4.1 `jog_angle(joint_id, direction, speed)`
