@@ -342,6 +342,21 @@ mc.send_angle(1, 40, 20)
   - `0` not moving
   - `-1` error
 
+#### 3.16 `angles_to_coords(angles)`
+
+- **Function** : Convert angles to coordinates.
+- **Parameters:**
+  - `angles`: `list` List of floating points for all angles.
+- **Return value**: `list` List of floating points for all coordinates.
+
+#### 3.17 `solve_inv_kinematics(target_coords, current_angles)`
+
+- **Function** : Convert coordinates to angles.
+- **Parameters:**
+  - `target_coords`: `list` List of floating points for all coordinates.
+  - `current_angles`: `list` List of floating points for all angles, current angles of the robot
+- **Return value**: `list` List of floating points for all angles.
+
 ### 4. JOG Mode and Operation
 
 #### 4.1 `jog_angle(joint_id, direction, speed)`
