@@ -1,8 +1,8 @@
 # Drag to teach
 
-Trajectory recording (including adaptive gripper) and playback can be realized.
+Trajectory recording and playback can be realized.
 
-> Python version drag and teach only supports Pi and Jetson Nano versions in 280, 270, and 320 models.
+> Python version drag and teach only supports Pi and Jetson Nano versions in 280, 270, 260, myArm 300 and 320 models.
 
 ## Instructions：
 
@@ -15,21 +15,24 @@ Trajectory recording (including adaptive gripper) and playback can be realized.
     <img src="../../resources/10-ApplicationBasePython/drag.png" style="zoom:100%;" />
   
   After the file is run:
-   - 3.1 Select robot port
-   - 3.2 Enter the baud rate, the default is 1000000
+   - 3.1 Select robot type
+   - 3.2 Select robot port
+   - 3.3 Enter the baud rate, the default is 1000000
         | machine type | Serial number | baud rate |
         |:---------:| :--------:|:--------:|
         |270 PI|  /dev/ttyAMA0|1000000|
         |280 PI|  /dev/ttyAMA0|1000000|
         |320 PI|  /dev/ttyAMA0|115200|
         |280 Jetson Nano|  /dev/ttyTHS1|1000000|
-  - 3.3 Choose whether debugging is required, debugging is not enabled by default
-  - 3.4 Finally, enter the function selection list, and the function selection is realized through the keyboard keys:
+        |260 PI|  /dev/ttyAMA0|1000000|
+        |myArm 300 PI|  /dev/ttyAMA0|115200|
+  - 3.4 Choose whether debugging is required, debugging is not enabled by default
+  - 3.5 Finally, enter the function selection list, and the function selection is realized through the keyboard keys:
     - `q`: quit
     - `r`: start recording
     - `c`: stop recording
-    - `p`: play once
-    - `P`: loop / stop playback
+    - `p`: (lowercase letters) play once
+    - `P`: (uppercase letters) loop / stop playback
     - `s`: Save this recording information, it will save the recording information to the record.txt file in the same directory as `drag_trial_teaching.py`
     - `l`: will load the information in the record.txt file in the same directory as `drag_trial_teaching.py`
     - `f`: relax all joints of the robot arm
