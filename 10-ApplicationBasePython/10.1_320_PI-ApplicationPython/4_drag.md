@@ -29,7 +29,7 @@ Trajectory recording and playback can be realized.
   - 3.4 Choose whether debugging is required, debugging is not enabled by default
   - 3.5 Finally, enter the function selection list, and the function selection is realized through the keyboard keys:
     - `q`: quit
-    - `r`: start recording
+    - `r`: start recording, now you can start dragging the robotic arm
     - `c`: stop recording
     - `p`: (lowercase letters) play once
     - `P`: (uppercase letters) loop / stop playback
