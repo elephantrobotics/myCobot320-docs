@@ -1,0 +1,31 @@
+{
+  "plugins": [
+    "chapter-fold",
+    "expandable-chapters",
+    "back-to-top-button",
+    "password-z",
+    "-lunr",
+    "-search",
+    "search-pro",
+    "theme-fexa",
+    "splitter",
+    "-sharing",
+	"klipse"
+  ],
+  "variables": {
+        "themeFexa":{
+            "showHome": false,
+            "showNavigator": false
+        }
+    },
+   "pluginsConfig": {
+    "theme-fexa":{
+      "search-placeholder":"Input Keywords to Search", 
+      "logo":"/photo/logo.png",
+      "logoLink":"https://www.elephantrobotics.com/en",
+      "favicon": "./favicon.ico"
+    },
+    "password": {
+    }
+  }
+}
