@@ -34,19 +34,19 @@
 
 从官网下载 Linux 版本的 myblockly 可得到一个如下图的安装包
 
-![](C:\Users\Administrator\Desktop\320_pi_blockly\zh\img\appimage.png)
+![](img\appimage.png)
 
 选中`myblockly-arm64-latest.AppImage`鼠标右键打开，点击`Properties`打开
 
-<img src="C:\Users\Administrator\Desktop\320_pi_blockly\zh\img\appimage1.png"  />
+<img src="img\appimage1.png"  />
 
 点击 进入`Permissions`
 
-<img src="C:\Users\Administrator\Desktop\320_pi_blockly\zh\img\appimage2.png"  />
+<img src="img\appimage2.png"  />
 
 `Permissions` 页内勾选`Allow executing file as program`, 后可点击`Close`按钮关闭弹窗
 
-<img src="C:\Users\Administrator\Desktop\320_pi_blockly\zh\img\appimage3.png"  />
+<img src="img\appimage3.png"  />
 
 关闭弹窗后 鼠标双击 安装包 `myblockly-arm64-latest.AppImage` 即可打开 myblockly
 
@@ -54,7 +54,7 @@
 
 从官网下载 Mac 版本的 myblockly 可得到一个如下图的安装包，鼠标双击打开即可
 
-![](C:\Users\Administrator\Desktop\320_pi_blockly\zh\img\mac.png)
+![](img\mac.png)
 
 **注意**：对于 MacOS，在安装之前确保系统 "偏好设置->安全性和隐私->通用" ，并允许从 App Store 和被认可的开发者。
 
