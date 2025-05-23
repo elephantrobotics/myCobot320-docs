@@ -33,10 +33,11 @@
   - [3.2 运输和储存](3-UserNotes/320_M5/3.1.2-TransportandStorage/1-TransportandStorage.md)
   - [3.3 维护和保养](/3-UserNotes/320_M5/3.1.3-MaintenanceandCare/1-MaintenanceandCare.md)
   - [3.4 常见问题解决](3-UserNotes/320_M5/4-FAQ/3.2_320_M5_userNotes.md)
-    - [1 如何优雅提问](3-UserNotes/320_M5/4-FAQ/0_how_to_ask.md)
-    - [2 驱动相关](3-UserNotes/320_M5/4-FAQ/1_driver.md)
-    - [3 软件](3-UserNotes/320_M5/4-FAQ/2_software.md)
-    - [4 硬件](3-UserNotes/320_M5/4-FAQ/3_hardware.md)
+    - [1 首次使用自查](3-UserNotes/320_M5/4-FAQ/4_first-time-self-check.md)
+    - [2 软件](3-UserNotes/320_M5/4-FAQ/2_software.md)
+    - [3 硬件](3-UserNotes/320_M5/4-FAQ/3_hardware.md)
+    - [3 配件](3-UserNotes/320_M5/4-FAQ/1_accessories.md)
+    - [3 其他](3-UserNotes/320_M5/4-FAQ/0_other.md)
 
 - [4 首次安装使用](4-FirstInstallAndUse/4.2-M5//4.2_320_M5_firstUse.md)
 

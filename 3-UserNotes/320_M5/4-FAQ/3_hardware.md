@@ -1,92 +1,104 @@
 # 硬件问题
 
-**Q1: myCobot 320 PI 的关节 1 和关节 6 的最大角度是多少？**
+**Q：M5屏幕无法显示画面，如何解决？**
 
-A1:
+1. 检查电源适配器与机器是否接触良好，可以尝试重新拔插一下电源适配器
+2. 轻轻按压屏幕边角，让M5satck与内部扩展板接触良好
 
-| 关节 | min<sup>o</sup> | max<sup>o</sup> | max speed<sup>o</sup> /s | max acceleration<sup>o</sup>/s<sup>2</sup> |
-| ---- | --------------- | --------------- | ------------------------ | ------------------------------------------ |
-| J1   | -165            | 165             | 150                      | 200                                        |
-| J2   | -165            | 165             | 150                      | 200                                        |
-| J3   | -165            | 165             | 150                      | 200                                        |
-| J4   | -165            | 165             | 150                      | 200                                        |
-| J5   | -165            | 165             | 150                      | 200                                        |
-| J6   | -175            | 175             | 150                      | 200                                        |
+![](../../../resources/3-UserNotes/14-IssueFAQ/m5/hardware_1.png)
 
-**Q2:六个舵机是由什么控制的？**
+3. 查看gitbook，下载对应的minirobot固件，注意如果是2021年280m5，建议刷AtomMain2.8的,basic1.0
 
-A2: 舵机是由顶部的 atom 来进行控制的。
+4. 可以拆开底座螺丝查看内部线缆是否有脱落，如有，请接上后再使用
 
-**Q3: atom 在机械臂中的作用是什么？**
+![](../../../resources/3-UserNotes/14-IssueFAQ/m5/hardware_2.png)
 
-A3: 它通过正向、逆向运动学和坐标切换等算法来控制机器人。Atom 暂时没有开源。
+**Q：机械臂上电锁不住如何解决？**
 
-# 有关通信的问题
+1. 检查是否有接上原装电源适配器，或者适配器是否接触良好，可以尝试重新拔插电源适配器
 
-**Q1: 为什么用 HDMI 电缆连接了机械臂，但屏幕却没有显示？是否需要下载端口驱动程序？**
+![](../../../resources/3-UserNotes/14-IssueFAQ/m5/hardware_3.png)
 
-A1: 检查连接是否正确，电源是否已打开。尝试使用其他接口并稳定插入接口。无需下载端口驱动程序。
+2. 检查关节在断电状态，能否正常转动，会不会出现阻力过大或者过小的情况，初步判断是否内部结构物理断裂，无物理断裂则接着往下检查.
 
-**Q2: 不同机械臂支持哪些版本的通信接口？**
+3. 320系列产品需要检查急停开关是否为释放状态，只有在释放状态才能正常使用关节，当急停开关为停止状态（开关被按下）的时候，是无法上电且正常通讯的，需要顺时针转动开关，让急停开关保持释放状态
 
-A2: 基于微处理器的机械臂支持 socket 通信 TCP；基于微控制器的机械臂可以 USB 转串口通信。
+![](../../../resources/3-UserNotes/14-IssueFAQ/m5/hardware_3_1.png)
 
-**Q3: 机械臂的通信频率是多少？**
+4. 检查Atom固件，方法如下：
 
-A3: 10-20Hz.
+   在正常情况下，机械臂上电后会自锁，且Atom亮绿灯，如下图所示（注意mechArm无灯态显示）
 
-# 关于参数的问题
+   ![](../../../resources/3-UserNotes/14-IssueFAQ/m5/hardware_4.png)
 
-**Q1: 机械臂的速度单位是什么？**
+   在机械臂上电后，Atom不亮绿灯或者关节无法自锁，可按照以下几点进行排查：
+   ①轻轻按压Atom屏幕，使Atom与机械臂内部板块接触良好。
 
-A2: 180°/s.
+   ②查看gitbook获取mystudio使方法，根据机型及版本信息，使用mystudio下载对应的Atom固件，如在烧录过程遇到任何问题，请参考本文mystuidio相关"固件下载异常"获取排查步骤。
 
-# 硬件问题解决方法
+   ③在成功烧录Atom固件且机械臂未连接电源的情况下，使用type-c连接Atom，若Atom亮起绿灯，但拔掉type-c后Atom绿灯熄灭，则判断为判断为Atom正常，但机械臂内部存在线路脱落或损坏问题，需要联系技术人员处理。
 
-1. 如何应对机械臂的抖动？
+   ④在成功烧录Atom固件且机械臂未连接电源的情况下，使用type-c连接Atom但是没亮绿灯，则判断为Atom硬件损坏，需要联系技术人员更换
 
-   **Step 1:** 通过 myStudio 刻录最新版本的 ATOM。
+**Q：按下急停后，释放急停锁不住了，怎么让机械臂再次锁住？**
 
-   **Step 2:** 升级 pymycobot。点击 Win+R，然后输入 cmd 进入终端。输入 `pip install pymycobot --upgrade --user` 然后按回车键。
+需要给机器重新上电，例如以myblockly给机器上电
+![](../../../resources/3-UserNotes/14-IssueFAQ/m5/hardware_5.png)
 
-   **Step 3:** 访问 [GitHub](https://github.com/elephantrobotics/pymycobot/tree/main/demo) 下载 pid_read_write.py。根据提示信息重置转向引擎的各个参数。然后再次运行系统。
+**Q: 关节抖动、关节角度偏差过大或关节无力下坠如何优化？**
 
-   **注意根据下图中给出的数据设置参数。**
+1. 参考机器人参数介绍章节，检查实际负载是否在机械臂有效负载范围内，负载过大会导致关节抖动，可适当减轻实际关节的负载
 
-<img src =../../../resources/3-UserNotes/参数.png
-width ="500"  align = "center">
+2. 将运动模式更改成刷新模式，这样会机械臂的运行轨迹会相对平滑，具体的API，请参考
+set_fresh_mode(1)
+![](../../../resources/3-UserNotes/14-IssueFAQ/m5/hardware_6.png)
 
-<img src =../../../resources/3-UserNotes/14-IssueFAQ/mycobot_pro320.png
-width ="500"  align = "center">
+3. 查看以下链接内容调整pid：https://drive.google.com/file/d/1UWhaaSTuwLFImuEGY1J2tvgxTQDwWxK_/view?usp=sharing
+4. 查看gitbook章节，使用mystudio下载对应版本的Atom固件，建议下载最新的
+5. 查看gitbook第5章节，对机械臂进行零位校准，也可参考下面链接的校准步骤：https://drive.google.com/file/d/1XtKH-ykKWPH0q9Z_YHwzkgwNKRhstHhi/view?usp=sharing
+6. 使用时间较长的机器(3个月以上)可能会出现关节老化产生关节间隙的情况，可按照以下视频，手动掰动关节，查看是否存在关节虚位：https://drive.google.com/file/d/1tXDUALmfw1z0u6lM9uH5hOHivjbRoWxW/view?usp=sharing
+7. 如果存在关节老化虚位问题，这种抖动则属于机器自然老化无法避免。
 
-# 关于末端夹持器
+**Q: 什么是关节零位点？**
 
-**Q1: 自适应夹爪是不能完全闭合吗？**
+以下图为例，关节与关节外壳边缘之前会设计有一个拱形槽，这个就是关节零位点
 
-A1: 夹爪本身是会有一定间隙存在，不是完全闭合的，您可以通过增加之间的垫片厚度调节。
+![](../../../resources/3-UserNotes/14-IssueFAQ/m5/hardware_7.png)
 
-**Q2: 自适应夹爪是什么通讯？**
+一般校准后零点姿态如下：
 
-A2: 是 ttl 通讯。
+![](../../../resources/3-UserNotes/14-IssueFAQ/m5/hardware_8.png)
 
-**Q3: mycobot320 末端提供什么通讯？**
 
-A3: mycobot320 末端提供 485 通讯接口。
+**Q：有没有零位校准的方法？**
 
-**Q4: 如何将 USB 摄像头固定在机械臂末端呢？**
+请参考gitbook第5章节或者下面这个链接：
 
-A4: 需要使用法兰固定，可以自主进行购买。
+https://drive.google.com/file/d/1XtKH-ykKWPH0q9Z_YHwzkgwNKRhstHhi/view?usp=sharing
 
-# 其它问题
+**Q:mycobot320机器底部的GPIO如何使用？**
 
-**Q1: 为什么在使用过程中电机电源会关闭？**
+- A：请参考以下用法
 
-A1: 因为电机温度太高，无法使用。请等待几分钟后再重新使用。
+![](../../../resources/3-UserNotes/14-IssueFAQ/m5/hardware_8_1.png)
 
-**Q2: 机械臂是否支持基于 Android 的开发？**
 
-A2: 我们不支持 Android 开发。如果您想自己开发，我们可以为您提供端口协议。
+**Q:mycobot320机器底部的IO有没有办法控制5v的led灯？**
 
----
+A: 请参考树莓派底部IO引脚的例子，其中输出的高电平是24V，如果你要使用5V用于控制led，建议外接降压模块后使用，目前我们暂无使用底部IO控制led的案例
 
-[← 上一页](./2_software.md) | [返回常见问题页面 →](../4-FAQ/3.2_320_M5_userNotes.md)
+
+**Q：atom在机械臂中的作用是什么？**
+
+- A：atom在机械臂中主要进行机械臂的运动学算法控制：包括了正逆运动学，选解，加减速，速度同步，多次方插补，坐标转换等，需要的实时控制与多线程等。atom的相关程序暂不开源。
+
+
+**Q：不同版本的机械臂支持什么通信接口？**
+
+- A：基于微处理器的机械臂支持socket通信TCP；基于微控制器的机械臂可以USB转串口通信。
+
+
+**Q：电机使用过程中自动断电，是为什么？**
+
+- A：使用时间较长电机过热保护。此现象是正常现象，等待几分钟后即可继续使用。
+
