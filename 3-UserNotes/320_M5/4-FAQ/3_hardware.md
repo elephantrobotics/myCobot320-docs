@@ -1,201 +1,100 @@
-# Questions about the Structure
+# Hardware problem
 
-Q1:  What are the maximum angle of Joint 1 and Joint 6 of myCobot 320 M5?
+**Q: The M5 screen cannot display the picture, how to solve it?**
 
-A1:
+1. Check whether the power adapter is in good contact with the machine, you can try to re-plug the power adapter
 
-| Joint | min<sup>o</sup>  | max<sup>o</sup>  | max speed<sup>o</sup> /s| max acceleration<sup>o</sup>/s<sup>2</sup>|
-| ----- | ---- | ---- | ------------ | ------------ |
-| J1    | -170 | 170  | 150          | 200          |
-| J2    | -120 | 120  | 150          | 200          |
-| J3    | -148 | 148  | 150          | 200          |
-| J4    | -120 | 135  | 150          | 200          |
-| J5    | -169 | 169  | 150          | 200          |
-| J6    | -180 | 180  | 150          | 200          |
+2. Gently press the corners of the screen to make the M5satck in good contact with the internal expansion board
 
+![](../../../resources/3-UserNotes/14-IssueFAQ/m5/hardware_1.png)
 
+3. Check gitbook and download the corresponding minirobot firmware. Note that if it is 2021 280m5, it is recommended to flash AtomMain2.8, basic1.0
 
-Q2: What controls the six steering engine?
+4. You can remove the base screws to check whether the internal cables are detached. If so, please connect them before use
 
-A2: They are controlled by Atom at the top of the robot.
+![](../../../resources/3-UserNotes/14-IssueFAQ/m5/hardware_2.png)
 
+**Q: How to solve the problem that the robot arm cannot be locked by power?**
 
+1. Check whether the original power adapter is connected or whether the adapter has good contact. You can try to re-plug the power adapter
 
-Q3: What functions Atom performs?
+![](../../../resources/3-UserNotes/14-IssueFAQ/m5/hardware_3.png)
 
-A3: It serves to control the robot by algorithm, such as forward, inverse kinematics and coordinate switching. Atom is temporarily not open-sourced.
+2. Check whether the joint can rotate normally when it is powered off, whether there is too much or too little resistance, and preliminarily determine whether the internal structure is physically broken. If there is no physical break, continue to check.
 
-# Questions about the Communication
+3. For 320 series products, it is necessary to check whether the emergency stop switch is in the released state. The joint can only be used normally in the released state. When the emergency stop switch is in the stopped state (the switch is pressed), it is impossible to power on and communicate normally. The switch needs to be turned clockwise to keep the emergency stop switch in the released state
 
-**Q1: Why the screen has no display although the robotic arm has been connected with HDMI cable? Does it need to download a port driver?**
+![](../../../resources/3-UserNotes/14-IssueFAQ/m5/hardware_3_1.png)
 
-A1: Check whether the connection is correct and the power has been turned on. Try to use another interface and plunge into the interface stably. There is no need to download a port driver.
+4. Check the Atom firmware as follows:
 
-**Q2: What are the versions of communication interface supported by different robotic arms?**
+Under normal circumstances, the robot arm will self-lock after power-on, and Atom will light up green, as shown in the figure below (note that mechArm has no light display)
 
-A2: The robotic arms of micro-processor supports TCP communication, and the robotic arms of micro-controller supports USB-port communication.
+![](../../../resources/3-UserNotes/14-IssueFAQ/m5/hardware_4.png)
 
-**Q3: How much is the frequency of the communication of robotic arm?**
+After the robot arm is powered on, Atom does not light up green or the joint cannot self-lock. You can follow the following points to troubleshoot:
+① Gently press the Atom screen to make Atom in good contact with the internal plate of the robot arm.
 
-A3: 10-20Hz.
+② Check gitbook to get the method of using mystudio. According to the model and version information, use mystudio to download the corresponding Atom firmware. If you encounter any problems during the burning process, please refer to this article "Firmware download exception" related to mystuidio to obtain the troubleshooting steps.
 
-**Q4: The M5 screen is not displaying anything. How can this issue be resolved?**
+③ After the Atom firmware is successfully burned and the robot arm is not connected to the power supply, use type-c to connect Atom. If the green light of Atom is on, but the green light of Atom goes out after the type-c is unplugged, it is judged that Atom is normal, but there is a problem of line detachment or damage inside the robot arm, and it is necessary to contact the technician to deal with it.
 
-A4: 
-   1. Check the connection between the power adapter and the device. Try unplugging and re-plugging the power adapter.
-   2. Gently press the corners of the screen to ensure proper contact between the M5stack and the internal expansion board.
-   3. Refer to the gitbook and download the corresponding minirobot firmware.
-   4. For the 280m5 model from 2021, it is recommended to flash AtomMain2.8 with basic1.0 firmware.  
+④ After the Atom firmware is successfully burned and the robot arm is not connected to the power supply, use type-c to connect Atom but the green light does not turn on, it is judged that the Atom hardware is damaged, and it is necessary to contact the technician to replace it
 
-# Questions about Parameters
+**Q: After pressing the emergency stop, the emergency stop cannot be locked. How to lock the robot arm again?**
 
-Q1: What's the unit of measurement of the speed of robotic arm?
+You need to power on the machine again, for example, power on the machine with myblockly
+![](../../../resources/3-UserNotes/14-IssueFAQ/m5/hardware_5.png)
 
-A2: 180°/s.
+**Q: How to optimize joint shaking, excessive joint angle deviation or joint weakness and falling?**
 
+1. Refer to the robot parameter introduction section to check whether the actual load is within the effective load range of the robot arm. Excessive load will cause joint vibration. The load of the actual joint can be appropriately reduced.
 
+2. Change the motion mode to refresh mode, so that the movement trajectory of the robot arm will be relatively smooth. For specific APIs, please refer to
+set_fresh_mode(1)
+![](../../../resources/3-UserNotes/14-IssueFAQ/m5/hardware_6.png)
 
-# Solutions to Hardware Problems
+3. Check the following link to adjust pid: https://drive.google.com/file/d/1UWhaaSTuwLFImuEGY1J2tvgxTQDwWxK_/view?usp=sharing
 
-**Q1: How to deal with the shaking of robotic arms?**
+4. Check the gitbook section and use mystudio to download the corresponding version of Atom firmware. It is recommended to download the latest
+5. Check Chapter 5 of the gitbook to calibrate the robot arm at zero position. You can also refer to the calibration steps in the following link: https://drive.google.com/file/d/1XtKH-ykKWPH0q9Z_YHwzkgwNKRhstHhi/view?usp=sharing
+6. For machines that have been used for a long time (more than 3 months), joints may age and produce joint gaps. You can follow the following video to manually bend the joints to check if there is any joint gap: https://drive.google.com/file/d/1tXDUALmfw1z0u6lM9uH5hOHivjbRoWxW/view?usp=sharing
+7. If there is a joint gap problem due to joint aging, this kind of jitter is inevitable due to the natural aging of the machine.
 
-   **Step 1:** Burn the latest version of ATOM via myStudio.
+**Q: What is the joint zero position?**
 
-   **Step 2:** Upgrade pymycobot. Click on Win+R, and type cmd to enter in the terminal. Type `pip install pymycobot --upgrade --user` and then press on Enter Key.
+Take the following figure as an example, there is an arched groove designed between the joint and the edge of the joint shell, which is the zero point of the joint
 
-   **Step 3:** Go to [GitHub](https://github.com/elephantrobotics/pymycobot/tree/main/demo) to download pid_read_write.py. Reset each parameter of the steering engine according to the prompt message. And then, operate the system again.
+![](../../../resources/3-UserNotes/14-IssueFAQ/m5/hardware_7.png)
 
-   **Notice:  Set the parameters according to the data given in the pictures below.**
+Generally, the zero point posture after calibration is as follows:
 
-![alt text](../../../resources/3-UserNotes/14-IssueFAQ/参数.png)
+![](../../../resources/3-UserNotes/14-IssueFAQ/m5/hardware_8.png)
 
-![alt text](../../../resources/3-UserNotes/14-IssueFAQ/mycobot_pro320.png)
+**Q: Is there a method for zero point calibration?**
 
-**Q2: How to resolve the issue when the joints cannot be locked after powering up the robotic arm?**
+Please refer to Chapter 5 of gitbook or the following link:
 
-A: 
-   1. Check if the original power adapter is connected and if it is properly plugged in. Try unplugging and re-plugging the power adapter.
+https://drive.google.com/file/d/1XtKH-ykKWPH0q9Z_YHwzkgwNKRhstHhi/view?usp=sharing
 
-![alt text](../../../resources/3-UserNotes/3-hardware/屏幕连接.png)
+**Q: How to use the GPIO at the bottom of the mycobot320 machine?**
 
-   2. Check if the joints can move freely when powered off and if there are any excessive resistance or lack of resistance issues. Preliminary assessment can determine if there are any internal structural fractures. If no physical fractures are found, proceed with further checks.  
-   3. For 320 series products, ensure the emergency stop switch is in the released position. Joints can only function properly when the emergency stop switch is released. If the emergency stop switch is in the stopped position (pressed), the device cannot be powered on or communicate normally. Turn the switch clockwise to release it.
+- A: Please refer to the following usage
 
-![alt text](../../../resources/3-UserNotes/3-hardware/急停.png)
+![](../../../resources/3-UserNotes/14-IssueFAQ/m5/hardware_8_1.png)
 
-   4. Check the Atom firmware using the following methods:  
-   Under normal circumstances, the robotic arm will self-lock and the Atom will light up in green after powering on, as shown in the following image (note that mechArm does not display any light status).
+**Q: Is there any way to control the 5V LED light with the IO at the bottom of the mycobot320 machine?**
 
-![alt text](../../../resources/3-UserNotes/3-hardware/Atom.png)
+A: Please refer to the example of the IO pin at the bottom of the Raspberry Pi, where the high level of the output is 24V. If you want to use 5V to control the LED, it is recommended to use it after connecting an external step-down module. At present, we have no case of using the bottom IO to control the LED
 
-If the Atom does not light up green or the joints do not self-lock, follow these steps for troubleshooting:  
-- Gently press the Atom screen to ensure proper contact between Atom and the internal components of the robotic arm.
-- Download the corresponding Atom firmware using Mystudio, please refer to the instructions in the Gitbook for using Mystudio. When downloading, ensure that the model and version information matches your device. If you encounter any issues during the flashing process, please consult the troubleshooting steps under "Firmware Download Abnormal" in this document for assistance.
-- After successfully burning the Atom firmware and with the robotic arm not connected to power, connect Atom using a type-C cable. If Atom lights up green but turns off after removing the type-C cable, it indicates a normal Atom but a problem with internal wiring or damage within the robotic arm, requiring technical assistance.
-- If Atom does not light up green when connected via type-C cable without power, it indicates hardware damage to Atom, necessitating replacement through technical support.
+**Q: What is the role of atom in the robot arm?**
 
-**Q3: After pressing the emergency stop switch and releasing it again, the joints of the robotic arm cannot lock. How can the robotic arm be locked again?**
+- A: Atom is mainly used in the robot arm to control the kinematic algorithm of the robot arm: including forward and inverse kinematics, solution selection, acceleration and deceleration, speed synchronization, multi-square interpolation, coordinate conversion, etc., and the required real-time control and multi-threading. The related programs of atom are not open source yet.
 
-- A: The machine needs to be powered up again, for example, by using myblockly to power on the robot arm.
+**Q: What communication interfaces do different versions of the robot arm support?**
 
-![alt text](../../../resources/3-UserNotes/3-hardware/上电.png)
+- A: The microprocessor-based robot supports socket communication TCP; the microcontroller-based robot can use USB to serial communication.
 
-**Q4: How can joint jitter, excessive joint angle deviation, or weak joint dropping be optimized?**
+**Q: Why does the motor automatically cut off during use?**
 
-- A:
-   1. Refer to the robot parameter introduction section to check if the actual load is within the effective load range of the robotic arm. Excessive load can cause joint jitter. Reduce the load on the actual joints appropriately.
-   2. Change the motion mode to refresh mode to make the robotic arm's motion trajectory relatively smooth. For specific API, refer to set_fresh_mode(0).
-   3. Adjust the PID using the following link： 
-      > https://drive.google.com/file/d/1UWhaaSTuwLFImuEGY1J2tvgxTQDwWxK_/view?usp=sharing  
-   4. Refer to Chapter 5 of the gitbook to calibrate the robotic arm's zero position. Alternatively, refer to the calibration steps in the following link:
-
-      > https://drive.google.com/file/d/1XtKH-ykKWPH0q9Z_YHwzkgwNKRhstHhi/view?usp=sharing
-
-   5. Refer to the gitbook chapter for downloading the corresponding version of Atom firmware using mystudio.
-   6. Machines that have been used for a long time (over 3 months) may experience joint wear, resulting in joint gaps. You can manually move the joints as shown in the following video to check for any looseness:
-   
-      > https://drive.google.com/file/d/1tXDUALmfw1z0u6lM9uH5hOHivjbRoWxW/view?usp=sharing  
-
-If there is joint wear and looseness, this kind of shaking is due to the natural aging of the machine and is unavoidable.
-
-**Q5: What is the joint zero position?**
-
-- A: In the example below, there is a curved groove designed between the joint and the edge of the joint shell, which is the joint zero position.
-
-![alt text](../../../resources/3-UserNotes/3-hardware/关节零点1.png)
-
-After calibration, the zero position posture is as follows:
-
-![alt text](../../../resources/3-UserNotes/3-hardware/关节零点2.png)
-
-Special attention should be paid to the zero position posture of joint 270:
-
-![alt text](../../../resources/3-UserNotes/3-hardware/关节零点3.png)
-
-**Q6: Is there a method for zero position calibration?**
-
-- A: Please refer to Chapter 5 of the gitbook or the following link: 
-
-   > https://drive.google.com/file/d/1XtKH-ykKWPH0q9Z_YHwzkgwNKRhstHhi/view?usp=sharing
-
-**Q7: How to use the GPIO at the bottom of the mycobot320 robot?**
-
-- A: Please refer to the following usage.
-
-![alt text](../../../resources/3-UserNotes/3-hardware/GPIOmylockly.png)
-
-**Q8: How to use the GPIO on mycobot260/270/280 series PI/JN robots?**
-
-- A: Take 280JN as an example, please refer to the source code in the following figure. For other models, please pay attention to changing the device serial port information.
-
-![alt text](../../../resources/3-UserNotes/3-hardware/GPIOmyblockly_jetson&pi.png)
-
-![alt text](../../../resources/3-UserNotes/3-hardware/GPIOmyblockly_jetson&pi2.png)  
-
-- And be sure not to use occupied pins, such as GPIO0, 1, 3 on 280JN. Please refer to the GPIO instructions in the corresponding robot's GitBook documentation for details.
-
-**Q9: Why do I get the following error message when using GPIO pins 0, 1, 3 on mycobot280 Jetson Nano?**
-
-![alt text](../../../resources/3-UserNotes/3-hardware/gpioerror.png)
-
-- A: These three pins are already occupied, causing conflicts when used. It's recommended to use other GPIO pins that are not occupied.Please refer to the pin function description in the Gitbook for specific available pins.
-
-![alt text](../../../resources/3-UserNotes/3-hardware/gpioerror2.png)
-
-**Q10: Can the IO at the bottom of mycobot320 control a 5V LED light?**
-
-- A:  Currently, we do not have any cases of using bottom IO to control LEDs.
-Please refer to the examples of the IO pins at the bottom of the Raspberry Pi, where the high level output is 24V. If you want to use 5V to control the LED, it is recommended to use an external step-down module.
-
-
-# Questions about Gripper & End
-
-Q1: Can the gripper close completely?
-
-A1: Due to the thickness of the gripper, it cannot close completely. You resort to a shim to make it completely closed.
-
-Q2: What is the kind of communication of adaptive gripper?
-
-A2: It is TTL communication.
-
-Q3: What is the communication of the end of myCobot 320 M5？
-
-A3: 485 communication interface.
-
-Q4: How to fix a camera at the end of a robotic arm?
-
-A4: A flange is required to fix a camera.
-
-# Other Questions
-
-Q1: Why the electric engine powers off during usage?
-
-A1: Because the engine is too hot to be used. Please wait for a few minutes and reuse again.
-
-Q2: Does the robotic arms support the development based on Android?
-
-A2: We doesn't support Android development. If you want to develop it by yourself, we can provide you with port protocol.
-
-
-
-[← Previous Page](./2_software.md) | [Back FAQs Page →](../4-FAQ/3.2_320_M5_userNotes.md)
+- A: The motor is overheated after a long period of use. This phenomenon is normal and can be continued after waiting for a few minutes.

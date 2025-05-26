@@ -31,12 +31,11 @@
   - [3.2 Transport and Storage](3-UserNotes/320_M5/3.1.2-TransportandStorage/1-TransportandStorage.md)
   - [3.3 Maintenance and Care](/3-UserNotes/320_M5/3.1.3-MaintenanceandCare/1-MaintenanceandCare.md)
   - [3.4 FAQs](3-UserNotes/320_M5/4-FAQ/3.2_320_M5_userNotes.md)
-    - [3.4.1 how to ask](3-UserNotes/320_M5/4-FAQ/0_how_to_ask.md)
-    - [3.4.2 driver](3-UserNotes/320_M5/4-FAQ/1-first_time_self_check.md)
-    - [3.4.3 software](3-UserNotes/320_M5/4-FAQ/2_software.md)
-    - [3.4.4 hardware](3-UserNotes/320_M5/4-FAQ/3_hardware.md)
-    - [3.4.5 accessory](3-UserNotes/320_M5/4-FAQ/4_accessory.md)
-    - [3.4.6 other](3-UserNotes/320_M5/4-FAQ/5_other.md)
+    - [3.4.1 First-time self-check](3-UserNotes/320_M5/4-FAQ/1-first_time_self_check.md)
+    - [3.4.2 software](3-UserNotes/320_M5/4-FAQ/2_software.md)
+    - [3.4.3 hardware](3-UserNotes/320_M5/4-FAQ/3_hardware.md)
+    - [3.4.4 accessory](3-UserNotes/320_M5/4-FAQ/4_accessory.md)
+    - [3.4.5 other](3-UserNotes/320_M5/4-FAQ/5_other.md)
 
 - [4 First Install and Use](4-FirstInstallAndUse/4.2-M5/4.2_320_M5_firstUse.md)
 
