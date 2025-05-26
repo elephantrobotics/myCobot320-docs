@@ -11,7 +11,11 @@
 1. 检查网络连接是否正常，下载固件的过程中是需要连接网络先下载固件的。
    
 2. 检查线路是否已经连接完成，细节如下：
-   在M5/Arduino系列机器中，烧录Atom固件时，需要使用USB线将末端的Atom接口与电脑的usb口连接；M5系列机器在烧录nimirobot固件时，则使用USB线将M5stack的侧面接口与电脑的usb口连接即可。320M5机器在烧录PICO固件时，需要使用USB线将底座的PICO接口与树莓派usb口连接。
+   在PI/JN系列机器中，烧录Atom时需要使用USB线将末端的Atom接口与树莓派usb口连接；
+
+例如：
+280pi烧录Atom的视频（320PI与其相同方法）：https://drive.google.com/file/d/1ErsdxNe-VT9_n34Gf-5yLK1DDQvCWgbq/view?usp=sharing 
+
 
 3. 选择对应机型的固件，不要选错其他机型的。
    
@@ -49,12 +53,7 @@
 ![](../../../resources/3-UserNotes/14-IssueFAQ/pi/blockly_1.png)
 
 - A: 报错提示缺少pymycobot文件的包括原因及解决方法参考下文3点：
-①没有安装pymycobot或者pymycobot出错，对应的解决方法是重新安装pymycobot，指令是pip3 install pymycobot --upgrade --user
-②如是M5或AR系列机器，需注意在安装python的过程中没有勾选下图的“Add Pythonxx to PATH”，需要卸载python后重新安装python，并将此选项勾选
-
-![](../../../resources/3-UserNotes/14-IssueFAQ/pi/python_install.png)
-
-③如是M5或AR系列机器，请确认PC中是否有多个python版本，建议卸载PC内所有python版本重新安装一个python3.8以上的版本，注意保持在PC中有且仅有一个python3.8以上版本。如实际使用需要多个python版本，请指定pymycobot使的python版本并在调用pymycobot库时指定python运行的版本
+①没有安装pymycobot或者pymycobot出错，对应的解决方法是重新安装pymycobot，指令是`pip3 install pymycobot --upgrade --user`
 
 **Q: 无法点击运行myblockly，如何解决？**
 
@@ -63,6 +62,19 @@
 
 ![](../../../resources/3-UserNotes/14-IssueFAQ/pi/blockly_2.png)
 
+**Q：在PI或JN中保存myblockly程序怎么不生效或者找不到文件？**
+
+①需要在保存文件后缀名应该是添加“.json”，例如：“pump.json”
+②需要确认保存的路径，在保存的路径下寻找保存后的文件
+
+可以参考视频：https://drive.google.com/file/d/1g_dd933TK1tptnisUad4PBfwSRsWWFeQ/view?usp=sharing 
+
+![](../../../resources/3-UserNotes/14-IssueFAQ/pi/pi_blockly_2.png)
+
+**Q：如何在myblockly中预设代码块内容，包括进入系统后机型、波特率等信息都是对应接入的机型的？**
+
+A：目前在myblockly中初次启动默认的机型是mycobot、波特率115200，暂时没有更改初始波特率的方法，但是你可以自己制作保存一个初始化的json文件，下次进入myblockly后加载此文件可得到预设的代码块。
+制作及保存json文件的方法请参考下文：https://drive.google.com/file/d/1g_dd933TK1tptnisUad4PBfwSRsWWFeQ/view?usp=sharing 
 
 **Q：为什么选择某个com口的时候会被拒绝连接？或者说怎么找到对应的com口是什么？**
 
@@ -101,13 +113,6 @@ https://drive.google.com/file/d/1yBWzhbSBUYsZPBl7PBdZKRwk3al71Dc7/view?usp=shari
 
 - A1：没有安装pymycobot，对应的解决方法是重新安装pymycobot，指令是`pip3 install pymycobot --upgrade --user`
 
-- A2: 在安装python的过程中没有勾选下图的“Add Pythonxx to PATH”，需要卸载python后重新安装python，并将此选项勾选。
-  
-- ![](../../../resources/3-UserNotes/14-IssueFAQ/pi/python_install.png)
-  
-- A3: 如是M5或AR系列机器，请确认PC中是否有多个python版本，建议卸载PC内所有python版本重新安装一个python3.8以上的版本，注意保持在PC中有且仅有一个python3.8以上版本。如实际使用需要多个python版本，请指定pymycobot使的python版本并在调用pymycobot库时指定python运行的版本。
-
-- A4：建议使用3.9版本的pyhton，pyhton12会出现不兼容的情况。
 
 **Q: 坐标控制怎么有时写入坐标后无响应？**
 
@@ -195,23 +200,6 @@ print('angles:'，mc.get_angles())
 
 ## 5 ROS相关
 
-**Q：有没有配置好环境的虚拟机镜像？**
-
-- A：我们有提供一个配置好ROS1及ROS2环境且内置ROS源码的虚拟机环境，用户可以通过下面这个链接下载，并将虚拟机文件导入VirtualBox，省去自己配置环境的麻烦，当测试ROS案例时建议使用我们已经配置好的虚拟机环境进行验证，避免由于环境配置的原因导致的一些案例运行报错
-请参考虚拟机文件导入虚拟机软件的操作步骤视频：https://drive.google.com/file/d/1KeYk_CUgDE46rVn7zbd0EhraIbgt3qZt/view?usp=sharing
-
-  [ROS1虚拟机文件下载](http://download-elephantrobotics.oss-cn-shenzhen.aliyuncs.com/system_images/ubuntu20.04_ROS1_V20230731.ova.zip) 
-
-  [ROS2虚拟机文件下载](https://download-elephantrobotics.oss-cn-shenzhen.aliyuncs.com/system_images/ubuntu20.04_ROS2_V20240228.zip)
-
-  [虚拟机软件VirtualBox下载](https://www.virtualbox.org/wiki/Downloads)
-
-**Q：导入ROS2虚拟机文件的时候报错怎么处理？**
-
-![](../../../resources/3-UserNotes/14-IssueFAQ/pi/ros_1.png)
-
-- A: 这是因为虚拟机软件Oracle VM VirtualBox版本过低导致的，需更新虚拟机软件版本。
-
 **Q：如何重新下载ROS源码包？**
 
 - A：使用指令拉取：
@@ -231,13 +219,6 @@ print('angles:'，mc.get_angles())
 
 - A：在这个脚本开头第一行，把Python解释器改为python3
 
-**Q：运行虚拟机找不到串口怎么处理？**
-
-- A:使用USB线将M5机械臂与PC连接，打开虚拟机设置→USB设备→添加USB设备→选择串口号QinHeng xxxxx，这个就是机器的串口设备。
-如果没有这个设备号，可以通过重新拔插设备获取对应的USB设备号，拔插有串口变化的即对应的机器串口设备号
-
-  ![](../../../resources/3-UserNotes/14-IssueFAQ/pi/ros_4.png)
-
 **Q:使用基于mujoco的环境进行仿真训练，因此需要机器人的xml文件**
 
 - A:目前GitHub上只有280JN的xml文件：[280JN](https://github.com/elephantrobotics/mycobot_mujoco) 
@@ -246,17 +227,6 @@ print('angles:'，mc.get_angles())
 **Q：终端切换到~/catkin_ws/src中使用git安装并更新mycobot_ros时，出现目标路径"mycobot_ros"已经存在，原因是什么？**
 - A：说明`~/catkin_ws/src`中已经存在一个`mycobot_ros`程序包，需要提前将其删掉，再重新执行git操作即可。
 
-**Q：rosrun运行时，终端报错显示`counld not open port /dev/ttyUSB0：Permission: '/dev/ttyUSB0'`，是为什么？**
-
-- A：串口权限不够，终端输入`sudo chmod 777 /dev/ttyUSB0`赋予权限。
-
-**Q：rosrun运行时，终端提示`Unable to register with master node [http://localhost:11311]: master may not be running yet. Will keep trying`的原因是？**
-
-- A：运行ros程序前，需开启ros节点，终端输入`roscore`。
-
-**Q：rosrun运行时，终端报错显示`counld not open port /dev/ttyUSB0：No such file or directory: '/dev/ttyUSB1'`，是为什么？**
-
-- A：串口有误。需确认当前机械臂的实际串口。可通过`ls /dev/tty*`查看。
 
 ## 6 C++相关
 

@@ -1,17 +1,5 @@
 # 硬件问题
 
-**Q：M5屏幕无法显示画面，如何解决？**
-
-1. 检查电源适配器与机器是否接触良好，可以尝试重新拔插一下电源适配器
-2. 轻轻按压屏幕边角，让M5satck与内部扩展板接触良好
-
-![](../../../resources/3-UserNotes/14-IssueFAQ/pi/hardware_1.png)
-
-3. 查看gitbook，下载对应的minirobot固件，注意如果是2021年280m5，建议刷AtomMain2.8的,basic1.0
-
-4. 可以拆开底座螺丝查看内部线缆是否有脱落，如有，请接上后再使用
-
-![](../../../resources/3-UserNotes/14-IssueFAQ/pi/hardware_2.png)
 
 **Q：机械臂上电锁不住如何解决？**
 

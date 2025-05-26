@@ -1,5 +1,24 @@
 # 其他
 
+**Q：如何彻底关闭热点自启动？**
+
+- A：如果想要彻底关闭开机自启动热点功能，可以将~/.config/autostart/文件夹下的hotspot_on.desktop文件夹移动到其他的文件夹目录，重启机器就可以
+
+**Q：树莓派或者jetson nano中提到需要密码，这个密码是什么？**
+
+可以尝试以下密码：
+```bash
+Elephant
+elephant
+aibot1234
+123
+123456
+123321
+aaa
+```
+如果以上密码都无效，那么密码应该不是我们设置的密码，您需要尝试考虑重置系统重置密码，重置方法请参考gitbook第5节。
+
+
 **Q：mycobot test tool怎么用？**
 
 mycobot test tool这个工具是出厂使用的，不建议用户使用，使用后可能会导致零位或者pid异常的情况，造成机器损坏，请直接删除此工具。
@@ -20,23 +39,33 @@ https://drive.google.com/file/d/1XtKH-ykKWPH0q9Z_YHwzkgwNKRhstHhi/view?usp=shari
 
 - **关于重置零位**：一般情况下当机器出现零位不正确，关节限位异常可重新零位校准，重置方法参考：https://drive.google.com/file/d/1XtKH-ykKWPH0q9Z_YHwzkgwNKRhstHhi/view?usp=sharing 
 
+**Q：使用HDMI线或usb将树莓派或者jetson nano接在个人电脑上，为什么看不到对应的树莓派或者jetson nano系统界面？**
+
+A：由于树莓派系列机器是自带出厂系统的设备，相当于是一个微型电脑，所以通过HDMI或者USB将两个电脑连接起来的情况下，是只会显示当前电脑的系统界面，而不会显示树莓派系统界面，这是正常现象。
+关于如何正确进入树莓派系统，你需要准备一个HDMI屏幕，通过一根HDMI线将HDMI屏幕与树莓派的HDMI接口进行连接，这样才能看到树莓派系统界面。
+如果你后续想在电脑上远程树莓派，这也是可行的，你可以查看VNC远程工具，具体使用方法请参考gitbook系统使用资料。
+
+**Q：树莓派无法开机进入系统怎么处理？**
+
+- A：请按照以下步骤进行检查：
+
+1. 检查HDMI接口线是否有松动，建议让HDMI线拉直，弯曲状态会影响信号传输。
+
+![](../../../resources/3-UserNotes/14-IssueFAQ/pi/pi_other_1.png)
+
+2. 尝试更换一条HDMI线或者HDMI接口测试（树莓派4b上有两个HDMI口，分别是HDMI0及HDMI1。
+
+![](../../../resources/3-UserNotes/14-IssueFAQ/pi/pi_other_2.png)
+
+3. 确认是否是HDMI屏幕（推荐使用1080p），VGA屏幕会出现不兼容，有时无法显示树莓派的画面，建议尝试更换一个HDMI屏幕，测试是否有画面显示。
+4. 先完成HDMI接线，再多重启几次机器，重启间隔及开机等待时间建议为3-5分钟
+5. 查看gitbook第5章节，重新刷对应的镜像文件。
+6. 如果烧录镜像之后仍然无法开机，如过你有网线和路由器，请在机械臂开机状态下，接网线到树莓派的网口，登录路由看下是否有树莓派设备IP，如果没有树莓派的IP，那么这个树莓派损坏了。
+
+
 **Q：urdf文件下载路径在哪里？**
 
 - A：请参考以下路径，所有mycobot机型的urdf都在此路径中：https://github.com/elephantrobotics/mycobot_ros/tree/noetic/mycobot_description/urdf 
-
-**Q:  使用蓝牙或者wifi功能的时候，无法控制机械臂怎么排查？**
-
-A：M5机械臂支持支持三种通讯方式，分别是usb串口，wifi及蓝牙通讯，最为常用的usb串口通讯方式，在每种通讯方式使用前，需要确保将M5的LCD屏幕调到对应方式，并保持这个通讯状态，才能正常控制机械臂。
-
-**wifi通讯模式**：使用python章节中的TCP/IP案例时，需要让M5的LCD屏幕保持在wifi通讯界面，如下图所示：
-
-![](../../../resources/3-UserNotes/14-IssueFAQ/pi/other_5.png)
-
-**蓝牙通讯方式**：使用手机APP控制时，需要让M5的LCD屏幕保持在蓝牙通讯界面，如下图所示：
-
-![](../../../resources/3-UserNotes/14-IssueFAQ/pi/other_6.png)
-
-确保通讯模式状态选择正确后，再次尝试控制机械臂
 
 **Q：通过串口或socket通讯，经过机器人的控制器控制电机，指令传输延时多大？有通讯时序图吗？实时性如何？**
 
@@ -65,10 +94,44 @@ A：控制坐标运动的API是send_coords([x,y,z,rx,ry,rz], speed)
 
 ![](../../../resources/3-UserNotes/14-IssueFAQ/pi/coord_2.png)
 
+
+**Q: 在树莓派上使用vscode，很卡怎么解决？**
+
+- A：参考链接：https://blog.csdn.net/u011296285/article/details/121121118 
+参考链接(En)：https://ratticon.com/how-to-fix-slow-visual-studio-code-on-raspberry-pi-4/ 
+
+**Q：PI/JN系列机械臂串口协议如何使用？**
+
+- A:在python代码中可以直接发送串口指令控制关节，不需要外接设备
+   
+    ```python
+    from pymycobot import MyCobot280
+    import serial
+    import time
+
+    ser=serial.Serial("/dev/ttyAMA0", 1000000)
+
+    command1=bytes.fromhex('FE FE 06 21 01 23 28 14 FA')#J1:90
+    command2=bytes.fromhex('FE FE 06 21 01 00 00 14 FA')#J1:0
+
+    ser.write(command1)
+    time.sleep(3)
+    ser.write(command2)
+    ser.close()
+    ```
+
 **Q: 关于DH参数的Offset 有更多的解释吗？Offset 是绕z旋转吗?**
 
 A:DH参数描述了机械臂中相邻连杆之间的几何和运动关系。
 在DH参数表中，Offset参数表示前一个连杆绕其z轴旋转对下一个连杆位置的影响，即连接两个连杆时的偏移量。对于机械臂中的Offset参数，一般表示上一个连杆绕自己的z轴旋转对下一个连杆位置的影响，而不是绕下一个连杆的z轴旋转。因此Offset不是绕z旋转，而是表示连接两个连杆时的位移。
+
+**Q：系统能添加其他语言吗，比如韩语？**
+
+A：可以，下载语言安装包并应用即可
+
+![](../../../resources/3-UserNotes/14-IssueFAQ/pi/pi_other_4.png)
+
+![](../../../resources/3-UserNotes/14-IssueFAQ/pi/pi_other_5.png)
 
 **Q: 有做轨迹规划的API是哪个？**
 
@@ -79,7 +142,7 @@ A: 请参考设置坐标和关节的API：send_coords()，send_angles()，自带
 A: 因为逆运动学有多解的情况，同一个坐标位置可能以不同的关节角度抵达，是会出现的。
 
 
-**Q:mycobot 320 M5 2022 机器人底座上的 24v 输出引脚的最大电流输出是多少？**
+**Q:mycobot 320 PI 2022 机器人底座上的 24v 输出引脚的最大电流输出是多少？**
 
 A：最大2A，持续时间不能超过1S
 
@@ -130,15 +193,6 @@ A:我们的机器都只提供整体关节的整体信息，不提供舵机、电
 
 A: 指的是如果你想查看名为 "turtle1" 的坐标系相对于名为 "turtle2" 的坐标系的变换关系，可以使用这个指令，通俗一点来说就是当你运行这个命令时，它会告诉你一个物体（"turtle1"）相对于另一个物体（"turtle2"）的位置和方向信息。就像在地图上你可以知道一个城市相对于另一个城市的位置一样
 
-**Q:ROS2的环境被不小心改动，我可以直接删掉280pi的ROS，自己重新安装吗？**
-A:关于ROS重新安装这个问题，我们不建议用户自己重新安装，因为ROS环境的搭建会相对复杂，容易出错，如果需要重置ROS环镜，我们建议用户重新刷写系统镜像，具体方法请参考 [基于ROS开发使用](https://docs.elephantrobotics.com/docs/mycobot-ar-cn/12-ApplicationBaseROS/)
-
-**Q：主机如何将文件传输到虚拟机中**
-
-A:按下图设置共享文件夹，可以将PC中的文件传输到虚拟机中
-
-![](../../../resources/3-UserNotes/14-IssueFAQ/pi/other_9.png)
-
 **Q:同一个位置，机械臂到位以后，重复定位偏差过大怎么解决？**
 
 新旧机器都可以通过调pid，尽可能减少偏差，
@@ -146,18 +200,32 @@ A:按下图设置共享文件夹，可以将PC中的文件传输到虚拟机中
 附：https://docs.qq.com/doc/DU0VhT2JNVUdNUEJS，https://drive.google.com/file/d/1UWhaaSTuwLFImuEGY1J2tvgxTQDwWxK_/view?usp=sharing
 但是旧版机器因为机械臂的2、4关节存在齿轮间隙，容易在重力的作用下产生关节偏差，最终影响末端精度，这四组关节值中2、4关节的受力不一致，所以精度也不太一样。目前建议通过程序进行调整，当机器到达点位后，可以在此点位再读一次点位，检查如果存在偏差，在此基础上再单关节调整具体偏差值，以达到到达指定点位的效果。
 
+**Q:树莓派版机械臂如何验证摄像头是否能正常工作？**
+
+A：参考此进行验证：https://blog.csdn.net/Mark_md/article/details/107494841 
+
 **Q:API和串口指令直接控制关节有什么区别？**
 
-API 提供了简化、抽象化的接口，使开发更高效和容易，适合快速开发和集成。
-串口指令 提供了直接、底层的控制，适合需要精细调整或开发自定义功能的场景，但通常开发和调试更复杂。
+A:
+1. 串口指令：
+     - a.串口指令是以原始的二进制数据形式发送到机械臂控制器的。
+     - b.通常需要对每个关节的角度、速度、加速度等参数进行手动编码，然后将其转换为十六进制形式发送。
+     - c.需要了解每个指令的格式和含义，并确保正确地发送到控制器。
+     - d.直接发送串口指令更加灵活，但也更加复杂，需要对机械臂控制器的通信协议有深入的理解。
+2. API控制：
+   - a.API提供了高级的函数接口，可以更方便地控制机械臂的运动。
+   - b.不需要手动编码二进制指令，而是调用API函数，将所需的参数传递给函数即可。
+   - c.API通常会隐藏底层通信细节，提供更简洁、易于使用的接口，降低了使用的复杂度。
+   - d.通常会提供各种方便的功能，如路径规划、运动插补等，使得控制更加灵活和高效。
+
 总得来说：
 使用串口指令直接控制机械臂更加灵活，但也更加复杂，需要对通信协议有深入的了解；而使用API控制更加简单方便，但可能会受限于API提供的功能和性能。
 
-**Q:windows运行git指令报错**
+**Q:点击打开某程序或应用提示密码，这个密码是多少？**
 
-![](../../../resources/3-UserNotes/14-IssueFAQ/pi/other_11.png)
+![](../../../resources/3-UserNotes/14-IssueFAQ/pi/pi_other_7.png)
 
-A:这是没有安装git导致的，需要先安装了git，再使用git指令
+A：密码：aibot1234
 
 **Q：MDI和JOG的区别是什么？**
 
@@ -181,25 +249,13 @@ sdh，std，标准   mdh，modify，改进
 
 ![](../../../resources/3-UserNotes/14-IssueFAQ/pi/other_15.png)
 
-**Q:报错缺少opencv_camera,如何处理？**
-
-![](../../../resources/3-UserNotes/14-IssueFAQ/pi/other_16.png)
-
-A:报错是显示缺少可执行权限，可能需要添加权限
-
-![](../../../resources/3-UserNotes/14-IssueFAQ/pi/other_17.png)
-
-改为用mycobot_280的，不需要用pi本身的了，因为m5那边占用有文件了，两边不能同时占有，否则会造成后面的编译失败。
-
-![](../../../resources/3-UserNotes/14-IssueFAQ/pi/other_18.png)
-
 **Q:数据传输速度怎么看？**
 A：使用以下代码：
 
 ```python
 import time
-from pymycobot.mycobot import MyCobot
-mc = MyCobot("COM8",115200, debug = True)
+from pymycobot import MyCobot320
+mc = MyCobot320("COM8",115200, debug = True)
 while 1:
     mc.get_angles()
 ```

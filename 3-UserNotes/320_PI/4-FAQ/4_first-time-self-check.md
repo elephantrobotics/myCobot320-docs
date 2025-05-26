@@ -10,26 +10,17 @@
 
 ### 1.进行硬件连接
 
- - M5系列机器的硬件连接：
-  
-    mycobot320M5机器则需要确保接上电源适配器、usb数据线及急停开关，并确保急停开关处于释放状态，未正确使用急停开关将无法正常使用mycobot320，急停开关请参考下图:
+ - PI系列机器的硬件连接：
+
+    mycobot320PI机器则需要确保接上电源适配器、急停开关，并确保急停开关处于释放状态(未正确使用急停开关将无法正常使用mycobot320),建议通过HDMI线缆将320pi与HDMI屏幕连接，并将键盘及鼠标接在320pi的usb接口，急停开关请参考下图:
 
     ![](../../../resources/3-UserNotes/14-IssueFAQ/pi/m5_check_1.png)
 
 ### 2.进行软件环境安装与配置
 
-使用M5版本机器需要自备一台电脑。在电脑上安装python、pymycobot库及usb串口驱动，具体请参考gitbook的环境配置章节。
+使用PI或JN版本机器，需要准备一块HDMI屏幕，但不必自备电脑。在连接HDMI屏幕后，可直接进入320pi机器自带的系统界面，且由于出厂系统已配置好软件环境，不必自己再安装python、pymycobot及usb驱动等工具，即可使用机械臂使用案例。
 
-### 3.选择正确的通讯方式
-
-每种通讯方式使用前，需要确保将M5的LCD屏幕调到对应方式，并保持这个通讯状态，才能正常控制机械臂。
-M5机械臂在使用myblockly，python，ros等开发方法需要确保M5的LCD屏幕停留在Atom：ok界面，如下图所示：
-
-![](../../../resources/3-UserNotes/14-IssueFAQ/pi/check_4.png)
-
-**注意：** 当屏幕显示Atom：no时，需要重新上电重启机器，并根据本文硬件相关“机械臂上电锁不住如何解决”的自检步骤去检查
-
-### 4.USB通讯示例
+### 3.USB通讯示例
 
 请使用myblockly或者python源码案例进行机械臂关节运动验证。
 
@@ -37,11 +28,9 @@ M5机械臂在使用myblockly，python，ros等开发方法需要确保M5的LCD�
 
 | 机器型号       | 串口号 |  波特率  |
 | :-----------: | :---------: | :---------: |
-| 320 M5         | Win: COM; Linux: /dev/ttyUSB | 115200 |
+| 320 PI        | /dev/ttyAMA0 | 115200 |
 
-**注意：** 关于M5系列机器的COM口的选择，需要根据当前个人电脑识别的端口号进行实时选择，因为每个人电脑识别到的COM口号都可能不一样且不固定的，具体选择的方案可以在本文档查看“Q：为什么选择某个com口的时候会被拒绝连接？或者说怎么找到对应的com口？”的答复
-
-#### 4.1 机械臂关节运动myblockly源码
+#### 3.1 机械臂关节运动myblockly源码
 
 ![](../../../resources/3-UserNotes/14-IssueFAQ/pi/check_5.png)
 
@@ -50,7 +39,7 @@ M5机械臂在使用myblockly，python，ros等开发方法需要确保M5的LCD�
 
 ![](../../../resources/3-UserNotes/14-IssueFAQ/pi/check_6.png)
 
-#### 4.2 机械臂关节运动关节python源码
+#### 3.2 机械臂关节运动关节python源码
 
 ```python
 #运动效果为机械臂围绕零位姿态，1-6关节逐一运动±20度
@@ -58,7 +47,7 @@ import time
 from pymycobot.mycobot320 import MyCobot320
 
 if __name__ == "__main__":
-    cobot = MyCobot320('com22',115200)#根据机型选择对应的端口号及波特率
+    cobot = MyCobot320('/dev/ttyAMA0',115200)#根据机型选择对应的端口号及波特率
     cobot.set_fresh_mode(1)
     cobot.send_angles([0, 0, 0, 0, 0, 0], 20)
     time.sleep(2)
