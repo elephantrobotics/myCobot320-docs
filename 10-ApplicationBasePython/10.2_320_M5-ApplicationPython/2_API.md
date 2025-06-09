@@ -1181,12 +1181,12 @@ from pymycobot import utils
   - 0 - 失败
   - 1 - 成功
 
-#### 15.12 `get_pro_gripper_default_speed(gripper_id, speed)`
+#### 15.12 `get_pro_gripper_speed(gripper_id, speed)`
 
-- **功能**：读取力控夹爪默认速度。
+- **功能**：读取力控夹爪速度。
 - **参数**：
   - `gripper_id` (`int`): 夹爪ID，默认14，取值范围 1 ~ 254。
-- **返回值**：夹爪默认运动速度，范围 1 ~ 100。
+- **返回值**：夹爪运动速度，范围 1 ~ 100。
 
 #### 15.13 `set_pro_gripper_abs_angle(gripper_id, gripper_angle)`
 
