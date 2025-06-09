@@ -1181,7 +1181,7 @@ from pymycobot import utils
   - 0 - 失败
   - 1 - 成功
 
-#### 15.12 `get_pro_gripper_speed(gripper_id, speed)`
+#### 15.12 `get_pro_gripper_speed(gripper_id)`
 
 - **功能**：读取力控夹爪速度。
 - **参数**：
