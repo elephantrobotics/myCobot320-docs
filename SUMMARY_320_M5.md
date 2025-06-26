@@ -116,6 +116,7 @@
   - [2 机器人夹爪搬运木块案例](7-ExamplesRobotsUsing/320M5_gripper.md)
   - [3 机器人吸泵搬运木块案例](7-ExamplesRobotsUsing/320M5_pump.md)
   - [4 手柄遥控机器人案例](7-ExamplesRobotsUsing/320M5.md)
+  - [5 320M5 deepseek案例](7-ExamplesRobotsUsing/deepseek/320ds.md)
 
 - [8 相关资料下载](8-FilesDownload/README.md)
 
