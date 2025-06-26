@@ -109,6 +109,7 @@
   - [2 Robot gripper carrying wood block example](7-ExamplesRobotsUsing/320M5_gripper.md)
   - [3 Robot suction pump carrying wood block example](7-ExamplesRobotsUsing/320M5_pump.md)
   - [4 Examples of Remote Control Robots](7-ExamplesRobotsUsing/320M5_EN.md)
+  - [5 320M5 deepseek cases](7-ExamplesRobotsUsing/deepseek/320ds_en.md)
   
 
 - [8 Documents Download](8-FilesDownload/README.md)
