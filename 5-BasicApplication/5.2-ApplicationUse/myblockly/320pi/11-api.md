@@ -20,25 +20,6 @@
 
 - **返回**：返回 Basic 固件版本。
 
-### 获取机器人 id
-
-![Alt text](./img/blocks/system/3.png)
-
-- **原型**: `get_robot_id()`
-
-- **接口描述**：获取机器人 id。
-
-- **返回**：返回机器人 id。
-
-### 获取机器人 id
-
-![Alt text](./img/blocks/system/4.png)
-
-- **原型**: `set_robot_id(id)`
-- **接口描述**：设置机器人 id。
-- **参数**：
-  - 机器人 id
-
 ## WLAN
 
 ### 设置 WLAN 账号密码
@@ -107,19 +88,6 @@
 
   - 蓝
 
-### 设置 PWM 输出
-
-![Alt text](./img/blocks/atom/2.png)
-
-- **原型**: `set_pwm_output(v1=0,v2=0,v3=0)`
-- **接口描述**：设置 PWM 输出。
-- **参数**
-
-  - **v1** (_int_)
-
-  - **v2** (_int_)
-
-  - **v3** (_int_)
 
 ### 设置末端引脚模式
 
@@ -215,28 +183,6 @@
     - 1 - 始终首先执行最新的命令。
     - 0 - 以队列的形式顺序执行指令。
 
-### 获取机器人错误信息。
-
-![Alt text](./img/blocks/status/7.png)
-
-- **原型**: `get_error_information()`
-
-- **接口描述**: 获取机器人错误信息。
-
-- **返回**:
-
-  - `0`: 没有错误.
-  - `1 ~ 6`: 对应关节超出极限位置.
-  - `32`: 运动学逆解无解.
-  - `33 ~ 34`: 直线运动没有邻接解.
-
-### 清除机器人错误消息
-
-![Alt text](./img/blocks/status/8.png)
-
-- **原型**: `clear_error_information()`
-- **接口描述**: 清除机器人错误消息。
-
 ### 检查 Atom 是否已连接
 
 ![Alt text](./img/blocks/status/9.png)
@@ -246,24 +192,6 @@
 - **返回**：
   - 0：未连接
   - 1：已连接
-
-### 设置自由模式
-
-![Alt text](./img/blocks/status/10.png)
-
-- **原型**: `set_free_mode(state)`
-- **接口描述**: 是否设置成自由模式
-- **参数**：
-  - **state**(int)：0 | 1
-
-### 检查是否是自由模式
-
-![Alt text](./img/blocks/status/11.png)
-
-- **原型**: `is_free_mode()`
-- **接口描述**: 检查是否是自由模式
-- **返回值**：
-  - **state**(int)：0 | 1
 
 ## 角度和坐标
 
@@ -530,26 +458,6 @@
 - **返回**: `encoder`: 0 ~ 4096
 
 ## 设置
-
-### get_speed
-
-![Alt text](./img/blocks/setting/1.png)
-
-- **原型**: `get_speed()`
-
-- **接口描述**: 获取速度
-
-- **返回**: speed: (`int`)
-
-### set_speed
-
-![Alt text](./img/blocks/setting/2.png)
-
-- **原型**: `set_speed(speed)`
-
-- **接口描述**: 设定速度。
-
-- **Parameters**: speed: (`int`) 0 ~ 100
 
 ### set_joint_min
 
