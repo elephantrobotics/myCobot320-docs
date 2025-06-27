@@ -20,25 +20,6 @@
 
 - **Return**: Return to Basic firmware version.
 
-#### Get Robot ID
-
-![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/system/3.png)
-
-- **Prototype**: `get_robot_id()`
-
-- **Interface Description**: Get the robot id.
-
-- **Return**: Return the robot id.
-
-#### Set Robot ID
-
-![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/system/4.png)
-
-- **Prototype**: `set_robot_id(id)`
-- **Interface Description**: Set the robot id.
-- **Parameters**:
-  -robot id
-
 ## WLAN Setting
 
 #### Set WLAN account password
@@ -106,20 +87,6 @@
   - green
 
   - blue
-
-#### Set PWM output
-
-![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/atom/2.png)
-
-- **Prototype**: `set_pwm_output(v1=0,v2=0,v3=0)`
-- **Interface Description**: Set PWM output.
-- **Parameters**
-
-  - **v1** (_int_)
-
-  - **v2** (_int_)
-
-  - **v3** (_int_)
 
 #### Set end pin mode
 
@@ -211,27 +178,6 @@
   - 1 - Always execute the latest command first.
   - 0 - Execute instructions sequentially in a queue.
 
-#### Get Error Infomation
-
-![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/status/7.png)
-
-- **Prototype**: `get_error_information()`
-- **Interface Description**: Get robot error information.
-
-- **Return**:
-
-  - `0`: No error.
-  - `1 ~ 6`: The corresponding joint exceeds the limit position.
-  - `32`: The inverse kinematics solution has no solution.
-  - `33 ~ 34`: There is no adjacent solution for linear motion.
-
-#### Clear Error Infomation
-
-![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/status/8.png)
-
-- **Prototype**: `clear_error_information()`
-- **Interface Description**: Clear robot error messages.
-
 #### Check if Atom is connected
 
 ![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/status/9.png)
@@ -241,24 +187,6 @@
 - **Return**:
   - 0: Not connected
   - 1: Connected
-
-#### Set free mode
-
-![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/status/10.png)
-
-- **Prototype**: `set_free_mode(state)`
-- **Interface Description**: Whether to set to free mode
-- **Parameters**:
-  - **state**(int): 0 | 1
-
-#### Is free mode
-
-![Alt text](../../../../resources/5-BasicApplication/5.2.1/m5/img/blocks/status/11.png)
-
-- **Prototype**: `is_free_mode()`
-- **Interface description**: Check whether it is free mode
-- **return value**:
-  - **state**(int): 0 | 1
 
 ## MDI Control
 
