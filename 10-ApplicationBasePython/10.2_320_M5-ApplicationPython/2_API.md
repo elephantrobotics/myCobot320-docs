@@ -847,7 +847,7 @@ from pymycobot import utils
 
 ### 15. Pro 力控夹爪
 
-#### 15.1 `set_pro_gripper(address, value, gripper_id,=14)`
+#### 15.1 `set_pro_gripper(address, value, gripper_id=14)`
 
 - **功能**：设置Pro力控夹爪参数，可以设置多种参数功能。具体请查看如下表格。
 - **参数**：
