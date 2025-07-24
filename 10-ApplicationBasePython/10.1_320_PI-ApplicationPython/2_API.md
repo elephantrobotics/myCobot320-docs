@@ -855,13 +855,13 @@ from pymycobot import utils
 
 ### 15. Pro force-controlled gripper
 
-#### 15.1 `set_pro_gripper(gripper_id, address, value)`
+#### 15.1 `set_pro_gripper(address, value, gripper_id=14)`
 
 - **Function**: Set the parameters of the Pro force-controlled gripper. You can set a variety of parameter functions. For details, please see the table below.
 - **Parameter**:
-  - `gripper_id` (`int`): Gripper ID, default 14, value range 1 ~ 254.
   - `address` (`int`): The command number of the gripper.
   - `value`: The parameter value corresponding to the command number.
+  - `gripper_id` (`int`): Gripper ID, default 14, value range 1 ~ 254.
 
 <table>
   <tr>
@@ -983,12 +983,12 @@ from pymycobot import utils
 </table>
 
 
-#### 15.2 `get_pro_gripper(gripper_id, address)`
+#### 15.2 `get_pro_gripper(address, gripper_id=14)`
 
 - **Function**: Get the parameters of the Pro force-controlled gripper, and you can get a variety of parameter functions. For details, please see the table below.
 - **Parameter**:
-  - `gripper_id` (`int`): Gripper ID, default 14, value range 1 ~ 254.
   - `address` (`int`): The command number of the gripper.
+  - `gripper_id` (`int`): Gripper ID, default 14, value range 1 ~ 254.
 
 <table>
   <tr>
@@ -1107,24 +1107,24 @@ from pymycobot import utils
   </tr>
 </table>
   
-#### 15.3 `set_pro_gripper_angle(gripper_id, gripper_angle)`
+#### 15.3 `set_pro_gripper_angle(gripper_angle，gripper_id=14)`
 
 - **Function**: Set the force-controlled gripper angle.
 - **Parameter**:
-  - `gripper_id` (`int`): Gripper ID, default 14, value range 1 ~ 254.
   - `gripper_angle` (`int`): Gripper angle, value range 0 ~ 100.
+  - `gripper_id` (`int`) Gripper ID, default 14, value range 1 ~ 254.
 - **Return value**:
   - 0 - Failed
   - 1 - Success
 
-#### 15.4 `get_pro_gripper_angle(gripper_id)`
+#### 15.4 `get_pro_gripper_angle(gripper_id=14)`
 
 - **Function**: Read the angle of the force-controlled gripper.
 - **Parameter**:
   - `gripper_id` (`int`): Gripper ID, default 14, value range 1 ~ 254.
 - **Return value**: `int` 0 ~ 100
 
-#### 15.5 `set_pro_gripper_open(gripper_id)`
+#### 15.5 `set_pro_gripper_open(gripper_id=14)`
 
 - **Function**: Open the force-controlled gripper.
 - **Parameter**:
@@ -1133,7 +1133,7 @@ from pymycobot import utils
   - 0 - Failed
   - 1 - Success
 
-#### 15.6 `set_pro_gripper_close(gripper_id)`
+#### 15.6 `set_pro_gripper_close(gripper_id=14)`
 
 - **Function**: Close the force-controlled gripper.
 - **Parameter**:
@@ -1142,7 +1142,7 @@ from pymycobot import utils
   - 0 - Failed
   - 1 - Success
 
-#### 15.7 `set_pro_gripper_calibration(gripper_id)`
+#### 15.7 `set_pro_gripper_calibration(gripper_id=14)`
 
 - **Function**: Set the zero position of the force-controlled gripper. (The zero position needs to be set first when using it for the first time)
 - **Parameter**:
@@ -1151,7 +1151,7 @@ from pymycobot import utils
   - 0 - Failed
   - 1 - Success
 
-#### 15.8 `get_pro_gripper_status(gripper_id)`
+#### 15.8 `get_pro_gripper_status(gripper_id=14)`
 
 - **Function**: Read the gripping status of the force-controlled gripper.
 - **Parameter**:
@@ -1162,7 +1162,7 @@ from pymycobot import utils
   - `2` - Stopped moving, object was detected.
   - `3` - After the object was detected, it fell.
 
-#### 15.9 `set_pro_gripper_torque(gripper_id, torque_value)`
+#### 15.9 `set_pro_gripper_torque(torque_value，gripper_id=14)`
 
 - **Function**: Set the torque of the force-controlled gripper.
 - **Parameter**:
@@ -1172,41 +1172,41 @@ from pymycobot import utils
   - 0 - Failed
   - 1 - Success
 
-#### 15.10 `get_pro_gripper_torque(gripper_id)`
+#### 15.10 `get_pro_gripper_torque(gripper_id=14)`
 
 - **Function**: Read the torque of the force-controlled gripper.
 - **Parameter**:
   - `gripper_id` (`int`): Gripper ID, default 14, value range 1 ~ 254.
 - **Return value:** (`int`) 100 ~ 300
 
-#### 15.11 `set_pro_gripper_speed(gripper_id, speed)`
+#### 15.11 `set_pro_gripper_speed(speed，gripper_id=14)`
 
 - **Function**: Set the force-controlled gripper speed.
 - **Parameter**:
-  - `gripper_id` (`int`): Gripper ID, default 14, value range 1 ~ 254.
   - `speed` (int): Gripper movement speed, value range 1 ~ 100.
+  - `gripper_id` (`int`) Gripper ID, default 14, value range 1 ~ 254.
 - **Return value**:
   - 0 - Failed
   - 1 - Success
 
-#### 15.12 `get_pro_gripper_default_speed(gripper_id, speed)`
+#### 15.12 `get_pro_gripper_default_speed(speed，gripper_id=14)`
 
 - **Function**: Read the default speed of the force-controlled gripper.
 - **Parameter**:
   - `gripper_id` (`int`): Gripper ID, default 14, value range 1 ~ 254.
 - **Return value**: Gripper default movement speed, range 1 ~ 100.
 
-#### 15.13 `set_pro_gripper_abs_angle(gripper_id, gripper_angle)`
+#### 15.13 `set_pro_gripper_abs_angle(gripper_angle，gripper_id=14)`
 
 - **Function**: Set the absolute angle of the force-controlled gripper.
 - **Parameter**:
-  - `gripper_id` (`int`): Gripper ID, default 14, value range 1 ~ 254.
   - `gripper_angle` (`int`): Gripper angle, value range 0 ~ 100.
+  - `gripper_id` (`int`) Gripper ID, default 14, value range 1 ~ 254.
 - **Return value**:
   - 0 - Failed
   - 1 - Success
 
-#### 15.14 `set_pro_gripper_pause(gripper_id)`
+#### 15.14 `set_pro_gripper_pause(gripper_id=14)`
 
 - **Function**: Pause motion.
 - **Parameter**:
@@ -1215,7 +1215,7 @@ from pymycobot import utils
   - 0 - Failed
   - 1 - Success
 
-#### 15.15 `set_pro_gripper_resume(gripper_id)`
+#### 15.15 `set_pro_gripper_resume(gripper_id=14)`
 
 - **Function**: Motion recovery.
 - **Parameter**:
@@ -1224,7 +1224,7 @@ from pymycobot import utils
   - 0 - Failed
   - 1 - Success
 
-#### 15.16 `set_pro_gripper_stop(gripper_id)`
+#### 15.16 `set_pro_gripper_stop(gripper_id=14)`
 
 - **Function**: Stop motion.
 - **Parameter**:
@@ -1232,6 +1232,284 @@ from pymycobot import utils
 - **Return value**:
   - 0 - Failed
   - 1 - Success
+
+### 16. myGripper H100 three-finger gripper
+
+#### 16.1 `get_hand_firmware_major_version(gripper_id=14)`
+
+* **Function**: Read the firmware **major** version number.
+* **Parameter**:
+  * `gripper_id` (`int`) Gripper ID, default 14, range 1 ~ 254.
+* **Return value**: (`float`) Major version number.
+
+#### 16.2 `get_hand_firmware_minor_version(gripper_id=14)`
+
+* **Function**: Read the firmware **minor** version number.
+* **Parameter**:
+  * `gripper_id` (`int`) Gripper ID, default 14, range 1 ~ 254.
+* **Return value**: Minor version number.
+
+#### 16.3 `set_hand_gripper_id(id_value，gripper_id=14)`
+
+* **Function**: Set the gripper ID.
+* **Parameter**:
+  * `id_value` (`int`) New ID, range 1 ~ 254.
+  * `gripper_id` (`int`) 1 ~ 254, default 14
+* **Return value**: 
+  * 0 - Failed
+  * 1 - Success
+
+#### 16.4 `get_hand_gripper_id(gripper_id=14)`
+
+* **Function**: Get the gripper ID.
+* **Parameter**:
+  * `gripper_id` (`int`) 1 ~ 254, default 14
+* **Return value**: Integer representing the gripper ID.
+
+#### 16.5 `set_hand_gripper_angle(joint_id, gripper_angle，gripper_id=14)`
+
+* **Function**: Set the angle of a single joint.
+* **Parameter**:
+  * `joint_id` (`int`) 1 ~ 6
+  * `gripper_angle` (`int`) 0 ~ 100
+  * `gripper_id` (`int`) 1 ~ 254, default 14
+* **Return value**: 
+  * 0 - Failed
+  * 1 - Success
+
+#### 16.6 `get_hand_gripper_angle(joint_id，gripper_id=14)`
+
+* **Function**: Get the angle of a single joint.
+* **Parameter**:
+  * `joint_id` (`int`) 1 ~ 6
+  * `gripper_id` (`int`) 1 ~ 254, default 14
+* **Return value**: `gripper_angle` (`int`) 0 ~ 100
+
+#### 16.7 `set_hand_gripper_angles(gripper_angles, speed，gripper_id=14)`
+
+* **Function**: Set angles for all joints.
+* **Parameter**:
+  * `gripper_angles` (`list[int]`) 6 values, 0 ~ 100
+  * `speed` (`int`) 0 ~ 100
+  * `gripper_id` (`int`) 1 ~ 254, default 14
+* **Return value**: 
+  * 0 - Failed
+  * 1 - Success
+
+#### 16.8 `get_hand_gripper_angles(gripper_id=14)`
+
+* **Function**: Get angles of all joints.
+* **Parameter**:
+  * `gripper_id` (`int`) 1 ~ 254, default 14
+* **Return value**: List of 6 integers (0 ~ 100)
+
+#### 16.9 `set_hand_gripper_torque(joint_id, torque_value，gripper_id=14)`
+
+* **Function**: Set the torque of a joint.
+* **Parameter**:
+  * `joint_id` (`int`) 1 ~ 6
+  * `torque_value` (`int`) 100 ~ 300
+  * `gripper_id` (`int`) 1 ~ 254, default 14
+* **Return value**:
+  * 0 - Failed
+  * 1 - Success
+
+#### 16.10 `get_hand_gripper_torque(joint_id，gripper_id=14)`
+
+* **Function**: Get the torque of a joint.
+* **Parameter**:
+  * `joint_id` (`int`) 1 ~ 6
+  * `gripper_id` (`int`) 1 ~ 254, default 14
+* **Return value**: `torque_value` (`int`) 100 ~ 300
+
+#### 16.11 `set_hand_gripper_calibrate(joint_id，gripper_id=14)`
+
+* **Function**: Calibrate the zero position of a joint.
+* **Parameter**:
+  * `joint_id` (`int`) 1 ~ 6
+  * `gripper_id` (`int`) 1 ~ 254, default 14
+* **Return value**: 
+  * 0 - Failed
+  * 1 - Success
+
+#### 16.12 `get_hand_gripper_status(gripper_id=14)`
+
+* **Function**: Get the clamping status of the gripper.
+* **Parameter**:
+  * `gripper_id` (`int`) Gripper ID, default 14, range 1 ~ 254.
+* **Return value**:
+  * 0 - Moving
+  * 1 - Stopped, no clamping
+  * 2 - Stopped, clamping detected
+  * 3 - Object fell after clamping
+
+#### 16.13 `set_hand_gripper_enabled(flag，gripper_id=14)`
+
+* **Function**: Set the enable state of the gripper
+* **Parameter**:
+  * `flag (int)`: 0 or 1
+  * `gripper_id` (`int`) 1 ~ 254, default 14
+* **Return value**: Operation status
+
+#### 16.14 `set_hand_gripper_speed(joint_id, speed，gripper_id=14)`
+
+* **Function**: Set the speed of the gripper joint.
+* **Parameter**:
+  * `joint_id` (`int`) 1 ~ 6
+  * `speed` (`int`) 1 ~ 100
+  * `gripper_id` (`int`) 1 ~ 254, default 14
+* **Return value**: 
+  * 0 - Failed
+  * 1 - Success
+
+#### 16.15 `get_hand_gripper_default_speed(joint_id，gripper_id=14)`
+
+* **Function**: Get the default speed of the gripper joint.
+* **Parameter**:
+  * `joint_id` (`int`) 1 ~ 6
+  * `gripper_id` (`int`) 1 ~ 254, default 14
+* **Return value**: Default speed (`int`) 1 ~ 100
+
+#### 16.16 `set_hand_gripper_p(joint_id, value，gripper_id=14)`
+
+* **Function**: Set the P value for a joint.
+* **Parameter**:
+  * `joint_id` (`int`) 1 ~ 6
+  * `value` (`int`) 0 ~ 254
+  * `gripper_id` (`int`) 1 ~ 254, default 14
+* **Return value**: 
+  * 0 - Failed
+  * 1 - Success
+
+#### 16.17 `get_hand_gripper_p(joint_id，gripper_id=14)`
+
+* **Function**: Get the P value of a joint.
+* **Parameter**:
+  * `joint_id` (`int`) 1 ~ 6
+  * `gripper_id` (`int`) 1 ~ 254, default 14
+* **Return value**: `value` (`int`) 0 ~ 254
+
+#### 16.18 `set_hand_gripper_d(joint_id, value，gripper_id=14)`
+
+* **Function**: Set the D value for a joint.
+* **Parameter**:
+  * `joint_id` (`int`) 1 ~ 6
+  * `value` (`int`) 0 ~ 254
+  * `gripper_id` (`int`) 1 ~ 254, default 14
+* **Return value**: 
+  * 0 - Failed
+  * 1 - Success
+
+#### 16.19 `get_hand_gripper_d(joint_id，gripper_id=14)`
+
+* **Function**: Get the D value of a joint.
+* **Parameter**:
+  * `joint_id` (`int`) 1 ~ 6
+  * `gripper_id` (`int`) 1 ~ 254, default 14
+* **Return value**: `value` (`int`) 0 ~ 254
+
+#### 16.20 `set_hand_gripper_i(joint_id, value，gripper_id=14)`
+
+* **Function**: Set the I value for a joint.
+* **Parameter**:
+  * `joint_id` (`int`) 1 ~ 6
+  * `value` (`int`) 0 ~ 254
+  * `gripper_id` (`int`) 1 ~ 254, default 14
+* **Return value**: 
+  * 0 - Failed
+  * 1 - Success
+
+#### 16.21 `get_hand_gripper_i(joint_id，gripper_id=14)`
+
+* **Function**: Get the I value of a joint.
+* **Parameter**:
+  * `joint_id` (`int`) 1 ~ 6
+  * `gripper_id` (`int`) 1 ~ 254, default 14
+* **Return value**: `value` (`int`) 0 ~ 254
+
+#### 16.22 `set_hand_gripper_min_pressure(joint_id, value，gripper_id=14)`
+
+* **Function**: Set the minimum starting force of a joint.
+* **Parameter**:
+  * `joint_id` (`int`) 1 ~ 6
+  * `value` (`int`) 0 ~ 254
+  * `gripper_id` (`int`) 1 ~ 254, default 14
+* **Return value**: 
+  * 0 - Failed
+  * 1 - Success
+
+#### 16.23 `get_hand_gripper_min_pressure(joint_id，gripper_id=14)`
+
+* **Function**: Get the minimum starting force of a joint.
+* **Parameter**:
+  * `joint_id` (`int`) 1 ~ 6
+  * `gripper_id` (`int`) 1 ~ 254, default 14
+* **Return value**: `value` (`int`) 0 ~ 254
+
+#### 16.24 `set_hand_gripper_clockwise(joint_id, value，gripper_id=14)`
+
+* **Function**: Set clockwise error range for a joint.
+* **Parameter**:
+  * `joint_id` (`int`) 1 ~ 6
+  * `value` (`int`) 0 ~ 16
+  * `gripper_id` (`int`) 1 ~ 254, default 14
+* **Return value**: 
+  * 0 - Failed
+  * 1 - Success
+
+#### 16.25 `get_hand_gripper_clockwise(joint_id，gripper_id=14)`
+
+* **Function**: Get clockwise error range for a joint.
+* **Parameter**:
+  * `joint_id` (`int`) 1 ~ 6
+  * `gripper_id` (`int`) 1 ~ 254, default 14
+* **Return value**: `value` (`int`) 0 ~ 16
+
+#### 16.26 `set_hand_gripper_counterclockwise(joint_id, value，gripper_id=14)`
+
+* **Function**: Set counterclockwise error range for a joint.
+* **Parameter**:
+  * `joint_id` (`int`) 1 ~ 6
+  * `value` (`int`) 0 ~ 16
+  * `gripper_id` (`int`) 1 ~ 254, default 14
+* **Return value**: 
+  * 0 - Failed
+  * 1 - Success
+
+#### 16.27 `get_hand_gripper_counterclockwise(joint_id，gripper_id=14)`
+
+* **Function**: Get counterclockwise error range for a joint.
+* **Parameter**:
+  * `joint_id` (`int`) 1 ~ 6
+  * `gripper_id` (`int`) 1 ~ 254, default 14
+* **Return value**: `value` (`int`) 0 ~ 16
+
+#### 16.28 `set_hand_gripper_pinch_action(pinch_pose, rank_mode, idle_flag=False，gripper_id=14)`
+
+* **Function**: Set the coordinated pinch action and speed.
+* **Parameter**:
+
+  * `pinch_pose` (`int`) 0 ~ 4
+    * 0: All joints return to zero
+    * 1: Index finger and thumb pinch
+    * 2: Middle finger and thumb pinch
+    * 3: Index and middle finger pinch
+    * 4: Three fingers pinch, If pinch_pose is 4, rank_mode ranges from 1 to 20
+  * `rank_mode` (`int`) 0 ~ 5
+  * `idle_flag` (`bool`, optional): default False
+  * `gripper_id` (`int`) 1 ~ 254, default 14
+* **Return value**: 
+  * 0 - Failed
+  * 1 - Success
+
+#### 16.29 `get_hand_gripper_type(gripper_id=14)`
+
+* **Function**: Get the machine model.
+* **Parameter**:
+  * `gripper_id` (`int`) 1 ~ 254, default 14
+* **Return value**:  (`int`) 
+  * 0 - left hand
+  * 1 - right hand
 
 ## MyCobot 320 Socket
 
