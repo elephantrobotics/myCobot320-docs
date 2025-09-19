@@ -920,7 +920,7 @@ from pymycobot import utils
     <td>设置夹持电流</td>
     <td style="text-align: center;">14</td>
     <td style="text-align: center;">43</td>
-    <td>1 ~ 254</td>
+    <td>100 ~ 300</td>
   </tr>
 </table>
 
@@ -1095,7 +1095,7 @@ from pymycobot import utils
   </tr>
   <tr>
     <td>读取夹持电流</td>
-    <td>1 ~ 254</td>
+    <td>100 ~ 300</td>
   </tr>
 </table>
   
@@ -1158,7 +1158,7 @@ from pymycobot import utils
 
 - **功能**：设置力控夹爪扭矩。
 - **参数**：
-  - `torque_value` (`int`) ：扭矩值，取值范围 100 ~ 300。
+  - `torque_value` (`int`) ：扭矩值，取值范围 0 ~ 100。
   - `gripper_id` (`int`): 夹爪ID，默认14，取值范围 1 ~ 254。
 - **返回值**：
   - 0 - 失败
@@ -1169,7 +1169,7 @@ from pymycobot import utils
 - **功能**：读取力控夹爪扭矩。
 - **参数**：
   - `gripper_id` (`int`): 夹爪ID，默认14，取值范围 1 ~ 254。
-- **返回值:** (`int`) 100 ~ 300
+- **返回值:** (`int`) 0 ~ 100
 
 #### 15.11`set_pro_gripper_speed(speed, gripper_id=14)`
 
