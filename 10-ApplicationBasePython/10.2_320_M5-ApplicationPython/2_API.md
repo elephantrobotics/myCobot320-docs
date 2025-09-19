@@ -935,7 +935,7 @@ from pymycobot import utils
     <td>Set clamping current</td>
     <td style="text-align: center;">14</td>
     <td style="text-align: center;">43</td>
-    <td>1 ~ 254</td>
+    <td>100 ~ 300</td>
   </tr>
 </table>
 
@@ -1110,7 +1110,7 @@ from pymycobot import utils
   </tr>
   <tr>
     <td>Read the clamping current</td>
-    <td>1 ~ 254</td>
+    <td>100 ~ 300</td>
   </tr>
 </table>
   
@@ -1173,8 +1173,8 @@ from pymycobot import utils
 
 - **Function**: Set the torque of the force-controlled gripper.
 - **Parameter**:
+  - `torque_value` (`int`): Torque value, value range 0 ~ 100.
   - `gripper_id` (`int`): Gripper ID, default 14, value range 1 ~ 254.
-  - `torque_value` (`int`): Torque value, value range 100 ~ 300.
 - **Return value**:
   - 0 - Failed
   - 1 - Success
@@ -1184,7 +1184,7 @@ from pymycobot import utils
 - **Function**: Read the torque of the force-controlled gripper.
 - **Parameter**:
   - `gripper_id` (`int`): Gripper ID, default 14, value range 1 ~ 254.
-- **Return value:** (`int`) 100 ~ 300
+- **Return value:** (`int`) 0 ~ 100
 
 #### 15.11 `set_pro_gripper_speed(speed，gripper_id=14)`
 
