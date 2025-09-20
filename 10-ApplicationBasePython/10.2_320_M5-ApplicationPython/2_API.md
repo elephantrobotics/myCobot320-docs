@@ -1300,7 +1300,7 @@ from pymycobot import utils
 - **功能**：设置某关节的力矩  
 - **参数**：
   - `joint_id` (`int`) 1 ~ 6  
-  - `torque_value` (`int`) 100 ~ 300  
+  - `torque_value` (`int`) 0 ~ 100  
   - `gripper_id` (`int`) 1 ~ 254，默认14
 - **返回值**：
   - 0 - 失败  
@@ -1312,7 +1312,7 @@ from pymycobot import utils
 - **参数**：
   - `joint_id` (`int`) 1 ~ 6  
   - `gripper_id` (`int`) 1 ~ 254，默认14
-- **返回值**：`torque_value` (`int`) 100 ~ 300
+- **返回值**：`torque_value` (`int`) 0 ~ 100
 
 #### 16.11 `set_hand_gripper_calibrate(joint_id, gripper_id=14)`
 
