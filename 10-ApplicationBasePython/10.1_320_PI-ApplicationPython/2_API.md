@@ -928,7 +928,7 @@ from pymycobot import utils
     <td>Set clamping current</td>
     <td style="text-align: center;">14</td>
     <td style="text-align: center;">43</td>
-    <td>1 ~ 254</td>
+    <td>100 ~ 300</td>
   </tr>
 </table>
 
@@ -1103,7 +1103,7 @@ from pymycobot import utils
   </tr>
   <tr>
     <td>Read the clamping current</td>
-    <td>1 ~ 254</td>
+    <td>100 ~ 300</td>
   </tr>
 </table>
   
@@ -1167,7 +1167,7 @@ from pymycobot import utils
 - **Function**: Set the torque of the force-controlled gripper.
 - **Parameter**:
   - `gripper_id` (`int`): Gripper ID, default 14, value range 1 ~ 254.
-  - `torque_value` (`int`): Torque value, value range 100 ~ 300.
+  - `torque_value` (`int`): Torque value, value range 0 ~ 100.
 - **Return value**:
   - 0 - Failed
   - 1 - Success
@@ -1177,7 +1177,7 @@ from pymycobot import utils
 - **Function**: Read the torque of the force-controlled gripper.
 - **Parameter**:
   - `gripper_id` (`int`): Gripper ID, default 14, value range 1 ~ 254.
-- **Return value:** (`int`) 100 ~ 300
+- **Return value:** (`int`) 0 ~ 100
 
 #### 15.11 `set_pro_gripper_speed(speed，gripper_id=14)`
 
@@ -1308,7 +1308,7 @@ from pymycobot import utils
 * **Function**: Set the torque of a joint.
 * **Parameter**:
   * `joint_id` (`int`) 1 ~ 6
-  * `torque_value` (`int`) 100 ~ 300
+  * `torque_value` (`int`) 0 ~ 100
   * `gripper_id` (`int`) 1 ~ 254, default 14
 * **Return value**:
   * 0 - Failed
@@ -1320,7 +1320,7 @@ from pymycobot import utils
 * **Parameter**:
   * `joint_id` (`int`) 1 ~ 6
   * `gripper_id` (`int`) 1 ~ 254, default 14
-* **Return value**: `torque_value` (`int`) 100 ~ 300
+* **Return value**: `torque_value` (`int`) 0 ~ 100
 
 #### 16.11 `set_hand_gripper_calibrate(joint_id，gripper_id=14)`
 

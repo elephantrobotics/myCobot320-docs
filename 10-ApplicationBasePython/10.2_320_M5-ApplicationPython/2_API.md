@@ -1315,7 +1315,7 @@ from pymycobot import utils
 * **Function**: Set the torque of a joint.
 * **Parameter**:
   * `joint_id` (`int`) 1 ~ 6
-  * `torque_value` (`int`) 100 ~ 300
+  * `torque_value` (`int`) 0 ~ 100
   * `gripper_id` (`int`) 1 ~ 254, default 14
 * **Return value**:
   * 0 - Failed
@@ -1327,7 +1327,7 @@ from pymycobot import utils
 * **Parameter**:
   * `joint_id` (`int`) 1 ~ 6
   * `gripper_id` (`int`) 1 ~ 254, default 14
-* **Return value**: `torque_value` (`int`) 100 ~ 300
+* **Return value**: `torque_value` (`int`) 0 ~ 100
 
 #### 16.11 `set_hand_gripper_calibrate(joint_id，gripper_id=14)`
 
