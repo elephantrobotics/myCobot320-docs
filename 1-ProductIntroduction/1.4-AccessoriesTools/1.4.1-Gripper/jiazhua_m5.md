@@ -211,7 +211,7 @@
   <tr>
     <td>读取夹爪ID</td>
     <td style="text-align: center;">14</td>
-    <td style="text-align: center;">3</td>
+    <td style="text-align: center;">4</td>
   </tr>
   <tr>
     <td>读取夹爪顺时针可运行误差</td>
