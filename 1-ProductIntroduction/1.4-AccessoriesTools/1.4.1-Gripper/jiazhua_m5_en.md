@@ -210,7 +210,7 @@ The robot arm needs to burn the pico firmware that supports the force-controlled
 <tr>
 <td>Read gripper ID</td>
 <td style="text-align: center;">14</td>
-<td style="text-align: center;">3</td>
+<td style="text-align: center;">4</td>
 </tr>
 <tr>
 <td>Read gripper clockwise runnable error</td>
