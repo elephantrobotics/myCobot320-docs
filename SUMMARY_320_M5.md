@@ -90,6 +90,7 @@
     - [2 ROS 基础](11-ApplicationBaseROS/11.1-ROS1/11.1.1-320M5/11.1.1.2-ROS基础.md)
     - [3 rviz 介绍](11-ApplicationBaseROS/11.1-ROS1/11.1.1-320M5/11.1.1.3-rviz介绍.md)
     - [4 基础功能](11-ApplicationBaseROS/11.1-ROS1/11.1.1-320M5/11.1.1.4-基础功能.md)
+    - [5 Gazebo基础功能](11-ApplicationBaseROS/11.1-ROS1/11.1.1-320M5/11.1.1.5-Gazebo基础功能.md)
   - [6.3 基于 ROS2 开发使用](11-ApplicationBaseROS/11.2-ROS2/11.2.1-M5.md)
     - [1 环境搭建](11-ApplicationBaseROS/11.2-ROS2/11.2.1-320M5/11.2.1.1-环境搭建.md)
     - [2 ROS2 基础](11-ApplicationBaseROS/11.2-ROS2/11.2.1-320M5/11.2.1.2-ROS2基础.md)
