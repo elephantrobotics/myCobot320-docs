@@ -37,6 +37,23 @@ mc.send_angle(1, 40, 20)
 - **function：** Get basic firmware version for M5 version
 - **Return value：** `float` firmware version
 
+
+
+#### 1.4 `get_error_information()`
+- **function：** Obtaining robot error information
+- **Return value：**
+  - `0`: No error.
+  - `1 ~ 6`: Corresponding joint exceeds the limit position.
+  - `16 ~ 19`: Collision protection triggered.
+  - `32`: No inverse kinematics solution.
+  - `33 ~ 34`: Linear motion has no adjacent solution.
+
+#### 1.5 `clear_error_information()`
+- **function:** Clear robot error message
+
+
+
+
 ### 2. Overall Status
 
 #### 2.1 `power_on()`
