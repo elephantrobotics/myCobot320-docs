@@ -858,69 +858,69 @@ from pymycobot import utils
 <table>
   <tr>
     <th>功能</th>
-    <th>gripper_id</th>
     <th>address</th>
     <th>value</th>
+    <th>gripper_id</th>
   </tr>
   <tr>
     <td>设置夹爪ID</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">3</td>
     <td>1 ~ 254</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>设置夹爪使能状态</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">10</td>
     <td>0或者1, 0 - 掉使能; 1 - 上使能</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>设置夹爪顺时针可运行误差</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">21</td>
     <td>0 ~ 16</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>设置夹爪逆时针可运行误差</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">23</td>
     <td>0 ~ 16</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>设置夹爪最小启动力</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">25</td>
     <td>0 ~ 254</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>IO输出设置</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">29</td>
     <td>0, 1, 16, 17</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>设置IO张开角度</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">30</td>
     <td>0 ~ 100</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>设置IO闭合角度</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">31</td>
     <td>0 ~ 100</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>设置舵机虚位数值</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">41</td>
     <td>0 ~ 100</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>设置夹持电流</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">43</td>
     <td>100 ~ 300</td>
+    <td style="text-align: center;">14</td>
   </tr>
 </table>
 
@@ -985,63 +985,63 @@ from pymycobot import utils
 <table>
   <tr>
     <th>功能</th>
-    <th>gripper_id</th>
     <th>address</th>
+    <th>gripper_id</th>
   </tr>
   <tr>
     <td>读取固件主版本号</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">1</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>读取固件次版本号</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">2</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>读取夹爪ID</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">4</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>读取夹爪顺时针可运行误差</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">22</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>读取夹爪逆时针可运行误差</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">24</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>读取夹爪最小启动力</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">26</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>读取IO张开角度</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">34</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>读取IO闭合角度</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">35</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>获取当前队列的数据量</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">40</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>读取舵机虚位数值</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">42</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>读取夹持电流</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">44</td>
+    <td style="text-align: center;">14</td>
   </tr>
 </table>
 
