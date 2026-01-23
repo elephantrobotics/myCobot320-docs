@@ -883,69 +883,69 @@ from pymycobot import utils
 <table>
   <tr>
     <th>Function</th>
-    <th>gripper_id</th>
     <th>address</th>
     <th>value</th>
+    <th>gripper_id</th>
   </tr>
   <tr>
     <td>Set gripper ID</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">3</td>
     <td>1 ~ 254</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>Set gripper enable status</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">10</td>
     <td>0 or 1, 0 - off enable; 1 - on enable</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>Set gripper clockwise runnable error</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">21</td>
     <td>0 ~ 16</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>Set gripper counterclockwise runnable error</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">23</td>
     <td>0 ~ 16</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>Set gripper minimum starting force</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">25</td>
     <td>0 ~ 254</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>IO output settings</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">29</td>
     <td>0, 1, 16, 17</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>Set IO opening angle</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">30</td>
     <td>0 ~ 100</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>Set IO closing angle</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">31</td>
     <td>0 ~ 100</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>Set servo virtual position value</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">41</td>
     <td>0 ~ 100</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>Set clamping current</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">43</td>
     <td>100 ~ 300</td>
+    <td style="text-align: center;">14</td>
   </tr>
 </table>
 
@@ -1010,63 +1010,63 @@ from pymycobot import utils
 <table>
   <tr>
     <th>Function</th>
-    <th>gripper_id</th>
     <th>address</th>
+    <th>gripper_id</th>
   </tr>
   <tr>
     <td>Read firmware major version number</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">1</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>Read firmware minor version number</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">2</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>Read gripper ID</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">4</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>Read gripper clockwise runnable error</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">22</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>Read gripper counterclockwise runnable error</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">24</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>Read gripper minimum starting force</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">26</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>Read IO opening angle</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">34</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>Read IO closing angle</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">35</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>Get the amount of data in the current queue</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">40</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>Read servo virtual position value</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">42</td>
+    <td style="text-align: center;">14</td>
   </tr>
   <tr>
     <td>Read the clamping current</td>
-    <td style="text-align: center;">14</td>
     <td style="text-align: center;">44</td>
+    <td style="text-align: center;">14</td>
   </tr>
 </table>
 
