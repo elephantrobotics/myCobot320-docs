@@ -4,7 +4,7 @@
 
 ## Python API使用说明
 
-API（Application Programming Interface）又称应用程序编程接口函数，是预先定义好的函数，使用以下函数接口时，请在一开始就导入我们的API库，输入如下代码，否则无法运行成功：
+API（Application Programming Interface）又称应用程序编程接口函数，是预先定义好的函数，使用以下函数接口时，请在一开始就导入我们的API库，请安装最新版本的pymycobot，防止ID错位。输入如下代码，否则无法运行成功：
 
 ```python
 # 示例
@@ -852,7 +852,7 @@ from pymycobot import utils
 
 - **返回值:** 返回检测到的端口号，如果没有监测到串口号则返回：None
 
-### 15. Pro 力控夹爪
+### 15. Pro 力控夹爪（请安装最新版本的pymycobot，防止ID错位）
 
 #### 15.1 `set_pro_gripper(address, value, gripper_id=14)`
 
