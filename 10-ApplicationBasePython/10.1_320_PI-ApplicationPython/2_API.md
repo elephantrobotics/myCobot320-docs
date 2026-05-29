@@ -4,7 +4,7 @@
 
 ## Python API usage instaructions
 
-API (Application Programming Interface), also known as Application Programming Interface functions, are predefined functions. When using the following function interfaces, please import our API library at the beginning by entering the following code, otherwise it will not run successfully:
+API (Application Programming Interface), also known as Application Programming Interface functions, are predefined functions. When using the following function interfaces,Please install the latest version of pymycobot to prevent ID misalignment. please import our API library at the beginning by entering the following code, otherwise it will not run successfully:
 
 ```python
 # Example
@@ -656,7 +656,7 @@ mc.send_angle(1, 40, 20)
 - **Return value:**
   - `1`: complete
 
-### 9. Robotic arm end gripper control
+### 9. Robotic arm end gripper control(Please install the latest version of pymycobot to prevent ID misalignment)
 
 #### 9.1 `set_gripper_state(flag, speed, _type_1=None)`
 
